@@ -97,3 +97,7 @@ html {
 .category-content {
     display: none;
 }
+
+.category-content.active {
+    display: block;
+}
