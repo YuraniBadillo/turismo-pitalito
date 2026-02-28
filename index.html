@@ -19,41 +19,28 @@
     </ul>
 </nav>
 
-<section id="naturaleza">
-    <h2 id="nature">Naturaleza</h2>
-    <div class="card">
-        <img src="images/guaitipan.jpg" alt="Laguna de Guaitipan">
-        <h3 id="exp1-title">Laguna de Guaitipan</h3>
-        <p id="exp1-desc">Hermosa laguna natural ideal para senderismo y fotografía.</p>
-
-        <iframe 
-        src="https://www.google.com/maps/embed?pb=..."
-        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
-
+<section class="category">
+    <div class="category-header" onclick="toggleSection('naturaleza-content')">
+        <h2 id="nature">Naturaleza</h2>
+        <p id="nature-desc">Explora paisajes naturales y rutas ecológicas.</p>
     </div>
 
-    <div class="card">
-    <img src="images/cascada.jpg" alt="Cascada El Maco">
-    <h3 id="exp3-title">Cascada El Maco</h3>
-    <p id="exp3-desc">
-        Una hermosa cascada rodeada de naturaleza ideal para caminatas ecológicas.
-    </p>
-    <iframe src="https://www.google.com/maps/embed?pb=..."
-    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy">
-    </iframe>
-</div>
+    <div id="naturaleza-content" class="category-content">
+        <!-- Aquí van tus cards -->
+        
+        <div class="card">
+            <img src="images/guaitipan.jpg" alt="Laguna de Guaitipan">
+            <h3 id="exp1-title">Laguna de Guaitipan</h3>
+            <p id="exp1-desc">Hermosa laguna natural ideal para senderismo y fotografía.</p>
+        </div>
 
-<div class="card">
-    <img src="images/sendero.jpg" alt="Sendero ecológico">
-    <h3 id="exp4-title">Sendero Ecológico</h3>
-    <p id="exp4-desc">
-        Recorrido natural para disfrutar de la biodiversidad del municipio.
-    </p>
-    <iframe src="https://www.google.com/maps/embed?pb=..."
-    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy">
-    </iframe>
-</div>
+        <div class="card">
+            <img src="images/maco.jpg" alt="Cascada El Maco">
+            <h3 id="exp3-title">Cascada El Maco</h3>
+            <p id="exp3-desc">Una hermosa cascada rodeada de naturaleza ideal para caminatas ecológicas.</p>
+        </div>
+
+    </div>
 </section>
 
 <section id="cultura">
