@@ -93,3 +93,7 @@ html {
 .navbar a:hover {
     color: #f39c12;
 }
+
+.category-content {
+    display: none;
+}
