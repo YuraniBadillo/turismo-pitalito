@@ -77,6 +77,10 @@ function changeLanguage() {
 
     document.getElementById("menu-nature").innerText = content[language].nature;
     document.getElementById("menu-culture").innerText = content[language].culture;
+    document.getElementById("culture-desc").innerText =
+    (language === "es")
+    ? "Descubre tradiciones, historia y patrimonio cultural de Pitalito."
+    : "Discover traditions, history and cultural heritage of Pitalito.";
 }
 
 function toggleSection(id) {
@@ -88,3 +92,4 @@ function toggleSection(id) {
         section.style.display = "none";
     }
 }
+
