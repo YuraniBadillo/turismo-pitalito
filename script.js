@@ -1,11 +1,11 @@
 let language = "es";
 
 function changeLanguage() {
-    if(language === "es") {
-        document.querySelector("h1").innerText = "Tourism Routes of Pitalito";
+    if (language === "es") {
+        document.getElementById("title").innerText = "Tourism Routes of Pitalito";
         language = "en";
     } else {
-        document.querySelector("h1").innerText = "Rutas Turísticas de Pitalito";
+        document.getElementById("title").innerText = "Rutas Turísticas de Pitalito";
         language = "es";
     }
 }
