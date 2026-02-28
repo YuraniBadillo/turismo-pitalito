@@ -74,4 +74,7 @@ function changeLanguage() {
 
     document.getElementById("exp6-title").innerText = content[language].exp6Title;
     document.getElementById("exp6-desc").innerText = content[language].exp6Desc;
+
+    document.getElementById("menu-nature").innerText = content[language].nature;
+    document.getElementById("menu-culture").innerText = content[language].culture;
 }
