@@ -55,7 +55,7 @@ iframe {
 }
 .card img {
     width: 100%;
-    max-width: 250px;   /* 👈 tamaño máximo */
+    max-width: 100px;   /* 👈 tamaño máximo */
     height: auto;
     border-radius: 10px;
     display: block;
