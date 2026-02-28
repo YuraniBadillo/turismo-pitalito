@@ -24,6 +24,6 @@ function changeLanguage() {
 
     document.getElementById("title").innerText = content[language].title;
     document.getElementById("nature").innerText = content[language].nature;
-    document.getElementById("exp1-title").innerText = content[language].exp1title;
+    document.getElementById("exp1-title").innerText = content[language].exp1Title;
     document.getElementById("exp1-desc").innerText = content[language].exp1Desc;
 }
