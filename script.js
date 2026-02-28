@@ -4,8 +4,8 @@ const content = {
     es: {
         title: "Rutas Turísticas de Pitalito",
         nature: "Naturaleza",
-        exp1Title: "Laguna de Guaitipan",
-        exp1Desc: "Hermosa laguna natural ideal para senderismo y fotografía."
+        exp1-title: "Laguna de Guaitipan",
+        exp1-desc: "Hermosa laguna natural ideal para senderismo y fotografía."
     },
     en: {
         title: "Tourism Routes of Pitalito",
