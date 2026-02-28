@@ -17,11 +17,9 @@ const content = {
         exp5Desc: "Espacio cultural donde se preserva la historia y tradiciones de la región.",
         exp6Title: "Ruta Ancestral",
         exp6Desc: "Experiencia cultural guiada sobre las raíces indígenas del territorio.",
-       
-
-        }
+         
+     },
     
-    },
     en: {
         title: "Tourism Routes of Pitalito",
         nature: "Nature",
@@ -39,7 +37,7 @@ const content = {
         exp6Title: "Ancestral Route",
         exp6Desc: "Guided cultural experience about the indigenous roots of the territory."
         
-    }
+        }
 };
 
 function changeLanguage() {
