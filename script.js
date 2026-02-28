@@ -10,8 +10,8 @@ const content = {
     en: {
         title: "Tourism Routes of Pitalito",
         nature: "Nature",
-        exp1Title: "Guaitipan Lagoon",
-        exp1Desc: "Beautiful natural lagoon ideal for hiking and photography."
+        exp1-title: "Guaitipan Lagoon",
+        exp1-desc: "Beautiful natural lagoon ideal for hiking and photography."
     }
 };
 
