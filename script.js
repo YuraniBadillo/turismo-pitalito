@@ -53,36 +53,52 @@ const content = {
 function changeLanguage() {
     language = (language === "es") ? "en" : "es";
 
-    document.getElementById("title").innerText = content[language].title;
-    document.getElementById("nature").innerText = content[language].nature;
-    document.getElementById("culture").innerText = content[language].culture;
+    function update(id, text) {
+        const element = document.getElementById(id);
+        if (element) {
+            element.innerText = text;
+        }
+    }
 
-    document.getElementById("exp1-title").innerText = content[language].exp1Title;
-    document.getElementById("exp1-desc").innerText = content[language].exp1Desc;
+    update("title", content[language].title);
+    update("nature", content[language].nature);
+    update("culture", content[language].culture);
 
-    document.getElementById("exp2-title").innerText = content[language].exp2Title;
-    document.getElementById("exp2-desc").innerText = content[language].exp2Desc;
+    update("exp1-title", content[language].exp1Title);
+    update("exp1-desc", content[language].exp1Desc);
 
-    document.getElementById("exp3-title").innerText = content[language].exp3Title;
-    document.getElementById("exp3-desc").innerText = content[language].exp3Desc;
+    update("exp2-title", content[language].exp2Title);
+    update("exp2-desc", content[language].exp2Desc);
 
-    document.getElementById("exp4-title").innerText = content[language].exp4Title;
-    document.getElementById("exp4-desc").innerText = content[language].exp4Desc;
+    update("exp3-title", content[language].exp3Title);
+    update("exp3-desc", content[language].exp3Desc);
 
-    document.getElementById("exp5-title").innerText = content[language].exp5Title;
-    document.getElementById("exp5-desc").innerText = content[language].exp5Desc;
+    update("exp4-title", content[language].exp4Title);
+    update("exp4-desc", content[language].exp4Desc);
 
-    document.getElementById("exp6-title").innerText = content[language].exp6Title;
-    document.getElementById("exp6-desc").innerText = content[language].exp6Desc;
+    update("exp5-title", content[language].exp5Title);
+    update("exp5-desc", content[language].exp5Desc);
 
-    document.getElementById("menu-nature").innerText = content[language].nature;
-    document.getElementById("menu-culture").innerText = content[language].culture;
-    document.getElementById("culture-desc").innerText =
-    (language === "es")
-    ? "Descubre tradiciones, historia y patrimonio cultural de Pitalito."
-    : "Discover traditions, history and cultural heritage of Pitalito.";
+    update("exp6-title", content[language].exp6Title);
+    update("exp6-desc", content[language].exp6Desc);
+
+    update("menu-nature", content[language].nature);
+    update("menu-culture", content[language].culture);
+
+    update(
+        "culture-desc",
+        language === "es"
+            ? "Descubre tradiciones, historia y patrimonio cultural de Pitalito."
+            : "Discover traditions, history and cultural heritage of Pitalito."
+    );
+
+    update(
+        "nature-desc",
+        language === "es"
+            ? "Explora paisajes naturales y rutas ecológicas."
+            : "Explore natural landscapes and ecological routes."
+    );
 }
-
 function toggleSection(id) {
     const section = document.getElementById(id);
     section.classList.toggle("active");
