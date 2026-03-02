@@ -95,7 +95,7 @@ html {
 }
 
 .category-content {
-    display: none;
+    display: block;
 }
 
 .category-content.active {
