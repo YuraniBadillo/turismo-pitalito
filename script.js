@@ -42,6 +42,16 @@ function applyLanguage() {
     update("culture", content[language].culture);
     update("nature-desc", content[language].natureDesc);
     update("culture-desc", content[language].cultureDesc);
+    update("exp1-title", content[language].exp1Title);
+    update("exp1-desc", content[language].exp1Desc);
+    update("exp2-title", content[language].exp2Title);
+    update("exp2-desc", content[language].exp2Desc);
+    update("exp3-title", content[language].exp3Title);
+    update("exp3-desc", content[language].exp3Desc);
+    update("exp5-title", content[language].exp5Title);
+    update("exp5-desc", content[language].exp5Desc);
+    update("exp6-title", content[language].exp6Title);
+    update("exp6-desc", content[language].exp6Desc);
 }
 
 function changeLanguage() {
