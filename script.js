@@ -1,54 +1,33 @@
-let language = "es";
+let isSpanish = true;
 
-const content = {
-    es: {
-        title: "Rutas Turísticas de Pitalito",
-        nature: "Naturaleza",
-        culture: "Cultura",
+function changeLanguage() {
+    isSpanish = !isSpanish;
 
-        exp1Title: "Laguna de Guaitipan",
-        exp1Desc: "Hermosa laguna natural ideal para senderismo y fotografía.",
-
-        exp2Title: "Artesanías Locales",
-        exp2Desc: "Talleres y muestras de artesanos locales que conservan técnicas tradicionales.",
-
-        exp3Title: "Cascada El Maco",
-        exp3Desc: "Una hermosa cascada rodeada de naturaleza ideal para caminatas ecológicas.",
-
-        exp4Title: "Sendero Ecológico",
-        exp4Desc: "Recorrido natural para disfrutar de la biodiversidad del municipio.",
-
-        exp5Title: "Museo Local",
-        exp5Desc: "Espacio cultural donde se preserva la historia y tradiciones de la región.",
-
-        exp6Title: "Ruta Ancestral",
-        exp6Desc: "Experiencia cultural guiada sobre las raíces indígenas del territorio."
-    },
-
-    en: {
-        title: "Tourism Routes of Pitalito",
-        nature: "Nature",
-        culture: "Culture",
-
-        exp1Title: "Guaitipan Lagoon",
-        exp1Desc: "Beautiful natural lagoon ideal for hiking and photography.",
-
-        exp2Title: "Local Handicrafts",
-        exp2Desc: "Workshops and exhibitions of local artisans preserving traditional techniques.",
-
-        exp3Title: "El Maco Waterfall",
-        exp3Desc: "A beautiful waterfall surrounded by nature, ideal for eco walks.",
-
-        exp4Title: "Ecological Trail",
-        exp4Desc: "Natural route to enjoy the biodiversity of the municipality.",
-
-        exp5Title: "Local Museum",
-        exp5Desc: "Cultural space preserving the history and traditions of the region.",
-
-        exp6Title: "Ancestral Route",
-        exp6Desc: "Guided cultural experience about the indigenous roots of the territory."
+    function update(id, text) {
+        const element = document.getElementById(id);
+        if (element) {
+            element.innerText = text;
+        }
     }
-};
+
+    if (isSpanish) {
+        update("title", "Rutas Turísticas de Pitalito");
+        update("home-title", "Explora Pitalito");
+        update("home-desc", "Descubre naturaleza y cultura del sur del Huila.");
+        update("btn-nature", "Ver Naturaleza");
+        update("btn-culture", "Ver Cultura");
+        update("nature", "Naturaleza");
+        update("culture", "Cultura");
+    } else {
+        update("title", "Tourist Routes of Pitalito");
+        update("home-title", "Explore Pitalito");
+        update("home-desc", "Discover nature and culture in southern Huila.");
+        update("btn-nature", "View Nature");
+        update("btn-culture", "View Culture");
+        update("nature", "Nature");
+        update("culture", "Culture");
+    }
+}
 
 function changeLanguage() {
     language = (language === "es") ? "en" : "es";
