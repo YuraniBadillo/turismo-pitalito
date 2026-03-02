@@ -98,8 +98,10 @@ html {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+}
 
-    @media (max-width: 768px) {
+/* Responsive */
+@media (max-width: 768px) {
     .category-content {
         grid-template-columns: 1fr;
     }
