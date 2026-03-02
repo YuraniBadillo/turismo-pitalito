@@ -2,16 +2,23 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Tourism Routes - Pitalito</title>
+    <title>Naturaleza - Pitalito</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
-     <h1 id="title">Rutas Turísticas de Pitalito</h1>
+    <h1 id="title">Rutas Turísticas de Pitalito</h1>
     <button onclick="changeLanguage()">English / Español</button>
 </header>
 
+<nav class="navbar">
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="naturaleza.html">Naturaleza</a></li>
+        <li><a href="cultura.html">Cultura</a></li>
+    </ul>
+</nav>
 
 <section class="category">
     <div class="category-header">
@@ -19,31 +26,22 @@
         <p id="nature-desc">Explora paisajes naturales y rutas ecológicas.</p>
     </div>
 
-    <div id="naturaleza-content" class="category-content">
-        <!-- Aquí van tus cards -->
-        
+    <div class="category-content">
+
         <div class="card">
             <img src="images/guaitipan.jpg" alt="Laguna de Guaitipan">
-            <h3 id="exp1-title">Laguna de Guaitipan</h3>
-            <p id="exp1-desc">Hermosa laguna natural ideal para senderismo y fotografía.</p>
+            <h3>Laguna de Guaitipan</h3>
+            <p>Hermosa laguna natural ideal para senderismo y fotografía.</p>
         </div>
 
         <div class="card">
             <img src="images/maco.jpg" alt="Cascada El Maco">
-            <h3 id="exp3-title">Cascada El Maco</h3>
-            <p id="exp3-desc">Una hermosa cascada rodeada de naturaleza ideal para caminatas ecológicas.</p>
+            <h3>Cascada El Maco</h3>
+            <p>Una hermosa cascada rodeada de naturaleza ideal para caminatas ecológicas.</p>
         </div>
 
     </div>
 </section>
-
-    <nav class="navbar">
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="naturaleza.html">Naturaleza</a></li>
-        <li><a href="cultura.html">Cultura</a></li>
-    </ul>
-</nav>
 
 <script src="script.js"></script>
 </body>
