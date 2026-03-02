@@ -1,4 +1,4 @@
-let language = "es";
+let language = localStorage.getItem("language") || "es";
 
 const content = {
     es: {
@@ -25,16 +25,14 @@ const content = {
     }
 };
 
-function changeLanguage() {
-    language = (language === "es") ? "en" : "es";
-
-    function update(id, text) {
-        const element = document.getElementById(id);
-        if (element) {
-            element.innerText = text;
-        }
+function update(id, text) {
+    const element = document.getElementById(id);
+    if (element) {
+        element.innerText = text;
     }
+}
 
+function applyLanguage() {
     update("title", content[language].title);
     update("home-title", content[language].homeTitle);
     update("home-desc", content[language].homeDesc);
@@ -45,3 +43,11 @@ function changeLanguage() {
     update("nature-desc", content[language].natureDesc);
     update("culture-desc", content[language].cultureDesc);
 }
+
+function changeLanguage() {
+    language = (language === "es") ? "en" : "es";
+    localStorage.setItem("language", language);
+    applyLanguage();
+}
+
+document.addEventListener("DOMContentLoaded", applyLanguage);
