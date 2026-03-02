@@ -94,10 +94,3 @@ html {
     color: #f39c12;
 }
 
-.category-content {
-    display: block;
-}
-
-.category-content.active {
-    display: block;
-}
