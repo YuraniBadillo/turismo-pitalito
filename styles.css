@@ -2,10 +2,11 @@
    CONFIGURACIÓN GENERAL
 ========================= */
 
-body {
-    font-family: 'Segoe UI', sans-serif;
+html, body {
     margin: 0;
-    background-color: #ede9fe; /* 👈 LILA SUAVE */
+    padding: 0;
+    background-color: red;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 html {
