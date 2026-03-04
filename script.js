@@ -11,6 +11,9 @@ const content = {
         culture: "Cultura",
         natureDesc: "Explora paisajes naturales y rutas ecológicas.",
         cultureDesc: "Descubre tradiciones, historia y patrimonio cultural de Pitalito.",
+        navHome: "Inicio",
+        navNature: "Naturaleza",
+        navCulture: "Cultura",
 
         exp1Title: "Laguna de Guaitipan",
         exp1Desc: "Hermosa laguna natural ideal para senderismo y fotografía.",
@@ -26,6 +29,7 @@ const content = {
 
         exp6Title: "Ruta del Cafe",
         exp6Desc: "Pitalito es líder en producción de café especial, ofreciendo visitas a fincas tradicionales para conocer el proceso desde la siembra hasta la taza"
+        
     },
 
     en: {
@@ -38,6 +42,9 @@ const content = {
         culture: "Culture",
         natureDesc: "Explore natural landscapes and ecological routes.",
         cultureDesc: "Discover traditions, history and cultural heritage of Pitalito.",
+        navHome: "Home",
+        navNature: "Nature",
+        navCulture: "Culture",
 
         exp1Title: "Guaitipan Lagoon",
         exp1Desc: "Beautiful natural lagoon ideal for hiking and photography.",
@@ -67,6 +74,9 @@ function applyLanguage() {
     update("title", content[language].title);
     update("home-title", content[language].homeTitle);
     update("home-desc", content[language].homeDesc);
+    update("nav-home", content[language].navHome);
+    update("nav-nature", content[language].navNature);
+    update("nav-culture", content[language].navCulture);
     update("btn-nature", content[language].btnNature);
     update("btn-culture", content[language].btnCulture);
     update("nature", content[language].nature);
