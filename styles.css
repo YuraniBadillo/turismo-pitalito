@@ -1,74 +1,57 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
 body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
     background-color: #f4f6f8;
 }
 
-header {
-    background: linear-gradient(90deg, #14532d, #1e3a8a);
-    color: white;
-    text-align: center;
-    padding: 25px;
-}
-
-button {
-    padding: 8px 15px;
-    border: none;
-    border-radius: 20px;
-    background-color: white;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-section {
-    padding: 40px 60px;
-}
-
-h2 {
-    color: #1e3a8a;
-    margin-bottom: 20px;
-}
-
-.card {
-    background: white;
-    padding: 20px;
-    margin-bottom: 25px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-iframe {
-    width: 100%;
-    border-radius: 10px;
-    margin-top: 10px;
-}
-.card img {
-    width: 100%;
-    max-width: 100px;   /* 👈 tamaño máximo */
-    height: auto;
-    border-radius: 10px;
-    display: block;
-    margin: 0 auto 15px auto;
-}
-
 html {
     scroll-behavior: smooth;
 }
 
+section {
+    padding: 60px 40px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background: linear-gradient(90deg, #14532d, #1e3a8a);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0 0 15px 0;
+}
+
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #f1f1f1;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
 .navbar {
     background-color: #2c3e50;
-    padding: 10px 0;
+    padding: 12px 0;
     text-align: center;
 }
 
@@ -80,7 +63,7 @@ html {
 
 .navbar li {
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 25px;
 }
 
 .navbar a {
@@ -94,15 +77,95 @@ html {
     color: #f39c12;
 }
 
+/* =========================
+   TÍTULOS
+========================= */
+
+h2 {
+    color: #1e3a8a;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* =========================
+   GRID DE CATEGORÍAS
+========================= */
+
 .category-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-/* Responsive */
+/* =========================
+   TARJETAS
+========================= */
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Título de subsección */
+.card h3 {
+    font-size: 24px;          /* 👈 MÁS GRANDE */
+    margin-bottom: 15px;
+    color: #14532d;
+}
+
+/* Imagen */
+.card img {
+    width: 100%;
+    max-width: 260px;         /* 👈 MÁS GRANDE */
+    height: auto;
+    border-radius: 15px;
+    margin: 15px auto;
+    display: block;
+}
+
+/* Descripción */
+.card p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 15px;
+    color: #444;
+}
+
+/* =========================
+   IFRAME (si usas videos)
+========================= */
+
+iframe {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
 @media (max-width: 768px) {
+    section {
+        padding: 40px 20px;
+    }
+
     .category-content {
         grid-template-columns: 1fr;
+    }
+
+    .card img {
+        max-width: 100%;
     }
 }
