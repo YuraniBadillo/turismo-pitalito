@@ -25,7 +25,7 @@ const content = {
         exp5Desc: " Competencias de los mejores ejemplares del Caballo Criollo Colombiano, juzgamientos de alto nivel, remates musicales y muestras gastronómicas.",
 
         exp6Title: "Ruta del Cafe",
-        exp6Desc: "Experiencia cultural guiada sobre las raíces indígenas del territorio."
+        exp6Desc: "Pitalito es líder en producción de café especial, ofreciendo visitas a fincas tradicionales para conocer el proceso desde la siembra hasta la taza"
     },
 
     en: {
