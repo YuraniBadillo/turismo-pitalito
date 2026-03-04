@@ -21,10 +21,10 @@ const content = {
         exp2Title: "Artesanías Locales",
         exp2Desc: "Talleres y muestras de artesanos locales que conservan técnicas tradicionales.",
 
-        exp5Title: "Museo Local",
-        exp5Desc: "Espacio cultural donde se preserva la historia y tradiciones de la región.",
+        exp5Title: "Feria Equina",
+        exp5Desc: " Competencias de los mejores ejemplares del Caballo Criollo Colombiano, juzgamientos de alto nivel, remates musicales y muestras gastronómicas.",
 
-        exp6Title: "Ruta Ancestral",
+        exp6Title: "Ruta del Cafe",
         exp6Desc: "Experiencia cultural guiada sobre las raíces indígenas del territorio."
     },
 
