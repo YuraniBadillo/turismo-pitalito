@@ -48,11 +48,11 @@ const content = {
         exp2Title: "Local Crafts",
         exp2Desc: "Workshops and exhibitions of local artisans preserving traditional techniques.",
 
-        exp5Title: "Local Museum",
-        exp5Desc: "Cultural space preserving the history and traditions of the region.",
+        exp5Title: "Equine Fair",
+        exp5Desc: "Competitions featuring the finest examples of the Colombian Criollo Horse, high-level judging, musical auctions, and gastronomic displays.",
 
-        exp6Title: "Ancestral Route",
-        exp6Desc: "Guided cultural experience about the indigenous roots of the territory."
+        exp6Title: "Coffee Route",
+        exp6Desc: "Pitalito is a leader in specialty coffee production, offering visits to traditional farms to learn about the process from planting to the cup."
     }
 };
 
