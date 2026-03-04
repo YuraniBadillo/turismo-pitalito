@@ -15,8 +15,8 @@ const content = {
         exp1Title: "Laguna de Guaitipan",
         exp1Desc: "Hermosa laguna natural ideal para senderismo y fotografía.",
 
-        exp3Title: "Cascada El Maco",
-        exp3Desc: "Una hermosa cascada rodeada de naturaleza ideal para caminatas ecológicas.",
+        exp3Title: "Parque Ecoturístico Pueblito Huilense",
+        exp3Desc: "es un Parque Ecoturistico que busca brindar experiencias en un entorno natural rescatando la cultura del Huila.",
 
         exp2Title: "Artesanías Locales",
         exp2Desc: "Talleres y muestras de artesanos locales que conservan técnicas tradicionales.",
@@ -42,8 +42,8 @@ const content = {
         exp1Title: "Guaitipan Lagoon",
         exp1Desc: "Beautiful natural lagoon ideal for hiking and photography.",
 
-        exp3Title: "El Maco Waterfall",
-        exp3Desc: "A beautiful waterfall surrounded by nature, perfect for ecological walks.",
+        exp3Title: "Pueblito Huilense Ecotourism Park",
+        exp3Desc: "It is an Ecotourism Park that seeks to provide experiences in a natural environment, rescuing the culture of Huila.",
 
         exp2Title: "Local Crafts",
         exp2Desc: "Workshops and exhibitions of local artisans preserving traditional techniques.",
