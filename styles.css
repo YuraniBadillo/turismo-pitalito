@@ -6,14 +6,14 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', sans-serif;
-    background-color: #e9d5ff; /* LILA MÁS VISIBLE */
     scroll-behavior: smooth;
 }
 
-/* Contenedor general para que se vea el fondo */
-main {
-    max-width: 1200px;
-    margin: 40px auto;
+body.home-page {
+    background-image: url('images/fondo-pitalito.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* =========================
@@ -81,208 +81,43 @@ button:hover {
 }
 
 /* =========================
-   SECCIONES GENERALES
+   CUADRO DE BIENVENIDA - INICIO
 ========================= */
 
-section {
-    padding: 60px 40px;
-    margin-bottom: 40px;
-}
-
-/* =========================
-   SECCIÓN DESTACADA BASE
-========================= */
-
-.highlight-section {
-    padding: 60px 20px;
-    border-radius: 25px;
-    margin-bottom: 60px;
-    text-align: center;
-    max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Título grande */
-.highlight-section h2 {
-    font-size: 42px;
-    margin-bottom: 15px;
-}
-
-/* Descripción */
-.highlight-section p {
-    font-size: 18px;
-    max-width: 750px;
-    margin: 0 auto;
-    line-height: 1.7;
-}
-
-/* =========================
-   NATURALEZA 
-========================= */
-
-.nature-section {
-    background: linear-gradient(90deg, #dcfce7, #bbf7d0);
-}
-
-.nature-section h2 {
-    color: #14532d;
-}
-
-/* =========================
-   CULTURA 
-========================= */
-
-.culture-section {
-    background: linear-gradient(90deg, #e0f2fe, #bae6fd);
-}
-
-.culture-section h2 {
-    color: #1e3a8a;
-}
-
-/* =========================
-   HOME
-========================= */
 .home-section {
-    background: linear-gradient(90deg, #fce7f3, #fbcfe8); /* color rosa suave */
-}
-
-.home-section h2 {
-    color: #9d174d; /* color del título */
-}
-
-.home-section p {
-    color: #4b5563; /* color del texto */
-}
-
-
-/* =========================
-   GRID DE CATEGORÍAS
-========================= */
-
-.category-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-/* =========================
-   TARJETAS
-========================= */
-
-.card {
-    background: white;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
-    text-align: center;
-}
-
-.card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-}
-
-/* Título subsección */
-.card h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: #14532d;
-}
-
-/* Imagen */
-.card img {
     width: 100%;
-    max-width: 260px;
-    height: auto;
-    border-radius: 15px;
-    margin: 15px auto;
-    display: block;
-}
-
-/* Descripción */
-.card p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-top: 15px;
-    color: #444;
-}
-
-/* =========================
-   IFRAME
-========================= */
-
-iframe {
-    width: 100%;
-    border-radius: 10px;
-    margin-top: 15px;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width: 768px) {
-
-    main {
-        margin: 20px auto;
-    }
-
-    section {
-        padding: 40px 20px;
-    }
-
-    .category-content {
-        grid-template-columns: 1fr;
-    }
-
-    .card img {
-        max-width: 100%;
-    }
-
-    .highlight-section h2 {
-        font-size: 32px;
-    }
-}
-
-/* =========================
-   HOME - CUADRO DE BIENVENIDA
-========================= */
-.home-section {
-    background: linear-gradient(90deg, #fce7f3, #fbcfe8);
-    padding: 80px 40px; /* más alto y más ancho */
-    max-width: 1200px; /* ocupa más espacio horizontal */
-    margin: 40px auto;
+    background-color: rgba(255, 255, 255, 0.85);
     border-radius: 25px;
+    padding: 0 20px;
+    margin: 20px 0 40px 0;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .home-section h2 {
     color: #9d174d;
-    margin-bottom: 25px;
     font-size: 42px;
+    margin-top: 8px;    /* margen superior reducido */
+    margin-bottom: 8px; /* margen inferior reducido */
 }
 
 .home-section p {
     color: #4b5563;
     font-size: 18px;
     line-height: 1.7;
-    max-width: 900px;
-    margin: 0 auto;
+    max-width: 750px;
+    margin: 0.5rem auto; /* centrado horizontal, margen vertical reducido */
 }
 
 /* =========================
-   BOTONES HOME FUERA DEL CUADRO
+   HOME - BOTONES DE NATURALEZA Y CULTURA
 ========================= */
+
 .home-buttons {
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin: 30px auto; /* separación del cuadro */
+    margin: 30px auto;
     flex-wrap: wrap;
 }
 
@@ -302,40 +137,16 @@ iframe {
 }
 
 /* =========================
-   RESPONSIVE
-========================= */
-@media (max-width: 768px) {
-    .home-section {
-        padding: 60px 20px;
-    }
-    .home-section h2 {
-        font-size: 32px;
-    }
-    .home-section p {
-        max-width: 100%;
-        margin-bottom: 30px;
-    }
-    .home-buttons {
-        flex-direction: column;
-        gap: 15px;
-        align-items: center;
-    }
-    .home-buttons .btn {
-        width: 80%;
-        text-align: center;
-    }
-}
-
-/* =========================
    CARDS DE INICIO - NATURALEZA Y CULTURA
 ========================= */
+
 .home-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
     max-width: 1200px;
-    margin: 40px auto; /* alineado con cuadro de bienvenida */
-    padding: 0 40px; /* mismo padding lateral que el cuadro */
+    margin: 40px auto;
+    padding: 0 40px;
 }
 
 .home-cards .card {
@@ -343,13 +154,14 @@ iframe {
     padding: 30px;
     border-radius: 25px;
     background: linear-gradient(90deg, #fef3c7, #fde68a);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    border: 2px solid #fcd34d;
     transition: all 0.3s ease;
 }
 
 .home-cards .card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
 }
 
 .home-cards .card h3 {
@@ -381,8 +193,27 @@ iframe {
     transform: scale(1.05);
 }
 
-/* Responsive */
+/* =========================
+   RESPONSIVE
+========================= */
+
 @media (max-width: 768px) {
+    .home-section h2 {
+        font-size: 32px;
+    }
+    .home-section p {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .home-buttons {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    .home-buttons .btn {
+        width: 80%;
+        text-align: center;
+    }
     .home-cards {
         grid-template-columns: 1fr;
         padding: 0 20px;
@@ -391,85 +222,4 @@ iframe {
         width: 100%;
         text-align: center;
     }
-}
-
-.home-cards .card {
-    text-align: center;
-    padding: 40px 30px; /* más espacio dentro de la card */
-    border-radius: 25px;
-    background: linear-gradient(90deg, #fef3c7, #fde68a); /* color de fondo del recuadro */
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15); /* sombra más marcada para que parezca recuadro */
-    border: 2px solid #fcd34d; /* borde visible que da sensación de recuadro */
-    transition: all 0.3s ease;
-}
-
-.home-cards .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
-}
-
-body.home-page {
-    background-image: url('images/fondo-pitalito.jpg'); /* ruta de tu imagen */
-    background-size: cover;        /* cubre todo el fondo */
-    background-position: center;   /* centrada */
-    background-repeat: no-repeat;  /* no se repite */
-}
-
-/* Asegura que los cuadros y cards estén sobre la imagen */
-.highlight-section,
-.home-cards .card {
-    position: relative;
-    z-index: 1; /* sobre la imagen de fondo */
-}
-
-body.nature-page {
-    background-image: url('images/naturaleza.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-body.culture-page {
-    background-image: url('images/cultura.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-/* Asegurar que el contenido se vea encima */
-.highlight-section,
-.category-content,
-.card {
-    position: relative;
-    z-index: 1;
-}
-
-/* =========================
-   CUADRO BIENVENIDO - INICIO
-========================= */
-
-/* Hacer que ocupe todo el ancho y sea ligeramente transparente */
-.home-section {
-    width: 100%; /* de lateral a lateral */
-    background-color: rgba(255, 255, 255, 0.85); /* blanco con transparencia */
-    border-radius: 25px;
-    padding: 0 20px; /* solo margen lateral */
-    margin: 20px 0 40px 0; /* separar un poco del navbar y de las cards */
-    text-align: center;
-    box-sizing: border-box; /* para que padding no aumente el ancho */
-}
-
-/* Ajustar el título y el párrafo dentro del recuadro */
-.home-section h2,
-.home-section p {
-    margin-top: 0.5cm; /* margen superior reducido */
-    margin-bottom: 0.5cm; /* margen inferior reducido */
-    line-height: 1.7;
-}
-
-/* Mantener max-width del párrafo para que no se estire demasiado en pantallas grandes */
-.home-section p {
-    max-width: 750px;
-    margin-left: auto;
-    margin-right: auto;
 }
