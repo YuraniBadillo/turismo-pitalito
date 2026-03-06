@@ -5,6 +5,11 @@ const content = {
         title: "Rutas Turísticas de Pitalito",
         homeTitle: "Explora Pitalito",
         homeDesc: "Descubre Pitalito, un destino lleno de vida y diversidad. Desde sus verdes montañas y ríos cristalinos hasta sus cafetales y coloridos paisajes rurales, cada rincón ofrece experiencias únicas: ecoturismo, senderismo, avistamiento de aves, gastronomía típica y la calidez de su gente te esperan para vivir aventuras inolvidables. ¡Explora la riqueza natural y cultural de Pitalito y déjate sorprender!",
+        cardNatureDesc: "Explora montañas, ríos y fauna de Pitalito.",
+        cardNatureBtn: "Ver Naturaleza",
+        cardCultureTitle: "Cultura",
+        cardCultureDesc: "Descubre tradiciones y patrimonio cultural de Pitalito.",
+        cardCultureBtn: "Ver Cultura",
         btnNature: "Ver Naturaleza",
         btnCulture: "Ver Cultura",
         nature: "Naturaleza",
@@ -14,6 +19,7 @@ const content = {
         navHome: "Inicio",
         navNature: "Naturaleza",
         navCulture: "Cultura",
+        
 
         exp1Title: "Laguna de Guaitipan",
         exp1Desc: "Hermosa laguna natural ideal para senderismo y fotografía.",
@@ -36,6 +42,12 @@ const content = {
         title: "Tourist Routes of Pitalito",
         homeTitle: "Explore Pitalito",
         homeDesc: "Discover Pitalito, a vibrant and diverse destination. From its verdant mountains and crystal-clear rivers to its coffee plantations and colorful rural landscapes, every corner offers unique experiences: ecotourism, hiking, birdwatching, traditional cuisine, and the warmth of its people await you for unforgettable adventures. Explore the natural and cultural richness of Pitalito and prepare to be amazed!",
+       cardNatureTitle: "Nature",
+       cardNatureDesc: "Explore mountains, rivers and wildlife of Pitalito.",
+       cardNatureBtn: "View Nature",
+       cardCultureTitle: "Culture",
+       cardCultureDesc: "Discover traditions and cultural heritage of Pitalito.",
+       cardCultureBtn: "View Culture",
         btnNature: "View Nature",
         btnCulture: "View Culture",
         nature: "Nature",
@@ -83,6 +95,12 @@ function applyLanguage() {
     update("culture", content[language].culture);
     update("nature-desc", content[language].natureDesc);
     update("culture-desc", content[language].cultureDesc);
+    update("card-nature-title", content[language].cardNatureTitle);
+    update("card-nature-desc", content[language].cardNatureDesc);
+    update("card-nature-btn", content[language].cardNatureBtn);
+    update("card-culture-title", content[language].cardCultureTitle);
+    update("card-culture-desc", content[language].cardCultureDesc);
+    update("card-culture-btn", content[language].cardCultureBtn);
 
     update("exp1-title", content[language].exp1Title);
     update("exp1-desc", content[language].exp1Desc);
