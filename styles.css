@@ -146,9 +146,8 @@ section {
 .home-section {
     background: linear-gradient(90deg, #fce7f3, #fbcfe8);
     padding: 0.5cm 0;
-    width: 100%;
-    margin: 40px 0;
-    border-radius: 0;
+    width: 100vw;            /* ancho total de pantalla */
+    margin-left: calc(50% - 50vw); /* centra el bloque */
     text-align: center;
 }
 
