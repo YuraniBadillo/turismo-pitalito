@@ -407,3 +407,17 @@ iframe {
     transform: translateY(-8px);
     box-shadow: 0 12px 30px rgba(0,0,0,0.2);
 }
+
+body.home-page {
+    background-image: url('images/fondo-pitalito.jpg'); /* ruta de tu imagen */
+    background-size: cover;        /* cubre todo el fondo */
+    background-position: center;   /* centrada */
+    background-repeat: no-repeat;  /* no se repite */
+}
+
+/* Asegura que los cuadros y cards estén sobre la imagen */
+.highlight-section,
+.home-cards .card {
+    position: relative;
+    z-index: 1; /* sobre la imagen de fondo */
+}
