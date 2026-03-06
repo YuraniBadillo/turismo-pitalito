@@ -392,3 +392,18 @@ iframe {
         text-align: center;
     }
 }
+
+.home-cards .card {
+    text-align: center;
+    padding: 40px 30px; /* más espacio dentro de la card */
+    border-radius: 25px;
+    background: linear-gradient(90deg, #fef3c7, #fde68a); /* color de fondo del recuadro */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15); /* sombra más marcada para que parezca recuadro */
+    border: 2px solid #fcd34d; /* borde visible que da sensación de recuadro */
+    transition: all 0.3s ease;
+}
+
+.home-cards .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
