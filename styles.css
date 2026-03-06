@@ -421,3 +421,25 @@ body.home-page {
     position: relative;
     z-index: 1; /* sobre la imagen de fondo */
 }
+
+body.nature-page {
+    background-image: url('images/fondo-naturaleza.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body.culture-page {
+    background-image: url('images/fondo-cultura.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Asegurar que el contenido se vea encima */
+.highlight-section,
+.category-content,
+.card {
+    position: relative;
+    z-index: 1;
+}
