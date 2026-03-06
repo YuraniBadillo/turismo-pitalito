@@ -325,3 +325,70 @@ iframe {
         text-align: center;
     }
 }
+
+/* =========================
+   CARDS DE INICIO - NATURALEZA Y CULTURA
+========================= */
+.home-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 40px auto; /* alineado con cuadro de bienvenida */
+    padding: 0 40px; /* mismo padding lateral que el cuadro */
+}
+
+.home-cards .card {
+    text-align: center;
+    padding: 30px;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #fef3c7, #fde68a);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.home-cards .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.home-cards .card h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #92400e;
+}
+
+.home-cards .card p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #4b5563;
+}
+
+.home-cards .card .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-weight: bold;
+    background-color: #9d174d;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.home-cards .card .btn:hover {
+    background-color: #c026d3;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .home-cards {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+    .home-cards .card .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
