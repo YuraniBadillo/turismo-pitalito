@@ -212,6 +212,23 @@ section {
     position: relative;
     overflow: hidden;
 }
+/* =========================
+   CARDS NATURALEZA
+========================= */
+
+.nature-page .card {
+    background: linear-gradient(90deg, #dcfce7, #bbf7d0);
+    border: 2px solid #86efac;
+}
+
+/* =========================
+   CARDS CULTURA
+========================= */
+
+.culture-page .card {
+    background: linear-gradient(90deg, #fef3c7, #fde68a);
+    border: 2px solid #fcd34d;
+}
 
 .card:hover {
     transform: translateY(-12px) scale(1.02);
