@@ -418,3 +418,8 @@ body::before {
 
     z-index: -1;
 }
+
+/* Ocultar navbar solo en la página de inicio */
+.home-page .navbar {
+    display: none;
+}
