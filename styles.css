@@ -443,3 +443,33 @@ body.culture-page {
     position: relative;
     z-index: 1;
 }
+
+/* =========================
+   CUADRO BIENVENIDO - INICIO
+========================= */
+
+/* Hacer que ocupe todo el ancho y sea ligeramente transparente */
+.home-section {
+    width: 100%; /* de lateral a lateral */
+    background-color: rgba(255, 255, 255, 0.85); /* blanco con transparencia */
+    border-radius: 25px;
+    padding: 0 20px; /* solo margen lateral */
+    margin: 20px 0 40px 0; /* separar un poco del navbar y de las cards */
+    text-align: center;
+    box-sizing: border-box; /* para que padding no aumente el ancho */
+}
+
+/* Ajustar el título y el párrafo dentro del recuadro */
+.home-section h2,
+.home-section p {
+    margin-top: 0.5cm; /* margen superior reducido */
+    margin-bottom: 0.5cm; /* margen inferior reducido */
+    line-height: 1.7;
+}
+
+/* Mantener max-width del párrafo para que no se estire demasiado en pantallas grandes */
+.home-section p {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
