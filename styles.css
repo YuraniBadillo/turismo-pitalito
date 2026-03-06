@@ -141,6 +141,21 @@ section {
     color: #1e3a8a;
 }
 
+/* =========================
+   HOME
+========================= */
+.home-section {
+    background: linear-gradient(90deg, #fce7f3, #fbcfe8); /* color rosa suave */
+}
+
+.home-section h2 {
+    color: #9d174d; /* color del título */
+}
+
+.home-section p {
+    color: #4b5563; /* color del texto */
+}
+
 
 /* =========================
    GRID DE CATEGORÍAS
