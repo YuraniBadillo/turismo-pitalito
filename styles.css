@@ -146,21 +146,17 @@ section {
 .home-section {
     background: linear-gradient(90deg, #fce7f3, #fbcfe8);
 
-    /* margen interna superior e inferior de 0.5cm */
-    padding: 0.5cm 20px;
+    padding-top: 0.5cm;
+    padding-bottom: 0.5cm;
+    padding-left: 20px;
+    padding-right: 20px;
 
-    /* ancho completo de pantalla */
-    width: 100vw;
+    width: 100vw;          /* ancho completo de pantalla */
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
 
-    /* centra el bloque aunque esté dentro de main */
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-
-    text-align: center;
     border-radius: 0;
+    text-align: center;
 }
 
 .home-section h2,
