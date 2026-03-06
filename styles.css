@@ -118,7 +118,7 @@ section {
 }
 
 /* =========================
-   NATURALEZA 🌿
+   NATURALEZA 
 ========================= */
 
 .nature-section {
@@ -130,7 +130,7 @@ section {
 }
 
 /* =========================
-   CULTURA 🎭
+   CULTURA 
 ========================= */
 
 .culture-section {
@@ -140,6 +140,19 @@ section {
 .culture-section h2 {
     color: #1e3a8a;
 }
+
+
+/* =========================
+   INICIO 
+========================= */
+.home-section {
+    background: linear-gradient(90deg, #dcfce7, #bbf7d0);
+}
+
+.home-section h2 {
+    color: #14532d;
+}
+
 
 /* =========================
    GRID DE CATEGORÍAS
