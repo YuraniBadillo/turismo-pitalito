@@ -248,3 +248,80 @@ iframe {
         font-size: 32px;
     }
 }
+
+/* =========================
+   HOME - CUADRO DE BIENVENIDA
+========================= */
+.home-section {
+    background: linear-gradient(90deg, #fce7f3, #fbcfe8);
+    padding: 80px 40px; /* más alto y más ancho */
+    max-width: 1200px; /* ocupa más espacio horizontal */
+    margin: 40px auto;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.home-section h2 {
+    color: #9d174d;
+    margin-bottom: 25px;
+    font-size: 42px;
+}
+
+.home-section p {
+    color: #4b5563;
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* =========================
+   BOTONES HOME FUERA DEL CUADRO
+========================= */
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px auto; /* separación del cuadro */
+    flex-wrap: wrap;
+}
+
+.home-buttons .btn {
+    padding: 15px 35px;
+    background-color: #9d174d;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.home-buttons .btn:hover {
+    background-color: #c026d3;
+    transform: scale(1.05);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    .home-section {
+        padding: 60px 20px;
+    }
+    .home-section h2 {
+        font-size: 32px;
+    }
+    .home-section p {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .home-buttons {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    .home-buttons .btn {
+        width: 80%;
+        text-align: center;
+    }
+}
