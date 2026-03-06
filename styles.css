@@ -145,15 +145,20 @@ section {
    HOME
 ========================= */
 .home-section {
-    background: linear-gradient(90deg, #fce7f3, #fbcfe8); /* color rosa suave */
+    background: linear-gradient(90deg, #fce7f3, #fbcfe8);
+    padding: 0.5cm 0; /* margen interna superior e inferior de 0.5 cm */
+    width: 100%; /* ocupa todo el ancho */
+    margin: 40px 0;
+    border-radius: 0;
+    text-align: center;
 }
 
-.home-section h2 {
-    color: #9d174d; /* color del título */
-}
-
+/* centrar el contenido interno */
+.home-section h2,
 .home-section p {
-    color: #4b5563; /* color del texto */
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
