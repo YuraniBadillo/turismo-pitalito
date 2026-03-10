@@ -147,12 +147,18 @@ section {
     color: #1e3a8a;
 }
 
+
 /* =========================
    GASTRONOMÍA
 ========================= */
 
 .food-section {
-    background: linear-gradient(90deg, #fee2e2, #fecaca);
+
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+
+    border-radius: 25px;
+
 }
 
 .food-section h2 {
