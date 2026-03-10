@@ -5,6 +5,9 @@ const content = {
         title: "Rutas Turísticas de Pitalito",
         homeTitle: "Explora Pitalito",
         homeDesc: "Descubre Pitalito, un destino lleno de vida y diversidad. Desde sus verdes montañas y ríos cristalinos hasta sus cafetales y coloridos paisajes rurales, cada rincón ofrece experiencias únicas: ecoturismo, senderismo, avistamiento de aves, gastronomía típica y la calidez de su gente te esperan para vivir aventuras inolvidables. ¡Explora la riqueza natural y cultural de Pitalito y déjate sorprender!",
+        homeFoodTitle: "Gastronomía",
+        homeFoodDesc: "Descubre los sabores tradicionales de Pitalito y disfruta de su rica oferta gastronómica.",
+        homeFoodBtn: "Explorar",
         cardNatureDesc: "Explora montañas, ríos y fauna de Pitalito.",
         cardNatureBtn: "Ver Naturaleza",
         cardCultureTitle: "Cultura",
@@ -47,12 +50,15 @@ const content = {
         title: "Tourist Routes of Pitalito",
         homeTitle: "Explore Pitalito",
         homeDesc: "Discover Pitalito, a vibrant and diverse destination. From its verdant mountains and crystal-clear rivers to its coffee plantations and colorful rural landscapes, every corner offers unique experiences: ecotourism, hiking, birdwatching, traditional cuisine, and the warmth of its people await you for unforgettable adventures. Explore the natural and cultural richness of Pitalito and prepare to be amazed!",
-       cardNatureTitle: "Nature",
-       cardNatureDesc: "Explore mountains, rivers and wildlife of Pitalito.",
-       cardNatureBtn: "View Nature",
-       cardCultureTitle: "Culture",
-       cardCultureDesc: "Discover traditions and cultural heritage of Pitalito.",
-       cardCultureBtn: "View Culture",
+        homeFoodTitle: "Gastronomy",
+        homeFoodDesc: "Discover the traditional flavors of Pitalito and enjoy its rich gastronomic offer.",
+        homeFoodBtn: "Explore",
+        cardNatureTitle: "Nature",
+        cardNatureDesc: "Explore mountains, rivers and wildlife of Pitalito.",
+        cardNatureBtn: "View Nature",
+        cardCultureTitle: "Culture",
+        cardCultureDesc: "Discover traditions and cultural heritage of Pitalito.",
+        cardCultureBtn: "View Culture",
         btnNature: "View Nature",
         btnCulture: "View Culture",
         nature: "Nature",
@@ -97,6 +103,9 @@ function applyLanguage() {
     update("title", content[language].title);
     update("home-title", content[language].homeTitle);
     update("home-desc", content[language].homeDesc);
+    update("home-food-title", content[language].homeFoodTitle);
+    update("home-food-desc", content[language].homeFoodDesc);
+    update("home-food-btn", content[language].homeFoodBtn);
     update("nav-home", content[language].navHome);
     update("nav-nature", content[language].navNature);
     update("nav-culture", content[language].navCulture);
