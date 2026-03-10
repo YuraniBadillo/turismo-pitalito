@@ -148,6 +148,18 @@ section {
 }
 
 /* =========================
+   GASTRONOMÍA
+========================= */
+
+.food-section {
+    background: linear-gradient(90deg, #fee2e2, #fecaca);
+}
+
+.food-section h2 {
+    color: #7f1d1d;
+}
+
+/* =========================
    HOME - CUADRO BIENVENIDA
 ========================= */
 
@@ -237,6 +249,19 @@ section {
 .culture-page .card {
     background: linear-gradient(90deg, #dbeafe, #bfdbfe); /* azul claro */
     border: 2px solid #93c5fd;
+}
+
+/* =========================
+   CARDS GASTRONOMÍA
+========================= */
+
+.gastronomia-page .card {
+    background: linear-gradient(90deg, #fee2e2, #fecaca);
+    border: 2px solid #fca5a5;
+}
+
+.gastronomia-page .card h3 {
+    color: #7f1d1d;
 }
 
 .card h3 {
