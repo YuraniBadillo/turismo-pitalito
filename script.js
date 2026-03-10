@@ -19,7 +19,12 @@ const content = {
         navHome: "Inicio",
         navNature: "Naturaleza",
         navCulture: "Cultura",
-        
+        foodTitle: "Gastronomía de Pitalito",
+        foodDesc: "Pitalito es reconocido por su rica gastronomía, donde los visitantes pueden disfrutar de platos típicos del Huila y experiencias culinarias únicas. Entre los restaurantes destacados se encuentran Fogón de Piedra y La Pecera, lugares que combinan tradición, sabor y un ambiente acogedor.",
+        food1Title: "Fogón de Piedra",
+        food1Desc: "Restaurante reconocido por su comida tradicional huilense preparada en fogón de piedra.",
+        food2Title: "La Pecera",
+        food2Desc: "Un restaurante popular en Pitalito donde se destacan platos típicos y una experiencia gastronómica única.",
 
         exp1Title: "Laguna de Guaitipan",
         exp1Desc: "Hermosa laguna natural ideal para senderismo y fotografía.",
@@ -57,6 +62,12 @@ const content = {
         navHome: "Home",
         navNature: "Nature",
         navCulture: "Culture",
+        foodTitle: "Pitalito Gastronomy",
+        foodDesc: "Pitalito is known for its rich gastronomy, where visitors can enjoy traditional dishes from Huila and unique culinary experiences. Among the most notable restaurants are Fogón de Piedra and La Pecera, places that combine tradition, flavor and a welcoming atmosphere.",
+        food1Title: "Stone Stove",
+        food1Desc: "Restaurant known for traditional Huila cuisine prepared on a stone stove.",
+        food2Title: "The Fish Tank",
+        food2Desc: "A popular restaurant in Pitalito known for its traditional dishes and unique dining experience.",
 
         exp1Title: "Guaitipan Lagoon",
         exp1Desc: "Beautiful natural lagoon ideal for hiking and photography.",
@@ -101,7 +112,12 @@ function applyLanguage() {
     update("card-culture-title", content[language].cardCultureTitle);
     update("card-culture-desc", content[language].cardCultureDesc);
     update("card-culture-btn", content[language].cardCultureBtn);
-
+    update("food-title", content[language].foodTitle);
+    update("food-desc", content[language].foodDesc);
+    update("food1-title", content[language].food1Title);
+    update("food1-desc", content[language].food1Desc);
+    update("food2-title", content[language].food2Title);
+    update("food2-desc", content[language].food2Desc);
     update("exp1-title", content[language].exp1Title);
     update("exp1-desc", content[language].exp1Desc);
     update("exp2-title", content[language].exp2Title);
