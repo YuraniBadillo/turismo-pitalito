@@ -3,6 +3,9 @@ let language = localStorage.getItem("language") || "es";
 const content = {
     es: {
         title: "Rutas Turísticas de Pitalito",
+        heroTitle: "Descubre la magia de Pitalito",
+        heroDesc: "Vive experiencias únicas entre montañas, cafetales, cultura y sabores tradicionales en uno de los destinos turísticos más encantadores del Huila.",
+        heroBtn: "Explorar destinos",
         homeTitle: "Explora Pitalito",
         homeDesc: "Descubre Pitalito, un destino lleno de vida y diversidad. Desde sus verdes montañas y ríos cristalinos hasta sus cafetales y coloridos paisajes rurales, cada rincón ofrece experiencias únicas: ecoturismo, senderismo, avistamiento de aves, gastronomía típica y la calidez de su gente te esperan para vivir aventuras inolvidables. ¡Explora la riqueza natural y cultural de Pitalito y déjate sorprender!",
         homeFoodTitle: "Gastronomía",
@@ -43,11 +46,15 @@ const content = {
 
         exp6Title: "Ruta del Cafe",
         exp6Desc: "Pitalito es líder en producción de café especial, ofreciendo visitas a fincas tradicionales para conocer el proceso desde la siembra hasta la taza"
+
         
     },
 
     en: {
         title: "Tourist Routes of Pitalito",
+        heroTitle: "Discover the magic of Pitalito",
+        heroDesc: "Live unique experiences among mountains, coffee plantations, culture and traditional flavors in one of the most charming tourist destinations in Huila.",
+        heroBtn: "Explore destinations",
         homeTitle: "Explore Pitalito",
         homeDesc: "Discover Pitalito, a vibrant and diverse destination. From its verdant mountains and crystal-clear rivers to its coffee plantations and colorful rural landscapes, every corner offers unique experiences: ecotourism, hiking, birdwatching, traditional cuisine, and the warmth of its people await you for unforgettable adventures. Explore the natural and cultural richness of Pitalito and prepare to be amazed!",
         homeFoodTitle: "Gastronomy",
@@ -101,6 +108,9 @@ function update(id, text) {
 
 function applyLanguage() {
     update("title", content[language].title);
+    update("hero-title", content[language].heroTitle);
+    update("hero-desc", content[language].heroDesc);
+    update("hero-btn", content[language].heroBtn);
     update("home-title", content[language].homeTitle);
     update("home-desc", content[language].homeDesc);
     update("home-food-title", content[language].homeFoodTitle);
