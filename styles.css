@@ -408,3 +408,52 @@ body::before {
 .home-page .navbar{
     display:none;
 }
+
+.hero{
+    height: 85vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url("images/pitalito.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: white;
+}
+
+.hero-content{
+    max-width: 700px;
+    padding: 20px;
+}
+
+.hero h2{
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.hero-btn{
+    background: #f39c12;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-btn:hover{
+    background: #e67e22;
+    transform: scale(1.05);
+}
