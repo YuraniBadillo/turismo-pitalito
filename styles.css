@@ -621,7 +621,9 @@ box-shadow:0 10px 25px rgba(0,0,0,0.15);
 
 /* GALERÍA */
 .gallery{
-width:600px;
+width:100%;
+max-width:900px;
+margin:auto;
 }
 /* CARD EXPERIENCIAS CON IMAGEN */
 
