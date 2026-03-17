@@ -535,7 +535,36 @@ padding:12px;
 cursor:pointer;
 border-radius:50%;
 }
+.experiences{
+margin-top:60px;
+text-align:center;
+}
 
+.exp-grid{
+display:flex;
+gap:25px;
+justify-content:center;
+flex-wrap:wrap;
+margin-top:25px;
+}
+
+.exp-card{
+width:280px;
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.exp-card:hover{
+transform:translateY(-8px);
+}
+
+.exp-card h3{
+color:#14532d;
+margin-bottom:10px;
+}
 .prev{ left:-20px;}
 .next{ right:-20px;}
 
