@@ -457,3 +457,38 @@ body::before {
     background: #e67e22;
     transform: scale(1.05);
 }
+
+.subsection{
+    max-width:1200px;
+    margin:60px auto;
+    background:rgba(255,255,255,0.85);
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.sub-title{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:30px;
+    color:#14532d;
+}
+
+.sub-container{
+    display:flex;
+    gap:40px;
+    align-items:center;
+}
+
+.sub-container img{
+    width:450px;
+    border-radius:20px;
+    object-fit:cover;
+}
+
+.sub-text p{
+    font-size:17px;
+    line-height:1.7;
+    margin-bottom:20px;
+    color:#444;
+}
