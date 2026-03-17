@@ -9,41 +9,79 @@
 
 <body class="nature-page">
 
-<header>
-<h1>Laguna de Guaitipán</h1>
-<a href="naturaleza.html" class="btn-sub">← Volver</a>
+<header class="sub-hero">
+    <h1>Laguna de Guaitipán</h1>
+    <a href="naturaleza.html" class="btn-sub">← Volver</a>
 </header>
 
-<section class="subsection">
+<main class="detail-container">
 
-<h2 class="sub-title">Un paraíso natural en Pitalito</h2>
+<section class="detail-box">
 
-<div class="sub-container">
-
-<img src="images/guaitipan.jpg" alt="Laguna de Guaitipán">
-
-<div class="sub-text">
+<h2>Un paraíso natural en Pitalito</h2>
 
 <p>
-La Laguna de Guaitipán es uno de los destinos naturales más representativos del municipio de Pitalito. 
-Rodeada de montañas, vegetación y aire puro, este lugar ofrece un ambiente tranquilo ideal para el descanso y la contemplación del paisaje.
+La Laguna de Guaitipán es uno de los destinos naturales más representativos del municipio.
+Rodeada de montañas, aire puro y vegetación exuberante, ofrece un ambiente ideal para el descanso,
+la contemplación del paisaje y el turismo ecológico.
 </p>
 
 <p>
-Los visitantes pueden realizar caminatas ecológicas, observación de aves, fotografía de naturaleza y actividades de turismo sostenible. 
-Su riqueza ambiental convierte este sitio en un espacio perfecto para conectar con la biodiversidad del sur del Huila.
+Los visitantes pueden disfrutar caminatas, observación de aves, fotografía de naturaleza y
+experiencias sostenibles que permiten conectarse con la biodiversidad del sur del Huila.
 </p>
 
-<p>
-Además de su belleza escénica, la laguna tiene un importante valor cultural y ambiental para la región, siendo un punto de encuentro 
-para quienes buscan experiencias auténticas en contacto directo con la naturaleza.
-</p>
+</section>
 
-</div>
+<!-- ⭐ GALERÍA -->
+<section class="gallery">
+
+<h2>Galería</h2>
+
+<div class="slider">
+
+<img src="images/guaitipan.jpg" class="slide active">
+<img src="images/guaitipan2.jpg" class="slide">
+<img src="images/guaitipan3.jpg" class="slide">
+
+<button class="prev" onclick="moveSlide(-1)">❮</button>
+<button class="next" onclick="moveSlide(1)">❯</button>
 
 </div>
 
 </section>
+
+<!-- ⭐ MAPA -->
+<section class="map-section">
+
+<h2>Ubicación</h2>
+
+<iframe
+src="https://www.google.com/maps?q=Laguna+de+Guaitipan+Pitalito&output=embed">
+</iframe>
+
+</section>
+
+</main>
+
+<script>
+
+let index = 0;
+const slides = document.querySelectorAll(".slide");
+
+function showSlide(n){
+slides.forEach(s => s.classList.remove("active"));
+slides[n].classList.add("active");
+}
+
+function moveSlide(step){
+index += step;
+if(index >= slides.length) index = 0;
+if(index < 0) index = slides.length - 1;
+showSlide(index);
+}
+
+</script>
 
 </body>
 </html>
