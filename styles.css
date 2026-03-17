@@ -341,25 +341,17 @@ body.home-page{
 }
 }
 
-body.nature-page {
-    background-image: url('images/naturaleza.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+body.nature-page{
+    background: linear-gradient(135deg,#134e5e,#71b280);
+}
 }
 
-body.culture-page {
-    background-image: url('images/cultura.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+body.culture-page{
+    background: linear-gradient(135deg,#1e3c72,#2a5298);
 }
 
-body.gastronomia-page {
-    background-image: url('images/gastronomia.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+body.gastronomia-page{
+    background: linear-gradient(135deg,#ff7e5f,#feb47b);
 }
 
 /* capa oscura sobre fondo */
