@@ -457,5 +457,21 @@ body::before {
     background: #e67e22;
     transform: scale(1.05);
 }
+.btn-sub{
+display:inline-block;
+margin-top:15px;
+padding:10px 22px;
+background:#14532d;
+color:white;
+border-radius:20px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn-sub:hover{
+background:#22c55e;
+transform:scale(1.05);
+}
 
 
