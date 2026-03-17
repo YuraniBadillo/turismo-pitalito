@@ -52,7 +52,7 @@ const content = {
         homeDesc: "Discover Pitalito, a vibrant and diverse destination. From its verdant mountains and crystal-clear rivers to its coffee plantations and colorful rural landscapes, every corner offers unique experiences: ecotourism, hiking, birdwatching, traditional cuisine, and the warmth of its people await you for unforgettable adventures. Explore the natural and cultural richness of Pitalito and prepare to be amazed!",
         homeFoodTitle: "Gastronomy",
         homeFoodDesc: "Discover the traditional flavors of Pitalito and enjoy its rich gastronomic offer.",
-        homeFoodBtn: "See Gastronomy",
+        homeFoodBtn: "View Gastronomy",
         cardNatureTitle: "Nature",
         cardNatureDesc: "Explore mountains, rivers and wildlife of Pitalito.",
         cardNatureBtn: "View Nature",
