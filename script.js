@@ -103,7 +103,7 @@ artExp2Desc: "Explora espacios donde se exhiben artesanías representativas de l
 artExp3Title: "Compra de recuerdos tradicionales",
 artExp3Desc: "Adquiere artesanías auténticas y apoya la economía local.",
         cafeTitle: "Ruta del Café",
-cafeHero: "La Ruta del Café en Pitalito permite conocer el proceso de producción del café huilense y vivir experiencias sensoriales en fincas cafeteras.",
+cafeHero: "La Ruta del Café en Pitalito permite a los visitantes adentrarse en el fascinante proceso de producción del café huilense, reconocido a nivel nacional e internacional por su calidad, aroma y sabor excepcional. Durante el recorrido, es posible visitar fincas cafeteras tradicionales, caminar entre cultivos rodeados de paisajes naturales y aprender de los caficultores sobre cada etapa del cultivo, desde la siembra y la cosecha hasta el secado y la tostión del grano.",
 
 cafeExpTitle: "Experiencias Cafeteras",
 
@@ -234,7 +234,7 @@ artExp3Title: "Traditional souvenir shopping",
 artExp3Desc: "Buy authentic handicrafts and support the local economy.",
 
         cafeTitle: "Coffee Route",
-cafeHero: "The Coffee Route in Pitalito allows visitors to learn about the coffee production process and enjoy sensory experiences in coffee farms.",
+cafeHero: "The Coffee Route in Pitalito allows visitors to delve into the fascinating process of producing Huila coffee, which is recognized nationally and internationally for its exceptional quality, aroma, and flavor. During the tour, you can visit traditional coffee farms, walk among the crops surrounded by natural landscapes, and learn from the coffee farmers about every stage of cultivation, from planting and harvesting to drying and roasting the beans.",
 
 cafeExpTitle: "Coffee Experiences",
 
