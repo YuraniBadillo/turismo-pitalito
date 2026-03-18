@@ -753,3 +753,16 @@ background: linear-gradient(
 #b31217 100%
 );
 }
+
+.pueblito-layout{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 40px;
+align-items: start;
+}
+
+.right-column{
+display: flex;
+flex-direction: column;
+gap: 40px;
+}
