@@ -805,3 +805,13 @@ grid-template-columns: 1fr 1fr;
 gap: 40px;
 align-items: start;
 }
+
+body.cafe-page{
+background: linear-gradient(
+180deg,
+#a67c52 0%,
+#6f4e37 35%,
+#4b2e2b 70%,
+#1c0f0a 100%
+);
+}
