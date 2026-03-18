@@ -31,12 +31,30 @@ const content = {
         food1Desc: "Restaurante reconocido por su comida tradicional huilense preparada en fogón de piedra.",
         food2Title: "La Pecera",
         food2Desc: "Un restaurante popular en Pitalito donde se destacan platos típicos y una experiencia gastronómica única.",
-
+        
         exp1Title: "Laguna de Guaitipan",
         exp1Desc: "Hermosa laguna natural ideal para senderismo y fotografía.",
 
         exp3Title: "Parque Ecoturístico Pueblito Huilense",
         exp3Desc: "es un Parque Ecoturistico que busca brindar experiencias en un entorno natural rescatando la cultura del Huila.",
+        guaitipanTitle: "Laguna de Guaitipán",
+        guaitipanHero: "La Laguna de Guaitipán es uno de los destinos naturales más representativos del municipio. Rodeada de montañas, aire puro y vegetación exuberante, ofrece un ambiente ideal para el descanso y el turismo ecológico.",
+        guaExpTitle: "Experiencias en la Laguna de Guaitipán",
+        guaExp1Title: "Senderismo ecológico",
+        guaExp1Desc: "Recorre senderos naturales rodeados de vegetación y paisajes montañosos.",
+        guaExp2Title: "Observación de aves",
+        guaExp2Desc: "Actividad ideal para conocer especies propias de ecosistemas andinos.",
+        guaExp3Title: "Fotografía paisajística",
+        guaExp3Desc: "Captura la belleza natural de la laguna y su entorno.",
+        parqueTitle: "Parque Ecoturístico Pueblito Huilense",
+        parqueDesc: "Espacio que rescata las tradiciones culturales del Huila en un entorno natural.",
+        parqueExpTitle: "Experiencias en el Parque",
+        parqueExp1Title: "Recorrido cultural",
+        parqueExp1Desc: "Representaciones de casas típicas y tradiciones huilenses.",
+        parqueExp2Title: "Actividades recreativas",
+        parqueExp2Desc: "Zonas verdes y juegos para compartir en familia.",
+        parqueExp3Title: "Gastronomía tradicional",
+        parqueExp3Desc: "Degustación de platos típicos y productos artesanales.",
 
         exp2Title: "Artesanías Locales",
         exp2Desc: "Talleres y muestras de artesanos locales que conservan técnicas tradicionales.",
@@ -46,6 +64,7 @@ const content = {
 
         exp6Title: "Ruta del Cafe",
         exp6Desc: "Pitalito es líder en producción de café especial, ofreciendo visitas a fincas tradicionales para conocer el proceso desde la siembra hasta la taza"
+        
 
         
     },
