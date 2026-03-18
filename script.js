@@ -158,6 +158,7 @@ function applyLanguage() {
     update("nav-home", content[language].navHome);
     update("nav-nature", content[language].navNature);
     update("nav-culture", content[language].navCulture);
+    update("nav-food", content[language].navFood);
     update("btn-nature", content[language].btnNature);
     update("btn-culture", content[language].btnCulture);
     update("nature", content[language].nature);
