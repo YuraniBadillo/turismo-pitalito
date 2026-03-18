@@ -102,6 +102,25 @@ artExp2Desc: "Explora espacios donde se exhiben artesanías representativas de l
 
 artExp3Title: "Compra de recuerdos tradicionales",
 artExp3Desc: "Adquiere artesanías auténticas y apoya la economía local.",
+        cafeTitle: "Ruta del Café",
+cafeHero: "La Ruta del Café en Pitalito permite conocer el proceso de producción del café huilense y vivir experiencias sensoriales en fincas cafeteras.",
+
+cafeExpTitle: "Experiencias Cafeteras",
+
+cafeExp1Title: "Recorrido por fincas cafeteras",
+cafeExp1Desc: "Camina por cultivos de café y conoce el proceso de siembra y cosecha.",
+
+cafeExp2Title: "Proceso de producción",
+cafeExp2Desc: "Aprende sobre el despulpado, secado y tostión del café.",
+
+cafeExp3Title: "Degustación de café especial",
+cafeExp3Desc: "Disfruta diferentes variedades de café y reconoce sus aromas.",
+
+cafeImg1: "Fuente: Internet",
+cafeImg2: "Fuente: Internet",
+cafeImg3: "Fuente: Internet",
+cafeImg4: "Fuente: Internet",
+cafeImg5: "Fuente: Video turístico"
 
         
 
@@ -213,6 +232,27 @@ artExp2Desc: "Explore spaces where representative regional handicrafts are displ
 
 artExp3Title: "Traditional souvenir shopping",
 artExp3Desc: "Buy authentic handicrafts and support the local economy.",
+
+        cafeTitle: "Coffee Route",
+cafeHero: "The Coffee Route in Pitalito allows visitors to learn about the coffee production process and enjoy sensory experiences in coffee farms.",
+
+cafeExpTitle: "Coffee Experiences",
+
+cafeExp1Title: "Coffee farm tour",
+cafeExp1Desc: "Walk through coffee crops and learn about planting and harvesting.",
+
+cafeExp2Title: "Production process",
+cafeExp2Desc: "Learn about pulping, drying and roasting coffee.",
+
+cafeExp3Title: "Special coffee tasting",
+cafeExp3Desc: "Taste different coffee varieties and recognize their aromas.",
+
+cafeImg1: "Source: Internet",
+cafeImg2: "Source: Internet",
+cafeImg3: "Source: Internet",
+cafeImg4: "Source: Internet",
+cafeImg5: "Source: Tourism video"
+        
     }
 };
 
@@ -321,6 +361,29 @@ update("art-exp2-desc", content[language].artExp2Desc);
 
 update("art-exp3-title", content[language].artExp3Title);
 update("art-exp3-desc", content[language].artExp3Desc);
+    /* ⭐ RUTA DEL CAFÉ */
+
+update("cafe-title", content[language].cafeTitle);
+update("cafe-hero", content[language].cafeHero);
+
+update("cafe-exp-title", content[language].cafeExpTitle);
+
+update("cafe-exp1-title", content[language].cafeExp1Title);
+update("cafe-exp1-desc", content[language].cafeExp1Desc);
+
+update("cafe-exp2-title", content[language].cafeExp2Title);
+update("cafe-exp2-desc", content[language].cafeExp2Desc);
+
+update("cafe-exp3-title", content[language].cafeExp3Title);
+update("cafe-exp3-desc", content[language].cafeExp3Desc);
+
+/* ⭐ GALERÍA */
+
+update("cafe-img1", content[language].cafeImg1);
+update("cafe-img2", content[language].cafeImg2);
+update("cafe-img3", content[language].cafeImg3);
+update("cafe-img4", content[language].cafeImg4);
+update("cafe-img5", content[language].cafeImg5);
 
 }
 
