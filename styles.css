@@ -743,3 +743,13 @@ align-items:center;
 color:white;
 text-align:center;
 }
+
+body.pueblito-page{
+background: linear-gradient(
+180deg,
+#ffd27f 0%,
+#ff9a3c 25%,
+#ff5e3a 60%,
+#b31217 100%
+);
+}
