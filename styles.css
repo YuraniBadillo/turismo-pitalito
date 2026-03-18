@@ -723,3 +723,9 @@ background: linear-gradient(
 #38bdf8 100%
 );
 }
+/* TITULOS BLANCOS EN SUBSECCIONES */
+
+.experiences h2,
+.gallery h2{
+color:white;
+}
