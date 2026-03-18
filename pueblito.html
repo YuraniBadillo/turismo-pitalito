@@ -9,7 +9,7 @@
 
 <body class="pueblito-page">
 
-    <header>
+<header>
 <h1 id="title">Rutas Turísticas de Pitalito</h1>
 <button onclick="changeLanguage()">English / Español</button>
 </header>
@@ -27,95 +27,86 @@
 <h1 id="pueblito-title">Parque Ecoturístico Pueblito Huilense</h1>
 
 <p id="pueblito-hero">
-El Parque Ecoturístico Pueblito Huilense es un espacio diseñado para rescatar las tradiciones culturales del departamento del Huila en medio de un entorno natural.
-Los visitantes pueden recorrer senderos, conocer arquitectura típica, disfrutar gastronomía regional y vivir experiencias recreativas.
-Este destino combina turismo ecológico, actividades familiares y espacios educativos que permiten conocer la identidad cultural huilense mientras se disfruta del paisaje rural.
+El Parque Ecoturístico Pueblito Huilense rescata las tradiciones culturales del Huila en un entorno natural.
 </p>
 </header>
-    
 
 <main class="detail-container">
 
-   
 <div class="pueblito-layout">
-    
+
+<!-- ⭐ EXPERIENCIAS -->
 <section class="experiences">
 
-<h2>Experiencias en el Parque</h2>
-    
-<div class="exp-grid">  
+<h2 id="p-exp-title">Experiencias en el Parque</h2>
+
+<div class="exp-grid">
 
 <div class="exp-card parque1">
-    
-<h3>Recorrido cultural</h3>
-<p>
-Conoce representaciones de casas típicas huilenses,
-costumbres campesinas y espacios que muestran la identidad regional.
+<h3 id="p-exp1-title">Recorrido cultural</h3>
+<p id="p-exp1-desc">
+Conoce representaciones de casas típicas huilenses y tradiciones regionales.
 </p>
 </div>
 
 <div class="exp-card parque2">
-<h3>Actividades recreativas</h3>
-<p>
-El parque ofrece zonas verdes, juegos y espacios para compartir
-en familia mientras se disfruta del ambiente natural.
+<h3 id="p-exp2-title">Actividades recreativas</h3>
+<p id="p-exp2-desc">
+Zonas verdes y juegos para compartir en familia.
 </p>
 </div>
 
 <div class="exp-card parque3">
-<h3>Gastronomía tradicional</h3>
-<p>
-Los visitantes pueden degustar platos típicos del Huila
-y productos locales elaborados de manera artesanal.
+<h3 id="p-exp3-title">Gastronomía tradicional</h3>
+<p id="p-exp3-desc">
+Degustación de platos típicos y productos artesanales.
 </p>
 </div>
-</div>    
+
+</div>
 </section>
 
+<!-- ⭐ COLUMNA DERECHA -->
+<div class="right-column">
 
 <!-- ⭐ GALERÍA -->
 <section class="gallery">
 
-<h2>Galería</h2>
+<h2 id="gallery-title">Galería</h2>
 
 <div class="slide active">
 <img src="images/parquea.jpg">
-<p class="img-source">Fuente: Internet</p>
+<p class="img-source" id="p-img1">Fuente: Internet</p>
 </div>
 
 <div class="slide">
 <img src="images/parqueb.jpg">
-<p class="img-source">Fuente: Turismo Huila</p>
+<p class="img-source" id="p-img2">Fuente: Turismo Huila</p>
 </div>
 
 <div class="slide">
 <img src="images/parquec.jpg">
-<p class="img-source">Fuente: Alcaldía de Pitalito</p>
+<p class="img-source" id="p-img3">Fuente: Alcaldía de Pitalito</p>
 </div>
 
-     <div class="slide">
-
-    <video controls class="gallery-video">
-        <source src="images/pueblito.mp4" type="video/mp4">
-        Tu navegador no soporta video.
-    </video>
-
-    <p class="img-source">
-        Fuente: Video promocional turístico
-    </p>
-
+<div class="slide">
+<video controls class="gallery-video">
+<source src="images/pueblito.mp4" type="video/mp4">
+</video>
+<p class="img-source" id="p-img4">Fuente: Video promocional</p>
 </div>
+
 <div class="slider">
 <button class="prev" onclick="moveSlide(-1)">❮</button>
 <button class="next" onclick="moveSlide(1)">❯</button>
 </div>
-    
+
 </section>
-    
-<!-- ⭐ MAPA -->
+
+<!-- ⭐ MAPA (DEBAJO DE GALERÍA) -->
 <section class="map-section">
 
-<h2>Ubicación</h2>
+<h2 id="location-title">Ubicación</h2>
 
 <iframe
 src="https://www.google.com/maps?q=Pueblito+Huilense+Pitalito&output=embed">
@@ -123,12 +114,11 @@ src="https://www.google.com/maps?q=Pueblito+Huilense+Pitalito&output=embed">
 
 </section>
 
-    </div>
-    
+</div>
+</div>
 </main>
 
 <script>
-
 let index = 0;
 const slides = document.querySelectorAll(".slide");
 
@@ -143,8 +133,9 @@ if(index >= slides.length) index = 0;
 if(index < 0) index = slides.length - 1;
 showSlide(index);
 }
-
 </script>
+
+<script src="script.js"></script>
 
 </body>
 </html>
