@@ -89,6 +89,20 @@ pImg3: "Fuente: Alcaldía de Pitalito",
 pImg4: "Fuente: Video promocional turístico",
         pueblitoTitle: "Parque Ecoturístico Pueblito Huilense",
 pueblitoHero: "El Parque Ecoturístico Pueblito Huilense es un espacio diseñado para rescatar las tradiciones culturales del departamento del Huila en medio de un entorno natural. Los visitantes pueden recorrer senderos, conocer arquitectura típica, disfrutar gastronomía regional y vivir experiencias recreativas.",
+        artesaniasTitle: "Artesanías Locales",
+artesaniasHero: "Las artesanías locales de Pitalito representan la identidad cultural y la creatividad de sus habitantes. Los visitantes pueden conocer técnicas tradicionales como tejidos, cerámica y trabajos en madera mientras interactúan con los artesanos.",
+
+artExpTitle: "Experiencias Culturales",
+
+artExp1Title: "Taller de elaboración artesanal",
+artExp1Desc: "Participa en talleres donde aprenderás técnicas tradicionales y podrás crear tu propia pieza.",
+
+artExp2Title: "Recorrido por muestras artesanales",
+artExp2Desc: "Explora espacios donde se exhiben artesanías representativas de la región.",
+
+artExp3Title: "Compra de recuerdos tradicionales",
+artExp3Desc: "Adquiere artesanías auténticas y apoya la economía local.",
+
         
 
         
@@ -186,6 +200,19 @@ pImg3: "Source: Pitalito City Hall",
 pImg4: "Source: Promotional tourism video",
         pueblitoTitle: "Pueblito Huilense Ecotourism Park",
 pueblitoHero: "The Pueblito Huilense Ecotourism Park is a space designed to preserve the cultural traditions of the department of Huila within a natural setting. Visitors can explore trails, discover traditional architecture, enjoy regional cuisine, and participate in recreational activities.",
+        artesaniasTitle: "Local Handicrafts",
+artesaniasHero: "Local handicrafts in Pitalito represent the cultural identity and creativity of its people. Visitors can learn traditional techniques such as weaving, pottery and woodwork while interacting with artisans.",
+
+artExpTitle: "Cultural Experiences",
+
+artExp1Title: "Handicraft workshop",
+artExp1Desc: "Join workshops where you will learn traditional techniques and create your own piece.",
+
+artExp2Title: "Handicraft exhibition tour",
+artExp2Desc: "Explore spaces where representative regional handicrafts are displayed.",
+
+artExp3Title: "Traditional souvenir shopping",
+artExp3Desc: "Buy authentic handicrafts and support the local economy.",
     }
 };
 
@@ -281,6 +308,20 @@ update("p-img3", content[language].pImg3);
 update("p-img4", content[language].pImg4);
     update("pueblito-title", content[language].pueblitoTitle);
 update("pueblito-hero", content[language].pueblitoHero);
+    update("artesanias-title", content[language].artesaniasTitle);
+update("artesanias-hero", content[language].artesaniasHero);
+
+update("art-exp-title", content[language].artExpTitle);
+
+update("art-exp1-title", content[language].artExp1Title);
+update("art-exp1-desc", content[language].artExp1Desc);
+
+update("art-exp2-title", content[language].artExp2Title);
+update("art-exp2-desc", content[language].artExp2Desc);
+
+update("art-exp3-title", content[language].artExp3Title);
+update("art-exp3-desc", content[language].artExp3Desc);
+
 }
 
 function changeLanguage() {
