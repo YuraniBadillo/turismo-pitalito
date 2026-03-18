@@ -9,119 +9,99 @@
 
 <body class="guaitipan-page">
 
-    <header>
-    <h1 id="title">Rutas Turísticas de Pitalito</h1>
-    <button onclick="changeLanguage()">English / Español</button>
+<header>
+<h1 id="title">Rutas Turísticas de Pitalito</h1>
+<button onclick="changeLanguage()">English / Español</button>
 </header>
 
-     <nav class="navbar">
-    <ul>
-        <li><a href="index.html" id="nav-home">Inicio</a></li>
-        <li><a href="naturaleza.html" id="nav-nature">Naturaleza</a></li>
-        <li><a href="cultura.html" id="nav-culture">Cultura</a></li>
-        <li><a href="gastronomia.html" id="nav-food">Gastronomía</a></li>
-    </ul>
+<nav class="navbar">
+<ul>
+<li><a href="index.html" id="nav-home">Inicio</a></li>
+<li><a href="naturaleza.html" id="nav-nature">Naturaleza</a></li>
+<li><a href="cultura.html" id="nav-culture">Cultura</a></li>
+<li><a href="gastronomia.html" id="nav-food">Gastronomía</a></li>
+</ul>
 </nav>
-    
-<header class="sub-hero">
-    <h1>Laguna de Guaitipán</h1>
-    <p id="hero-desc">
-            La Laguna de Guaitipán es uno de los destinos naturales más representativos del municipio. 
-        Rodeada de montañas, aire puro y vegetación exuberante, ofrece un ambiente ideal para el descanso, la contemplación del paisaje y el turismo ecológico. 
-        Los visitantes pueden disfrutar caminatas, observación de aves, fotografía de naturaleza y experiencias sostenibles que permiten conectarse con la biodiversidad del sur del Huila.
-        </p>
-    </header>
 
-   
+<header class="sub-hero">
+<h1 id="guaitipan-title">Laguna de Guaitipán</h1>
+
+<p id="guaitipan-hero">
+La Laguna de Guaitipán es uno de los destinos naturales más representativos del municipio.
+Rodeada de montañas, aire puro y vegetación exuberante, ofrece un ambiente ideal para el descanso,
+la contemplación del paisaje y el turismo ecológico.
+</p>
+</header>
+
 <main class="detail-container">
 
+<div class="guaitipan-layout">
 
- <div class="guaitipan-layout">
+<section class="experiences">
 
-    <section class="experiences">
-
-<h2>Experiencias en la Laguna de Guaitipán</h2>
+<h2 id="gua-exp-title">Experiencias en la Laguna de Guaitipán</h2>
 
 <div class="exp-grid">
 
 <div class="exp-card senderismo">
-<h3>Senderismo ecológico</h3>
-<p>
-Recorre los senderos naturales que rodean la laguna mientras disfrutas del paisaje
-montañoso, la vegetación nativa y el contacto directo con la naturaleza.
-Es una actividad ideal para caminatas tranquilas, ejercicio al aire libre
-y conexión ambiental.
+<h3 id="gua-exp1-title">Senderismo ecológico</h3>
+<p id="gua-exp1-desc">
+Recorre senderos naturales rodeados de vegetación y paisajes montañosos.
 </p>
 </div>
 
 <div class="exp-card aves">
-<h3>Observación de aves</h3>
-<p>
-La zona alberga diferentes especies de aves propias de ecosistemas húmedos
-y bosques andinos. Los visitantes pueden realizar jornadas de observación
-y fotografía de fauna, especialmente en horas de la mañana.
+<h3 id="gua-exp2-title">Observación de aves</h3>
+<p id="gua-exp2-desc">
+Actividad ideal para observar especies propias de ecosistemas andinos.
 </p>
 </div>
 
 <div class="exp-card foto">
-<h3>Fotografía paisajística</h3>
-<p>
-La laguna ofrece escenarios naturales perfectos para capturar imágenes
-del reflejo del cielo, las montañas y la vegetación circundante.
-Es un lugar ideal para amantes de la fotografía y creadores de contenido.
+<h3 id="gua-exp3-title">Fotografía paisajística</h3>
+<p id="gua-exp3-desc">
+Captura la belleza natural de la laguna y su entorno.
 </p>
 </div>
 
 </div>
 </section>
 
-
 <!-- ⭐ GALERÍA -->
 <section class="gallery">
 
 <h2>Galería</h2>
 
-
 <div class="slide active">
-    <img src="images/guaitipan.jpg">
-    <p class="img-source">
-        Fuente: Autor desconocido / Tomado de Internet
-    </p>
+<img src="images/guaitipan.jpg">
+<p class="img-source">Fuente: Autor desconocido</p>
 </div>
-    <div class="slide">
-    <img src="images/guaitipan2.jpg">
-    <p class="img-source">
-        Fuente: Autor desconocido / Tomado de Internet
-    </p>
-</div>
-    <div class="slide">
-    <img src="images/guaitipan3.jpg">
-    <p class="img-source">
-        Fuente: Turismo Huila
-    </p>
-</div>
-    
-    <div class="slide">
-    
-    <video controls class="gallery-video">
-        <source src="images/guaitipan4.mp4" type="video/mp4">
-        Tu navegador no soporta video.
-    </video>
 
-    <p class="img-source">
-        Fuente: https://www.facebook.com/LagunadeGuaitipan
-    </p>
-
+<div class="slide">
+<img src="images/guaitipan2.jpg">
+<p class="img-source">Fuente: Internet</p>
 </div>
-   
+
+<div class="slide">
+<img src="images/guaitipan3.jpg">
+<p class="img-source">Fuente: Turismo Huila</p>
+</div>
+
+<div class="slide">
+<video controls class="gallery-video">
+<source src="images/guaitipan4.mp4" type="video/mp4">
+</video>
+<p class="img-source">Fuente: Facebook Laguna de Guaitipán</p>
+</div>
+
 <div class="slider">
-  <button class="prev" onclick="moveSlide(-1)">❮</button>
-  <button class="next" onclick="moveSlide(1)">❯</button>
-
+<button class="prev" onclick="moveSlide(-1)">❮</button>
+<button class="next" onclick="moveSlide(1)">❯</button>
 </div>
 
+</section>
 
-<!-- ⭐ MAPA -->
+<!-- ⭐ MAPA (YA DENTRO DEL CONTENEDOR Y DEBAJO DE GALERÍA) -->
 <section class="map-section">
 
 <h2>Ubicación</h2>
@@ -133,11 +113,11 @@ src="https://www.google.com/maps?q=Laguna+de+Guaitipan+Pitalito&output=embed">
 </section>
 
 </div>
-    
+
 </main>
 
+<!-- ⭐ SCRIPT SLIDER -->
 <script>
-
 let index = 0;
 const slides = document.querySelectorAll(".slide");
 
@@ -152,8 +132,10 @@ if(index >= slides.length) index = 0;
 if(index < 0) index = slides.length - 1;
 showSlide(index);
 }
-
 </script>
+
+<!-- ⭐ SCRIPT DE IDIOMA (MUY IMPORTANTE) -->
+<script src="script.js"></script>
 
 </body>
 </html>
