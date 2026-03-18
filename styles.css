@@ -712,3 +712,9 @@ width:100%;
 .exp-card p{
 color:white;
 }
+
+/* FONDO SUBSECCIÓN LAGUNA */
+
+body.guaitipan-page{
+background: linear-gradient(135deg,#0b3d2e,#14532d,#0f766e);
+}
