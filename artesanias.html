@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Artesanias Locales</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="artesanias-page">
+
+<header>
+<h1 id="title">Rutas Turísticas de Pitalito</h1>
+<button onclick="changeLanguage()">English / Español</button>
+</header>
+
+<nav class="navbar">
+<ul>
+<li><a href="index.html" id="nav-home">Inicio</a></li>
+<li><a href="naturaleza.html" id="nav-nature">Naturaleza</a></li>
+<li><a href="cultura.html" id="nav-culture">Cultura</a></li>
+<li><a href="gastronomia.html" id="nav-food">Gastronomía</a></li>
+</ul>
+</nav>
+
+<header class="sub3-hero">
+<h1 id="pueblito-title">Artesanias Locales</h1>
+
+<p id="artesanias-hero">
+Las artesanías locales de Pitalito representan la identidad cultural y la creatividad de sus habitantes.
+En esta experiencia, los visitantes pueden conocer el trabajo de artesanos que elaboran piezas únicas utilizando materiales tradicionales como madera, fibras naturales, cerámica y tejidos.
+Además de observar el proceso de elaboración, es posible interactuar con los artesanos, aprender sobre las técnicas ancestrales y adquirir recuerdos auténticos que reflejan la historia y las costumbres de la región.
+Esta actividad permite valorar el patrimonio cultural y apoyar la economía local mientras se vive una experiencia auténtica y enriquecedora.
+</p>
+</header>
+
+<main class="detail-container">
+
+<div class="artesanias-layout">
+
+<!-- ⭐ EXPERIENCIAS -->
+<section class="experiences">
+
+<h2 id="p-exp-title">Experiencias Culturales</h2>
+
+<div class="exp-grid">
+
+<div class="exp-card artesanias1">
+<h3 id="p-exp1-title">Taller de elaboración artesanal</h3>
+<p id="p-exp1-desc">
+Los visitantes pueden participar en talleres guiados por artesanos locales donde aprenderán técnicas tradicionales como el tejido, la cerámica o el trabajo en madera.
+Esta experiencia permite crear una pieza propia mientras se conoce el significado cultural de cada elaboración.
+</p>
+</div>
+
+<div class="exp-card artesanias2">
+<h3 id="p-exp2-title">Recorrido por muestras artesanales</h3>
+<p id="p-exp2-desc">
+Explora espacios donde se exhiben artesanías representativas de la región, apreciando la diversidad de materiales, colores y estilos.
+Durante el recorrido, los visitantes descubren la historia y el valor cultural de cada producto elaborado a mano.
+</p>
+</div>
+
+<div class="exp-card artesanias3">
+<h3 id="p-exp3-title">Compra de recuerdos tradicionales</h3>
+<p id="p-exp3-desc">
+Disfruta de la oportunidad de adquirir artesanías auténticas directamente de sus creadores.
+Esta experiencia no solo permite llevar un recuerdo único del destino, sino también apoyar la economía local y preservar las tradiciones culturales.
+</p>
+</div>
+
+</div>
+</section>
+
+<!-- ⭐ COLUMNA DERECHA -->
+<div class="right-column">
+
+<!-- ⭐ GALERÍA -->
+<section class="gallery">
+
+<h2 id="gallery-title">Galería</h2>
+
+<div class="slide active">
+<img src="images/artesaniasa.jpg">
+<p class="img-source" id="p-img1">Fuente: Internet</p>
+</div>
+
+<div class="slide">
+<img src="images/artesaniasb.jpg">
+<p class="img-source" id="p-img2">Fuente: Internet</p>
+</div>
+  
+<div class="slide">
+<img src="images/artesaniasc.jpg">
+<p class="img-source" id="p-img1">Fuente: Internet</p>
+</div>
+
+<div class="slide">
+<img src="images/artesaniasd.jpg">
+<p class="img-source" id="p-img3">Fuente: Internet<</p>
+</div>
+
+ 
+<div class="slide">
+<video controls class="gallery-video">
+<source src="images/artesanias.mp4" type="video/mp4">
+</video>
+<p class="img-source" id="p-img4">Fuente: https://www.instagram.com/reels/DQAtfKNDefZ/</p>
+</div>
+
+<div class="slider">
+<button class="prev" onclick="moveSlide(-1)">❮</button>
+<button class="next" onclick="moveSlide(1)">❯</button>
+</div>
+
+
+
+<!-- ⭐ MAPA (DEBAJO DE GALERÍA) -->
+<section class="map-section">
+
+<h2 id="location-title">Ubicación</h2>
+
+<iframe
+src="https://www.google.com/maps?q=Parque+Principal+Pitalito+Huila&output=embed">
+</iframe>
+
+</section>
+
+</div>
+</div>
+</main>
+
+<script>
+let index = 0;
+const slides = document.querySelectorAll(".slide");
+
+function showSlide(n){
+slides.forEach(s => s.classList.remove("active"));
+slides[n].classList.add("active");
+}
+
+function moveSlide(step){
+index += step;
+if(index >= slides.length) index = 0;
+if(index < 0) index = slides.length - 1;
+showSlide(index);
+}
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
