@@ -90,7 +90,7 @@ pImg4: "Fuente: Video promocional turístico",
         pueblitoTitle: "Parque Ecoturístico Pueblito Huilense",
 pueblitoHero: "El Parque Ecoturístico Pueblito Huilense es un espacio diseñado para rescatar las tradiciones culturales del departamento del Huila en medio de un entorno natural. Los visitantes pueden recorrer senderos, conocer arquitectura típica, disfrutar gastronomía regional y vivir experiencias recreativas.",
         artesaniasTitle: "Artesanías Locales",
-artesaniasHero: "Las artesanías locales de Pitalito representan la identidad cultural y la creatividad de sus habitantes. Los visitantes pueden conocer técnicas tradicionales como tejidos, cerámica y trabajos en madera mientras interactúan con los artesanos.",
+artesaniasHero: "Las artesanías locales de Pitalito representan la identidad cultural y la creatividad de sus habitantes. En esta experiencia, los visitantes pueden conocer el trabajo de artesanos que elaboran piezas únicas utilizando materiales tradicionales como madera, fibras naturales, cerámica y tejidos. Además de observar el proceso de elaboración, es posible interactuar con los artesanos, aprender sobre las técnicas ancestrales y adquirir recuerdos auténticos que reflejan la historia y las costumbres de la región. Esta actividad permite valorar el patrimonio cultural y apoyar la economía local mientras se vive una experiencia auténtica y enriquecedora.",
 
 artExpTitle: "Experiencias Culturales",
 
@@ -201,7 +201,7 @@ pImg4: "Source: Promotional tourism video",
         pueblitoTitle: "Pueblito Huilense Ecotourism Park",
 pueblitoHero: "The Pueblito Huilense Ecotourism Park is a space designed to preserve the cultural traditions of the department of Huila within a natural setting. Visitors can explore trails, discover traditional architecture, enjoy regional cuisine, and participate in recreational activities.",
         artesaniasTitle: "Local Handicrafts",
-artesaniasHero: "Local handicrafts in Pitalito represent the cultural identity and creativity of its people. Visitors can learn traditional techniques such as weaving, pottery and woodwork while interacting with artisans.",
+artesaniasHero: "The local crafts of Pitalito reflect the cultural identity and creativity of its residents. During this experience, visitors can discover the work of artisans who create unique pieces using traditional materials such as wood, natural fibers, ceramics, and textiles. In addition to observing the crafting process, visitors can interact with the artisans, learn about traditional techniques, and purchase authentic souvenirs that reflect the region’s history and customs. This activity allows you to appreciate the cultural heritage and support the local economy while enjoying an authentic and enriching experience.",
 
 artExpTitle: "Cultural Experiences",
 
