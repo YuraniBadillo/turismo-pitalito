@@ -186,6 +186,25 @@ function applyLanguage() {
     update("exp5-desc", content[language].exp5Desc);
     update("exp6-title", content[language].exp6Title);
     update("exp6-desc", content[language].exp6Desc);
+    update("guaitipan-title", content[language].guaitipanTitle);
+update("guaitipan-hero", content[language].guaitipanHero);
+update("gua-exp-title", content[language].guaExpTitle);
+update("gua-exp1-title", content[language].guaExp1Title);
+update("gua-exp1-desc", content[language].guaExp1Desc);
+update("gua-exp2-title", content[language].guaExp2Title);
+update("gua-exp2-desc", content[language].guaExp2Desc);
+update("gua-exp3-title", content[language].guaExp3Title);
+update("gua-exp3-desc", content[language].guaExp3Desc);
+
+update("parque-title", content[language].parqueTitle);
+update("parque-desc", content[language].parqueDesc);
+update("parque-exp-title", content[language].parqueExpTitle);
+update("parque-exp1-title", content[language].parqueExp1Title);
+update("parque-exp1-desc", content[language].parqueExp1Desc);
+update("parque-exp2-title", content[language].parqueExp2Title);
+update("parque-exp2-desc", content[language].parqueExp2Desc);
+update("parque-exp3-title", content[language].parqueExp3Title);
+update("parque-exp3-desc", content[language].parqueExp3Desc);
 }
 
 function changeLanguage() {
