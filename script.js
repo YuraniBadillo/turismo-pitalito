@@ -72,6 +72,21 @@ imgSource1: "Fuente: Autor desconocido",
 imgSource2: "Fuente: Internet",
 imgSource3: "Fuente: Turismo Huila",
 imgSource4: "Fuente: Facebook Laguna de Guaitipán",
+        pExpTitle: "Experiencias en el Parque",
+
+pExp1Title: "Recorrido cultural",
+pExp1Desc: "Conoce representaciones de casas típicas huilenses y tradiciones regionales.",
+
+pExp2Title: "Actividades recreativas",
+pExp2Desc: "Zonas verdes y juegos para compartir en familia.",
+
+pExp3Title: "Gastronomía tradicional",
+pExp3Desc: "Degustación de platos típicos y productos artesanales.",
+
+pImg1: "Fuente: Internet",
+pImg2: "Fuente: Turismo Huila",
+pImg3: "Fuente: Alcaldía de Pitalito",
+pImg4: "Fuente: Video promocional turístico",
         
 
         
@@ -135,6 +150,7 @@ parqueExp2Title: "Recreational activities",
 parqueExp2Desc: "Green areas and games for family enjoyment.",
 parqueExp3Title: "Traditional gastronomy",
 parqueExp3Desc: "Taste typical dishes and artisanal products.",
+        
 
         exp2Title: "Local Crafts",
         exp2Desc: "Workshops and exhibitions of local artisans preserving traditional techniques.",
@@ -151,6 +167,21 @@ imgSource1: "Source: Unknown author",
 imgSource2: "Source: Internet",
 imgSource3: "Source: Huila Tourism",
 imgSource4: "Source: Laguna de Guaitipan Facebook",
+        pExpTitle: "Experiences in the Park",
+
+pExp1Title: "Cultural tour",
+pExp1Desc: "Discover traditional Huila houses and regional customs.",
+
+pExp2Title: "Recreational activities",
+pExp2Desc: "Green areas and games to enjoy with family.",
+
+pExp3Title: "Traditional gastronomy",
+pExp3Desc: "Taste typical dishes and artisanal local products.",
+
+pImg1: "Source: Internet",
+pImg2: "Source: Huila Tourism",
+pImg3: "Source: Pitalito City Hall",
+pImg4: "Source: Promotional tourism video",
     }
 };
 
@@ -229,6 +260,21 @@ update("img-source1", content[language].imgSource1);
 update("img-source2", content[language].imgSource2);
 update("img-source3", content[language].imgSource3);
 update("img-source4", content[language].imgSource4);
+    update("p-exp-title", content[language].pExpTitle);
+
+update("p-exp1-title", content[language].pExp1Title);
+update("p-exp1-desc", content[language].pExp1Desc);
+
+update("p-exp2-title", content[language].pExp2Title);
+update("p-exp2-desc", content[language].pExp2Desc);
+
+update("p-exp3-title", content[language].pExp3Title);
+update("p-exp3-desc", content[language].pExp3Desc);
+
+update("p-img1", content[language].pImg1);
+update("p-img2", content[language].pImg2);
+update("p-img3", content[language].pImg3);
+update("p-img4", content[language].pImg4);
 }
 
 function changeLanguage() {
