@@ -683,3 +683,27 @@ background:url("images/parque2.jpg") center/cover;
 .parque3{
 background:url("images/parque3.jpg") center/cover;
 }
+
+.detail-grid{
+max-width:1200px;
+margin:60px auto;
+display:grid;
+grid-template-columns: 1fr 1.4fr;
+gap:50px;
+align-items:start;
+}
+
+/* mapa ocupa solo columna derecha */
+.detail-grid .map-section{
+grid-column:2;
+}
+
+/* EXPERIENCIAS */
+.detail-grid .experiences{
+text-align:left;
+}
+
+/* GALERÍA */
+.detail-grid .gallery{
+width:100%;
+}
