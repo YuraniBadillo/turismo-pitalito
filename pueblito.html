@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parque Ecoturístico Pueblito Huilense</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nature-page">
+
+<header class="sub-hero" style="background:url('images/parque.jpg') center/cover;">
+    <h1>Parque Ecoturístico Pueblito Huilense</h1>
+    <a href="naturaleza.html" class="btn-sub">← Volver</a>
+</header>
+
+<main class="detail-container">
+
+<section class="detail-box">
+
+<h2>Cultura y naturaleza en un solo lugar</h2>
+
+<p>
+El Parque Ecoturístico Pueblito Huilense es un espacio diseñado para rescatar
+las tradiciones culturales del departamento del Huila en medio de un entorno natural.
+Los visitantes pueden recorrer senderos, conocer arquitectura típica,
+disfrutar gastronomía regional y vivir experiencias recreativas.
+</p>
+
+<p>
+Este destino combina turismo ecológico, actividades familiares y espacios
+educativos que permiten conocer la identidad cultural huilense mientras
+se disfruta del paisaje rural.
+</p>
+
+</section>
+
+
+<div class="guaitipan-layout">
+
+<!-- ⭐ EXPERIENCIAS -->
+<section class="experiences">
+
+<h2>Experiencias en el Parque</h2>
+
+<div class="exp-card parque1">
+<h3>Recorrido cultural</h3>
+<p>
+Conoce representaciones de casas típicas huilenses,
+costumbres campesinas y espacios que muestran la identidad regional.
+</p>
+</div>
+
+<div class="exp-card parque2">
+<h3>Actividades recreativas</h3>
+<p>
+El parque ofrece zonas verdes, juegos y espacios para compartir
+en familia mientras se disfruta del ambiente natural.
+</p>
+</div>
+
+<div class="exp-card parque3">
+<h3>Gastronomía tradicional</h3>
+<p>
+Los visitantes pueden degustar platos típicos del Huila
+y productos locales elaborados de manera artesanal.
+</p>
+</div>
+
+</section>
+
+
+<!-- ⭐ GALERÍA -->
+<section class="gallery">
+
+<h2>Galería</h2>
+
+<div class="slide active">
+<img src="images/parque1.jpg">
+<p class="img-source">Fuente: Internet</p>
+</div>
+
+<div class="slide">
+<img src="images/parque2.jpg">
+<p class="img-source">Fuente: Turismo Huila</p>
+</div>
+
+<div class="slide">
+<img src="images/parque3.jpg">
+<p class="img-source">Fuente: Alcaldía de Pitalito</p>
+</div>
+
+<div class="slider">
+<button class="prev" onclick="moveSlide(-1)">❮</button>
+<button class="next" onclick="moveSlide(1)">❯</button>
+</div>
+
+</section>
+
+</div>
+
+
+<!-- ⭐ MAPA -->
+<section class="map-section">
+
+<h2>Ubicación</h2>
+
+<iframe
+src="https://www.google.com/maps?q=Pueblito+Huilense+Pitalito&output=embed">
+</iframe>
+
+</section>
+
+</main>
+
+<script>
+
+let index = 0;
+const slides = document.querySelectorAll(".slide");
+
+function showSlide(n){
+slides.forEach(s => s.classList.remove("active"));
+slides[n].classList.add("active");
+}
+
+function moveSlide(step){
+index += step;
+if(index >= slides.length) index = 0;
+if(index < 0) index = slides.length - 1;
+showSlide(index);
+}
+
+</script>
+
+</body>
+</html>
