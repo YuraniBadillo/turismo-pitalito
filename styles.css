@@ -707,3 +707,8 @@ text-align:left;
 .detail-grid .gallery{
 width:100%;
 }
+.exp-card,
+.exp-card h3,
+.exp-card p{
+color:white;
+}
