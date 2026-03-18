@@ -798,3 +798,10 @@ align-items:center;
 color:white;
 text-align:center;
 }
+
+.cafe-layout{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 40px;
+align-items: start;
+}
