@@ -88,7 +88,7 @@ pImg2: "Fuente: Turismo Huila",
 pImg3: "Fuente: Alcaldía de Pitalito",
 pImg4: "Fuente: Video promocional turístico",
         pueblitoTitle: "Parque Ecoturístico Pueblito Huilense",
-pueblitoHero: "El Parque Ecoturístico Pueblito Huilense rescata las tradiciones culturales del Huila en un entorno natural.",
+pueblitoHero: "El Parque Ecoturístico Pueblito Huilense es un espacio diseñado para rescatar las tradiciones culturales del departamento del Huila en medio de un entorno natural. Los visitantes pueden recorrer senderos, conocer arquitectura típica, disfrutar gastronomía regional y vivir experiencias recreativas.",
         
 
         
@@ -185,7 +185,7 @@ pImg2: "Source: Huila Tourism",
 pImg3: "Source: Pitalito City Hall",
 pImg4: "Source: Promotional tourism video",
         pueblitoTitle: "Pueblito Huilense Ecotourism Park",
-pueblitoHero: "The Pueblito Huilense Ecotourism Park preserves the cultural traditions of Huila in a natural environment.",
+pueblitoHero: "The Pueblito Huilense Ecotourism Park is a space designed to preserve the cultural traditions of the department of Huila within a natural setting. Visitors can explore trails, discover traditional architecture, enjoy regional cuisine, and participate in recreational activities.",
     }
 };
 
