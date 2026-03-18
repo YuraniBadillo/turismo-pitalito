@@ -64,7 +64,14 @@ const content = {
         exp5Desc: " Competencias de los mejores ejemplares del Caballo Criollo Colombiano, juzgamientos de alto nivel, remates musicales y muestras gastronómicas.",
 
         exp6Title: "Ruta del Cafe",
-        exp6Desc: "Pitalito es líder en producción de café especial, ofreciendo visitas a fincas tradicionales para conocer el proceso desde la siembra hasta la taza"
+        exp6Desc: "Pitalito es líder en producción de café especial, ofreciendo visitas a fincas tradicionales para conocer el proceso desde la siembra hasta la taza",
+        galleryTitle: "Galería",
+locationTitle: "Ubicación",
+
+imgSource1: "Fuente: Autor desconocido",
+imgSource2: "Fuente: Internet",
+imgSource3: "Fuente: Turismo Huila",
+imgSource4: "Fuente: Facebook Laguna de Guaitipán",
         
 
         
@@ -136,7 +143,14 @@ parqueExp3Desc: "Taste typical dishes and artisanal products.",
         exp5Desc: "Competitions featuring the finest examples of the Colombian Criollo Horse, high-level judging, musical auctions, and gastronomic displays.",
 
         exp6Title: "Coffee Route",
-        exp6Desc: "Pitalito is a leader in specialty coffee production, offering visits to traditional farms to learn about the process from planting to the cup."
+        exp6Desc: "Pitalito is a leader in specialty coffee production, offering visits to traditional farms to learn about the process from planting to the cup.",
+        galleryTitle: "Gallery",
+locationTitle: "Location",
+
+imgSource1: "Source: Unknown author",
+imgSource2: "Source: Internet",
+imgSource3: "Source: Huila Tourism",
+imgSource4: "Source: Laguna de Guaitipan Facebook",
     }
 };
 
@@ -208,6 +222,13 @@ update("parque-exp2-title", content[language].parqueExp2Title);
 update("parque-exp2-desc", content[language].parqueExp2Desc);
 update("parque-exp3-title", content[language].parqueExp3Title);
 update("parque-exp3-desc", content[language].parqueExp3Desc);
+    update("gallery-title", content[language].galleryTitle);
+update("location-title", content[language].locationTitle);
+
+update("img-source1", content[language].imgSource1);
+update("img-source2", content[language].imgSource2);
+update("img-source3", content[language].imgSource3);
+update("img-source4", content[language].imgSource4);
 }
 
 function changeLanguage() {
