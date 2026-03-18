@@ -87,6 +87,8 @@ pImg1: "Fuente: Internet",
 pImg2: "Fuente: Turismo Huila",
 pImg3: "Fuente: Alcaldía de Pitalito",
 pImg4: "Fuente: Video promocional turístico",
+        pueblitoTitle: "Parque Ecoturístico Pueblito Huilense",
+pueblitoHero: "El Parque Ecoturístico Pueblito Huilense rescata las tradiciones culturales del Huila en un entorno natural.",
         
 
         
@@ -182,6 +184,8 @@ pImg1: "Source: Internet",
 pImg2: "Source: Huila Tourism",
 pImg3: "Source: Pitalito City Hall",
 pImg4: "Source: Promotional tourism video",
+        pueblitoTitle: "Pueblito Huilense Ecotourism Park",
+pueblitoHero: "The Pueblito Huilense Ecotourism Park preserves the cultural traditions of Huila in a natural environment.",
     }
 };
 
@@ -275,6 +279,8 @@ update("p-img1", content[language].pImg1);
 update("p-img2", content[language].pImg2);
 update("p-img3", content[language].pImg3);
 update("p-img4", content[language].pImg4);
+    update("pueblito-title", content[language].pueblitoTitle);
+update("pueblito-hero", content[language].pueblitoHero);
 }
 
 function changeLanguage() {
