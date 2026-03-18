@@ -783,3 +783,18 @@ grid-template-columns: 1fr 1fr;
 gap: 40px;
 align-items: start;
 }
+
+.sub3-hero{
+height:50vh;
+background:
+linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+url("images/artesanias1.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+}
