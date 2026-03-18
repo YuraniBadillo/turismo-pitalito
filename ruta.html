@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ruta del Café</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="cafe-page">
+
+<header>
+<h1 id="title">Rutas Turísticas de Pitalito</h1>
+<button onclick="changeLanguage()">English / Español</button>
+</header>
+
+<nav class="navbar">
+<ul>
+<li><a href="index.html" id="nav-home">Inicio</a></li>
+<li><a href="naturaleza.html" id="nav-nature">Naturaleza</a></li>
+<li><a href="cultura.html" id="nav-culture">Cultura</a></li>
+<li><a href="gastronomia.html" id="nav-food">Gastronomía</a></li>
+</ul>
+</nav>
+
+<header class="sub4-hero">
+<h1 id="cafe-title">Ruta del Café</h1>
+
+<p id="cafe-hero">
+La Ruta del Café en Pitalito permite a los visitantes conocer de cerca el proceso de producción del café huilense, reconocido por su calidad y sabor.
+Durante el recorrido se visitan fincas cafeteras, se aprende sobre la siembra, cosecha y tostión del café, y se viven experiencias sensoriales a través de la degustación.
+Esta actividad combina naturaleza, tradición y aprendizaje, ofreciendo una experiencia auténtica en contacto con la cultura cafetera de la región.
+</p>
+</header>
+
+<main class="detail-container">
+
+<div class="cafe-layout">
+
+<!-- ⭐ EXPERIENCIAS -->
+<section class="experiences">
+
+<h2 id="cafe-exp-title">Experiencias Cafeteras</h2>
+
+<div class="exp-grid">
+
+<div class="exp-card cafe1">
+<h3 id="cafe-exp1-title">Recorrido por fincas cafeteras</h3>
+<p id="cafe-exp1-desc">
+Los visitantes pueden caminar por cultivos de café y conocer el proceso de siembra y recolección del grano mientras disfrutan del paisaje rural.
+</p>
+</div>
+
+<div class="exp-card cafe2">
+<h3 id="cafe-exp2-title">Proceso de producción</h3>
+<p id="cafe-exp2-desc">
+Aprende sobre el despulpado, secado y tostión del café mediante demostraciones guiadas por productores locales.
+</p>
+</div>
+
+<div class="exp-card cafe3">
+<h3 id="cafe-exp3-title">Degustación de café especial</h3>
+<p id="cafe-exp3-desc">
+Vive una experiencia sensorial probando diferentes variedades de café huilense y aprendiendo a identificar sus aromas y sabores.
+</p>
+</div>
+
+</div>
+</section>
+
+<!-- ⭐ COLUMNA DERECHA -->
+<div class="right-column">
+
+<!-- ⭐ GALERÍA -->
+<section class="gallery">
+
+<h2 id="gallery-title">Galería</h2>
+
+<div class="slide active">
+<img src="images/cafe1.jpg">
+<p class="img-source" id="cafe-img1">Fuente: Internet</p>
+</div>
+
+<div class="slide">
+<img src="images/cafe2.jpg">
+<p class="img-source" id="cafe-img2">Fuente: Internet</p>
+</div>
+
+<div class="slide">
+<img src="images/cafe3.jpg">
+<p class="img-source" id="cafe-img3">Fuente: Internet</p>
+</div>
+
+<div class="slide">
+<img src="images/cafe4.jpg">
+<p class="img-source" id="cafe-img4">Fuente: Internet</p>
+</div>
+
+<div class="slide">
+<video controls class="gallery-video">
+<source src="images/cafe.mp4" type="video/mp4">
+</video>
+<p class="img-source" id="cafe-img5">Fuente: Video turístico</p>
+</div>
+
+<div class="slider">
+<button class="prev" onclick="moveSlide(-1)">❮</button>
+<button class="next" onclick="moveSlide(1)">❯</button>
+</div>
+
+</section>
+
+<!-- ⭐ MAPA -->
+<section class="map-section">
+
+<h2 id="location-title">Ubicación</h2>
+
+<iframe
+src="https://www.google.com/maps?q=Fincas+cafeteras+Pitalito+Huila&output=embed">
+</iframe>
+
+</section>
+
+</div>
+</div>
+</main>
+
+<script>
+let index = 0;
+const slides = document.querySelectorAll(".slide");
+
+function showSlide(n){
+slides.forEach(s => s.classList.remove("active"));
+slides[n].classList.add("active");
+}
+
+function moveSlide(step){
+index += step;
+if(index >= slides.length) index = 0;
+if(index < 0) index = slides.length - 1;
+showSlide(index);
+}
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
