@@ -815,3 +815,19 @@ background: linear-gradient(
 #1c0f0a 100%
 );
 }
+
+.sub4-hero{
+height:50vh;
+background:
+linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+url("images/cafe.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+}
+
