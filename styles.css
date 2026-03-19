@@ -1021,3 +1021,36 @@ align-items:center;
 color:white;
 text-align:center;
 }
+
+/* BOTÓN VOLVER ARRIBA */
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+
+    width: 50px;
+    height: 50px;
+
+    background: #9d174d;
+    color: white;
+
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    text-decoration: none;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+    transition: 0.3s;
+
+    z-index: 999;
+}
+
+.back-to-top:hover {
+    background: #f39c12;
+    transform: scale(1.1);
+}
