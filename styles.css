@@ -980,3 +980,12 @@ background: linear-gradient(
   height: 250px;
   border: 0;
 }
+
+.menu-section h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #5a3e2b; /* tono café */
+  letter-spacing: 1px;
+}
