@@ -693,6 +693,16 @@ background:url("images/artesanias2.jpg") center/cover;
 background:url("images/artesanias3.jpg") center/cover;
 }
 
+.matrimonio1{
+background:url("images/artesanias0.jpg") center/cover;
+}
+.matrimonio2{
+background:url("images/artesanias2.jpg") center/cover;
+}
+.matrimonio3{
+background:url("images/artesanias3.jpg") center/cover;
+}
+
 .detail-grid{
 max-width:1200px;
 margin:60px auto;
