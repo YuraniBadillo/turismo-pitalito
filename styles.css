@@ -896,3 +896,12 @@ background: linear-gradient(
     #ffffff 100%
 );
 }
+
+.boscafe-page {
+  background: linear-gradient(
+    180deg,
+    #c19a6b 0%,   /* camel */
+    #e6c7a1 40%,  /* tono intermedio */
+    #f5f5dc 100%  /* beige */
+  );
+}
