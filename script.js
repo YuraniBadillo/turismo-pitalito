@@ -150,6 +150,26 @@ cafeExp2Desc: "Vive una experiencia culinaria auténtica con platos típicos pre
 
 cafeExp3Title: "Degustación de café especial",
 cafeExp3Desc: "Vive una experiencia sensorial probando diferentes variedades de café huilense y aprendiendo a identificar sus aromas y sabores.",
+        boscafeTitle: "Finca Agroturística Boscafé San Juan",
+
+boscafeHero: "La Finca Agroturística Boscafé San Juan, ubicada en el corregimiento de Bruselas en Pitalito, Huila, es un destino que combina la riqueza de la tradición cafetera con la belleza natural de la región. Rodeada de montañas, cafetales y una exuberante vegetación, esta finca ofrece a los visitantes una experiencia auténtica en contacto con el campo. Durante la visita, es posible conocer todo el proceso del café, desde su cultivo hasta su preparación final, guiado por personas expertas que comparten sus conocimientos y pasión por el café huilense. Además, el entorno natural permite disfrutar de paisajes tranquilos, aire puro y espacios ideales para el descanso.",
+
+boscafeExpTitle: "Experiencias",
+
+boscafeExp1Title: "Recorrido cafetero guiado",
+boscafeExp1Desc: "Conoce paso a paso el proceso del café, desde el cultivo y la cosecha hasta su transformación final, acompañado por guías que comparten su conocimiento y tradición.",
+
+boscafeExp2Title: "Caminatas ecológicas",
+boscafeExp2Desc: "Explora senderos rodeados de naturaleza, montañas y vegetación típica de la región, ideales para relajarse, respirar aire puro y conectarse con el entorno.",
+
+boscafeExp3Title: "Experiencia de degustación de café",
+boscafeExp3Desc: "Disfruta una cata de café donde podrás probar diferentes preparaciones y aprender a identificar aromas, sabores y características del café huilense.",
+
+boscafeImg1: "Fuente: Instagram Boscafé San Juan",
+boscafeImg2: "Fuente: Instagram Boscafé San Juan",
+boscafeImg3: "Fuente: Instagram Boscafé San Juan",
+boscafeImg4: "Fuente: Instagram Boscafé San Juan",
+boscafeImg5: "Fuente: Instagram Boscafé San Juan",
         
     },
 
@@ -304,6 +324,26 @@ cafeExp2Desc: "Enjoy an authentic culinary experience with traditional handmade 
 
 cafeExp3Title: "Specialty coffee tasting",
 cafeExp3Desc: "Experience a sensory journey tasting different coffee varieties while learning to identify aromas and flavors.",
+        boscafeTitle: "Boscafé San Juan Agrotourism Farm",
+
+boscafeHero: "Boscafé San Juan Agrotourism Farm, located in Bruselas, Pitalito, Huila, is a destination that combines coffee tradition with natural beauty. Surrounded by mountains and coffee plantations, it offers an authentic rural experience. Visitors can learn about the entire coffee process, from cultivation to preparation, while enjoying peaceful landscapes and fresh air.",
+
+boscafeExpTitle: "Experiences",
+
+boscafeExp1Title: "Guided coffee tour",
+boscafeExp1Desc: "Learn step by step about the coffee process, from cultivation to final preparation, guided by experts.",
+
+boscafeExp2Title: "Ecological walks",
+boscafeExp2Desc: "Explore natural trails surrounded by mountains and vegetation, perfect for relaxation and connection with nature.",
+
+boscafeExp3Title: "Coffee tasting experience",
+boscafeExp3Desc: "Enjoy a tasting session where you can try different coffee preparations and identify aromas and flavors.",
+
+boscafeImg1: "Source: Boscafé San Juan Instagram",
+boscafeImg2: "Source: Boscafé San Juan Instagram",
+boscafeImg3: "Source: Boscafé San Juan Instagram",
+boscafeImg4: "Source: Boscafé San Juan Instagram",
+boscafeImg5: "Source: Boscafé San Juan Instagram",
     }
 };
 
@@ -464,6 +504,29 @@ update("cafe-exp2-desc", content[language].cafeExp2Desc);
 
 update("cafe-exp3-title", content[language].cafeExp3Title);
 update("cafe-exp3-desc", content[language].cafeExp3Desc);
+    /* ⭐ BOSCAFÉ */
+
+update("boscafe-title", content[language].boscafeTitle);
+update("boscafe-hero", content[language].boscafeHero);
+
+update("boscafe-exp-title", content[language].boscafeExpTitle);
+
+update("cafe-exp1-title", content[language].boscafeExp1Title);
+update("cafe-exp1-desc", content[language].boscafeExp1Desc);
+
+update("cafe-exp2-title", content[language].boscafeExp2Title);
+update("cafe-exp2-desc", content[language].boscafeExp2Desc);
+
+update("cafe-exp3-title", content[language].boscafeExp3Title);
+update("cafe-exp3-desc", content[language].boscafeExp3Desc);
+
+/* ⭐ GALERÍA */
+
+update("boscafe-img1", content[language].boscafeImg1);
+update("boscafe-img2", content[language].boscafeImg2);
+update("boscafe-img3", content[language].boscafeImg3);
+update("boscafe-img4", content[language].boscafeImg4);
+update("boscafe-img5", content[language].boscafeImg5);
 
 }
 
