@@ -28,11 +28,11 @@
 <h1 id="fogon-title">Fogón de Piedra</h1>
 
 <p id="fogon-hero">
-Fogón de Piedra es un restaurante tradicional de Pitalito reconocido por su auténtica cocina huilense preparada de forma artesanal. Su ambiente campesino y acogedor permite a los visitantes disfrutar de una experiencia gastronómica única.
+Fogón de Piedra es un restaurante tradicional de Pitalito reconocido por su auténtica cocina huilense preparada de forma artesanal.
 </p>
 </header>
 
-<main class="detail-container">
+<main>
 
 <!-- ⭐ MENÚ -->
 <section class="menu-section">
@@ -53,7 +53,7 @@ Fogón de Piedra es un restaurante tradicional de Pitalito reconocido por su aut
 <div class="menu-card">
 <img src="images/pescado.jpg">
 <div class="menu-info">
-<h3>SPescado</h3>
+<h3>Pescado</h3>
 <p>Yuca, papa, plátano y arroz.</p>
 <span class="price">$22.000</span>
 </div>
@@ -99,38 +99,33 @@ Fogón de Piedra es un restaurante tradicional de Pitalito reconocido por su aut
 
 </section>
 
-<!-- ⭐ GALERÍA + MAPA -->
+<!-- ⭐ GALERÍA + MAPA (SEPARADO DEL MENÚ) -->
 <section class="bottom-section">
 
-<!-- GALERÍA -->
 <div class="gallery-box">
 
 <h2 id="gallery-title">Galería</h2>
 
 <div class="slide active">
-<img src="images/fogon.jpg">
-<p class="img-source">Fuente: Internet</p>
-</div>
-
-<div class="slide">
 <img src="images/fogona.jpg">
-<p class="img-source">Fuente: Internet</p>
+<p class="img-source">Fuente:https://www.instagram.com/fogondepiedrapitalito/</p>
 </div>
 
 <div class="slide">
 <img src="images/fogonb.jpg">
-<p class="img-source">Fuente: Internet</p>
+<p class="img-source">Fuente:https://www.instagram.com/fogondepiedrapitalito/</p>
 </div>
 
-  <div class="slide">
-<img src="images/fogonc.jpg">
-<p class="img-source">Fuente: Internet</p>
-</div>
 <div class="slide">
-<img src="images/fogond.jpg">
-<p class="img-source">Fuente: Internet</p>
+<img src="images/fogonc.jpg">
+<p class="img-source">Fuente:https://www.instagram.com/fogondepiedrapitalito/</p>
 </div>
   
+<div class="slide">
+<img src="images/fogond.jpg">
+<p class="img-source">Fuente:https://www.instagram.com/fogondepiedrapitalito/</p>
+</div>
+
 <div class="slider">
 <button onclick="moveSlide(-1)">❮</button>
 <button onclick="moveSlide(1)">❯</button>
@@ -138,7 +133,6 @@ Fogón de Piedra es un restaurante tradicional de Pitalito reconocido por su aut
 
 </div>
 
-<!-- MAPA -->
 <div class="map-box">
 
 <h2 id="location-title">Ubicación</h2>
@@ -153,7 +147,6 @@ src="https://www.google.com/maps?q=Fogon+de+Piedra+Pitalito&output=embed">
 
 </main>
 
-<!-- ⭐ SCRIPT SLIDER -->
 <script>
 let index = 0;
 const slides = document.querySelectorAll(".slide");
