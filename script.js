@@ -135,8 +135,21 @@ cafeImg5: "Fuente: Video turístico",
 exp8Desc: "La Finca Cafetera el Matrimonio, ubicada en Pitalito, Huila (vía Guacacallo), es un reconocido destino agroturístico y mirador. Ofrece experiencias cafeteras, recorridos guiados por la propietaria Flor Castro, comida típica, alojamiento rural y vistas panorámicas.",
 
 exp9Title: "Finca Agroturística Boscafé San Juan",
-exp9Desc: "Ubicada en el corregimiento de Bruselas en Pitalito, es un espacio donde la tradición cafetera y la naturaleza se unen. Permite conocer el proceso del café mientras disfrutas paisajes montañosos."
+exp9Desc: "Ubicada en el corregimiento de Bruselas en Pitalito, es un espacio donde la tradición cafetera y la naturaleza se unen. Permite conocer el proceso del café mientras disfrutas paisajes montañosos.",
 
+
+        matrimonioHero: "La Finca Cafetera El Matrimonio, ubicada en Pitalito, Huila (vía Guacacallo), es un destino agroturístico que combina tradición, naturaleza y cultura cafetera. Este lugar ofrece a los visitantes una experiencia auténtica donde pueden conocer de cerca todo el proceso del café, desde la siembra del grano hasta su preparación en taza. Durante el recorrido, los visitantes son guiados por sus anfitriones, quienes comparten sus conocimientos y la historia de la finca, permitiendo una conexión directa con las raíces del campo. Además, la finca cuenta con hermosos paisajes, miradores naturales, gastronomía típica de la región y espacios de descanso que hacen de la visita una experiencia tranquila y enriquecedora.",
+
+cafeExpTitle: "Experiencias",
+
+cafeExp1Title: "Vista panorámica y fotografía",
+cafeExp1Desc: "Disfruta de impresionantes paisajes desde el mirador, donde podrás apreciar montañas, cafetales y atardeceres únicos, ideales para fotografía y momentos de tranquilidad.",
+
+cafeExp2Title: "Gastronomía campesina tradicional",
+cafeExp2Desc: "Vive una experiencia culinaria auténtica con platos típicos preparados de forma artesanal, en un ambiente rural que resalta los sabores del Huila.",
+
+cafeExp3Title: "Degustación de café especial",
+cafeExp3Desc: "Vive una experiencia sensorial probando diferentes variedades de café huilense y aprendiendo a identificar sus aromas y sabores.",
         
     },
 
@@ -276,8 +289,20 @@ cafeImg5: "Source: Tourism video",
 exp8Desc: "El Matrimonio Coffee Farm, located in Pitalito, Huila, is a well-known agrotourism destination. It offers coffee experiences, guided tours, traditional food, rural lodging, and panoramic views.",
 
 exp9Title: "Boscafé San Juan Agrotourism Farm",
-exp9Desc: "Located in Bruselas, Pitalito, it is a place where coffee tradition and nature come together. Visitors can learn about the coffee process while enjoying mountain landscapes."
-        
+exp9Desc: "Located in Bruselas, Pitalito, it is a place where coffee tradition and nature come together. Visitors can learn about the coffee process while enjoying mountain landscapes.",
+
+        matrimonioHero: "El Matrimonio Coffee Farm, located in Pitalito, Huila, is an agrotourism destination that combines tradition, nature, and coffee culture. Visitors can experience the entire coffee process, from planting to cup preparation. Guided tours allow guests to connect with local traditions, enjoy beautiful landscapes, natural viewpoints, traditional food, and relaxing rural spaces.",
+
+cafeExpTitle: "Experiences",
+
+cafeExp1Title: "Panoramic view and photography",
+cafeExp1Desc: "Enjoy stunning landscapes from the viewpoint, including mountains, coffee plantations, and unique sunsets, perfect for photography and relaxation.",
+
+cafeExp2Title: "Traditional rural gastronomy",
+cafeExp2Desc: "Enjoy an authentic culinary experience with traditional handmade dishes in a rural setting that highlights the flavors of Huila.",
+
+cafeExp3Title: "Specialty coffee tasting",
+cafeExp3Desc: "Experience a sensory journey tasting different coffee varieties while learning to identify aromas and flavors.",
     }
 };
 
@@ -423,6 +448,21 @@ update("exp8-desc", content[language].exp8Desc);
 
 update("exp9-title", content[language].exp9Title);
 update("exp9-desc", content[language].exp9Desc);
+
+    /* ⭐ FINCA EL MATRIMONIO */
+
+update("matrimonio-hero", content[language].matrimonioHero);
+
+update("cafe-exp-title", content[language].cafeExpTitle);
+
+update("cafe-exp1-title", content[language].cafeExp1Title);
+update("cafe-exp1-desc", content[language].cafeExp1Desc);
+
+update("cafe-exp2-title", content[language].cafeExp2Title);
+update("cafe-exp2-desc", content[language].cafeExp2Desc);
+
+update("cafe-exp3-title", content[language].cafeExp3Title);
+update("cafe-exp3-desc", content[language].cafeExp3Desc);
 
 }
 
