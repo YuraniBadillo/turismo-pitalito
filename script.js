@@ -391,6 +391,12 @@ update("cafe-exp2-desc", content[language].cafeExp2Desc);
 update("cafe-exp3-title", content[language].cafeExp3Title);
 update("cafe-exp3-desc", content[language].cafeExp3Desc);
 
+update("art-img1", content[language].artImg1);
+update("art-img2", content[language].artImg2);
+update("art-img3", content[language].artImg3);
+update("art-img4", content[language].artImg4);
+update("art-img5", content[language].artImg5);
+
 /* ⭐ GALERÍA */
 
 update("cafe-img1", content[language].cafeImg1);
