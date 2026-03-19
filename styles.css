@@ -340,18 +340,10 @@ body.home-page{
     min-height: 100vh;
 }
 
-body.nature-page{
-    kground: linear-gradient(135deg, #0f2027, #2c5364, #a8e6cf);
-    min-height: 100vh;
-}
-
-body.culture-page{
-    kground: linear-gradient(135deg, #0f2027, #2c5364, #a8e6cf);
-    min-height: 100vh;
-}
-
-body.gastronomia-page{
-    kground: linear-gradient(135deg, #0f2027, #2c5364, #a8e6cf);
+body.nature-page,
+body.culture-page,
+body.gastronomia-page {
+    background: linear-gradient(135deg, #0f2027, #2c5364, #a8e6cf);
     min-height: 100vh;
 }
 
