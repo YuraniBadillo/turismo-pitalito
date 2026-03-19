@@ -983,11 +983,12 @@ background: linear-gradient(
 
 .menu-section h2 {
   text-align: center;
-  font-size: 36px;
+  font-size: 44px;
   font-weight: bold;
   margin-bottom: 30px;
-  color: #5a3e2b; /* tono café */
-  letter-spacing: 1px;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6); /* efecto glow suave */
 }
 
 .sub-food-hero{
