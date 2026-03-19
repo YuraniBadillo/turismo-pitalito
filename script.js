@@ -170,6 +170,9 @@ boscafeImg2: "Fuente: Instagram Boscafé San Juan",
 boscafeImg3: "Fuente: Instagram Boscafé San Juan",
 boscafeImg4: "Fuente: Instagram Boscafé San Juan",
 boscafeImg5: "Fuente: Instagram Boscafé San Juan",
+        fogonTitle: "Fogón de Piedra",
+fogonHero: "Fogón de Piedra es un restaurante tradicional de Pitalito reconocido por su auténtica cocina huilense preparada de forma artesanal...",
+menuTitle: "Menú",
         
     },
 
@@ -344,6 +347,9 @@ boscafeImg2: "Source: Boscafé San Juan Instagram",
 boscafeImg3: "Source: Boscafé San Juan Instagram",
 boscafeImg4: "Source: Boscafé San Juan Instagram",
 boscafeImg5: "Source: Boscafé San Juan Instagram",
+        fogonTitle: "Stone Stove",
+fogonHero: "Stone Stove is a traditional restaurant in Pitalito known for its authentic handmade Huila cuisine...",
+menuTitle: "Menu",
     }
 };
 
@@ -528,6 +534,9 @@ update("boscafe-img3", content[language].boscafeImg3);
 update("boscafe-img4", content[language].boscafeImg4);
 update("boscafe-img5", content[language].boscafeImg5);
 
+    update("fogon-title", content[language].fogonTitle);
+update("fogon-hero", content[language].fogonHero);
+update("menu-title", content[language].menuTitle);
 }
 
 function changeLanguage() {
