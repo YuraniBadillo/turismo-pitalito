@@ -137,8 +137,8 @@ exp8Desc: "La Finca Cafetera el Matrimonio, ubicada en Pitalito, Huila (vía Gua
 exp9Title: "Finca Agroturística Boscafé San Juan",
 exp9Desc: "Ubicada en el corregimiento de Bruselas en Pitalito, es un espacio donde la tradición cafetera y la naturaleza se unen. Permite conocer el proceso del café mientras disfrutas paisajes montañosos.",
 
-
-        matrimonioHero: "La Finca Cafetera El Matrimonio, ubicada en Pitalito, Huila (vía Guacacallo), es un destino agroturístico que combina tradición, naturaleza y cultura cafetera. Este lugar ofrece a los visitantes una experiencia auténtica donde pueden conocer de cerca todo el proceso del café, desde la siembra del grano hasta su preparación en taza. Durante el recorrido, los visitantes son guiados por sus anfitriones, quienes comparten sus conocimientos y la historia de la finca, permitiendo una conexión directa con las raíces del campo. Además, la finca cuenta con hermosos paisajes, miradores naturales, gastronomía típica de la región y espacios de descanso que hacen de la visita una experiencia tranquila y enriquecedora.",
+matrimonioTitle: "Finca Cafetera El Matrimonio",
+matrimonioHero: "La Finca Cafetera El Matrimonio, ubicada en Pitalito, Huila (vía Guacacallo), es un destino agroturístico que combina tradición, naturaleza y cultura cafetera. Este lugar ofrece a los visitantes una experiencia auténtica donde pueden conocer de cerca todo el proceso del café, desde la siembra del grano hasta su preparación en taza. Durante el recorrido, los visitantes son guiados por sus anfitriones, quienes comparten sus conocimientos y la historia de la finca, permitiendo una conexión directa con las raíces del campo. Además, la finca cuenta con hermosos paisajes, miradores naturales, gastronomía típica de la región y espacios de descanso que hacen de la visita una experiencia tranquila y enriquecedora.",
 
 cafeExpTitle: "Experiencias",
 
@@ -291,7 +291,8 @@ exp8Desc: "El Matrimonio Coffee Farm, located in Pitalito, Huila, is a well-know
 exp9Title: "Boscafé San Juan Agrotourism Farm",
 exp9Desc: "Located in Bruselas, Pitalito, it is a place where coffee tradition and nature come together. Visitors can learn about the coffee process while enjoying mountain landscapes.",
 
-        matrimonioHero: "El Matrimonio Coffee Farm, located in Pitalito, Huila, is an agrotourism destination that combines tradition, nature, and coffee culture. Visitors can experience the entire coffee process, from planting to cup preparation. Guided tours allow guests to connect with local traditions, enjoy beautiful landscapes, natural viewpoints, traditional food, and relaxing rural spaces.",
+matrimonioTitle: "El Matrimonio Coffee Farm",
+matrimonioHero: "El Matrimonio Coffee Farm, located in Pitalito, Huila, is an agrotourism destination that combines tradition, nature, and coffee culture. Visitors can experience the entire coffee process, from planting to cup preparation. Guided tours allow guests to connect with local traditions, enjoy beautiful landscapes, natural viewpoints, traditional food, and relaxing rural spaces.",
 
 cafeExpTitle: "Experiences",
 
@@ -450,7 +451,7 @@ update("exp9-title", content[language].exp9Title);
 update("exp9-desc", content[language].exp9Desc);
 
     /* ⭐ FINCA EL MATRIMONIO */
-
+update("matrimonio-title", content[language].matrimonioTitle);
 update("matrimonio-hero", content[language].matrimonioHero);
 
 update("cafe-exp-title", content[language].cafeExpTitle);
