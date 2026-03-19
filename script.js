@@ -174,7 +174,34 @@ boscafeImg5: "Fuente: Instagram Boscafé San Juan",
 fogonHero: "Fogón de Piedra es uno de los restaurantes más representativos de Pitalito, reconocido por preservar y resaltar la auténtica gastronomía huilense a través de preparaciones tradicionales hechas en fogón de piedra, una técnica ancestral que le aporta un sabor único a cada plato. En este lugar, la cocina no solo se entiende como alimentación, sino como una expresión cultural que transmite historia, identidad y tradición. El restaurante se distingue por el uso de ingredientes frescos y locales, cuidadosamente seleccionados para garantizar calidad y sabor en cada preparación. Platos como el asado huilense, la tilapia frita, el pollo campesino y las carnes a la parrilla son elaborados siguiendo recetas típicas que han pasado de generación en generación, manteniendo la esencia de la cocina regional.",
         menuTitle: "Menú",
 
-        peceraPlato1Title: "Cazuela de Mariscos",
+        plato1Title: "Asado huilense",
+plato1Desc: "Arroz, yuca, ensalada y arepa.",
+
+plato2Title: "Pescado",
+plato2Desc: "Yuca, papa, plátano y arroz.",
+
+plato3Title: "Carne a la llanera",
+plato3Desc: "Papa criolla, ensalada y arepa.",
+
+plato4Title: "Pollo campesino",
+plato4Desc: "Arroz, patacón y ensalada.",
+
+plato5Title: "Tilapia frita",
+plato5Desc: "Arroz, patacón, ensalada y limón.",
+
+plato6Title: "Churrasco",
+plato6Desc: "Papas a la francesa y ensalada.",
+
+fogonImg1: "Fuente: Instagram",
+fogonImg2: "Fuente: Instagram",
+fogonImg3: "Fuente: Instagram",
+fogonImg4: "Fuente: Instagram",
+
+peceraTitle: "La Pecera",
+peceraHero: "La Pecera es un restaurante reconocido en Pitalito por ofrecer una experiencia gastronómica única que combina tradición, sabor y un ambiente moderno y acogedor. Este lugar se destaca por su variada oferta de platos típicos de la región, especialmente preparaciones a base de pescado y mariscos, elaboradas con ingredientes frescos y de alta calidad. El restaurante brinda un espacio agradable ideal para compartir en familia o con amigos, donde los visitantes pueden disfrutar de una atención cálida y un ambiente relajado. Su propuesta culinaria resalta los sabores auténticos del Huila, incorporando técnicas que potencian el gusto y la presentación de cada plato.",
+        menuTitle: "Menú",
+        
+peceraPlato1Title: "Cazuela de Mariscos",
 peceraPlato1Desc: "Patacón y arroz.",
 
 peceraPlato2Title: "Bagre en Salsa",
@@ -373,6 +400,33 @@ boscafeImg5: "Source: Boscafé San Juan Instagram",
         fogonTitle: "Stone Stove",
 fogonHero: "Fogón de Piedra is one of Pitalito’s most iconic restaurants, renowned for preserving and showcasing authentic Huila cuisine through traditional dishes prepared in a stone oven—an ancient technique that lends a unique flavor to every dish. Here, cooking is not merely about food, but a cultural expression that conveys history, identity, and tradition. The restaurant stands out for its use of fresh, local ingredients, carefully selected to ensure quality and flavor in every dish. Dishes such as Huila-style roast, fried tilapia, country-style chicken, and grilled meats are prepared using traditional recipes passed down from generation to generation, preserving the essence of regional cuisine.",
 menuTitle: "Menu",
+        plato1Title: "Huila-style Roast",
+plato1Desc: "Rice, cassava, salad and arepa.",
+
+plato2Title: "Fish",
+plato2Desc: "Cassava, potato, plantain and rice.",
+
+plato3Title: "Grilled Llanera Beef",
+plato3Desc: "Creole potatoes, salad and arepa.",
+
+plato4Title: "Country-style Chicken",
+plato4Desc: "Rice, fried plantain and salad.",
+
+plato5Title: "Fried Tilapia",
+plato5Desc: "Rice, fried plantain, salad and lemon.",
+
+plato6Title: "Steak (Churrasco)",
+plato6Desc: "French fries and salad.",
+
+fogonImg1: "Source: Instagram",
+fogonImg2: "Source: Instagram",
+fogonImg3: "Source: Instagram",
+fogonImg4: "Source: Instagram",
+
+        peceraTitle: "La Pecera",
+peceraHero: "La Pecera is a well-known restaurant in Pitalito that offers a unique dining experience combining tradition, flavor, and a modern, welcoming atmosphere. This restaurant stands out for its wide variety of regional specialties, particularly fish and seafood dishes, prepared with fresh, high-quality ingredients. The restaurant offers a pleasant space ideal for sharing with family or friends, where guests can enjoy warm service and a relaxed atmosphere. Its culinary offerings highlight the authentic flavors of Huila, incorporating techniques that enhance the taste and presentation of each dish.",
+        menuTitle: "Menu",
+        
         peceraPlato1Title: "Seafood Casserole",
 peceraPlato1Desc: "Fried plantain and rice.",
 
@@ -579,8 +633,8 @@ update("boscafe-img3", content[language].boscafeImg3);
 update("boscafe-img4", content[language].boscafeImg4);
 update("boscafe-img5", content[language].boscafeImg5);
 
-    update("fogon-title", content[language].fogonTitle);
-update("fogon-hero", content[language].fogonHero);
+     update("pecera-title", content[language].peceraTitle);
+update("pecera-hero", content[language].peceraHero);
 update("menu-title", content[language].menuTitle);
 
     update("pecera-plato1-title", content[language].peceraPlato1Title);
@@ -601,11 +655,39 @@ update("pecera-plato5-desc", content[language].peceraPlato5Desc);
 update("pecera-plato6-title", content[language].peceraPlato6Title);
 update("pecera-plato6-desc", content[language].peceraPlato6Desc);
 
+     update("fogon-title", content[language].fogonTitle);
+update("fogon-hero", content[language].fogonHero);
+update("menu-title", content[language].menuTitle);
+
 /* GALERÍA */
 update("pecera-img1", content[language].peceraImg1);
 update("pecera-img2", content[language].peceraImg2);
 update("pecera-img3", content[language].peceraImg3);
 update("pecera-img4", content[language].peceraImg4);
+    /* ⭐ MENÚ FOGÓN */
+update("plato1-title", content[language].plato1Title);
+update("plato1-desc", content[language].plato1Desc);
+
+update("plato2-title", content[language].plato2Title);
+update("plato2-desc", content[language].plato2Desc);
+
+update("plato3-title", content[language].plato3Title);
+update("plato3-desc", content[language].plato3Desc);
+
+update("plato4-title", content[language].plato4Title);
+update("plato4-desc", content[language].plato4Desc);
+
+update("plato5-title", content[language].plato5Title);
+update("plato5-desc", content[language].plato5Desc);
+
+update("plato6-title", content[language].plato6Title);
+update("plato6-desc", content[language].plato6Desc);
+
+/* ⭐ GALERÍA FOGÓN */
+update("fogon-img1", content[language].fogonImg1);
+update("fogon-img2", content[language].fogonImg2);
+update("fogon-img3", content[language].fogonImg3);
+update("fogon-img4", content[language].fogonImg4);
 }
 
 function changeLanguage() {
