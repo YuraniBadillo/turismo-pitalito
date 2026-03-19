@@ -990,7 +990,7 @@ background: linear-gradient(
   letter-spacing: 1px;
 }
 
-.fogon-hero{
+.sub-food-hero{
 height:50vh;
 background:
 linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
@@ -1004,11 +1004,4 @@ align-items:center;
 color:white;
 text-align:center;
 }
-body.matrimonio-page{
-background: linear-gradient(
-    180deg,
-    #1e90ff 0%,
-    #87cefa 40%,
-    #ffffff 100%
-);
-}
+
