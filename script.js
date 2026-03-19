@@ -72,6 +72,7 @@ imgSource1: "Fuente: Autor desconocido",
 imgSource2: "Fuente: Internet",
 imgSource3: "Fuente: Turismo Huila",
 imgSource4: "Fuente: Facebook Laguna de Guaitipán",
+        
         pExpTitle: "Experiencias en el Parque",
 
 pExp1Title: "Recorrido cultural",
@@ -115,6 +116,13 @@ cafeExp2Desc: "Aprende sobre el despulpado, secado y tostión del café.",
 
 cafeExp3Title: "Degustación de café especial",
 cafeExp3Desc: "Disfruta diferentes variedades de café y reconoce sus aromas.",
+       
+        artImg1: "Fuente:https://huilamagnifica.com/el-nogal-luis-hernando-gomez-pitalito",
+artImg2: "Fuente:https://huilamagnifica.com/artesanias-exoticas-jhon-edison-ramirez-pitalito",
+artImg3: "Fuente:https://huilamagnifica.com/cooperativa-de-arte-de-pitalito-coarpi-pitalito",
+artImg4: "Fuente:https://huilamagnifica.com/el-chorote-artesanias-y-ceramicas-acevedo",
+artImg5: "Fuente: https://www.facebook.com/watch/?v=1665123227615087/",
+
 
 cafeImg1: "Fuente: Internet",
 cafeImg2: "Fuente: Internet",
@@ -246,6 +254,12 @@ cafeExp2Desc: "Learn about pulping, drying and roasting coffee.",
 
 cafeExp3Title: "Special coffee tasting",
 cafeExp3Desc: "Taste different coffee varieties and recognize their aromas.",
+        
+artImg1: "Source:https://huilamagnifica.com/el-nogal-luis-hernando-gomez-pitalito",
+artImg2: "Source:https://huilamagnifica.com/artesanias-exoticas-jhon-edison-ramirez-pitalito",
+artImg3: "Source:https://huilamagnifica.com/cooperativa-de-arte-de-pitalito-coarpi-pitalito",
+artImg4: "Source:https://huilamagnifica.com/el-chorote-artesanias-y-ceramicas-acevedo",
+artImg5: "Source: https://www.facebook.com/watch/?v=1665123227615087/",
 
 cafeImg1: "Source: Internet",
 cafeImg2: "Source: Internet",
