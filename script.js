@@ -697,15 +697,3 @@ function changeLanguage() {
 }
 
 document.addEventListener("DOMContentLoaded", applyLanguage);
-
-<script>
-const btnTop = document.querySelector(".back-to-top");
-
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) {
-        btnTop.style.display = "block";
-    } else {
-        btnTop.style.display = "none";
-    }
-});
-<script>
