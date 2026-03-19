@@ -475,7 +475,7 @@ background:#22c55e;
 transform:scale(1.05);
 }
 .sub-hero{
-height:50vh;
+height:30vh;
 background:
 linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
 url("images/guaitipan1.jpg");
@@ -759,7 +759,7 @@ background: linear-gradient(
 color:white;
 }
 .sub2-hero{
-height:50vh;
+height:30vh;
 background:
 linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
 url("images/parque.jpg");
@@ -814,7 +814,7 @@ align-items: start;
 }
 
 .sub3-hero{
-height:50vh;
+height:30vh;
 background:
 linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
 url("images/artesanias1.jpg");
@@ -846,7 +846,7 @@ background: linear-gradient(
 }
 
 .sub4-hero{
-height:50vh;
+height:30vh;
 background:
 linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
 url("images/cafe.jpg");
@@ -861,7 +861,7 @@ text-align:center;
 }
 
 .sub5-hero{
-height:50vh;
+height:30vh;
 background:
 linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
 url("images/matrimonio.jpg");
@@ -876,7 +876,7 @@ text-align:center;
 }
 
 .sub6-hero{
-height:50vh;
+height:30vh;
 background:
 linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
 url("images/boscafe.jpg");
