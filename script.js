@@ -171,8 +171,8 @@ boscafeImg3: "Fuente: Instagram Boscafé San Juan",
 boscafeImg4: "Fuente: Instagram Boscafé San Juan",
 boscafeImg5: "Fuente: Instagram Boscafé San Juan",
         fogonTitle: "Fogón de Piedra",
-fogonHero: "Fogón de Piedra es un restaurante tradicional de Pitalito reconocido por su auténtica cocina huilense preparada de forma artesanal...",
-menuTitle: "Menú",
+fogonHero: "Fogón de Piedra es uno de los restaurantes más representativos de Pitalito, reconocido por preservar y resaltar la auténtica gastronomía huilense a través de preparaciones tradicionales hechas en fogón de piedra, una técnica ancestral que le aporta un sabor único a cada plato. En este lugar, la cocina no solo se entiende como alimentación, sino como una expresión cultural que transmite historia, identidad y tradición. El restaurante se distingue por el uso de ingredientes frescos y locales, cuidadosamente seleccionados para garantizar calidad y sabor en cada preparación. Platos como el asado huilense, la tilapia frita, el pollo campesino y las carnes a la parrilla son elaborados siguiendo recetas típicas que han pasado de generación en generación, manteniendo la esencia de la cocina regional.",
+        menuTitle: "Menú",
         
     },
 
@@ -348,7 +348,7 @@ boscafeImg3: "Source: Boscafé San Juan Instagram",
 boscafeImg4: "Source: Boscafé San Juan Instagram",
 boscafeImg5: "Source: Boscafé San Juan Instagram",
         fogonTitle: "Stone Stove",
-fogonHero: "Stone Stove is a traditional restaurant in Pitalito known for its authentic handmade Huila cuisine...",
+fogonHero: "Fogón de Piedra is one of Pitalito’s most iconic restaurants, renowned for preserving and showcasing authentic Huila cuisine through traditional dishes prepared in a stone oven—an ancient technique that lends a unique flavor to every dish. Here, cooking is not merely about food, but a cultural expression that conveys history, identity, and tradition. The restaurant stands out for its use of fresh, local ingredients, carefully selected to ensure quality and flavor in every dish. Dishes such as Huila-style roast, fried tilapia, country-style chicken, and grilled meats are prepared using traditional recipes passed down from generation to generation, preserving the essence of regional cuisine.",
 menuTitle: "Menu",
     }
 };
