@@ -173,6 +173,29 @@ boscafeImg5: "Fuente: Instagram Boscafé San Juan",
         fogonTitle: "Fogón de Piedra",
 fogonHero: "Fogón de Piedra es uno de los restaurantes más representativos de Pitalito, reconocido por preservar y resaltar la auténtica gastronomía huilense a través de preparaciones tradicionales hechas en fogón de piedra, una técnica ancestral que le aporta un sabor único a cada plato. En este lugar, la cocina no solo se entiende como alimentación, sino como una expresión cultural que transmite historia, identidad y tradición. El restaurante se distingue por el uso de ingredientes frescos y locales, cuidadosamente seleccionados para garantizar calidad y sabor en cada preparación. Platos como el asado huilense, la tilapia frita, el pollo campesino y las carnes a la parrilla son elaborados siguiendo recetas típicas que han pasado de generación en generación, manteniendo la esencia de la cocina regional.",
         menuTitle: "Menú",
+
+        peceraPlato1Title: "Cazuela de Mariscos",
+peceraPlato1Desc: "Patacón y arroz.",
+
+peceraPlato2Title: "Bagre en Salsa",
+peceraPlato2Desc: "Maduro, papa, ensalada y arroz.",
+
+peceraPlato3Title: "Ceviche de Camarón",
+peceraPlato3Desc: "Patacón.",
+
+peceraPlato4Title: "Trucha a la Marinera",
+peceraPlato4Desc: "Arroz, patacón y ensalada.",
+
+peceraPlato5Title: "Pechuga a la Parrilla",
+peceraPlato5Desc: "Arroz, patacón, ensalada y limón.",
+
+peceraPlato6Title: "Viudo de Capaz",
+peceraPlato6Desc: "Papa, yuca, arroz y aguacate.",
+
+peceraImg1: "Fuente: Facebook La Pecera",
+peceraImg2: "Fuente: Facebook La Pecera",
+peceraImg3: "Fuente: Facebook La Pecera",
+peceraImg4: "Fuente: Facebook La Pecera",
         
     },
 
@@ -350,6 +373,28 @@ boscafeImg5: "Source: Boscafé San Juan Instagram",
         fogonTitle: "Stone Stove",
 fogonHero: "Fogón de Piedra is one of Pitalito’s most iconic restaurants, renowned for preserving and showcasing authentic Huila cuisine through traditional dishes prepared in a stone oven—an ancient technique that lends a unique flavor to every dish. Here, cooking is not merely about food, but a cultural expression that conveys history, identity, and tradition. The restaurant stands out for its use of fresh, local ingredients, carefully selected to ensure quality and flavor in every dish. Dishes such as Huila-style roast, fried tilapia, country-style chicken, and grilled meats are prepared using traditional recipes passed down from generation to generation, preserving the essence of regional cuisine.",
 menuTitle: "Menu",
+        peceraPlato1Title: "Seafood Casserole",
+peceraPlato1Desc: "Fried plantain and rice.",
+
+peceraPlato2Title: "Catfish in Sauce",
+peceraPlato2Desc: "Sweet plantain, potato, salad and rice.",
+
+peceraPlato3Title: "Shrimp Ceviche",
+peceraPlato3Desc: "Fried plantain.",
+
+peceraPlato4Title: "Marinera Trout",
+peceraPlato4Desc: "Rice, fried plantain and salad.",
+
+peceraPlato5Title: "Grilled Chicken Breast",
+peceraPlato5Desc: "Rice, fried plantain, salad and lemon.",
+
+peceraPlato6Title: "Capaz Fish Stew",
+peceraPlato6Desc: "Potato, cassava, rice and avocado.",
+
+peceraImg1: "Source: La Pecera Facebook",
+peceraImg2: "Source: La Pecera Facebook",
+peceraImg3: "Source: La Pecera Facebook",
+peceraImg4: "Source: La Pecera Facebook",
     }
 };
 
@@ -537,6 +582,30 @@ update("boscafe-img5", content[language].boscafeImg5);
     update("fogon-title", content[language].fogonTitle);
 update("fogon-hero", content[language].fogonHero);
 update("menu-title", content[language].menuTitle);
+
+    update("pecera-plato1-title", content[language].peceraPlato1Title);
+update("pecera-plato1-desc", content[language].peceraPlato1Desc);
+
+update("pecera-plato2-title", content[language].peceraPlato2Title);
+update("pecera-plato2-desc", content[language].peceraPlato2Desc);
+
+update("pecera-plato3-title", content[language].peceraPlato3Title);
+update("pecera-plato3-desc", content[language].peceraPlato3Desc);
+
+update("pecera-plato4-title", content[language].peceraPlato4Title);
+update("pecera-plato4-desc", content[language].peceraPlato4Desc);
+
+update("pecera-plato5-title", content[language].peceraPlato5Title);
+update("pecera-plato5-desc", content[language].peceraPlato5Desc);
+
+update("pecera-plato6-title", content[language].peceraPlato6Title);
+update("pecera-plato6-desc", content[language].peceraPlato6Desc);
+
+/* GALERÍA */
+update("pecera-img1", content[language].peceraImg1);
+update("pecera-img2", content[language].peceraImg2);
+update("pecera-img3", content[language].peceraImg3);
+update("pecera-img4", content[language].peceraImg4);
 }
 
 function changeLanguage() {
