@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Pecera</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="pecera-page">
+
+<header>
+<h1 id="title">Rutas Turísticas de Pitalito</h1>
+<button onclick="changeLanguage()">English / Español</button>
+</header>
+
+<nav class="navbar">
+<ul>
+<li><a href="index.html" id="nav-home">Inicio</a></li>
+<li><a href="naturaleza.html" id="nav-nature">Naturaleza</a></li>
+<li><a href="cultura.html" id="nav-culture">Cultura</a></li>
+<li><a href="gastronomia.html" id="nav-food">Gastronomía</a></li>
+</ul>
+</nav>
+
+<!-- ⭐ HERO -->
+<header class="sub-pec-hero">
+<h1 id="fogon-title">La Pecera</h1>
+
+<p id="pecera-hero">
+La Pecera es un restaurante reconocido en Pitalito por ofrecer una experiencia gastronómica única que combina tradición, sabor y un ambiente moderno y acogedor. Este lugar se destaca por su variada oferta de platos típicos de la región, especialmente preparaciones a base de pescado y mariscos, elaboradas con ingredientes frescos y de alta calidad. El restaurante brinda un espacio agradable ideal para compartir en familia o con amigos, donde los visitantes pueden disfrutar de una atención cálida y un ambiente relajado. Su propuesta culinaria resalta los sabores auténticos del Huila, incorporando técnicas que potencian el gusto y la presentación de cada plato.
+</p>
+</header>
+
+<main>
+
+<!-- ⭐ MENÚ -->
+<section class="menu-section">
+
+<h2 id="menu-title">Menú</h2>
+
+<div class="menu-grid">
+
+<div class="menu-card">
+<img src="images/cazuela.jpg">
+<div class="menu-info">
+<h3>Cazuela de Mariscos</h3>
+<p>Patacon y Arroz.</p>
+<span class="price">$37.000</span>
+</div>
+</div>
+
+<div class="menu-card">
+<img src="images/trucha.jpg">
+<div class="menu-info">
+<h3>Trucha a la Parrilla</h3>
+<p>Maduro, papa, Ensalada y arroz.</p>
+<span class="price">$30.000</span>
+</div>
+</div>
+
+<div class="menu-card">
+<img src="images/ceviche.jpg">
+<div class="menu-info">
+<h3>Ceviche de Camaron</h3>
+<p>Patacon.</p>
+<span class="price">$25.000</span>
+</div>
+</div>
+
+<div class="menu-card">
+<img src="images/punta.jpg">
+<div class="menu-info">
+<h3>Punta de Anca</h3>
+<p>Arroz, patacón y ensalada.</p>
+<span class="price">$35.000</span>
+</div>
+</div>
+
+<div class="menu-card">
+<img src="images/pechuga.jpg">
+<div class="menu-info">
+<h3>Pechuga a la Parrilla</h3>
+<p>Arroz, patacón, ensalada y limón.</p>
+<span class="price">$40.000</span>
+</div>
+</div>
+
+<div class="menu-card">
+<img src="images/viudo.jpg">
+<div class="menu-info">
+<h3>Viudo de Capaz</h3>
+<p>Papa, Yuca, Arroz y Aguacate</p>
+<span class="price">$35.000</span>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- ⭐ GALERÍA + MAPA (SEPARADO DEL MENÚ) -->
+<section class="bottom-section">
+
+<div class="gallery-box">
+
+<h2 id="gallery-title">Galería</h2>
+
+<div class="slide active">
+<img src="images/peceraa.jpg">
+<p class="img-source">Fuente:https://www.instagram.com/fogondepiedrapitalito/</p>
+</div>
+
+<div class="slide">
+<img src="images/pecerab.jpg">
+<p class="img-source">Fuente:https://www.facebook.com/search/top/?q=la%20pecera/</p>
+</div>
+
+<div class="slide">
+<img src="images/pecerac.jpg">
+<p class="img-source">Fuente:https://www.facebook.com/search/top/?q=la%20pecera/</p>
+</div>
+  
+<div class="slide">
+<img src="images/pecerad.jpg">
+<p class="img-source">Fuente:https://www.facebook.com/search/top/?q=la%20pecera/</p>
+</div>
+
+<div class="slider">
+<button onclick="moveSlide(-1)">❮</button>
+<button onclick="moveSlide(1)">❯</button>
+</div>
+
+</div>
+
+<div class="map-box">
+
+<h2 id="location-title">Ubicación</h2>
+
+<iframe 
+src="https://www.google.com/maps?q=Fogon+de+Piedra+Pitalito&output=embed">
+</iframe>
+
+</div>
+
+</section>
+
+</main>
+
+<script>
+let index = 0;
+const slides = document.querySelectorAll(".slide");
+
+function showSlide(n){
+  slides.forEach(s => s.classList.remove("active"));
+  slides[n].classList.add("active");
+}
+
+function moveSlide(step){
+  index += step;
+  if(index >= slides.length) index = 0;
+  if(index < 0) index = slides.length - 1;
+  showSlide(index);
+}
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
