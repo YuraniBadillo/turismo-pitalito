@@ -511,14 +511,14 @@ update("boscafe-hero", content[language].boscafeHero);
 
 update("boscafe-exp-title", content[language].boscafeExpTitle);
 
-update("cafe-exp1-title", content[language].boscafeExp1Title);
-update("cafe-exp1-desc", content[language].boscafeExp1Desc);
+update("boscafe-exp1-title", content[language].boscafeExp1Title);
+update("boscafe-exp1-desc", content[language].boscafeExp1Desc);
 
-update("cafe-exp2-title", content[language].boscafeExp2Title);
-update("cafe-exp2-desc", content[language].boscafeExp2Desc);
+update("boscafe-exp2-title", content[language].boscafeExp2Title);
+update("boscafe-exp2-desc", content[language].boscafeExp2Desc);
 
-update("cafe-exp3-title", content[language].boscafeExp3Title);
-update("cafe-exp3-desc", content[language].boscafeExp3Desc);
+update("boscafe-exp3-title", content[language].boscafeExp3Title);
+update("boscafe-exp3-desc", content[language].boscafeExp3Desc);
 
 /* ⭐ GALERÍA */
 
