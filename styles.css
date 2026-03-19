@@ -888,3 +888,11 @@ align-items:center;
 color:white;
 text-align:center;
 }
+body.matrimonio-page{
+background: linear-gradient(
+    180deg,
+    #1e90ff 0%,
+    #87cefa 40%,
+    #ffffff 100%
+);
+}
