@@ -339,19 +339,20 @@ body.home-page{
     background: linear-gradient(135deg, #0f2027, #2c5364, #a8e6cf);
     min-height: 100vh;
 }
-}
 
 body.nature-page{
-    background: linear-gradient(135deg,#134e5e,#71b280);
-}
+    kground: linear-gradient(135deg, #0f2027, #2c5364, #a8e6cf);
+    min-height: 100vh;
 }
 
 body.culture-page{
-    background: linear-gradient(135deg,#1e3c72,#2a5298);
+    kground: linear-gradient(135deg, #0f2027, #2c5364, #a8e6cf);
+    min-height: 100vh;
 }
 
 body.gastronomia-page{
-    background: linear-gradient(135deg,#ff7e5f,#feb47b);
+    kground: linear-gradient(135deg, #0f2027, #2c5364, #a8e6cf);
+    min-height: 100vh;
 }
 
 /* capa oscura sobre fondo */
