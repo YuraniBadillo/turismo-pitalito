@@ -404,6 +404,14 @@ update("cafe-img2", content[language].cafeImg2);
 update("cafe-img3", content[language].cafeImg3);
 update("cafe-img4", content[language].cafeImg4);
 update("cafe-img5", content[language].cafeImg5);
+   
+    /* ⭐ FINCAS CAFETERAS */
+
+update("exp8-title", content[language].exp8Title);
+update("exp8-desc", content[language].exp8Desc);
+
+update("exp9-title", content[language].exp9Title);
+update("exp9-desc", content[language].exp9Desc);
 
 }
 
