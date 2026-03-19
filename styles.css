@@ -703,6 +703,15 @@ background:url("images/matrimonio2.jpg") center/cover;
 background:url("images/matrimonio3.jpg") center/cover;
 }
 
+.boscafe1{
+background:url("images/boscafe1.jpg") center/cover;
+}
+.boscafe2{
+background:url("images/boscafe2.jpg") center/cover;
+}
+.boscafe3{
+background:url("images/boscafe3.jpg") center/cover;
+}
 .detail-grid{
 max-width:1200px;
 margin:60px auto;
