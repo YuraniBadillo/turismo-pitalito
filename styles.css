@@ -1054,3 +1054,14 @@ text-align:center;
     background: #f39c12;
     transform: scale(1.1);
 }
+.footer {
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    margin-top: 40px;
+}
