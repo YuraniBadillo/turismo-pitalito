@@ -1005,3 +1005,11 @@ color:white;
 text-align:center;
 }
 
+.fogon-page {
+  background: linear-gradient(
+    180deg,
+    #000000 0%,   /* negro */
+    #2c2c2c 50%,  /* gris oscuro */
+    #555555 100%  /* gris */
+  );
+}
