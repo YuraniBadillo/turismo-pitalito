@@ -128,9 +128,14 @@ cafeImg1: "Fuente: Internet",
 cafeImg2: "Fuente: Internet",
 cafeImg3: "Fuente: Internet",
 cafeImg4: "Fuente: Internet",
-cafeImg5: "Fuente: Video turístico"
+cafeImg5: "Fuente: Video turístico",
 
         
+        exp8Title: "Finca Cafetera El Matrimonio",
+exp8Desc: "La Finca Cafetera el Matrimonio, ubicada en Pitalito, Huila (vía Guacacallo), es un reconocido destino agroturístico y mirador. Ofrece experiencias cafeteras, recorridos guiados por la propietaria Flor Castro, comida típica, alojamiento rural y vistas panorámicas.",
+
+exp9Title: "Finca Agroturística Boscafé San Juan",
+exp9Desc: "Ubicada en el corregimiento de Bruselas en Pitalito, es un espacio donde la tradición cafetera y la naturaleza se unen. Permite conocer el proceso del café mientras disfrutas paisajes montañosos."
 
         
     },
@@ -265,7 +270,13 @@ cafeImg1: "Source: Internet",
 cafeImg2: "Source: Internet",
 cafeImg3: "Source: Internet",
 cafeImg4: "Source: Internet",
-cafeImg5: "Source: Tourism video"
+cafeImg5: "Source: Tourism video",
+
+        exp8Title: "El Matrimonio Coffee Farm",
+exp8Desc: "El Matrimonio Coffee Farm, located in Pitalito, Huila, is a well-known agrotourism destination. It offers coffee experiences, guided tours, traditional food, rural lodging, and panoramic views.",
+
+exp9Title: "Boscafé San Juan Agrotourism Farm",
+exp9Desc: "Located in Bruselas, Pitalito, it is a place where coffee tradition and nature come together. Visitors can learn about the coffee process while enjoying mountain landscapes."
         
     }
 };
