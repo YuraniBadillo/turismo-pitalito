@@ -1,1076 +1,124 @@
 /* =========================
-   CONFIGURACIÓN GENERAL
+   RESPONSIVE COMPLETO
 ========================= */
 
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #e9d5ff;
-    scroll-behavior: smooth;
-}
+@media (max-width: 768px){
 
-/* Contenedor general */
-main {
-    max-width: 1200px;
-    margin: 40px auto;
-}
-
-/* =========================
-   HEADER
-========================= */
-
-header {
-    background:
-        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-        url("images/pitalito.jpg");
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    color: white;
-    text-align: center;
-    padding: 80px 20px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-}
-
-header h1{
-    font-size: 42px;
-    letter-spacing: 1px;
-}
-
-button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 30px;
-    background-color: white;
-    color: #6d28d9;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-button:hover {
-    background-color: #f3f0ff;
-    transform: scale(1.05);
-}
-
-/* =========================
-   NAVBAR
-========================= */
-
-.navbar {
-    background-color: #2c3e50;
-    padding: 12px 0;
-    text-align: center;
-}
-
-.navbar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.navbar li {
-    display: inline-block;
-    margin: 0 25px;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.navbar a:hover {
-    color: #f39c12;
-}
-
-/* =========================
-   SECCIONES GENERALES
-========================= */
-
-section {
-    padding: 60px 40px;
-    margin-bottom: 40px;
-}
-
-.category {
-    padding-top: 0;
-}
-
-/* =========================
-   SECCIÓN DESTACADA BASE
-========================= */
-
-.highlight-section {
-
-    background: rgba(255,255,255,0.75);
-    backdrop-filter: blur(10px);
-
-    padding: 60px 20px;
-    border-radius: 25px;
-
-    margin-bottom: 30px;
-
-    text-align: center;
-    max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
-
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-}
-
-.highlight-section h2 {
-    font-size: 42px;
-    margin-bottom: 15px;
-}
-
-.highlight-section p {
-    font-size: 18px;
-    max-width: 750px;
-    margin: 0 auto;
-    line-height: 1.7;
-}
-
-/* =========================
-   NATURALEZA
-========================= */
-
-.nature-section h2 {
-    color: #14532d;
-}
-
-/* =========================
-   CULTURA
-========================= */
-
-.culture-section h2 {
-    color: #1e3a8a;
-}
-
-/* =========================
-   GASTRONOMÍA
-========================= */
-
-.food-section h2 {
-    color: #7f1d1d;
-}
-
-/* =========================
-   HOME - CUADRO BIENVENIDA
-========================= */
-
-.home-section {
-
-    background: rgba(255,255,255,0.75);
-    backdrop-filter: blur(10px);
-
-    padding-top: 0.5cm;
-    padding-bottom: 0.5cm;
-    padding-left: 40px;
-    padding-right: 40px;
-
-    border-radius: 25px;
-    text-align: center;
-
-    max-width: 1100px;
-    margin: 40px auto;
-
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-}
-
-.home-section h2,
-.home-section p {
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.home-section h2 {
-    color: #9d174d;
-    font-size: 42px;
-}
-
-.home-section p {
-    color: #4b5563;
-    font-size: 18px;
-    line-height: 1.7;
-}
-
-/* =========================
-   GRID DE CATEGORÍAS
-========================= */
-
-.category-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-/* =========================
-   TARJETAS
-========================= */
-
-.card {
-
-    background: white;
-    padding: 30px;
-    border-radius: 20px;
-
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-
-    transition: all 0.35s ease;
-
-    text-align: center;
-
-    position: relative;
-    overflow: hidden;
-}
-
-.card h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: #14532d;
-}
-
-.card img {
-    width: 100%;
-    max-width: 260px;
-    height: 170px;
-    object-fit: cover;
-    border-radius: 15px;
-    margin: 15px auto;
-    display: block;
-}
-
-.card p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-top: 15px;
-    color: #444;
-}
-
-/* =========================
-   CARDS NATURALEZA
-========================= */
-
-.nature-page .card {
-    background: linear-gradient(90deg,#dcfce7,#bbf7d0);
-    border: 2px solid #86efac;
-}
-
-/* =========================
-   CARDS CULTURA
-========================= */
-
-.culture-page .card {
-    background: linear-gradient(90deg,#dbeafe,#bfdbfe);
-    border: 2px solid #93c5fd;
-}
-
-/* =========================
-   CARDS GASTRONOMÍA
-========================= */
-
-.gastronomia-page .card {
-    background: linear-gradient(90deg,#fee2e2,#fecaca);
-    border: 2px solid #fca5a5;
-}
-
-.gastronomia-page .card h3 {
-    color: #7f1d1d;
-}
-
-/* =========================
-   CARDS INICIO
-========================= */
-
-.home-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    gap: 40px;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 40px;
-}
-
-.home-cards .card {
-    text-align: center;
-    padding: 40px 30px;
-    border-radius: 25px;
-    background: linear-gradient(90deg,#fef3c7,#fde68a);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-    border: 2px solid #fcd34d;
-}
-
-.home-cards .card h3 {
-    font-size: 28px;
-    margin-bottom: 15px;
-    color: #92400e;
-}
-
-.home-cards .card p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 25px;
-    color: #4b5563;
-}
-
-.home-cards .card .btn {
-    display: inline-block;
-    padding: 12px 25px;
-    font-weight: bold;
-    background-color: #9d174d;
-    color: white;
-    border-radius: 25px;
-    text-decoration: none;
-}
-
-/* =========================
-   FONDOS DE PÁGINAS
-========================= */
-
-body.home-page{
-    background: linear-gradient(135deg, #0f2027, #2c5364, #a8e6cf);
-    min-height: 100vh;
-}
-
-body.nature-page,
-body.culture-page,
-body.gastronomia-page {
-    background: linear-gradient(135deg, #0f2027, #2c5364, #a8e6cf);
-    min-height: 100vh;
-}
-
-/* capa oscura sobre fondo */
-
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
-    background: rgba(0,0,0,0.25);
-
-    z-index: -1;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width:768px){
-
+    /* GENERAL */
     main{
-        margin:20px auto;
+        margin: 20px auto;
+        padding: 0 15px;
     }
 
     section{
-        padding:40px 20px;
+        padding: 30px 15px;
     }
 
-    .category-content{
-        grid-template-columns:1fr;
+    /* NAVBAR EN COLUMNA */
+    .navbar li{
+        display: block;
+        margin: 10px 0;
     }
 
-    .card img{
-        max-width:100%;
+    /* HERO */
+    .hero{
+        height: auto;
+        padding: 60px 20px;
     }
 
-    .highlight-section h2{
-        font-size:32px;
+    .hero h2{
+        font-size: 32px;
     }
 
+    .hero p{
+        font-size: 16px;
+    }
+
+    /* SUB HERO */
+    .sub-hero,
+    .sub2-hero,
+    .sub3-hero,
+    .sub4-hero,
+    .sub5-hero,
+    .sub6-hero,
+    .sub-food-hero,
+    .sub-pec-hero{
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    /* LAYOUTS → COLUMNAS */
+    .guaitipan-layout,
+    .pueblito-layout,
+    .artesanias-layout,
+    .cafe-layout{
+        display: flex !important;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* GRID A 1 COLUMNA */
+    .pueblito-layout,
+    .artesanias-layout,
+    .cafe-layout{
+        grid-template-columns: 1fr !important;
+    }
+
+    /* EXPERIENCIAS */
+    .experiences{
+        width: 100%;
+    }
+
+    .exp-grid{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .exp-card{
+        width: 100%;
+        height: auto;
+        min-height: 180px;
+    }
+
+    /* GALERÍA */
+    .gallery{
+        width: 100%;
+    }
+
+    .slide img,
+    .gallery-video{
+        height: auto;
+        max-height: 250px;
+    }
+
+    /* BOTONES SLIDER */
+    .prev{
+        left: 5px;
+    }
+
+    .next{
+        right: 5px;
+    }
+
+    /* MAPA */
+    .map-section iframe{
+        height: 250px;
+    }
+
+    /* MENÚ (GASTRONOMÍA) */
+    .menu-grid{
+        grid-template-columns: 1fr;
+    }
+
+    /* GALERÍA + MAPA ABAJO */
+    .bottom-section{
+        grid-template-columns: 1fr;
+    }
+
+    /* HOME CARDS */
     .home-cards{
-        grid-template-columns:1fr;
-        padding:0 20px;
+        grid-template-columns: 1fr;
+        padding: 0 15px;
     }
 
-}
-
-/* Ocultar navbar solo en inicio */
-
-.home-page .navbar{
-    display:none;
-}
-
-.hero{
-    height: 85vh;
-
-    background:
-    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-    url("images/Hero.jpg");
-
-    background-size: cover;
-    background-position: center;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-    color: white;
-}
-
-.hero-content{
-    max-width: 700px;
-    padding: 20px;
-}
-
-.hero h2{
-    font-size: 55px;
-    margin-bottom: 20px;
-}
-
-.hero p{
-    font-size: 20px;
-    line-height: 1.6;
-    margin-bottom: 30px;
-}
-
-.hero-btn{
-    background: #f39c12;
-    color: white;
-    padding: 15px 35px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.hero-btn:hover{
-    background: #e67e22;
-    transform: scale(1.05);
-}
-.btn-sub{
-display:inline-block;
-margin-top:15px;
-padding:10px 22px;
-background:#14532d;
-color:white;
-border-radius:20px;
-text-decoration:none;
-font-weight:bold;
-transition:0.3s;
-}
-
-.btn-sub:hover{
-background:#22c55e;
-transform:scale(1.05);
-}
-.sub-hero{
-height:30vh;
-background:
-linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
-url("images/guaitipan1.jpg");
-background-size:cover;
-background-position:center;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-color:white;
-text-align:center;
-}
-
-.detail-container{
-max-width:1100px;
-margin:auto;
-padding:40px 20px;
-}
-
-.detail-box{
-background:white;
-padding:40px;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,0.15);
-margin-bottom:40px;
-text-align:center;
-}
-
-.gallery{
-text-align:center;
-margin-bottom:40px;
-}
-
-.slider{
-position:relative;
-max-width:700px;
-margin:auto;
-}
-
-.slide{
-width:100%;
-border-radius:20px;
-display:none;
-}
-
-.slide.active{
-display:block;
-}
-
-.prev,.next{
-position:absolute;
-top:50%;
-transform:translateY(-50%);
-background:#14532d;
-color:white;
-border:none;
-padding:12px;
-cursor:pointer;
-border-radius:50%;
-}
-.experiences{
-margin-top:60px;
-text-align:center;
-}
-
-.exp-grid{
-display:flex;
-gap:25px;
-justify-content:center;
-flex-wrap:wrap;
-margin-top:25px;
-}
-
-.exp-card{
-width:280px;
-background:white;
-padding:25px;
-border-radius:20px;
-box-shadow:0 10px 25px rgba(0,0,0,0.15);
-transition:0.3s;
-}
-
-.exp-card:hover{
-transform:translateY(-8px);
-}
-
-.exp-card h3{
-color:#14532d;
-margin-bottom:10px;
-}
-.prev{ left:-20px;}
-.next{ right:-20px;}
-
-.map-section{
-text-align:center;
-}
-
-.map-section iframe{
-width:100%;
-height:400px;
-border-radius:20px;
-border:none;
-box-shadow:0 10px 25px rgba(0,0,0,0.2);
-}
-
-.slide img,
-.gallery-video{
-width:100%;
-height:400px;
-object-fit:cover;
-border-radius:25px;
-box-shadow:0 15px 35px rgba(0,0,0,0.3);
-margin:20px auto;
-display:block;
-}
-
-.gallery-video{
-width:100%;
-border-radius:20px;
-box-shadow:0 10px 25px rgba(0,0,0,0.2);
-}
-.guaitipan-layout{
-display:flex;
-justify-content:center;
-gap:60px;
-margin-top:50px;
-align-items:flex-start;
-}
-
-/* EXPERIENCIAS */
-.experiences{
-width:420px;
-text-align:left;
-}
-
-.exp-card{
-background:white;
-padding:20px;
-margin-bottom:20px;
-border-radius:18px;
-box-shadow:0 10px 25px rgba(0,0,0,0.15);
-}
-
-/* GALERÍA */
-.gallery{
-width:100%;
-max-width:900px;
-margin:auto;
-}
-/* CARD EXPERIENCIAS CON IMAGEN */
-
-.exp-card{
-position:relative;
-color:white;
-height:220px;
-display:flex;
-flex-direction:column;
-justify-content:center;
-border-radius:20px;
-overflow:hidden;
-padding:25px;
-box-shadow:0 10px 25px rgba(0,0,0,0.25);
-}
-
-/* CAPA OSCURA PARA QUE EL TEXTO SE LEA */
-.exp-card::before{
-content:"";
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.45);
-z-index:1;
-}
-
-/* TEXTO ENCIMA */
-.exp-card h3,
-.exp-card p{
-position:relative;
-z-index:2;
-}
-
-/* IMÁGENES DE FONDO */
-
-.senderismo{
-background:url("images/senderismo.jpg") center/cover;
-}
-
-.aves{
-background:url("images/aves.jpg") center/cover;
-}
-
-.foto{
-background:url("images/fotografia.jpg") center/cover;
-}
-
-.parque1{
-background:url("images/parque1.jpg") center/cover;
-}
-
-.parque2{
-background:url("images/parque2.jpg") center/cover;
-}
-
-.parque3{
-background:url("images/parque3.jpg") center/cover;
-}
-.artesanias1{
-background:url("images/artesanias0.jpg") center/cover;
-}
-.artesanias2{
-background:url("images/artesanias2.jpg") center/cover;
-}
-.artesanias3{
-background:url("images/artesanias3.jpg") center/cover;
-}
-
-.matrimonio1{
-background:url("images/matrimonio1.jpg") center/cover;
-}
-.matrimonio2{
-background:url("images/matrimonio2.jpg") center/cover;
-}
-.matrimonio3{
-background:url("images/matrimonio3.jpg") center/cover;
-}
-
-.boscafe1{
-background:url("images/boscafe1.jpg") center/cover;
-}
-.boscafe2{
-background:url("images/boscafe2.jpg") center/cover;
-}
-.boscafe3{
-background:url("images/boscafe3.jpg") center/cover;
-}
-.detail-grid{
-max-width:1200px;
-margin:60px auto;
-display:grid;
-grid-template-columns: 1fr 1.4fr;
-gap:50px;
-align-items:start;
-}
-
-/* mapa ocupa solo columna derecha */
-.detail-grid .map-section{
-grid-column:2;
-}
-
-/* EXPERIENCIAS */
-.detail-grid .experiences{
-text-align:left;
-}
-
-/* GALERÍA */
-.detail-grid .gallery{
-width:100%;
-}
-.exp-card,
-.exp-card h3,
-.exp-card p{
-color:white;
-}
-/* FONDO DEGRADADO LAGUNA */
-
-body.guaitipan-page{
-background: linear-gradient(
-180deg,
-#0a2f23 0%,
-#0f5132 35%,
-#0d6efd 70%,
-#38bdf8 100%
-);
-}
-/* TITULOS BLANCOS EN SUBSECCIONES */
-
-.experiences h2,
-.gallery h2{
-color:white;
-}
-.sub2-hero{
-height:30vh;
-background:
-linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
-url("images/parque.jpg");
-background-size:cover;
-background-position:center;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-color:white;
-text-align:center;
-}
-
-body.pueblito-page{
-background: linear-gradient(
-180deg,
-#ffd27f 0%,
-#ff9a3c 25%,
-#ff5e3a 60%,
-#b31217 100%
-);
-}
-
-.pueblito-layout{
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 40px;
-align-items: start;
-}
-
-.right-column{
-display: flex;
-flex-direction: column;
-gap: 40px;
-}
-
-body.artesanias-page{
-background: linear-gradient(
-180deg,
-#f5deb3 0%,
-#d2a679 25%,
-#a47148 60%,
-#5c3a21 100%
-);
-}
-
-.artesanias-layout{
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 40px;
-align-items: start;
-}
-
-.sub3-hero{
-height:30vh;
-background:
-linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
-url("images/artesanias1.jpg");
-background-size:cover;
-background-position:center;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-color:white;
-text-align:center;
-}
-
-.cafe-layout{
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 40px;
-align-items: start;
-}
-
-body.cafe-page{
-background: linear-gradient(
-180deg,
-#a67c52 0%,
-#6f4e37 35%,
-#4b2e2b 70%,
-#1c0f0a 100%
-);
-}
-
-.sub4-hero{
-height:30vh;
-background:
-linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
-url("images/cafe.jpg");
-background-size:cover;
-background-position:center;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-color:white;
-text-align:center;
-}
-
-.sub5-hero{
-height:30vh;
-background:
-linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
-url("images/matrimonio.jpg");
-background-size:cover;
-background-position:center;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-color:white;
-text-align:center;
-}
-
-.sub6-hero{
-height:30vh;
-background:
-linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
-url("images/boscafe.jpg");
-background-size:cover;
-background-position:center;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-color:white;
-text-align:center;
-}
-body.matrimonio-page{
-background: linear-gradient(
-    180deg,
-    #1e90ff 0%,
-    #87cefa 40%,
-    #ffffff 100%
-);
-}
-
-.boscafe-page {
-  background: linear-gradient(
-    180deg,
-    #c19a6b 0%,   /* camel */
-    #e6c7a1 40%,  /* tono intermedio */
-    #f5f5dc 100%  /* beige */
-  );
-}
-
-/* MENÚ CENTRADO Y ANCHO COMPLETO */
-.menu-section {
-  width: 100%;
-  padding: 40px;
-}
-
-.menu-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 arriba */
-  gap: 25px;
-  max-width: 1200px;
-  margin: 0 auto; /* CENTRADO */
-}
-
-/* CARDS */
-.menu-card {
-  background: white;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.menu-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.menu-info {
-  padding: 15px;
-  text-align: center;
-}
-
-/* GALERÍA Y MAPA */
-.bottom-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px;
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 20px;
-}
-
-/* CAJAS SEPARADAS */
-.gallery-box,
-.map-box {
-  background: white;
-  padding: 15px;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-/* GALERÍA */
-.gallery-box img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-}
-
-.slide {
-  display: none;
-}
-
-.slide.active {
-  display: block;
-}
-
-/* MAPA */
-.map-box iframe {
-  width: 100%;
-  height: 250px;
-  border: 0;
-}
-
-.menu-section h2 {
-  text-align: center;
-  font-size: 44px;
-  font-weight: bold;
-  margin-bottom: 30px;
-  color: #ffffff;
-  letter-spacing: 2px;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.6); /* efecto glow suave */
-}
-
-.sub-food-hero{
-height:30vh;
-background:
-linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
-url("images/Fogon1.jpg");
-background-size:cover;
-background-position:center;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-color:white;
-text-align:center;
-}
-
-.fogon-page {
-  background: linear-gradient(
-    180deg,
-    #000000 0%,   /* negro */
-    #2c2c2c 50%,  /* gris oscuro */
-    #555555 100%  /* gris */
-  );
-}
-
-.sub-pec-hero{
-height:30vh;
-background:
-linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
-url("images/pecera.jpg");
-background-size:cover;
-background-position:center;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-color:white;
-text-align:center;
-}
-
-/* BOTÓN VOLVER ARRIBA */
-.back-to-top {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-
-    width: 50px;
-    height: 50px;
-
-    background: #9d174d;
-    color: white;
-
-    border-radius: 50%;
-    text-align: center;
-    line-height: 50px;
-
-    font-size: 22px;
-    font-weight: bold;
-
-    text-decoration: none;
-
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-
-    transition: 0.3s;
-
-    z-index: 999;
-}
-
-.back-to-top:hover {
-    background: #f39c12;
-    transform: scale(1.1);
-}
-.footer {
-    width: 100%;
-    background: rgba(0,0,0,0.7);
-    color: white;
-    text-align: center;
-    padding: 15px 10px;
-    font-size: 14px;
-    position: relative;
-    bottom: 0;
-    margin-top: 40px;
-}
-
-.pecera-page {
-  background: linear-gradient(
-    180deg,
-    #000000 0%,   /* negro */
-    #2c2c2c 50%,  /* gris oscuro */
-    #555555 100%  /* gris */
-  );
 }
