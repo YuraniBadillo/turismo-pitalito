@@ -292,10 +292,10 @@ section {
 
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
-    gap: 50px;
+    gap: 20px;
 
     width: 100%;
-    padding: 40px;
+    padding: 80px;
 
     margin: 0; /* importante */
 }
