@@ -290,7 +290,7 @@ section {
 .home-cards {
     display: grid;
 
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 3fr));
 
     gap: 20px;
 
