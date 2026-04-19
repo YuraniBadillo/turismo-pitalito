@@ -12,8 +12,8 @@ html, body {
 
 /* Contenedor general */
 main {
-    max-width: 1200px;
-    margin: 40px auto;
+    width: 100%;
+    margin: 20px 0;
 }
 
 /* =========================
