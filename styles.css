@@ -1074,7 +1074,10 @@ text-align:center;
     #555555 100%  /* gris */
   );
 }
-
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+}
 /* =========================
    RESPONSIVE COMPLETO
 ========================= */
@@ -1197,9 +1200,5 @@ text-align:center;
         grid-template-columns: 1fr;
         padding: 0 15px;
     }
-   h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-    letter-spacing: 1px;
-}
-
+ 
 }
