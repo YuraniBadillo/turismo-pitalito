@@ -333,8 +333,7 @@ section {
 ========================= */
 
 body.home-page{
-    background: linear-gradient(135deg, #0f2027, #2c5364, #a8e6cf);
-    min-height: 100vh;
+    background: #f4f4f4; /* color plano limpio */
 }
 
 body.nature-page,
