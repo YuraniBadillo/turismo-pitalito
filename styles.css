@@ -41,19 +41,16 @@ header h1{
 }
 
 button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 30px;
-    background-color: white;
-    color: #6d28d9;
-    cursor: pointer;
+    padding: 10px 22px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #9d174d, #f39c12);
+    color: white;
     font-weight: bold;
-    transition: 0.3s;
+    border: none;
 }
 
 button:hover {
-    background-color: #f3f0ff;
-    transform: scale(1.05);
+    transform: scale(1.08);
 }
 
 /* =========================
