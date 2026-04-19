@@ -295,9 +295,9 @@ section {
     gap: 20px;
 
     width: 100%;
-    padding: 100%;
+    padding: 40px;
 
-    margin: 0; /* importante */
+    margin: 100; /* importante */
 }
 
 .home-cards .card:hover {
