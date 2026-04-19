@@ -296,13 +296,10 @@ section {
     padding: 40px;
 }
 
-.home-cards .card {
-    text-align: center;
-    padding: 40px 30px;
-    border-radius: 25px;
-    background: linear-gradient(90deg,#fef3c7,#fde68a);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-    border: 2px solid #fcd34d;
+.home-cards .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
 }
 
 .home-cards .card h3 {
