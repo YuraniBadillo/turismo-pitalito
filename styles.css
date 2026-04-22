@@ -52,10 +52,9 @@ button {
 }
 
 button:hover {
-    background: transparent;
-    color: #9d174d;
+    background-color: #f3f0ff;
+    transform: scale(1.05);
 }
-
 /* =========================
    NAVBAR
 ========================= */
