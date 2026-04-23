@@ -740,3 +740,51 @@ section {
     }
     #nature { font-size: 3rem; }
 }
+
+/* =========================
+   EXTENSIÓN DEL HERO (Sin mover tarjetas)
+========================= */
+
+.nature-section {
+    position: relative; /* Necesario para que el adorno se pegue aquí */
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 10%;
+    margin-bottom: 0; /* Quitamos el margen para que conecte con lo siguiente */
+    
+    background: 
+        linear-gradient(to right, rgba(6, 78, 59, 0.95), rgba(0, 0, 0, 0.3)),
+        url('images/naturaleza-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    color: white;
+    z-index: 1;
+}
+
+/* El truco: Un bloque que extiende el color hacia abajo */
+.nature-section::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* Empieza justo donde termina el Hero */
+    left: 0;
+    width: 100%;
+    height: 400px; /* Esta es la profundidad que tendrá el fondo detrás de las tarjetas */
+    background: #064e3b; /* El mismo verde oscuro del inicio del Hero */
+    z-index: -1; /* Se posiciona por detrás de todo */
+    
+    /* Degradado para que se pierda suavemente hacia el color de fondo de la página */
+    background: linear-gradient(to bottom, #064e3b, #f0fdf4); 
+}
+
+/* Aseguramos que el contenedor de las tarjetas sea transparente para ver el fondo */
+.category-content {
+    position: relative;
+    z-index: 10;
+    padding-top: 60px; /* Espacio para que no queden pegadas al texto del hero */
+    margin-top: 0; /* Garantizamos que no se muevan de su sitio */
+}
