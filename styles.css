@@ -660,6 +660,26 @@ section {
     box-shadow: 8px 8px 0px #000;
 }
 
+/* Caja de Vidrio en Naturaleza */
+.nature-section {
+    /* Aseguramos que el contenido se vea bien */
+    display: flex;
+    align-items: center; 
+}
+
+/* Creamos el efecto directamente sobre el header de la categoría */
+.nature-page .category-header {
+    background: rgba(255, 255, 255, 0.1); /* Transparencia */
+    backdrop-filter: blur(15px);         /* Efecto borroso */
+    -webkit-backdrop-filter: blur(15px);
+    padding: 50px;
+    border-radius: 4px;
+    border-left: 8px solid #19e337;      /* Verde Neón */
+    max-width: 700px;
+    margin-left: 10%;                    /* Alineación lateral */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
 /* =========================
    RESPONSIVE
 ========================= */
@@ -927,6 +947,23 @@ section {
     text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
 }
 
+/* Caja de Vidrio en Cultura */
+.culture-section {
+    display: flex;
+    align-items: center;
+}
+
+.culture-page .category-header {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 50px;
+    border-radius: 4px;
+    border-left: 8px solid #f59e0b;      /* Amarillo Ámbar */
+    max-width: 700px;
+    margin-left: 10%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
 /* =========================
    RESPONSIVE CULTURA
 ========================= */
@@ -1110,6 +1147,32 @@ section {
     z-index: 10;   /* Bajamos su prioridad frente al navbar */
 }
 
+/* Caja de Vidrio en Gastronomía */
+.gastronomia-page .food-section {
+    display: flex;
+    align-items: center;
+    padding: 100px 10%;
+}
+
+/* Esta es la "caja" en tu HTML de Gastronomía */
+.gastronomia-page .highlight-section {
+    background: rgba(255, 255, 255, 0.1) !important; 
+    backdrop-filter: blur(15px) !important;
+    -webkit-backdrop-filter: blur(15px);
+    padding: 50px !important;
+    border-radius: 4px;
+    border-left: 8px solid #f97316;      /* Naranja Fuego */
+    max-width: 700px;
+    
+    /* Corrección de posición para que NO tape el menú */
+    margin: 0 !important; 
+    position: relative;
+    z-index: 10;
+    
+    /* Quitamos el grid y sombras pesadas de la clase original */
+    display: block; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
 /* =========================
    RESPONSIVE GASTRONOMÍA
 ========================= */
@@ -1122,106 +1185,5 @@ section {
     .food-section::after { height: 1000px; }
     .gastronomia-page .category-content {
         grid-template-columns: 1fr;
-    }
-}
-
-/* =========================
-   ESTILO BASE PARA MINI-HEROS CON CAJA DE VIDRIO
-========================= */
-
-/* Esta regla aplica el efecto a las tres páginas a la vez */
-.nature-section, .culture-section, .food-section {
-    position: relative; 
-    width: 100%;
-    min-height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 100px 10%; /* Ajuste de padding para centrar la caja */
-    margin-bottom: 0; 
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    z-index: 1;
-}
-
-/* =========================
-   LA CAJA DE VIDRIO (Glass Container)
-========================= */
-
-/* Aplicamos el efecto a la caja que contiene el título y descripción */
-.nature-section .hero-content, 
-.culture-section .hero-content, 
-.food-section .highlight-section { /* Gastronomía usa .highlight-section en el HTML */
-    background: rgba(255, 255, 255, 0.08); /* Fondo blanco muy transparente */
-    backdrop-filter: blur(16px) saturate(180%); /* EL EFECTO CLAVE: Borroso y Saturación */
-    -webkit-backdrop-filter: blur(16px) saturate(180%); /* Soporte para Safari */
-    
-    padding: 60px; /* Espaciado interno de la caja */
-    max-width: 800px; /* Ancho máximo de la caja */
-    width: 100%;
-    
-    /* Bordes Brutalistas para consistencia */
-    border: 2px solid rgba(255, 255, 255, 0.15); /* Borde sutil */
-    border-radius: 4px; /* Un poco redondeado para suavizar */
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Sombra suave para profundidad */
-    
-    /* Detalle de línea de color lateral (heredado de tu estilo) */
-    position: relative;
-    overflow: hidden;
-}
-
-/* Reajuste de márgenes para que no se muevan de su lugar */
-.gastronomia-page .highlight-section {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-}
-
-/* =========================
-   REAJUSTE DE TEXTOS DENTRO DE LA CAJA DE VIDRIO
-========================= */
-
-/* Títulos con sombra para máxima legibilidad */
-#nature, #culture, #food-title {
-    font-size: clamp(2.5rem, 6vw, 4.5rem);
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
-    margin: 0;
-}
-
-/* Descripciones con sombra suave */
-#nature-desc, #culture-desc, #food-desc {
-    font-size: 1.15rem;
-    line-height: 1.8;
-    color: #fef2f2;
-    margin-top: 25px;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
-}
-
-/* Detalle decorativo lateral dentro de la caja de vidrio */
-.nature-section .hero-content::before, 
-.culture-section .hero-content::before, 
-.food-section .highlight-section::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 8px; /* Línea gruesa lateral */
-    z-index: 2;
-}
-
-/* Colores de línea lateral específicos */
-.nature-section .hero-content::before { background: #19e337; }
-.culture-section .hero-content::before { background: #f59e0b; }
-.food-section .highlight-section::before { background: #f97316; }
-
-/* =========================
-   RESPONSIVE (Glass)
-========================= */
-@media (max-width: 768px) {
-    .nature-section .hero-content, 
-    .culture-section .hero-content, 
-    .food-section .highlight-section {
-        padding: 40px 25px; /* Menos padding interno en móvil */
     }
 }
