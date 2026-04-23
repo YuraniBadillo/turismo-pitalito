@@ -360,7 +360,7 @@ section {
     /* Forzamos exactamente 3 columnas en pantallas grandes */
     grid-template-columns: repeat(3, 1fr); 
     gap: 30px;
-    max-width: 1300px; /* Un poco más ancho para llenar la pantalla */
+    max-width: 2300px; /* Un poco más ancho para llenar la pantalla */
     margin: 60px auto;
     padding: 0 20px;
 }
@@ -402,7 +402,7 @@ section {
 .home-cards .card h3 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: var(--primary-color); /* Color de letra H3 diferente */
+    color: #050505; /* Color de letra H3 diferente */
     line-height: 1.2;
 }
 
