@@ -669,3 +669,74 @@ section {
         padding: 0 20px;
     }
 }
+
+/* =========================
+   MINI-HERO: NATURALEZA
+========================= */
+
+.nature-section {
+    position: relative;
+    width: 100%;
+    min-height: 50vh; /* Altura de medio impacto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 10%;
+    margin-bottom: 60px;
+    
+    /* Fondo con imagen y overlay oscuro para legibilidad */
+    background: 
+        linear-gradient(to right, rgba(6, 78, 59, 0.9), rgba(0, 0, 0, 0.2)),
+        url('images/naturaleza-hero.jpg'); /* Usa una foto de paisajes de Pitalito */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Efecto Parallax */
+    
+    /* Corte asimétrico para mantener el estilo del sitio */
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    color: white;
+}
+
+/* Ajuste del Título dentro del Hero */
+#nature {
+    font-size: clamp(3rem, 8vw, 5rem);
+    color: #19e337; /* Tu verde neón para que brille sobre el fondo oscuro */
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+    line-height: 1;
+}
+
+/* Ajuste de la descripción dentro del Hero */
+#nature-desc {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #e5e7eb;
+    max-width: 700px;
+    margin-top: 25px;
+    text-align: left;
+    /* Quitamos las columnas aquí para que se lea mejor sobre la imagen */
+    column-count: 1; 
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+/* Detalle decorativo lateral */
+.nature-section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 20%;
+    bottom: 20%;
+    width: 10px;
+    background: #19e337;
+}
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+    .nature-section {
+        min-height: 40vh;
+        padding: 40px 5%;
+        clip-path: none; /* Quitamos el corte en móvil para evitar bugs de visualización */
+    }
+    #nature { font-size: 3rem; }
+}
