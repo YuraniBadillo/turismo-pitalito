@@ -469,6 +469,73 @@ section {
 }
 
 /* =========================
+   SECCIÓN DE BIENVENIDA (HIGHLIGHT)
+========================= */
+
+.highlight-section {
+    max-width: 1100px;
+    margin: -50px auto 80px; /* Margen negativo para que "suba" sobre el header/hero */
+    background: #ffffff;
+    padding: 60px;
+    position: relative;
+    z-index: 10; /* Para que quede encima del corte del header */
+    border: 3px solid #000000;
+    box-shadow: 15px 15px 0px var(--primary-color); /* Sombra sólida verde */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Decoración lineal superior */
+.highlight-section::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 1px solid #e5e7eb;
+    pointer-events: none;
+}
+
+#home-title {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    color: #1f2a40;
+    margin-bottom: 25px;
+    border-left: none; /* Quitamos el borde lateral del h2 general aquí */
+    padding-left: 0;
+    position: relative;
+}
+
+/* Línea decorativa bajo el título */
+#home-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 5px;
+    background: var(--accent-color);
+    margin: 15px auto 0;
+}
+
+#home-desc {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4b5563;
+    max-width: 800px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+    .highlight-section {
+        margin: 20px;
+        padding: 40px 20px;
+        box-shadow: 8px 8px 0px var(--primary-color);
+    }
+}
+
+/* =========================
    RESPONSIVE (A 1 columna en móviles)
 ========================= */
 @media (max-width: 992px) {
