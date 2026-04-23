@@ -764,36 +764,6 @@ section {
     .nature-section::after { height: 1000px; } /* Más largo para móvil porque las tarjetas se apilan */
 }
 
-/* El contenedor padre con la imagen de fondo */
-.nature-section {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 80px 10%;
-    min-height: 50vh;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), 
-                url('images/naturaleza-hero.jpg') center/cover fixed;
-}
-
-/* La caja de vidrio que acabamos de crear en el HTML */
-.nature-content {
-    background: rgba(255, 255, 255, 0.1); /* Transparencia */
-    backdrop-filter: blur(15px);         /* Desenfoque */
-    -webkit-backdrop-filter: blur(15px);
-    padding: 40px;
-    border-radius: 4px;
-    border-left: 8px solid #19e337;      /* Tu color verde de acento */
-    max-width: 700px;
-    color: white;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-}
-
-/* Estilo para el título dentro del vidrio */
-#nature {
-    margin-top: 0;
-    color: #19e337;
-    font-size: 3rem;
-}
 /* =========================
    PÁGINA DE CULTURA (culture-page)
 ========================= */
