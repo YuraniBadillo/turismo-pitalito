@@ -49,6 +49,10 @@ h3 {
     color: #ffffff; /* Blanco puro para legibilidad en bloques pequeños */
     font-size: 1.5rem;
 }
+.footer h3 {
+    color: var(--accent-color); /* Usamos el naranja para los títulos de las columnas del pie de página */
+    margin-bottom: 20px;
+}
 /* =========================
    HEADER
 ========================= */
