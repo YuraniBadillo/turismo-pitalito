@@ -353,48 +353,98 @@ section {
     color: #7f1d1d;
 }
 /* =========================
-   CARDS INICIO
+   GRID DE 3 COLUMNAS UNIFORMES
 ========================= */
-
 .home-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    gap: 40px;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 40px;
+    /* Forzamos exactamente 3 columnas en pantallas grandes */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+    max-width: 1300px; /* Un poco más ancho para llenar la pantalla */
+    margin: 60px auto;
+    padding: 0 20px;
 }
 
+/* =========================
+   TARJETAS CON FORMAS ASIMÉTRICAS
+========================= */
 .home-cards .card {
-    text-align: center;
-    padding: 40px 30px;
-    border-radius: 25px;
-    background: linear-gradient(90deg,#fef3c7,#fde68a);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-    border: 2px solid #fcd34d;
+    text-align: left; /* Alineación editorial para mayor seriedad */
+    padding: 50px 35px;
+    background: #ffffff;
+    border: 3px solid #000000; /* Borde sólido estilo Brutalista */
+    box-shadow: 12px 12px 0px var(--accent-color); /* Sombra sólida que llena espacio */
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
 }
 
+/* CADA TARJETA CON UNA FORMA DIFERENTE (Border-radius asimétrico) */
+
+/* Tarjeta 1: Esquina superior derecha redondeada */
+.home-cards .card:nth-child(1) {
+    border-radius: 80px 0px 0px 0px;
+}
+
+/* Tarjeta 2: Esquinas alternas (estilo hoja) */
+.home-cards .card:nth-child(2) {
+    border-radius: 0px 80px 0px 80px;
+}
+
+/* Tarjeta 3: Esquina inferior izquierda redondeada */
+.home-cards .card:nth-child(3) {
+    border-radius: 0px 0px 80px 0px;
+}
+
+/* =========================
+   CONTENIDO INTERNO MEJORADO
+========================= */
 .home-cards .card h3 {
-    font-size: 28px;
-    margin-bottom: 15px;
-    color: #92400e;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--primary-color); /* Color de letra H3 diferente */
+    line-height: 1.2;
 }
 
 .home-cards .card p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 25px;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 30px;
     color: #4b5563;
+    min-height: 100px; /* Asegura que todas tengan la misma altura visual */
 }
 
+/* Botón Cuadrado con Sombra (Match con el estilo anterior) */
 .home-cards .card .btn {
     display: inline-block;
-    padding: 12px 25px;
-    font-weight: bold;
-    background-color: #9d174d;
+    padding: 15px 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #000000;
     color: white;
-    border-radius: 25px;
-    text-decoration: none;
+    border: 2px solid #000000;
+    border-radius: 0; /* Totalmente cuadrado */
+    box-shadow: 4px 4px 0px var(--accent-color);
+    transition: 0.3s;
 }
 
+.home-cards .card .btn:hover {
+    background-color: var(--accent-color);
+    box-shadow: none;
+    transform: translate(2px, 2px);
+}
+
+/* =========================
+   RESPONSIVE (A 1 columna en móviles)
+========================= */
+@media (max-width: 992px) {
+    .home-cards {
+        grid-template-columns: 1fr;
+        padding: 0 40px;
+    }
+}
+.home-cards .card:hover {
+    transform: rotate(-1deg) scale(1.02);
+    box-shadow: 18px 18px 0px #000000;
+}
 
