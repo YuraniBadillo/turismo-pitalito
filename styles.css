@@ -54,47 +54,91 @@ h3 {
     margin-bottom: 20px;
 }
 /* =========================
-   HEADER PROFESIONAL (Rediseñado)
+   HEADER PROFESIONAL (Versión Final)
 ========================= */
 
 header {
-    height: 60vh; /* Altura controlada para subpáginas */
+    height: 70vh; /* Altura equilibrada */
     background: 
-        linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 100%),
-        url("images/pitalito.jpg");
+        linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.2) 100%),
+        url("images/pitalito.jpg"); /* Verifica que la ruta de tu imagen sea correcta */
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Efecto Parallax suave */
+    background-attachment: fixed; /* Efecto Parallax */
     
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Alineación asimétrica */
+    justify-content: flex-start;
     padding: 0 10%;
+    position: relative;
     
-    /* Corte diagonal moderno para romper la rigidez */
+    /* Corte diagonal moderno */
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
-    box-shadow: none; /* El clip-path ya define el borde */
 }
 
-/* Contenedor de texto estilo "Vidrio" */
+/* Contenedor estilo Glassmorphism con alineación */
 .header-content {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    padding: 40px;
-    border-left: 8px solid var(--accent-color); /* Línea gruesa de acento */
-    max-width: 600px;
+    background: rgba(255, 255, 255, 0.1); /* Efecto cristal */
+    backdrop-filter: blur(12px);
+    padding: 60px; /* Padding generoso */
+    border-left: 8px solid var(--accent-color); /* Línea de acento naranja */
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
+/* Título H1 con color propio y espacio inferior */
 header h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: clamp(32px, 5vw, 52px); /* Tamaño fluido */
-    color: var(--accent-color); /* Color de letra H1 diferenciado */
+    font-size: clamp(32px, 6vw, 55px);
+    color: var(--accent-color); /* Tu color de acento definido en :root */
     text-transform: uppercase;
-    margin: 0 0 20px 0;
+    margin: 0 0 50px 0; /* DISTANCIA CLAVE: Aleja el botón del título */
     line-height: 1;
     letter-spacing: -2px;
+    text-shadow: 2px 2px 15px rgba(0,0,0,0.3);
 }
 
+/* Botón Cuadrado, Negro y Verde Neón */
+header button {
+    padding: 18px 40px;
+    border: 2px solid #000000;
+    border-radius: 0; /* Totalmente cuadrado */
+    background-color: #000000;
+    color: #19e337; /* Tu verde neón */
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    
+    /* Sombra sólida desplazada (Match con tarjetas) */
+    box-shadow: 8px 8px 0px var(--accent-color);
+}
+
+/* Efecto Hover: El botón se "hunde" */
+header button:hover {
+    background-color: #19e337;
+    color: #000000;
+    transform: translate(4px, 4px);
+    box-shadow: 2px 2px 0px #000000;
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+    header {
+        padding: 0 5%;
+        height: 60vh;
+    }
+    .header-content {
+        padding: 30px;
+    }
+    header h1 {
+        margin-bottom: 30px;
+    }
+}
 /* =========================
    BOTONES CUADRADOS (Match con el estilo anterior)
 ========================= */
