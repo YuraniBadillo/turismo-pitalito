@@ -734,7 +734,7 @@ section {
 /* Ajuste para móviles */
 @media (max-width: 768px) {
     .nature-section {
-        min-height: 40vh;
+        min-height: 150vh;
         padding: 40px 5%;
         clip-path: none; /* Quitamos el corte en móvil para evitar bugs de visualización */
     }
