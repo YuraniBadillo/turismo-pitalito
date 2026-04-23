@@ -120,17 +120,7 @@ header button:hover {
     color: #000000;
     transform: translate(-3px, -3px); /* Efecto de rebote */
     box-shadow: 9px 9px 0px #000000;
-}
-.home-cards .card p {
-    /* ... tus otros estilos ... */
-    margin-bottom: 40px; /* Crea una separación clara antes del botón */
-}
 
-.home-cards .card .btn {
-    /* ... tus otros estilos ... */
-    margin-top: auto; /* Empuja el botón al final si las tarjetas tienen alturas distintas */
-    display: inline-block;
-}
 
 
 /* =========================
