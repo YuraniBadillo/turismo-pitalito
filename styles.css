@@ -81,7 +81,7 @@ button {
     padding: 10px 20px;
     border: none;
     border-radius: 30px;
-    background-color: white;
+    background-color: black;
     color: #19e337;
     cursor: pointer;
     font-weight: bold;
@@ -89,7 +89,7 @@ button {
 }
 
 button:hover {
-    background-color: #000000;
+    background-color: #000080;
     transform: scale(1.05);
 }
 
