@@ -33,7 +33,7 @@ h1, h2, h3 {
 
 /* Título principal: Color de acento para máximo contraste en el Hero */
 h1 {
-    color: #f09e9e; /* Naranja vibrante */
+    color: var(--accent-color); /* Naranja vibrante */
     text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
 }
 
