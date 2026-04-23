@@ -1089,7 +1089,7 @@ section {
 /* Textos del Hero Gastronomía */
 #food-title {
     font-size: clamp(3rem, 8vw, 5rem);
-    color: #fb923c; /* Naranja claro para resaltar */
+    color: #f2f0ed; /* Naranja claro para resaltar */
     margin: 0;
     text-transform: uppercase;
     letter-spacing: -3px;
