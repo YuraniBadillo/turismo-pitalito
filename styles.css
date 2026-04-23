@@ -58,7 +58,7 @@ h3 {
 ========================= */
 
 header {
-    height: 60vh; /* Altura controlada para subpáginas */
+    height: 10vh; /* Altura controlada para subpáginas */
     background: 
         linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 100%),
         url("images/pitalito.jpg");
