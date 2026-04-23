@@ -99,27 +99,33 @@ header h1 {
    BOTONES CUADRADOS (Match con el estilo anterior)
 ========================= */
 
-header button {
-    padding: 15px 30px;
-    border: 2px solid #000000;
-    border-radius: 0; /* Totalmente cuadrado */
-    background-color: #000000;
-    color: #19e337; /* Mantengo tu color verde neón original */
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    text-transform: uppercase;
-    transition: 0.2s;
+.header-content {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-left: 8px solid var(--accent-color);
     
-    /* Sombra sólida desplazada */
-    box-shadow: 6px 6px 0px var(--accent-color);
+    /* CAMBIO CLAVE: De vertical a horizontal */
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-between; /* Empuja el botón al extremo opuesto */
+    
+    max-width: 900px; /* Aumentamos el ancho para que quepan ambos de lado */
+    width: 80%;
 }
-
-header button:hover {
-    background-color: #19e337;
-    color: #000000;
-    transform: translate(-3px, -3px); /* Efecto de rebote */
-    box-shadow: 9px 9px 0px #000000;
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(32px, 5vw, 52px);
+    color: var(--accent-color);
+    text-transform: uppercase;
+    
+    /* CAMBIO CLAVE: Quitamos el margen de abajo y lo ponemos a la derecha */
+    margin: 0 60px 0 0; 
+    
+    line-height: 1;
+    letter-spacing: -2px;
+    flex-shrink: 0; /* Evita que el título se achique si el texto es largo */
 }
 
 
