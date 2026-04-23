@@ -1,4 +1,5 @@
 /* =========================
+/* =========================
    CONFIGURACIÓN GENERAL (Personalizada)
 ========================= */
 
@@ -13,14 +14,15 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif; /* Tipografía para lectura */
     background-color: #1f2a40;
     color: #a5bad9;
     scroll-behavior: smooth;
 }
+ 
 
 /* =========================
-   TIPOGRAFÍA
+   TIPOGRAFÍA CON COLORES ÚNICOS
 ========================= */
 
 h1, h2, h3 {
@@ -29,172 +31,285 @@ h1, h2, h3 {
     letter-spacing: -1px;
 }
 
+/* Título principal: Color de acento para máximo contraste en el Hero */
 h1 {
-    color: var(--accent-color);
+    color: var(--accent-color); /* Naranja vibrante */
     text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
 }
 
+/* Títulos de sección: Color primario para elegancia */
 h2 {
-    color: #a78bfa;
-    border-left: 4px solid var(--accent-color);
+    color: #a78bfa; /* Un morado claro/lavanda que resalta sobre el fondo oscuro */
+    border-left: 4px solid var(--accent-color); /* Detalle visual extra */
     padding-left: 15px;
 }
 
+/* Títulos de tarjetas/subsecciones: Color blanco o gris azulado claro */
 h3 {
-    color: #ffffff;
+    color: #ffffff; /* Blanco puro para legibilidad en bloques pequeños */
     font-size: 1.5rem;
 }
-
 .footer h3 {
-    color: var(--accent-color);
+    color: var(--accent-color); /* Usamos el naranja para los títulos de las columnas del pie de página */
     margin-bottom: 20px;
 }
-
 /* =========================
-   HEADER Y NAV
+   HEADER PROFESIONAL (Rediseñado)
 ========================= */
 
 header {
-    height: 30vh;
+    height: 30vh; /* Altura controlada para subpáginas */
     background: 
         linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 100%),
-        url("images/pitalito.jpg") center/cover fixed;
+        url("images/pitalito.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Efecto Parallax suave */
+    
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    padding: 0 10%;
+    justify-content: flex-start; /* Alineación asimétrica */
+   padding: 0 10%;
+    
+    /* Corte diagonal moderno para romper la rigidez */
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    box-shadow: none; /* El clip-path ya define el borde */
 }
+
+/* Contenedor de texto estilo "Vidrio" */
+.header-content {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 25px 40px;
+    border-left: 8px solid var(--accent-color); /* Línea gruesa de acento */
+    max-width: 600px;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(32px, 5vw, 52px); /* Tamaño fluido */
+    color: var(--accent-color); /* Color de letra H1 diferenciado */
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+/* =========================
+   BOTONES CUADRADOS (Match con el estilo anterior)
+========================= */
 
 .header-content {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     padding: 40px;
     border-left: 8px solid var(--accent-color);
+    
+    /* CAMBIO CLAVE: De vertical a horizontal */
     display: flex;
     flex-direction: row; 
     align-items: center; 
-    justify-content: space-between;
-    max-width: 900px;
+    justify-content: space-between; /* Empuja el botón al extremo opuesto */
+    
+    max-width: 900px; /* Aumentamos el ancho para que quepan ambos de lado */
     width: 80%;
 }
-
-.navbar {
-    background-color: #2c3e50;
-    padding: 12px 0;
-    text-align: center;
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(32px, 5vw, 52px);
+    color: var(--accent-color);
+    text-transform: uppercase;
+    
+    /* CAMBIO CLAVE: Quitamos el margen de abajo y lo ponemos a la derecha */
+    margin: 0 60px 0 0; 
+    
+    line-height: 1;
+    letter-spacing: -2px;
+    flex-shrink: 0; /* Evita que el título se achique si el texto es largo */
 }
 
-.navbar ul { list-style: none; padding: 0; margin: 0; }
-.navbar li { display: inline-block; margin: 0 25px; }
-.navbar a { text-decoration: none; color: white; font-weight: bold; transition: 0.3s; }
-.navbar a:hover { color: #f39c12; }
 
 /* =========================
-   HERO INICIO
+   HERO DINÁMICO (Adiós a la rigidez)
 ========================= */
 
 .hero {
-    height: 45vh;
+    height: 45vh; /* Más impacto visual */
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), 
-                url("images/Hero.jpg") center/cover fixed;
+                url("images/Hero.jpg") center/cover fixed; /* Efecto Parallax */
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-start; /* Alineación asimétrica */
     padding-left: 10%;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%); /* Forma orgánica */
 }
 
 .hero-content {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(100, 100, 100, 0.1);
     backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
     padding: 50px;
     border-radius: 4px;
     border-left: 5px solid var(--accent-color);
     max-width: 600px;
 }
 
-/* ============================================================
-   EFECTO VIDRIO EN HEROS DE NATURALEZA, CULTURA Y GASTRONOMÍA
-============================================================ */
-
-/* Estilos de sección para asegurar que el fondo se vea */
-.nature-section, .culture-section, .food-section {
-    position: relative; 
-    width: 100%;
-    min-height: 60vh;
-    display: flex;
-    align-items: center;
-    padding: 0 10%;
-    background-size: cover !important;
-    background-position: center !important;
-    background-attachment: fixed !important;
+.hero h2 {
+    font-size: clamp(2.5rem, 6vw, 4.5rem); /* Tamaño fluido */
+    line-height: 1.1;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
 }
-
-/* Aplicación del VIDRIO a las cajas de texto únicamente */
-.nature-page .category-header, 
-.culture-page .category-header, 
-.gastronomia-page .highlight-section {
-    background: rgba(255, 255, 255, 0.1) !important; /* Fondo transparente */
-    backdrop-filter: blur(15px) !important;         /* Efecto borroso */
-    -webkit-backdrop-filter: blur(15px);
-    padding: 50px !important;
-    border-radius: 4px;
-    max-width: 700px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    position: relative;
-    z-index: 10;
-}
-
-/* Bordes de color específicos para cada caja de vidrio */
-.nature-page .category-header { border-left: 8px solid #19e337; }
-.culture-page .category-header { border-left: 8px solid #f59e0b; }
-.gastronomia-page .highlight-section { 
-    border-left: 8px solid #f97316 !important; 
-    margin: 0 !important; 
-    display: block !important; 
-}
-
-/* Fondos individuales (Imágenes) */
-.nature-section { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/naturaleza-hero.jpg'); }
-.culture-section { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/cultura-hero.jpg'); }
-.food-section { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/gastronomia-hero.jpg'); }
-
 /* =========================
-   TARJETAS Y GRIDS
+   BOTONES ESTILO EDITORIAL (Cuadrados y con Sombra)
 ========================= */
 
+.hero-btn, button, .btn-sub {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 18px 35px;
+    
+    /* Forma Cuadrada Estricta */
+    border-radius: 0 !important; 
+    border: 2px solid #ffffff;
+    
+    background: var(--accent-color);
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+
+    /* Sombra Sólida Estilo "Pop" */
+    box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+/* Efecto al pasar el mouse (Hover) */
+.hero-btn:hover, button:hover, .btn-sub:hover {
+    background: #ffffff;
+    color: #000000;
+    border-color: #000000;
+    
+    /* La sombra se reduce para simular que el botón se "presiona" */
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+    transform: translate(4px, 4px);
+}
+
+/* Botón secundario o Navbar si aplica */
+.navbar a.btn-nav {
+    border: 1px solid var(--accent-color);
+    padding: 10px 20px;
+    box-shadow: 4px 4px 0px var(--accent-color);
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    background-color: #2c3e50;
+    padding: 12px 0;
+    text-align: center;
+  }
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #f39c12;
+}
+
+/* =========================
+   ESTRUCTURA DE CONTENIDOS (Gestión de espacio en blanco)
+========================= */
+
+main {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Eliminamos el exceso de blanco con un patrón sutil de fondo */
+section {
+    padding: 100px 0;
+    background-image: radial-gradient(#d1d5db 0.5px, transparent 0.5px);
+    background-size: 20px 20px; /* Puntismo sutil */
+}
+
+/* Grid uniforme solicitado por el tutor */
 .category-content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    max-width: 1300px;
-    margin: 50px auto;
-    padding: 0 40px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
 }
+
+/* =========================
+   TARJETAS (Diseño Editorial)
+========================= */
 
 .card {
     background: white;
+    border-radius: 0; /* Menos redondeado = más profesional/arquitectónico */
     border: 1px solid #eee;
+    padding: 0;
     overflow: hidden;
     transition: var(--transition);
 }
 
-.card img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
 
-/* Colores de tarjetas */
-.nature-page .card { border: 3px solid #064e3b; box-shadow: 15px 15px 0px #10b981; }
-.culture-page .card { border: 3px solid #78350f; box-shadow: 15px 15px 0px #d97706; }
-.gastronomia-page .card { border: 3px solid #9a3412; box-shadow: 15px 15px 0px #f97316; }
+.card img {
+    width: 100%;
+    height: 250px; /* Tamaño uniforme estricto */
+    object-fit: cover;
+    filter: grayscale(30%); /* Efecto artístico */
+    transition: var(--transition);
+}
+
+.card:hover img {
+    filter: grayscale(0%);
+}
+
+.card-info {
+    padding: 25px;
+}
 
 /* =========================
-   FOOTER
+   ICONOGRAFÍA SVG (Dinamismo)
+========================= */
+
+/* Clase para íconos dinámicos */
+.icon-svg {
+    width: 45px;
+    height: 45px;
+    fill: var(--primary-color);
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* =========================
+   FOOTER Y CITAS
 ========================= */
 
 .footer {
@@ -203,18 +318,812 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
+    text-align: left;
 }
+
+.ai-citation {
+    font-style: italic;
+    font-size: 0.85rem;
+    color: #9ca3af;
+    border-top: 1px solid #374151;
+    margin-top: 20px;
+    padding-top: 10px;
+    text-align: center;
+    grid-column: 1 / -1; /* Ocupa todo el ancho */
+}
+
+/* =========================
+   NATURALEZA
+========================= */
+
+.nature-section h2 {
+    color: #14532d;
+}
+
+/* =========================
+   CULTURA
+========================= */
+
+.culture-section h2 {
+    color: #1e3a8a;
+}
+
+/* =========================
+   GASTRONOMÍA
+========================= */
+
+.food-section h2 {
+    color: #7f1d1d;
+}
+
+/* =========================
+   CARDS NATURALEZA
+========================= */
+
+.nature-page .card {
+    background: linear-gradient(90deg,#dcfce7,#bbf7d0);
+    border: 2px solid #86efac;
+}
+
+/* =========================
+   CARDS CULTURA
+========================= */
+
+.culture-page .card {
+    background: linear-gradient(90deg,#dbeafe,#bfdbfe);
+    border: 2px solid #93c5fd;
+}
+
+/* =========================
+   CARDS GASTRONOMÍA
+========================= */
+
+.gastronomia-page .card {
+    background: linear-gradient(90deg,#fee2e2,#fecaca);
+    border: 2px solid #fca5a5;
+}
+
+.gastronomia-page .card h3 {
+    color: #7f1d1d;
+}
+/* =========================
+   GRID DE 3 COLUMNAS UNIFORMES
+========================= */
+.home-cards {
+    display: grid;
+    /* Forzamos exactamente 3 columnas en pantallas grandes */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+    max-width: 2300px; /* Un poco más ancho para llenar la pantalla */
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* =========================
+   TARJETAS CON FORMAS ASIMÉTRICAS
+========================= */
+.home-cards .card {
+    text-align: left; /* Alineación editorial para mayor seriedad */
+    padding: 50px 35px;
+    background: #ffffff;
+    border: 3px solid #000000; /* Borde sólido estilo Brutalista */
+    box-shadow: 12px 12px 0px var(--accent-color); /* Sombra sólida que llena espacio */
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+/* CADA TARJETA CON UNA FORMA DIFERENTE (Border-radius asimétrico) */
+
+/* Tarjeta 1: Esquina superior derecha redondeada */
+.home-cards .card:nth-child(1) {
+    border-radius: 80px 0px 0px 0px;
+}
+
+/* Tarjeta 2: Esquinas alternas (estilo hoja) */
+.home-cards .card:nth-child(2) {
+    border-radius: 0px 80px 0px 80px;
+}
+
+/* Tarjeta 3: Esquina inferior izquierda redondeada */
+.home-cards .card:nth-child(3) {
+    border-radius: 0px 0px 80px 0px;
+}
+
+/* =========================
+   CONTENIDO INTERNO MEJORADO
+========================= */
+.home-cards .card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #050505; /* Color de letra H3 diferente */
+    line-height: 1.2;
+}
+
+.home-cards .card p {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #4b5563;
+    min-height: 100px; /* Asegura que todas tengan la misma altura visual */
+}
+
+/* Botón Cuadrado con Sombra (Match con el estilo anterior) */
+.home-cards .card .btn {
+    display: inline-block;
+    padding: 15px 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #000000;
+    color: white;
+    border: 2px solid #000000;
+    border-radius: 0; /* Totalmente cuadrado */
+    box-shadow: 4px 4px 0px var(--accent-color);
+    transition: 0.3s;
+}
+
+.home-cards .card .btn:hover {
+    background-color: var(--accent-color);
+    box-shadow: none;
+    transform: translate(2px, 2px);
+}
+
+/* =========================
+   BIENVENIDA: ESTILO GALERÍA DE LUJO
+========================= */
+
+.highlight-section {
+    max-width: 1100px;
+    margin: -40px auto 100px;
+    padding: 100px 60px;
+    background-color: #ffffff;
+    display: grid;
+    /* Dividimos en dos columnas: una para el título y otra para el texto */
+    grid-template-columns: 1fr 1.5fr;
+    gap: 50px;
+    position: relative;
+    z-index: 20;
+    
+    /* Borde casi invisible pero con sombra de profundidad */
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 40px 40px 80px rgba(0,0,0,0.08);
+}
+
+/* Detalle de línea vertical decorativa */
+.highlight-section::after {
+    content: "";
+    position: absolute;
+    left: 40%; /* Línea divisoria visual */
+    top: 20%;
+    bottom: 20%;
+    width: 1px;
+    background: linear-gradient(to bottom, transparent, var(--accent-color), transparent);
+}
+
+#home-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: #1a1a1a;
+    line-height: 0.85;
+    text-align: right; /* Título pegado a la línea divisoria */
+    margin: 0;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Resaltado elegante para la palabra clave */
+#home-title span {
+    display: block;
+    font-size: 1.2rem;
+    letter-spacing: 8px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+#home-desc {
+    font-size: 1.1rem;
+    line-height: 2;
+    color: #555;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-left: 4px solid var(--accent-color); /* Un toque de color sólido */
+}
+
+/* Ajuste para móviles: se vuelve vertical */
+@media (max-width: 900px) {
+    .highlight-section {
+        grid-template-columns: 1fr;
+        margin: 20px;
+        padding: 50px 30px;
+        text-align: center;
+    }
+    .highlight-section::after { display: none; }
+    #home-title { text-align: center; margin-bottom: 30px; }
+    #home-desc { border-left: none; border-top: 2px solid var(--accent-color); padding: 20px 0 0 0; }
+}
+
+/* =========================
+   RESPONSIVE (A 1 columna en móviles)
+========================= */
+@media (max-width: 992px) {
+    .home-cards {
+        grid-template-columns: 1fr;
+        padding: 0 40px;
+    }
+}
+.home-cards .card:hover {
+    transform: rotate(-1deg) scale(1.02);
+    box-shadow: 18px 18px 0px #000000;
+}
+
+/* =========================
+   PÁGINA DE NATURALEZA (nature-page)
+========================= */
+
+/* Paleta de colores para Naturaleza */
+.nature-page {
+    background-color: linear-gradient(to bottom, #064e3b, #f0fdf4); /* Un fondo verde menta muy suave */
+}
+
+/* Ajuste de la sección para que ocupe el ancho */
+.nature-page .category-content {
+    display: grid;
+    /* Dos columnas iguales que llenan el espacio */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px;
+    max-width: 1300px;
+    margin: 50px auto;
+    padding: 0 40px;
+}
+
+/* =========================
+   TARJETAS DE NATURALEZA (Llamativas)
+========================= */
+
+.nature-page .card {
+    background: #ffffff;
+    border: 3px solid #064e3b; /* Verde bosque profundo */
+    padding: 0; /* Quitamos padding para que la imagen toque los bordes laterales */
+    overflow: hidden;
+    position: relative;
+    transition: var(--transition);
+    
+    /* Sombra sólida verde esmeralda */
+    box-shadow: 15px 15px 0px #10b981; 
+}
+
+/* Forma diferente para cada una (Asimetría) */
+.nature-page .card:nth-child(1) {
+    border-radius: 0 100px 0 0;
+}
+
+.nature-page .card:nth-child(2) {
+    border-radius: 100px 0 0 0;
+}
+
+.nature-page .card img {
+    width: 100%;
+    height: 350px; /* Imagen más alta para impacto */
+    object-fit: cover;
+    border-bottom: 3px solid #064e3b;
+    transition: transform 0.5s ease;
+}
+
+.nature-page .card:hover img {
+    transform: scale(1.05); /* Zoom suave al pasar el mouse */
+}
+
+/* =========================
+   TEXTOS Y BOTONES (btn-sub)
+========================= */
+
+.nature-page .card h3 {
+    color: #064e3b;
+    font-size: 1.8rem;
+    padding: 25px 25px 10px;
+    margin: 0;
+}
+
+.nature-page .card p {
+    color: #374151;
+    padding: 0 25px 25px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Botón Sub (Ver más) estilizado */
+.nature-page .btn-sub {
+    display: block;
+    text-align: center;
+    background: #064e3b;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 20px;
+    margin: 0 25px 25px;
+    border: 2px solid #000;
+    transition: all 0.3s;
+    
+    /* Sombra interna del botón */
+    box-shadow: 5px 5px 0px #10b981;
+}
+
+.nature-page .btn-sub:hover {
+    background: #10b981;
+    color: #000;
+    transform: translate(-3px, -3px);
+    box-shadow: 8px 8px 0px #000;
+}
+
 
 /* =========================
    RESPONSIVE
 ========================= */
-
 @media (max-width: 900px) {
-    .category-content { grid-template-columns: 1fr; }
-    .nature-page .category-header, 
-    .culture-page .category-header, 
-    .gastronomia-page .highlight-section {
-        padding: 30px !important;
-        margin: 0 auto !important;
+    .nature-page .category-content {
+        grid-template-columns: 1fr; /* Una sola columna en móviles */
+        padding: 0 20px;
+    }
+}
+
+/* =========================
+   MINI-HERO NATURALEZA: DISEÑO UNIFICADO
+========================= */
+
+.nature-section {
+    position: relative; 
+    width: 100%;
+    min-height: 60vh; /* Altura unificada */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 10% 120px; /* Un poco más de espacio abajo para las tarjetas */
+    margin-bottom: 0; 
+    
+    /* Fondo con imagen y Parallax */
+    background: 
+        linear-gradient(to right, rgba(6, 78, 59, 0.95), rgba(0, 0, 0, 0.3)),
+        url('images/naturaleza-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    color: white;
+    z-index: 1;
+    
+    /* IMPORTANTE: Quitamos el clip-path aquí para que la extensión del fondo funcione */
+}
+
+/* El truco: Extensión de color hacia abajo (DETRÁS de las tarjetas) */
+.nature-section::after {
+    content: "";
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    height: 600px; /* Altura suficiente para cubrir las tarjetas */
+    z-index: -1; 
+    /* Degradado del verde del Hero al fondo de la página */
+    background: linear-gradient(to bottom, #064e3b, #f0fdf4); 
+}
+
+/* Detalle decorativo lateral neón */
+.nature-section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 20%;
+    bottom: 20%;
+    width: 10px;
+    background: #19e337;
+    z-index: 2;
+}
+
+/* Textos del Hero */
+#nature {
+    font-size: clamp(3rem, 8vw, 5rem);
+    color: #19e337; 
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+    line-height: 1;
+}
+
+#nature-desc {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #e5e7eb;
+    max-width: 750px;
+    margin-top: 25px;
+    text-align: left;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+/* =========================
+   CONTENEDOR DE TARJETAS
+========================= */
+.category-content {
+    position: relative;
+    z-index: 10; /* Asegura que las tarjetas floten sobre la extensión verde */
+    padding-top: 40px; 
+    margin-top: 0;
+}
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+    .nature-section {
+        min-height: auto; /* Que el contenido mande en móvil */
+        padding: 60px 5% 80px;
+    }
+    #nature { font-size: 2.8rem; }
+    .nature-section::after { height: 1000px; } /* Más largo para móvil porque las tarjetas se apilan */
+}
+
+/* =========================
+   PÁGINA DE CULTURA (culture-page)
+========================= */
+
+/* Paleta de colores para Cultura (Tonos arcilla y café) */
+.culture-page {
+    background-color:linear-gradient(to bottom, #064e3b, #f0fdf4); /* Fondo crema suave */
+}
+
+.culture-page .category-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px;
+    max-width: 1300px;
+    margin: 50px auto;
+    padding: 0 40px;
+}
+
+/* =========================
+   TARJETAS DE CULTURA
+========================= */
+
+.culture-page .card {
+    background: #ffffff;
+    border: 3px solid #78350f; /* Color café oscuro / arcilla */
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    transition: var(--transition);
+    
+    /* Sombra sólida color terracota */
+    box-shadow: 15px 15px 0px #d97706; 
+}
+
+/* Asimetría en las tarjetas de cultura */
+.culture-page .card:nth-child(1) {
+    border-radius: 40px 0px 40px 0px; /* Estilo artesanal */
+}
+
+.culture-page .card:nth-child(2) {
+    border-radius: 0px 40px 0px 40px;
+}
+
+.culture-page .card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-bottom: 3px solid #78350f;
+    transition: transform 0.5s ease;
+}
+
+.culture-page .card:hover img {
+    transform: scale(1.05);
+}
+
+/* =========================
+   TEXTOS Y BOTONES (Cultura)
+========================= */
+
+.culture-page .card h3 {
+    color: #78350f;
+    font-size: 1.8rem;
+    padding: 25px 25px 10px;
+    margin: 0;
+}
+
+.culture-page .card p {
+    color: #4b5563;
+    padding: 0 25px 25px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.culture-page .btn-sub {
+    display: block;
+    text-align: center;
+    background: #78350f;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 20px;
+    margin: 0 25px 25px;
+    border: 2px solid #000;
+    transition: all 0.3s;
+    box-shadow: 5px 5px 0px #d97706;
+}
+
+.culture-page .btn-sub:hover {
+    background: #d97706;
+    color: #fff;
+    transform: translate(-3px, -3px);
+    box-shadow: 8px 8px 0px #000;
+}
+
+/* =========================
+   MINI-HERO CULTURA: DISEÑO UNIFICADO
+========================= */
+
+.culture-section {
+    position: relative; 
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 10% 120px;
+    margin-bottom: 0; 
+    
+    background: 
+        linear-gradient(to right, rgba(120, 53, 15, 0.9), rgba(0, 0, 0, 0.4)),
+        url('images/cultura-hero.jpg'); /* Imagen de café o artesanías */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    color: white;
+    z-index: 1;
+}
+
+/* Extensión de color hacia abajo (DETRÁS de las tarjetas) */
+.culture-section::after {
+    content: "";
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    height: 600px;
+    z-index: -1; 
+    background: linear-gradient(to bottom, #78350f, #fffaf5); 
+}
+
+/* Detalle decorativo lateral (Color Oro/Ámbar) */
+.culture-section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 20%;
+    bottom: 20%;
+    width: 10px;
+    background: #f59e0b; /* Amarillo ámbar */
+    z-index: 2;
+}
+
+/* Textos del Hero Cultura */
+#culture {
+    font-size: clamp(3rem, 8vw, 5rem);
+    color: #c90e0e; 
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+    line-height: 1;
+}
+
+#culture-desc {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #f3f4f6;
+    max-width: 750px;
+    margin-top: 25px;
+    text-align: left;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+
+/* =========================
+   RESPONSIVE CULTURA
+========================= */
+@media (max-width: 768px) {
+    .culture-section {
+        min-height: auto;
+        padding: 60px 5% 80px;
+    }
+    #culture { font-size: 2.8rem; }
+    .culture-section::after { height: 1000px; }
+    .culture-page .category-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================
+   PÁGINA DE GASTRONOMÍA (gastronomia-page)
+========================= */
+
+/* Paleta de colores cálida (Asado, Fogón, Tradición) */
+.gastronomia-page {
+    background-color: linear-gradient(to bottom, #064e3b, #f0fdf4); /* Un crema anaranjado muy suave */
+}
+
+.gastronomia-page .category-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px;
+    max-width: 1300px;
+    margin: 50px auto;
+    padding: 0 40px;
+}
+
+/* =========================
+   TARJETAS DE GASTRONOMÍA
+========================= */
+
+.gastronomia-page .card {
+    background: #ffffff;
+    border: 3px solid #9a3412; /* Color ladrillo / asado */
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    transition: var(--transition);
+    
+    /* Sombra sólida naranja vibrante */
+    box-shadow: 15px 15px 0px #f97316; 
+}
+
+/* Forma redondeada estilo "plato" o "artesanal" */
+.gastronomia-page .card:nth-child(1) {
+    border-radius: 60px 0px 60px 0px;
+}
+
+.gastronomia-page .card:nth-child(2) {
+    border-radius: 0px 60px 0px 60px;
+}
+
+.gastronomia-page .card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-bottom: 3px solid #9a3412;
+    transition: transform 0.5s ease;
+}
+
+.gastronomia-page .card:hover img {
+    transform: scale(1.05);
+}
+
+/* =========================
+   TEXTOS Y BOTONES (Gastronomía)
+========================= */
+
+.gastronomia-page .card h3 {
+    color: #9a3412;
+    font-size: 1.8rem;
+    padding: 25px 25px 10px;
+    margin: 0;
+}
+
+.gastronomia-page .card p {
+    color: #4b5563;
+    padding: 0 25px 25px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.gastronomia-page .btn-sub {
+    display: block;
+    text-align: center;
+    background: #9a3412;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 20px;
+    margin: 0 25px 25px;
+    border: 2px solid #000;
+    transition: all 0.3s;
+    box-shadow: 5px 5px 0px #ea580c;
+}
+
+.gastronomia-page .btn-sub:hover {
+    background: #fcfbfa;
+    color: #fff;
+    transform: translate(-3px, -3px);
+    box-shadow: 8px 8px 0px #000;
+}
+
+/* =========================
+   MINI-HERO GASTRONOMÍA: DISEÑO UNIFICADO
+========================= */
+
+.food-section {
+    position: relative; 
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 10% 120px;
+    margin-bottom: 0; 
+    
+    background: 
+        linear-gradient(to right, rgba(154, 52, 18, 0.9), rgba(0, 0, 0, 0.4)),
+        url('images/gastronomia-hero.jpg'); /* Imagen de asado huilense o platos típicos */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    color: white;
+    z-index: 1;
+}
+
+/* Extensión de color hacia abajo (DETRÁS de las tarjetas) */
+.food-section::after {
+    content: "";
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    height: 600px;
+    z-index: -1; 
+    background: linear-gradient(to bottom, #9a3412, #fff7ed); 
+}
+
+/* Detalle decorativo lateral (Color Fuego/Naranja) */
+.food-section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 20%;
+    bottom: 20%;
+    width: 10px;
+    background: #f97316;
+    z-index: 2;
+}
+
+/* Textos del Hero Gastronomía */
+#food-title {
+    font-size: clamp(3rem, 8vw, 5rem);
+    color: #f2f0ed; /* Naranja claro para resaltar */
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+    line-height: 1;
+}
+
+#food-desc {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #fef2f2;
+    max-width: 750px;
+    margin-top: 25px;
+    text-align: left;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+}
+.gastronomia-page .highlight-section {
+    margin-top: 0; /* Anulamos el -40px solo en esta página */
+    z-index: 10;   /* Bajamos su prioridad frente al navbar */
+}
+
+
+/* =========================
+   RESPONSIVE GASTRONOMÍA
+========================= */
+@media (max-width: 768px) {
+    .food-section {
+        min-height: auto;
+        padding: 60px 5% 80px;
+    }
+    #food-title { font-size: 2.8rem; }
+    .food-section::after { height: 1000px; }
+    .gastronomia-page .category-content {
+        grid-template-columns: 1fr;
     }
 }
