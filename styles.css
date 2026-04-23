@@ -1124,3 +1124,104 @@ section {
         grid-template-columns: 1fr;
     }
 }
+
+/* =========================
+   ESTILO BASE PARA MINI-HEROS CON CAJA DE VIDRIO
+========================= */
+
+/* Esta regla aplica el efecto a las tres páginas a la vez */
+.nature-section, .culture-section, .food-section {
+    position: relative; 
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 10%; /* Ajuste de padding para centrar la caja */
+    margin-bottom: 0; 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 1;
+}
+
+/* =========================
+   LA CAJA DE VIDRIO (Glass Container)
+========================= */
+
+/* Aplicamos el efecto a la caja que contiene el título y descripción */
+.nature-section .hero-content, 
+.culture-section .hero-content, 
+.food-section .highlight-section { /* Gastronomía usa .highlight-section en el HTML */
+    background: rgba(255, 255, 255, 0.08); /* Fondo blanco muy transparente */
+    backdrop-filter: blur(16px) saturate(180%); /* EL EFECTO CLAVE: Borroso y Saturación */
+    -webkit-backdrop-filter: blur(16px) saturate(180%); /* Soporte para Safari */
+    
+    padding: 60px; /* Espaciado interno de la caja */
+    max-width: 800px; /* Ancho máximo de la caja */
+    width: 100%;
+    
+    /* Bordes Brutalistas para consistencia */
+    border: 2px solid rgba(255, 255, 255, 0.15); /* Borde sutil */
+    border-radius: 4px; /* Un poco redondeado para suavizar */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Sombra suave para profundidad */
+    
+    /* Detalle de línea de color lateral (heredado de tu estilo) */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Reajuste de márgenes para que no se muevan de su lugar */
+.gastronomia-page .highlight-section {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* =========================
+   REAJUSTE DE TEXTOS DENTRO DE LA CAJA DE VIDRIO
+========================= */
+
+/* Títulos con sombra para máxima legibilidad */
+#nature, #culture, #food-title {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    margin: 0;
+}
+
+/* Descripciones con sombra suave */
+#nature-desc, #culture-desc, #food-desc {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #fef2f2;
+    margin-top: 25px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+/* Detalle decorativo lateral dentro de la caja de vidrio */
+.nature-section .hero-content::before, 
+.culture-section .hero-content::before, 
+.food-section .highlight-section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 8px; /* Línea gruesa lateral */
+    z-index: 2;
+}
+
+/* Colores de línea lateral específicos */
+.nature-section .hero-content::before { background: #19e337; }
+.culture-section .hero-content::before { background: #f59e0b; }
+.food-section .highlight-section::before { background: #f97316; }
+
+/* =========================
+   RESPONSIVE (Glass)
+========================= */
+@media (max-width: 768px) {
+    .nature-section .hero-content, 
+    .culture-section .hero-content, 
+    .food-section .highlight-section {
+        padding: 40px 25px; /* Menos padding interno en móvil */
+    }
+}
