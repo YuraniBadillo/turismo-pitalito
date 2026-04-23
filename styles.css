@@ -58,7 +58,7 @@ h3 {
 ========================= */
 
 header {
-    height: 10vh; /* Altura controlada para subpáginas */
+    height: 30vh; /* Altura controlada para subpáginas */
     background: 
         linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 100%),
         url("images/pitalito.jpg");
@@ -134,7 +134,7 @@ header h1 {
 ========================= */
 
 .hero {
-    height: 95vh; /* Más impacto visual */
+    height: 65vh; /* Más impacto visual */
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), 
                 url("images/Hero.jpg") center/cover fixed; /* Efecto Parallax */
     display: flex;
