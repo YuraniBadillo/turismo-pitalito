@@ -1,225 +1,186 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pitalito - Experiencia Única</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    
-    <style>
-        /* =========================
-           VARIABLES Y BASE
-        ========================= */
-        :root {
-            --primary: #6d28d9;
-            --accent: #f39c12;
-            --glass: rgba(255, 255, 255, 0.9);
-            --transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-        }
+/* =========================
+   CONFIGURACIÓN GENERAL (Personalizada)
+========================= */
 
-        html, body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Open Sans', sans-serif; /* Tipografía legible */
-            background: #f0f2f5;
-            color: #1f2937;
-            scroll-behavior: smooth;
-        }
+:root {
+    --primary-color: #6d28d9;
+    --accent-color: #f39c12;
+    --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    --card-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
 
-        h1, h2, h3 {
-            font-family: 'Montserrat', sans-serif; /* Tipografía de impacto */
-            text-transform: uppercase;
-            letter-spacing: -1px;
-        }
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif; /* Tipografía para lectura */
+    background-color: #f3f4f6;
+    color: #1f2937;
+    scroll-behavior: smooth;
+}
 
-        /* =========================
-           HERO (Personalizado)
-        ========================= */
-        .hero {
-            height: 80vh;
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                        url("images/Hero.jpg") center/cover fixed;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
-        }
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif; /* Tipografía para impacto */
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
 
-        .hero h2 { font-size: clamp(2rem, 8vw, 4rem); margin: 0; }
+/* =========================
+   HERO DINÁMICO (Adiós a la rigidez)
+========================= */
 
-        /* =========================
-           BLOQUES DE CONTENIDO (Sin espacios muertos)
-        ========================= */
-        .container {
-            max-width: 1200px;
-            margin: -50px auto 50px; /* Sube un poco para entrar en el hero */
-            padding: 0 20px;
-            position: relative;
-            z-index: 10;
-        }
+.hero {
+    height: 95vh; /* Más impacto visual */
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), 
+                url("images/Hero.jpg") center/cover fixed; /* Efecto Parallax */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alineación asimétrica */
+    padding-left: 10%;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%); /* Forma orgánica */
+}
 
-        .detail-box {
-            background: var(--glass);
-            backdrop-filter: blur(10px);
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            margin-bottom: 40px;
-        }
+.hero-content {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 50px;
+    border-radius: 4px;
+    border-left: 5px solid var(--accent-color);
+    max-width: 600px;
+}
 
-        /* =========================
-           EXPERIENCIAS (Cards con Imagen)
-        ========================= */
-        .exp-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin: 40px 0;
-        }
+.hero h2 {
+    font-size: clamp(2.5rem, 6vw, 4.5rem); /* Tamaño fluido */
+    line-height: 1.1;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
 
-        .exp-card {
-            position: relative;
-            height: 350px;
-            border-radius: 15px;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            padding: 25px;
-            transition: var(--transition);
-        }
+/* =========================
+   NAVBAR (Glassmorphism)
+========================= */
 
-        /* Imagen de fondo de la card */
-        .exp-card::before {
-            content: "";
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background-size: cover;
-            background-position: center;
-            transition: transform 0.6s ease;
-            z-index: 0;
-        }
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(44, 62, 80, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 20px 0;
+    border-bottom: 2px solid var(--accent-color);
+}
 
-        .exp-card::after {
-            content: "";
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(to top, rgba(0,0,0,0.8) 20%, transparent 80%);
-            z-index: 1;
-        }
+.navbar a {
+    position: relative;
+    padding-bottom: 5px;
+}
 
-        .exp-card:hover::before { transform: scale(1.1); }
-        .exp-card h3, .exp-card p { position: relative; z-index: 2; color: white; margin: 5px 0; }
+.navbar a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--accent-color);
+    transition: var(--transition);
+}
 
-        /* CLASES DE IMÁGENES (Ajusta las rutas) */
-        .senderismo::before { background-image: url("images/senderismo.jpg"); }
-        .aves::before { background-image: url("images/aves.jpg"); }
-        .foto::before { background-image: url("images/fotografia.jpg"); }
+.navbar a:hover::after {
+    width: 100%;
+}
 
-        /* =========================
-           GALERÍA ÁLBUM AUTOMÁTICO
-        ========================= */
-        .gallery-album {
-            width: 100%;
-            height: 500px;
-            border-radius: 20px;
-            overflow: hidden;
-            position: relative;
-            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-            border: 5px solid white;
-        }
+/* =========================
+   ESTRUCTURA DE CONTENIDOS (Gestión de espacio en blanco)
+========================= */
 
-        .slider-wrapper {
-            display: flex;
-            width: 400%; /* Para 4 imágenes */
-            height: 100%;
-            animation: automaticSlide 20s infinite ease-in-out;
-        }
+main {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-        .slider-wrapper img {
-            width: 25%; /* 100 / 4 imágenes */
-            height: 100%;
-            object-fit: cover;
-        }
+/* Eliminamos el exceso de blanco con un patrón sutil de fondo */
+section {
+    padding: 100px 0;
+    background-image: radial-gradient(#d1d5db 0.5px, transparent 0.5px);
+    background-size: 20px 20px; /* Puntismo sutil */
+}
 
-        @keyframes automaticSlide {
-            0%, 20% { transform: translateX(0); }
-            25%, 45% { transform: translateX(-25%); }
-            50%, 70% { transform: translateX(-50%); }
-            75%, 95% { transform: translateX(-75%); }
-            100% { transform: translateX(0); }
-        }
+/* Grid uniforme solicitado por el tutor */
+.category-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
 
-        /* =========================
-           FOOTER Y CITAS
-        ========================= */
-        footer {
-            background: #1a1a1a;
-            color: #9ca3af;
-            padding: 40px 20px;
-            text-align: center;
-            font-size: 14px;
-        }
+/* =========================
+   TARJETAS (Diseño Editorial)
+========================= */
 
-        .citation {
-            border-top: 1px solid #374151;
-            margin-top: 20px;
-            padding-top: 15px;
-            font-style: italic;
-        }
-    </style>
-</head>
-<body>
+.card {
+    background: white;
+    border-radius: 0; /* Menos redondeado = más profesional/arquitectónico */
+    border: 1px solid #eee;
+    padding: 0;
+    overflow: hidden;
+    transition: var(--transition);
+}
 
-    <header class="hero">
-        <div class="hero-content">
-            <h2>PITALITO: CORAZÓN DEL HUILA</h2>
-            <p>Descubre experiencias que trascienden lo ordinario.</p>
-        </div>
-    </header>
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
 
-    <main class="container">
-        
-        <section class="detail-box">
-            <h3>Bienvenido a la Experiencia</h3>
-            <p>Este sitio ha sido diseñado siguiendo estándares de personalización avanzada para ofrecer una interfaz limpia, dinámica y moderna.</p>
-        </section>
+.card img {
+    width: 100%;
+    height: 250px; /* Tamaño uniforme estricto */
+    object-fit: cover;
+    filter: grayscale(30%); /* Efecto artístico */
+    transition: var(--transition);
+}
 
-        <section class="exp-grid">
-            <div class="exp-card senderismo">
-                <h3>Senderismo</h3>
-                <p>Explora los caminos más bellos del valle.</p>
-            </div>
-            <div class="exp-card aves">
-                <h3>Avistamiento</h3>
-                <p>Conéctate con la fauna local en su estado puro.</p>
-            </div>
-            <div class="exp-card foto">
-                <h3>Fotografía</h3>
-                <p>Captura momentos inolvidables.</p>
-            </div>
-        </section>
+.card:hover img {
+    filter: grayscale(0%);
+}
 
-        <section class="gallery-album">
-            <div class="slider-wrapper">
-                <img src="images/guaitipan1.jpg" alt="Paisaje 1">
-                <img src="images/parque.jpg" alt="Paisaje 2">
-                <img src="images/artesanias1.jpg" alt="Paisaje 3">
-                <img src="images/cafe.jpg" alt="Paisaje 4">
-            </div>
-        </section>
+.card-info {
+    padding: 25px;
+}
 
-    </main>
+/* =========================
+   ICONOGRAFÍA SVG (Dinamismo)
+========================= */
 
-    <footer>
-        <p>&copy; 2026 Pitalito Turismo. Todos los derechos reservados.</p>
-        <div class="citation">
-            OpenAI. (2024). <em>ChatGPT</em> (versión de mayo 24) [Modelo de lenguaje grande]. https://chat.openai.com
-        </div>
-    </footer>
+/* Clase para íconos dinámicos */
+.icon-svg {
+    width: 45px;
+    height: 45px;
+    fill: var(--primary-color);
+    margin-bottom: 15px;
+    display: block;
+}
 
-</body>
-</html>
+/* =========================
+   FOOTER Y CITAS
+========================= */
+
+.footer {
+    background: #1a1a1a;
+    padding: 60px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    text-align: left;
+}
+
+.ai-citation {
+    font-style: italic;
+    font-size: 0.85rem;
+    color: #9ca3af;
+    border-top: 1px solid #374151;
+    margin-top: 20px;
+    padding-top: 10px;
+    text-align: center;
+    grid-column: 1 / -1; /* Ocupa todo el ancho */
+}
