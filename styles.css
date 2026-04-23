@@ -469,70 +469,76 @@ section {
 }
 
 /* =========================
-   SECCIÓN DE BIENVENIDA (HIGHLIGHT)
+   BIENVENIDA: ESTILO ELEGANTE ASIMÉTRICO
 ========================= */
 
 .highlight-section {
-    max-width: 1100px;
-    margin: -50px auto 80px; /* Margen negativo para que "suba" sobre el header/hero */
-    background: #ffffff;
-    padding: 60px;
+    max-width: 1000px;
+    margin: -60px auto 100px; /* Sube sobre el header */
+    padding: 80px 50px;
+    background-color: #ffffff;
     position: relative;
-    z-index: 10; /* Para que quede encima del corte del header */
-    border: 3px solid #000000;
-    box-shadow: 15px 15px 0px var(--primary-color); /* Sombra sólida verde */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    z-index: 10;
+    
+    /* Borde fino y elegante */
+    border: 1px solid #e5e7eb;
+    
+    /* Sombra sólida desplazada (Elegancia minimalista) */
+    box-shadow: 20px 20px 0px var(--accent-color); 
 }
 
-/* Decoración lineal superior */
+/* Detalle decorativo: El número o palabra pequeña arriba */
 .highlight-section::before {
-    content: "";
+    content: "EST. 1818"; /* O "HUILA, COLOMBIA" */
     position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-    border: 1px solid #e5e7eb;
-    pointer-events: none;
+    top: -15px;
+    left: 40px;
+    background: var(--primary-color);
+    color: #000;
+    padding: 5px 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
 }
 
 #home-title {
-    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-size: 3rem;
     color: #1f2a40;
-    margin-bottom: 25px;
-    border-left: none; /* Quitamos el borde lateral del h2 general aquí */
-    padding-left: 0;
-    position: relative;
+    margin-bottom: 30px;
+    text-align: left; /* Alineación a la izquierda es más elegante */
+    letter-spacing: -2px;
+    line-height: 0.9;
 }
 
-/* Línea decorativa bajo el título */
+/* Línea de acento minimalista */
 #home-title::after {
     content: "";
     display: block;
-    width: 80px;
-    height: 5px;
-    background: var(--accent-color);
-    margin: 15px auto 0;
+    width: 60px;
+    height: 2px;
+    background: var(--primary-color);
+    margin-top: 20px;
 }
 
 #home-desc {
-    font-size: 1.1rem;
-    line-height: 1.8;
+    font-size: 1.15rem;
+    line-height: 1.9;
     color: #4b5563;
-    max-width: 800px;
-    font-family: 'Open Sans', sans-serif;
+    max-width: 700px;
+    text-align: left;
+    font-weight: 300; /* Letra más delgada para elegancia */
+    margin-left: 0;
 }
 
-/* Ajuste para móviles */
+/* Ajuste Responsive */
 @media (max-width: 768px) {
     .highlight-section {
         margin: 20px;
-        padding: 40px 20px;
-        box-shadow: 8px 8px 0px var(--primary-color);
+        padding: 40px 30px;
+        box-shadow: 10px 10px 0px var(--accent-color);
     }
+    #home-title { font-size: 2.2rem; }
 }
 
 /* =========================
