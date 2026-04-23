@@ -297,3 +297,27 @@ section {
     text-align: center;
     grid-column: 1 / -1; /* Ocupa todo el ancho */
 }
+
+/* =========================
+   NATURALEZA
+========================= */
+
+.nature-section h2 {
+    color: #14532d;
+}
+
+/* =========================
+   CULTURA
+========================= */
+
+.culture-section h2 {
+    color: #1e3a8a;
+}
+
+/* =========================
+   GASTRONOMÍA
+========================= */
+
+.food-section h2 {
+    color: #7f1d1d;
+}
