@@ -948,7 +948,7 @@ section {
 
 /* Paleta de colores cálida (Asado, Fogón, Tradición) */
 .gastronomia-page {
-    background-color: #fff7ed; /* Un crema anaranjado muy suave */
+    background-color: linear-gradient(to bottom, #064e3b, #f0fdf4); /* Un crema anaranjado muy suave */
 }
 
 .gastronomia-page .category-content {
