@@ -82,14 +82,14 @@ button {
     border: none;
     border-radius: 30px;
     background-color: white;
-    color: #6d28d9;
+    color: #19e337;
     cursor: pointer;
     font-weight: bold;
     transition: 0.3s;
 }
 
 button:hover {
-    background-color: #f3f0ff;
+    background-color: #000000;
     transform: scale(1.05);
 }
 
@@ -111,7 +111,7 @@ button:hover {
 }
 
 .hero-content {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(200, 200, 200, 0.1);
     backdrop-filter: blur(15px);
     padding: 50px;
     border-radius: 4px;
