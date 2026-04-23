@@ -76,25 +76,34 @@ header {
     box-shadow: none; /* El clip-path ya define el borde */
 }
 
-/* Contenedor de texto estilo "Vidrio" */
 .header-content {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     padding: 40px;
-    border-left: 8px solid var(--accent-color); /* Línea gruesa de acento */
-    max-width: 600px;
+    border-left: 8px solid var(--accent-color);
+    
+    /* CAMBIO CLAVE: De vertical a horizontal */
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-between; /* Empuja el botón al extremo opuesto */
+    
+    max-width: 900px; /* Aumentamos el ancho para que quepan ambos de lado */
+    width: 80%;
 }
-
 header h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: clamp(32px, 5vw, 52px); /* Tamaño fluido */
-    color: var(--accent-color); /* Color de letra H1 diferenciado */
+    font-size: clamp(32px, 5vw, 52px);
+    color: var(--accent-color);
     text-transform: uppercase;
-    margin: 0 0 50px 0;
+    
+    /* CAMBIO CLAVE: Quitamos el margen de abajo y lo ponemos a la derecha */
+    margin: 0 60px 0 0; 
+    
     line-height: 1;
     letter-spacing: -2px;
+    flex-shrink: 0; /* Evita que el título se achique si el texto es largo */
 }
-
 /* =========================
    BOTONES CUADRADOS (Match con el estilo anterior)
 ========================= */
