@@ -566,7 +566,7 @@ section {
 
 /* Paleta de colores para Naturaleza */
 .nature-page {
-    background-color: #f0fdf4; /* Un fondo verde menta muy suave */
+    background-color: linear-gradient(to bottom, #064e3b, #f0fdf4); /* Un fondo verde menta muy suave */
 }
 
 /* Ajuste de la sección para que ocupe el ancho */
