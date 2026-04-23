@@ -352,5 +352,49 @@ section {
 .gastronomia-page .card h3 {
     color: #7f1d1d;
 }
+/* =========================
+   CARDS INICIO
+========================= */
+
+.home-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 40px;
+}
+
+.home-cards .card {
+    text-align: center;
+    padding: 40px 30px;
+    border-radius: 25px;
+    background: linear-gradient(90deg,#fef3c7,#fde68a);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    border: 2px solid #fcd34d;
+}
+
+.home-cards .card h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #92400e;
+}
+
+.home-cards .card p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #4b5563;
+}
+
+.home-cards .card .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-weight: bold;
+    background-color: #9d174d;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+}
 
 
