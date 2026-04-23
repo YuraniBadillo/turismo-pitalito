@@ -769,7 +769,7 @@ section {
 
 /* Paleta de colores para Cultura (Tonos arcilla y café) */
 .culture-page {
-    background-color: #fffaf5; /* Fondo crema suave */
+    background-color:linear-gradient(to bottom, #064e3b, #f0fdf4); /* Fondo crema suave */
 }
 
 .culture-page .category-content {
