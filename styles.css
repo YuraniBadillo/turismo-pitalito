@@ -1129,50 +1129,17 @@ section {
 }
 
 /* ============================================================
-   ESTILOS ESPECÍFICOS: PÁGINA LAGUNA DE GUAITIPÁN (SIMETRÍA TOTAL)
+   ESTILOS ESPECÍFICOS: PÁGINA LAGUNA DE GUAITIPÁN (UNIFICADO)
 ============================================================ */
 
 .guaitipan-page {
-    background-color: #f0fdf4;
-}
-
-/* --- HERO --- */
-.sub-hero {
-    height: 70vh;
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), 
-                url('images/guaitipan.jpg') center/cover fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0 15%;
-    color: white;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
-}
-
-#guaitipan-title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: clamp(2.5rem, 6vw, 4rem);
-    color: #19e337;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-    text-shadow: 2px 4px 10px rgba(0,0,0,0.5);
-}
-
-#guaitipan-hero {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    padding: 25px;
-    border-radius: 4px;
-    border-top: 3px solid #19e337;
-    max-width: 800px;
+    background-color: #f0fdf4; /* Fondo verde menta suave */
 }
 
 /* --- GRID DE EXPERIENCIAS --- */
 .detail-container {
     max-width: 1200px;
-    margin: 60px auto 10px auto; /* Espacio mínimo hacia abajo */
+    margin: 60px auto 10px auto; /* Espacio mínimo hacia abajo para pegar a galería */
     padding: 0 20px;
 }
 
@@ -1208,7 +1175,7 @@ section {
     display: flex;
     gap: 30px; 
     max-width: 1200px;
-    margin: 0 auto 60px auto; 
+    margin: 0 auto 60px auto; /* Centrado y con margen inferior */
     padding: 20px;
     align-items: stretch; /* Obliga a que ambos tengan la misma altura */
 }
@@ -1220,34 +1187,104 @@ section {
     flex-direction: column;
     background: #fff;
     border: 4px solid #000;
-    box-shadow: 12px 12px 0px #dba40b; /* Sombra sólida naranja */
+    box-shadow: 12px 12px 0px #dba40b; /* Sombra sólida naranja compartida */
     padding: 25px;
     box-sizing: border-box;
 }
 
-/* Títulos internos (Morados como en tu imagen) */
+/* Títulos internos */
 .gallery h2, .map-section h2 {
     margin-top: 0;
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
-    color: #a855f7; 
+    color: #a855f7; /* Color morado de tu imagen */
     font-size: 1.4rem;
     text-transform: uppercase;
     border-left: 4px solid #a855f7;
     padding-left: 10px;
 }
 
-/* --- AJUSTES DE LA GALERÍA --- */
-.slide-container {
-    flex-grow: 1; /* Ocupa el espacio disponible */
+/* --- AJUSTES DE LA GALERÍA (ESTILO ÁLBUM FOTO) --- */
+.slide {
+    display: none;
+    flex-direction: column;
+    height: 100%;
+}
+
+.slide.active {
+    display: flex;
+}
+
+/* EL EFECTO DE FOTO PEGADA: Un padding blanco grueso simula el marco de papel */
+.slide-photo-frame {
+    background: #fff;
+    padding: 10px; /* Ancho del marco blanco de la foto */
+    border: 1px solid #ddd; /* Sutil borde del papel */
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Suave sombra para "despegar" la foto */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .slide img, .gallery-video {
     width: 100%;
-    height: 350px; 
+    height: 350px; /* Altura fija para control, object-fit hace el resto */
     object-fit: cover;
-    border: 3px solid #000;
+    border-radius: 1px;
 }
 
 .img-source {
-    background
+    background: #000;
+    color: #fff;
+    padding: 6px;
+    font-size: 0.75rem;
+    text-align: center;
+    margin-top: auto; /* Se queda al final del marco */
+}
+
+/* Botones del Slider (Simétricos) */
+.slider {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.prev, .next {
+    background: #dba40b;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 4px 4px 0px #000;
+    transition: 0.2s;
+}
+
+.prev:hover, .next:hover {
+    background: #000;
+    color: #fff;
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px #dba40b;
+}
+
+/* --- AJUSTES DEL MAPA --- */
+.map-section iframe {
+    width: 100%;
+    height: 100%; /* Se estira para llenar el contenedor */
+    flex-grow: 1;
+    border: 3px solid #000;
+    min-height: 400px;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 900px) {
+    .horizontal-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+    .gallery, .map-section {
+        width: 100%;
+    }
+}
