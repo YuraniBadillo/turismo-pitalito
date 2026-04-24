@@ -1175,7 +1175,7 @@ section {
 /* --- GRID DE EXPERIENCIAS (Distribución Limpia) --- */
 .detail-container {
     max-width: 1200px;
-    margin: 60px auto;
+    margin: 60px auto 20px auto; /* Reducimos el margen inferior de 60px a 20px */
     padding: 0 20px;
 }
 
@@ -1306,22 +1306,28 @@ section {
 /* --- POSICIONAMIENTO EN PARALELO --- */
 .horizontal-layout {
     display: flex;
-    gap: 25px; /* El mismo espacio que usaste en exp-grid para que coincida verticalmente */
-    margin-top: 5px; /* Espacio después de las experiencias */
-    align-items: stretch; /* Para que ambos tengan la misma altura si es posible */
-}
+    gap: 25px;
+    margin-top: 0px; /* Cambiamos de 5px a 0 para eliminar el hueco */
+    margin-bottom: 60px; /* Añadimos margen abajo para separar del footer si es necesario */
+    align-items: stretch;
+    padding: 0 20px; /* Añadido para que se alinee con el ancho del detail-container */
+    max-width: 1200px; /* Añadido para que coincida con el bloque superior */
+    margin-left: auto;
+    margin-right: auto;
 
-/* Ajustamos las secciones hijas para que ocupen el espacio proporcional */
-.gallery, .map-section {
-    flex: 1; /* Cada uno toma el 50% del ancho */
-    margin-top: 0 !important; /* Quitamos los márgenes previos que empujaban hacia abajo */
-    display: flex;
-    flex-direction: column;
-}
-
-/* Aseguramos que el contenido interno de la galería y mapa llene el espacio */
+/* --- GALERÍA TIPO ÁLBUM --- */
 .gallery {
-    height: 100%;
+    /* Eliminamos el margin-top: 100px que tenías originalmente */
+    margin-top: 0 !important; 
+    background: #ffffff;
+    padding: 40px;
+    border: 2px solid #eee;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+}
+
+/* --- SECCIÓN MAPA --- */
+.map-section {
+    margin-top: 0 !important; /* Eliminamos el margin-top: 80px */
 }
 
 .map-section iframe {
