@@ -1222,7 +1222,7 @@ section {
     background: #ffffff;
     padding: 40px;
     border: 2px solid #eee;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 50px 80px rgba(0,0,0,0.05);
 }
 
 .slide {
