@@ -1302,3 +1302,30 @@ section {
     .exp-grid { grid-template-columns: 1fr; }
     .gallery { padding: 15px; }
 }
+/* ============================================================
+   AJUSTE DE ALINEACIÓN GENERAL (UNIFORMIDAD)
+============================================================ */
+
+/* Contenedor uniforme para TODAS las secciones */
+.detail-container,
+.gallery,
+.map-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Ajuste interno para que no se “salgan” visualmente */
+.gallery {
+    margin-top: 60px; /* igual que las demás */
+}
+
+.map-section {
+    margin-top: 60px; /* igual que las demás */
+}
+
+/* Opcional: asegurar que el mapa respete el ancho interno */
+.map-section iframe {
+    display: block;
+}
