@@ -1129,124 +1129,126 @@ section {
 }
 
 /* ============================================================
-   REDISEÑO: PÁGINA LAGUNA DE GUAITIPÁN (ESTILO COMPACTO)
+   REDISEÑO PARALELO: PÁGINA LAGUNA DE GUAITIPÁN
 ============================================================ */
 
 .guaitipan-page {
-    background: #f8fafc; /* Gris azulado muy tenue para resaltar los bloques */
+    background-color: #f0fdf4;
 }
 
 /* --- HERO COMPACTO --- */
 .sub-hero {
-    height: 60vh;
-    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), 
+    height: 45vh; /* Un poco más bajo para dar paso rápido al contenido paralelo */
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), 
                 url('images/guaitipan.jpg') center/cover fixed;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
 }
 
-/* --- CONTENEDOR PRINCIPAL INTEGRADO --- */
+/* --- CONTENEDOR PARALELO (COLUMNAS) --- */
 .detail-container {
-    max-width: 1300px;
-    margin: -60px auto 60px; /* Sube un poco para solaparse con el hero */
-    padding: 0 20px;
-    position: relative;
-    z-index: 30;
+    max-width: 1400px; /* Más ancho para el diseño paralelo */
+    margin: 40px auto;
+    padding: 0 40px;
+    display: flex; /* Activamos la distribución paralela */
+    gap: 40px; /* Espacio entre columna de experiencias y columna de medios */
+    align-items: flex-start;
 }
 
-/* Layout de cuadrícula para unir Experiencias y Galería */
-.guaitipan-layout {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr; /* Dos columnas: Izquierda Experiencias, Derecha Galería */
-    gap: 30px;
-    background: #ffffff;
-    padding: 40px;
-    border: 3px solid #000;
-    box-shadow: 20px 20px 0px rgba(0,0,0,0.1);
+/* --- COLUMNA IZQUIERDA: EXPERIENCIAS (Vertical) --- */
+.experiences {
+    flex: 1; /* Columna más angosta */
+    position: sticky; /* Se queda fija mientras haces scroll en la galería */
+    top: 20px;
 }
 
-/* --- COLUMNA IZQUIERDA: EXPERIENCIAS --- */
 .experiences h2 {
-    margin-top: 0;
-    font-size: 1.8rem;
-    margin-bottom: 30px;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    border-left: 5px solid #19e337;
+    padding-left: 15px;
 }
 
 .exp-grid {
     display: flex;
-    flex-direction: column; /* Lista vertical para ahorrar espacio lateral */
-    gap: 15px;
+    flex-direction: column; /* Apiladas verticalmente */
+    gap: 20px;
 }
 
 .exp-card {
-    height: 140px; /* Más compactas */
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
+    height: 180px; /* Tamaño más compacto para que quepan varias */
     padding: 20px;
     box-shadow: 6px 6px 0px #19e337;
 }
 
 .exp-card h3 {
     font-size: 1.2rem;
-    margin: 0;
-    z-index: 2;
+    margin-bottom: 5px;
 }
 
 .exp-card p {
-    display: none; /* Ocultamos descripción larga para limpieza visual */
+    font-size: 0.9rem;
+    line-height: 1.3;
 }
 
-/* --- COLUMNA DERECHA: GALERÍA ÁLBUM --- */
+/* --- COLUMNA DERECHA: GALERÍA Y MAPA --- */
+.guaitipan-layout {
+    flex: 2; /* Columna más ancha para medios */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Ajuste Galería Álbum */
 .gallery {
-    margin-top: 0;
-    padding: 0;
-    background: transparent;
-    box-shadow: none;
-    border: none;
-}
-
-.gallery h2 { display: none; } /* Título redundante, ya se entiende que es una galería */
-
-.slide {
-    border: 8px solid #fff;
-    outline: 1px solid #ddd;
+    margin-top: 0; /* Quitamos el margen excesivo */
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
 .slide img, .gallery-video {
-    height: 400px; /* Altura fija para mantener simetría con la columna de experiencias */
+    width: 100%;
+    max-height: 450px; /* Tamaño controlado */
+    object-fit: cover;
+    border: 8px solid #fff;
+    outline: 1px solid #eee;
 }
 
-/* --- SECCIÓN INFERIOR: MAPA INTEGRADO --- */
+/* Ajuste Mapa Paralelo */
 .map-section {
-    grid-column: 1 / -1; /* Ocupa las dos columnas abajo */
-    margin-top: 20px;
-    padding-top: 30px;
-    border-top: 2px dashed #ccc;
+    margin-top: 0;
 }
 
-.map-section h2 { border: none; padding: 0; margin-bottom: 20px; text-align: center; }
+.map-section h2 {
+    font-size: 1.5rem;
+}
 
 .map-section iframe {
-    height: 300px; /* Mapa más discreto */
-    border: 2px solid #000;
+    height: 350px; /* Mapa más equilibrado */
+    border: 3px solid #000;
+    box-shadow: 8px 8px 0px #dba40b;
 }
 
 /* --- RESPONSIVE --- */
-@media (max-width: 1100px) {
-    .guaitipan-layout {
-        grid-template-columns: 1fr; /* Volver a una columna en tablets/móviles */
-        padding: 20px;
+@media (max-width: 1024px) {
+    .detail-container {
+        flex-direction: column; /* En tablets y móviles vuelve a ser vertical */
+        padding: 0 20px;
     }
     
-    .detail-container { margin-top: 20px; }
-    
-    .exp-card { height: 180px; }
-}
+    .experiences {
+        position: static;
+        width: 100%;
+    }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    .exp-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
 }
