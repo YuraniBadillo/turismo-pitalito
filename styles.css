@@ -1322,7 +1322,7 @@ section {
 }
 
 .map-section {
-    margin-top: 60px; /* igual que las demás */
+    margin-top: 100px; /* igual que las demás */
 }
 
 /* Opcional: asegurar que el mapa respete el ancho interno */
