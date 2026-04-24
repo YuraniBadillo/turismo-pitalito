@@ -1353,7 +1353,7 @@ section {
 .right-content {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 80px;
     width: 100%;
 }
 
