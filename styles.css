@@ -1302,3 +1302,56 @@ section {
     .exp-grid { grid-template-columns: 1fr; }
     .gallery { padding: 15px; }
 }
+
+/* --- CONTENEDOR MAESTRO (Layout de dos columnas) --- */
+.detail-container {
+    max-width: 1300px;
+    margin: 60px auto;
+    padding: 0 20px;
+    
+    /* Activamos Grid para separar izquierda de derecha */
+    display: grid;
+    grid-template-columns: 350px 1fr; 
+    gap: 40px;
+    align-items: start;
+}
+
+/* --- COLUMNA IZQUIERDA: EXPERIENCIAS --- */
+.exp-grid {
+    display: flex;
+    flex-direction: column; /* Una debajo de otra */
+    gap: 25px;
+    margin-top: 0; /* Quitamos margen superior para alinear con el álbum */
+}
+
+.exp-card {
+    height: 250px; /* Reducimos un poco el alto para que no sea infinita la columna */
+    width: 100%;
+}
+
+/* --- COLUMNA DERECHA: ÁLBUM Y MAPA --- */
+.content-right {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.gallery {
+    margin-top: 0; /* Alineado al tope de las experiencias */
+}
+
+.map-section {
+    margin-top: 0; /* Controlado por el gap del padre */
+}
+
+/* --- RESPONSIVE: Volver a una sola columna en móviles --- */
+@media (max-width: 992px) {
+    .detail-container {
+        grid-template-columns: 1fr; /* Una sola columna */
+    }
+    
+    .exp-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
