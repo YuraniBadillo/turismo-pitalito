@@ -1306,8 +1306,8 @@ section {
 /* --- POSICIONAMIENTO EN PARALELO --- */
 .horizontal-layout {
     display: flex;
-    gap: 25px; /* El mismo espacio que usaste en exp-grid para que coincida verticalmente */
-    margin-top: 5px; /* Espacio después de las experiencias */
+    gap: 0px; /* El mismo espacio que usaste en exp-grid para que coincida verticalmente */
+    margin-top: 0px; /* Espacio después de las experiencias */
     align-items: stretch; /* Para que ambos tengan la misma altura si es posible */
 }
 
@@ -1320,7 +1320,7 @@ section {
 }
 
 /* Aseguramos que el contenido interno de la galería y mapa llene el espacio */
-.gallery {
+.gallery, .map-section {
     height: 100%;
 }
 
