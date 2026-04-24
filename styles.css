@@ -1138,7 +1138,7 @@ section {
 
 /* --- HERO CON VIDRIO (Coherencia con Naturaleza) --- */
 .sub-hero {
-    height: 100vh;
+    height: 70vh;
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), 
                 url('images/guaitipan.jpg') center/cover fixed;
     display: flex;
@@ -1307,7 +1307,7 @@ section {
 .horizontal-layout {
     display: flex;
     gap: 25px; /* El mismo espacio que usaste en exp-grid para que coincida verticalmente */
-    margin-top: 20px; /* Espacio después de las experiencias */
+    margin-top: 5px; /* Espacio después de las experiencias */
     align-items: stretch; /* Para que ambos tengan la misma altura si es posible */
 }
 
