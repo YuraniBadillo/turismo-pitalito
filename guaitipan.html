@@ -1,151 +1,118 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Laguna de Guaitipán</title>
-<link rel="stylesheet" href="styles.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laguna de Guaitipán</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body class="guaitipan-page">
 
-<header>
-<h1 id="title">Rutas Turísticas de Pitalito</h1>
-<button onclick="changeLanguage()">English / Español</button>
-</header>
+    <header>
+        <h1 id="title">Rutas Turísticas de Pitalito</h1>
+        <button onclick="changeLanguage()">English / Español</button>
+    </header>
 
-<nav class="navbar">
-<ul>
-<li><a href="index.html" id="nav-home">Inicio</a></li>
-<li><a href="naturaleza.html" id="nav-nature">Naturaleza</a></li>
-<li><a href="cultura.html" id="nav-culture">Cultura</a></li>
-<li><a href="gastronomia.html" id="nav-food">Gastronomía</a></li>
-</ul>
-</nav>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html" id="nav-home">Inicio</a></li>
+            <li><a href="naturaleza.html" id="nav-nature">Naturaleza</a></li>
+            <li><a href="cultura.html" id="nav-culture">Cultura</a></li>
+            <li><a href="gastronomia.html" id="nav-food">Gastronomía</a></li>
+        </ul>
+    </nav>
 
-<header class="sub-hero">
-<h1 id="guaitipan-title">Laguna de Guaitipán</h1>
+    <header class="sub-hero">
+        <h1 id="guaitipan-title">Laguna de Guaitipán</h1>
+        <p id="guaitipan-hero">
+            La Laguna de Guaitipán es uno de los destinos naturales más representativos del municipio.
+            Rodeada de montañas, aire puro y vegetación exuberante, ofrece un ambiente ideal para el descanso,
+            la contemplación del paisaje y el turismo ecológico.
+        </p>
+    </header>
 
-<p id="guaitipan-hero">
-La Laguna de Guaitipán es uno de los destinos naturales más representativos del municipio.
-Rodeada de montañas, aire puro y vegetación exuberante, ofrece un ambiente ideal para el descanso,
-la contemplación del paisaje y el turismo ecológico.
-</p>
-</header>
+    <main class="detail-container">
+        
+        <section class="experiences-section">
+            <h2 id="gua-exp-title">Experiencias en la Laguna</h2>
+            <div class="exp-grid-horizontal">
+                <div class="exp-card senderismo">
+                    <h3 id="gua-exp1-title">Senderismo ecológico</h3>
+                    <p id="gua-exp1-desc">Recorre senderos naturales rodeados de vegetación.</p>
+                </div>
+                <div class="exp-card aves">
+                    <h3 id="gua-exp2-title">Observación de aves</h3>
+                    <p id="gua-exp2-desc">Actividad ideal para observar especies andinas.</p>
+                </div>
+                <div class="exp-card foto">
+                    <h3 id="gua-exp3-title">Fotografía paisajística</h3>
+                    <p id="gua-exp3-desc">Captura la belleza natural de la laguna.</p>
+                </div>
+            </div>
+        </section>
 
-<main class="detail-container">
+        <div class="bottom-layout">
+            
+            <section class="gallery">
+                <h2 id="gallery-title">Galería</h2>
+                <div class="slide active">
+                    <img src="images/guaitipan.jpg">
+                    <p class="img-source" id="img-source1">Fuente: Autor desconocido</p>
+                </div>
+                <div class="slide">
+                    <img src="images/guaitipan2.jpg">
+                    <p class="img-source" id="img-source2">Fuente: Internet</p>
+                </div>
+                <div class="slide">
+                    <img src="images/guaitipan3.jpg">
+                    <p class="img-source" id="img-source3">Fuente: Turismo Huila</p>
+                </div>
+                <div class="slide">
+                    <video controls class="gallery-video">
+                        <source src="images/guaitipan4.mp4" type="video/mp4">
+                    </video>
+                    <p class="img-source" id="img-source4">Fuente: Facebook Laguna de Guaitipán</p>
+                </div>
+                <div class="slider">
+                    <button class="prev" onclick="moveSlide(-1)">❮</button>
+                    <button class="next" onclick="moveSlide(1)">❯</button>
+                </div>
+            </section>
 
-<div class="guaitipan-layout">
+            <section class="map-section">
+                <h2 id="location-title">Ubicación</h2>
+                <iframe src="https://www.google.com/maps?q=Laguna+de+Guaitipan+Pitalito&output=embed"></iframe>
+            </section>
 
-<section class="experiences">
+        </div> </main>
 
-<h2 id="gua-exp-title">Experiencias en la Laguna de Guaitipán</h2>
+    <script>
+        let index = 0;
+        const slides = document.querySelectorAll(".slide");
 
-<div class="exp-grid">
+        function showSlide(n){
+            slides.forEach(s => s.classList.remove("active"));
+            slides[n].classList.add("active");
+        }
 
-<div class="exp-card senderismo">
-<h3 id="gua-exp1-title">Senderismo ecológico</h3>
-<p id="gua-exp1-desc">
-Recorre senderos naturales rodeados de vegetación y paisajes montañosos.
-</p>
-</div>
+        function moveSlide(step){
+            index += step;
+            if(index >= slides.length) index = 0;
+            if(index < 0) index = slides.length - 1;
+            showSlide(index);
+        }
+    </script>
 
-<div class="exp-card aves">
-<h3 id="gua-exp2-title">Observación de aves</h3>
-<p id="gua-exp2-desc">
-Actividad ideal para observar especies propias de ecosistemas andinos.
-</p>
-</div>
+    <script src="script.js"></script>
 
-<div class="exp-card foto">
-<h3 id="gua-exp3-title">Fotografía paisajística</h3>
-<p id="gua-exp3-desc">
-Captura la belleza natural de la laguna y su entorno.
-</p>
-</div>
+    <a href="#" class="back-to-top">↑</a>
 
-</div>
-</section>
+    <footer class="footer">
+        <p>Este sitio web utilizó ChatGPT como apoyo en la generación de contenido y desarrollo web (OpenAI, 2023).</p>
+        <p>Referencia: OpenAI. (2023). ChatGPT [Modelo de lenguaje grande]. https://chat.openai.com</p>
+    </footer>
 
-<!-- ⭐ GALERÍA -->
-<section class="gallery">
-
-<h2 id="gallery-title">Galería</h2>
-
-<div class="slide active">
-<img src="images/guaitipan.jpg">
-<p class="img-source" id="img-source1">Fuente: Autor desconocido</p>
-</div>
-
-<div class="slide">
-<img src="images/guaitipan2.jpg">
-<p class="img-source" id="img-source2">Fuente: Internet</p>
-</div>
-
-<div class="slide">
-<img src="images/guaitipan3.jpg">
-<p class="img-source" id="img-source3">Fuente: Turismo Huila</p>
-</div>
-
-<div class="slide">
-<video controls class="gallery-video">
-<source src="images/guaitipan4.mp4" type="video/mp4">
-</video>
-<p class="img-source" id="img-source4">
-Fuente: Facebook Laguna de Guaitipán
-</p>
-</div>
-<div class="slider">
-<button class="prev" onclick="moveSlide(-1)">❮</button>
-<button class="next" onclick="moveSlide(1)">❯</button>
-</div>
-
-
-<!-- ⭐ MAPA (YA DENTRO DEL CONTENEDOR Y DEBAJO DE GALERÍA) -->
-<section class="map-section">
-
-<h2 id="location-title">Ubicación</h2>
-
-<iframe
-src="https://www.google.com/maps?q=Laguna+de+Guaitipan+Pitalito&output=embed">
-</iframe>
-
-</section>
-
-</div>
-
-</main>
-
-<!-- ⭐ SCRIPT SLIDER -->
-<script>
-let index = 0;
-const slides = document.querySelectorAll(".slide");
-
-function showSlide(n){
-slides.forEach(s => s.classList.remove("active"));
-slides[n].classList.add("active");
-}
-
-function moveSlide(step){
-index += step;
-if(index >= slides.length) index = 0;
-if(index < 0) index = slides.length - 1;
-showSlide(index);
-}
-</script>
-
-<!-- ⭐ SCRIPT DE IDIOMA (MUY IMPORTANTE) -->
-<script src="script.js"></script>
-
-  <a href="#" class="back-to-top">↑</a>
-<footer class="footer">
-  <p>
-    Este sitio web utilizó ChatGPT como apoyo en la generación de contenido y desarrollo web (OpenAI, 2023).
-  </p>
-  <p>
-    Referencia: OpenAI. (2023). ChatGPT [Modelo de lenguaje grande]. https://chat.openai.com
-  </p>
-</footer>
 </body>
 </html>
