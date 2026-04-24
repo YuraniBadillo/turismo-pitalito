@@ -1302,3 +1302,39 @@ section {
     .exp-grid { grid-template-columns: 1fr; }
     .gallery { padding: 15px; }
 }
+
+/* --- POSICIONAMIENTO EN PARALELO --- */
+.horizontal-layout {
+    display: flex;
+    gap: 25px; /* El mismo espacio que usaste en exp-grid para que coincida verticalmente */
+    margin-top: 60px; /* Espacio después de las experiencias */
+    align-items: stretch; /* Para que ambos tengan la misma altura si es posible */
+}
+
+/* Ajustamos las secciones hijas para que ocupen el espacio proporcional */
+.gallery, .map-section {
+    flex: 1; /* Cada uno toma el 50% del ancho */
+    margin-top: 0 !important; /* Quitamos los márgenes previos que empujaban hacia abajo */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Aseguramos que el contenido interno de la galería y mapa llene el espacio */
+.gallery {
+    height: 100%;
+}
+
+.map-section iframe {
+    flex-grow: 1; /* El mapa se estira para llenar la altura de la sección */
+    height: 100%; /* Sobrescribe el height fijo de 450px para ser dinámico */
+    min-height: 450px;
+}
+@media (max-width: 768px) {
+    .horizontal-layout {
+        flex-direction: column; /* Se apilan en vertical en celulares */
+    }
+    
+    .map-section iframe {
+        height: 350px; /* Altura fija para móviles */
+    }
+}
