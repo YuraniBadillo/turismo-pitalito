@@ -1138,7 +1138,7 @@ section {
 
 /* --- HERO CON VIDRIO (Coherencia con Naturaleza) --- */
 .sub-hero {
-    height: 50vh;
+    height: 70vh;
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), 
                 url('images/guaitipan.jpg') center/cover fixed;
     display: flex;
