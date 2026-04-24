@@ -1133,10 +1133,10 @@ section {
 ============================================================ */
 
 .guaitipan-page {
-    background-color: #f0fdf4; /* Fondo verde menta muy suave */
+    background-color: #f0fdf4; /* Fondo verde menta suave */
 }
 
-/* --- HERO CON VIDRIO (Coherencia con Naturaleza) --- */
+/* --- HERO --- */
 .sub-hero {
     height: 50vh;
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), 
@@ -1172,22 +1172,27 @@ section {
     line-height: 1.6;
 }
 
-/* --- GRID DE EXPERIENCIAS (Distribución Limpia) --- */
+/* --- LAYOUT PRINCIPAL (Dos columnas) --- */
 .detail-container {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 60px auto;
     padding: 0 20px;
+    display: grid;
+    /* La izquierda tiene un ancho fijo, la derecha fluye */
+    grid-template-columns: 400px 1fr; 
+    gap: 40px;
+    align-items: start;
 }
 
+/* --- COLUMNA IZQUIERDA: EXPERIENCIAS --- */
 .exp-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 25px;
-    margin-top: 30px;
 }
 
 .exp-card {
-    height: 300px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -1195,7 +1200,7 @@ section {
     position: relative;
     overflow: hidden;
     border: 3px solid #000;
-    box-shadow: 10px 10px 0px #19e337; /* Sombra sólida estilo anterior */
+    box-shadow: 10px 10px 0px #19e337;
     transition: transform 0.3s ease;
     color: white;
 }
@@ -1205,7 +1210,7 @@ section {
     box-shadow: 15px 15px 0px #000;
 }
 
-/* Imágenes de fondo para las experiencias */
+/* Imágenes de fondo (Se mantienen igual) */
 .senderismo { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/senderismo.jpg') center/cover; }
 .aves { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/aves.jpg') center/cover; }
 .foto { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/fotografia.jpg') center/cover; }
@@ -1216,9 +1221,14 @@ section {
     color: #19e337 !important;
 }
 
-/* --- GALERÍA TIPO ÁLBUM --- */
+/* --- COLUMNA DERECHA: ÁLBUM Y MAPA --- */
+.content-right {
+    display: flex;
+    flex-direction: column;
+    gap: 50px; /* Espacio entre Galería y Mapa */
+}
+
 .gallery {
-    margin-top: 100px;
     background: #ffffff;
     padding: 40px;
     border: 2px solid #eee;
@@ -1229,14 +1239,11 @@ section {
     display: none;
     text-align: center;
     position: relative;
-    border: 10px solid #fff; /* Marco tipo fotografía clásica */
+    border: 10px solid #fff;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.slide.active {
-    display: block;
-    animation: fadeIn 0.5s ease;
-}
+.slide.active { display: block; animation: fadeIn 0.5s ease; }
 
 .slide img, .gallery-video {
     width: 100%;
@@ -1247,7 +1254,6 @@ section {
 .img-source {
     background: #1a1a1a;
     color: #9ca3af;
-    margin: 0;
     padding: 10px;
     font-size: 0.8rem;
     font-style: italic;
@@ -1279,79 +1285,27 @@ section {
 }
 
 /* --- SECCIÓN MAPA --- */
-.map-section {
-    margin-top: 80px;
-}
-
 .map-section iframe {
     width: 100%;
     height: 450px;
     border: 4px solid #000;
-    box-shadow: 12px 12px 0px #dba40b; /* Acento naranja del inicio */
+    box-shadow: 12px 12px 0px #dba40b;
     filter: grayscale(20%);
 }
 
+/* --- ANIMACIONES Y RESPONSIVE --- */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* --- RESPONSIVE --- */
-@media (max-width: 768px) {
-    .sub-hero { padding: 0 5%; height: 60vh; }
-    .exp-grid { grid-template-columns: 1fr; }
-    .gallery { padding: 15px; }
-}
-
-/* --- CONTENEDOR MAESTRO (Layout de dos columnas) --- */
-.detail-container {
-    max-width: 1300px;
-    margin: 60px auto;
-    padding: 0 20px;
-    
-    /* Activamos Grid para separar izquierda de derecha */
-    display: grid;
-    grid-template-columns: 350px 1fr; 
-    gap: 40px;
-    align-items: start;
-}
-
-/* --- COLUMNA IZQUIERDA: EXPERIENCIAS --- */
-.exp-grid {
-    display: flex;
-    flex-direction: column; /* Una debajo de otra */
-    gap: 25px;
-    margin-top: 0; /* Quitamos margen superior para alinear con el álbum */
-}
-
-.exp-card {
-    height: 250px; /* Reducimos un poco el alto para que no sea infinita la columna */
-    width: 100%;
-}
-
-/* --- COLUMNA DERECHA: ÁLBUM Y MAPA --- */
-.content-right {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.gallery {
-    margin-top: 0; /* Alineado al tope de las experiencias */
-}
-
-.map-section {
-    margin-top: 0; /* Controlado por el gap del padre */
-}
-
-/* --- RESPONSIVE: Volver a una sola columna en móviles --- */
 @media (max-width: 992px) {
     .detail-container {
-        grid-template-columns: 1fr; /* Una sola columna */
+        grid-template-columns: 1fr; /* Una columna en tablets/móvil */
     }
     
     .exp-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 }
