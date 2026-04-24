@@ -1129,16 +1129,19 @@ section {
 }
 
 /* ============================================================
-   ESTILOS ESPECÍFICOS: PÁGINA LAGUNA DE GUAITIPÁN
+   ESTILOS OPTIMIZADOS: PÁGINA LAGUNA DE GUAITIPÁN
 ============================================================ */
 
 .guaitipan-page {
-    background-color: #f0fdf4; /* Fondo verde menta muy suave */
+    /* Degradado que conecta el verde naturaleza con el fondo limpio */
+    background: linear-gradient(180deg, #dcfce7 0%, #f0fdf4 15%, #ffffff 100%);
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
-/* --- HERO CON VIDRIO (Coherencia con Naturaleza) --- */
+/* --- HERO CON VIDRIO (Sin margen inferior para continuidad) --- */
 .sub-hero {
-    height: 70vh;
+    height: 75vh;
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), 
                 url('images/guaitipan.jpg') center/cover fixed;
     display: flex;
@@ -1148,7 +1151,9 @@ section {
     text-align: center;
     padding: 0 15%;
     color: white;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    /* Clip-path ajustado para una transición más suave */
+    clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
+    margin-bottom: 0; 
 }
 
 #guaitipan-title {
@@ -1172,10 +1177,10 @@ section {
     line-height: 1.6;
 }
 
-/* --- GRID DE EXPERIENCIAS (Distribución Limpia) --- */
+/* --- CONTENEDOR DE DETALLES (Márgenes ajustados) --- */
 .detail-container {
     max-width: 1200px;
-    margin: 60px auto;
+    margin: 40px auto; /* Reducido para evitar el exceso de blanco */
     padding: 0 20px;
 }
 
@@ -1183,7 +1188,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .exp-card {
@@ -1194,15 +1199,15 @@ section {
     padding: 30px;
     position: relative;
     overflow: hidden;
-    border: 3px solid #000;
-    box-shadow: 10px 10px 0px #19e337; /* Sombra sólida estilo anterior */
-    transition: transform 0.3s ease;
+    border: 2px solid #000;
+    box-shadow: 8px 8px 0px #19e337; /* Sombra un poco más sutil */
+    transition: all 0.3s ease;
     color: white;
 }
 
 .exp-card:hover {
-    transform: translate(-5px, -5px);
-    box-shadow: 15px 15px 0px #000;
+    transform: translate(-4px, -4px);
+    box-shadow: 12px 12px 0px #000;
 }
 
 /* Imágenes de fondo para las experiencias */
@@ -1216,20 +1221,35 @@ section {
     color: #19e337 !important;
 }
 
-/* --- GALERÍA TIPO ÁLBUM --- */
+/* --- DISEÑO HORIZONTAL (Galería y Mapa unidos) --- */
+.horizontal-layout {
+    display: flex;
+    gap: 25px;
+    margin-top: 40px;
+    align-items: stretch;
+}
+
+.gallery, .map-section {
+    flex: 1;
+    margin-top: 0 !important;
+    display: flex;
+    flex-direction: column;
+}
+
 .gallery {
-    margin-top: 100px;
-    background: #ffffff;
-    padding: 40px;
-    border: 2px solid #eee;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+    background: rgba(255, 255, 255, 0.7); /* Efecto cristal para el fondo degradado */
+    backdrop-filter: blur(8px);
+    padding: 30px;
+    border: 1px solid rgba(0,0,0,0.05);
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
 .slide {
     display: none;
     text-align: center;
     position: relative;
-    border: 10px solid #fff; /* Marco tipo fotografía clásica */
+    border: 8px solid #fff; /* Marco más elegante */
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
@@ -1240,7 +1260,7 @@ section {
 
 .slide img, .gallery-video {
     width: 100%;
-    max-height: 550px;
+    max-height: 500px;
     object-fit: cover;
 }
 
@@ -1257,7 +1277,7 @@ section {
 .slider {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
     margin-top: 20px;
 }
 
@@ -1265,7 +1285,7 @@ section {
     background: #000;
     color: #fff;
     border: none;
-    padding: 15px 25px;
+    padding: 12px 20px;
     cursor: pointer;
     font-weight: bold;
     box-shadow: 4px 4px 0px #19e337;
@@ -1275,66 +1295,37 @@ section {
 .prev:hover, .next:hover {
     background: #19e337;
     color: #000;
-    transform: scale(1.1);
+    transform: translateY(-2px);
 }
 
 /* --- SECCIÓN MAPA --- */
-.map-section {
-    margin-top: 80px;
-}
-
 .map-section iframe {
+    flex-grow: 1;
     width: 100%;
-    height: 450px;
-    border: 4px solid #000;
-    box-shadow: 12px 12px 0px #dba40b; /* Acento naranja del inicio */
-    filter: grayscale(20%);
+    min-height: 450px;
+    border: 2px solid #000;
+    box-shadow: 8px 8px 0px #dba40b;
+    border-radius: 8px;
+    filter: grayscale(15%);
 }
 
+/* Animaciones */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
 /* --- RESPONSIVE --- */
+@media (max-width: 992px) {
+    .horizontal-layout {
+        flex-direction: column; /* Evita que queden muy angostos en tablets */
+    }
+}
+
 @media (max-width: 768px) {
     .sub-hero { padding: 0 5%; height: 60vh; }
     .exp-grid { grid-template-columns: 1fr; }
     .gallery { padding: 15px; }
-}
-
-/* --- POSICIONAMIENTO EN PARALELO --- */
-.horizontal-layout {
-    display: flex;
-    gap: 25px; /* El mismo espacio que usaste en exp-grid para que coincida verticalmente */
-    margin-top: 5px; /* Espacio después de las experiencias */
-    align-items: stretch; /* Para que ambos tengan la misma altura si es posible */
-}
-
-/* Ajustamos las secciones hijas para que ocupen el espacio proporcional */
-.gallery, .map-section {
-    flex: 1; /* Cada uno toma el 50% del ancho */
-    margin-top: 0 !important; /* Quitamos los márgenes previos que empujaban hacia abajo */
-    display: flex;
-    flex-direction: column;
-}
-
-/* Aseguramos que el contenido interno de la galería y mapa llene el espacio */
-.gallery {
-    height: 100%;
-}
-
-.map-section iframe {
-    flex-grow: 1; /* El mapa se estira para llenar la altura de la sección */
-    height: 100%; /* Sobrescribe el height fijo de 450px para ser dinámico */
-    min-height: 450px;
-}
-@media (max-width: 768px) {
-    .horizontal-layout {
-        flex-direction: column; /* Se apilan en vertical en celulares */
-    }
-    
-    .map-section iframe {
-        height: 350px; /* Altura fija para móviles */
-    }
+    .map-section iframe { height: 350px; min-height: 350px; }
+    .detail-container { margin: 20px auto; }
 }
