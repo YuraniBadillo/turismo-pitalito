@@ -1129,16 +1129,16 @@ section {
 }
 
 /* ============================================================
-   REDISEÑO PARALELO: PÁGINA LAGUNA DE GUAITIPÁN
+   ESTILOS ESPECÍFICOS: PÁGINA LAGUNA DE GUAITIPÁN
 ============================================================ */
 
 .guaitipan-page {
-    background-color: #f0fdf4;
+    background-color: #f0fdf4; /* Fondo verde menta muy suave */
 }
 
-/* --- HERO COMPACTO --- */
+/* --- HERO CON VIDRIO (Coherencia con Naturaleza) --- */
 .sub-hero {
-    height: 45vh; /* Un poco más bajo para dar paso rápido al contenido paralelo */
+    height: 50vh;
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), 
                 url('images/guaitipan.jpg') center/cover fixed;
     display: flex;
@@ -1146,109 +1146,159 @@ section {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 0 15%;
+    color: white;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
 }
 
-/* --- CONTENEDOR PARALELO (COLUMNAS) --- */
+#guaitipan-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    color: #19e337;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-shadow: 2px 4px 10px rgba(0,0,0,0.5);
+}
+
+#guaitipan-hero {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 4px;
+    border-top: 3px solid #19e337;
+    max-width: 800px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* --- GRID DE EXPERIENCIAS (Distribución Limpia) --- */
 .detail-container {
-    max-width: 1400px; /* Más ancho para el diseño paralelo */
-    margin: 40px auto;
-    padding: 0 40px;
-    display: flex; /* Activamos la distribución paralela */
-    gap: 40px; /* Espacio entre columna de experiencias y columna de medios */
-    align-items: flex-start;
-}
-
-/* --- COLUMNA IZQUIERDA: EXPERIENCIAS (Vertical) --- */
-.experiences {
-    flex: 1; /* Columna más angosta */
-    position: sticky; /* Se queda fija mientras haces scroll en la galería */
-    top: 20px;
-}
-
-.experiences h2 {
-    font-size: 1.5rem;
-    margin-bottom: 25px;
-    border-left: 5px solid #19e337;
-    padding-left: 15px;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
 }
 
 .exp-grid {
-    display: flex;
-    flex-direction: column; /* Apiladas verticalmente */
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
 }
 
 .exp-card {
-    height: 180px; /* Tamaño más compacto para que quepan varias */
-    padding: 20px;
-    box-shadow: 6px 6px 0px #19e337;
-}
-
-.exp-card h3 {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-}
-
-.exp-card p {
-    font-size: 0.9rem;
-    line-height: 1.3;
-}
-
-/* --- COLUMNA DERECHA: GALERÍA Y MAPA --- */
-.guaitipan-layout {
-    flex: 2; /* Columna más ancha para medios */
+    height: 300px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    justify-content: flex-end;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #000;
+    box-shadow: 10px 10px 0px #19e337; /* Sombra sólida estilo anterior */
+    transition: transform 0.3s ease;
+    color: white;
 }
 
-/* Ajuste Galería Álbum */
+.exp-card:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 15px 15px 0px #000;
+}
+
+/* Imágenes de fondo para las experiencias */
+.senderismo { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/senderismo.jpg') center/cover; }
+.aves { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/aves.jpg') center/cover; }
+.foto { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/fotografia.jpg') center/cover; }
+
+.exp-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #19e337 !important;
+}
+
+/* --- GALERÍA TIPO ÁLBUM --- */
 .gallery {
-    margin-top: 0; /* Quitamos el margen excesivo */
-    padding: 20px;
-    background: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    margin-top: 100px;
+    background: #ffffff;
+    padding: 40px;
+    border: 2px solid #eee;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+}
+
+.slide {
+    display: none;
+    text-align: center;
+    position: relative;
+    border: 10px solid #fff; /* Marco tipo fotografía clásica */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.slide.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
 }
 
 .slide img, .gallery-video {
     width: 100%;
-    max-height: 450px; /* Tamaño controlado */
+    max-height: 550px;
     object-fit: cover;
-    border: 8px solid #fff;
-    outline: 1px solid #eee;
 }
 
-/* Ajuste Mapa Paralelo */
+.img-source {
+    background: #1a1a1a;
+    color: #9ca3af;
+    margin: 0;
+    padding: 10px;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+/* Controles del Slider */
+.slider {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.prev, .next {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 4px 4px 0px #19e337;
+    transition: 0.2s;
+}
+
+.prev:hover, .next:hover {
+    background: #19e337;
+    color: #000;
+    transform: scale(1.1);
+}
+
+/* --- SECCIÓN MAPA --- */
 .map-section {
-    margin-top: 0;
-}
-
-.map-section h2 {
-    font-size: 1.5rem;
+    margin-top: 80px;
 }
 
 .map-section iframe {
-    height: 350px; /* Mapa más equilibrado */
-    border: 3px solid #000;
-    box-shadow: 8px 8px 0px #dba40b;
+    width: 100%;
+    height: 450px;
+    border: 4px solid #000;
+    box-shadow: 12px 12px 0px #dba40b; /* Acento naranja del inicio */
+    filter: grayscale(20%);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 /* --- RESPONSIVE --- */
-@media (max-width: 1024px) {
-    .detail-container {
-        flex-direction: column; /* En tablets y móviles vuelve a ser vertical */
-        padding: 0 20px;
-    }
-    
-    .experiences {
-        position: static;
-        width: 100%;
-    }
-
-    .exp-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
+@media (max-width: 768px) {
+    .sub-hero { padding: 0 5%; height: 60vh; }
+    .exp-grid { grid-template-columns: 1fr; }
+    .gallery { padding: 15px; }
 }
