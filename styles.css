@@ -1129,203 +1129,62 @@ section {
 }
 
 /* ============================================================
-   ESTILOS OPTIMIZADOS: PÁGINA LAGUNA DE GUAITIPÁN
+   REPARACIÓN DE ESPACIOS Y COLOR DE FONDO
 ============================================================ */
 
-.guaitipan-page {
-    /* Degradado que conecta el verde naturaleza con el fondo limpio */
-    background: linear-gradient(180deg, #dcfce7 0%, #f0fdf4 15%, #ffffff 100%);
-    min-height: 100vh;
-    overflow-x: hidden;
+/* Forzamos el fondo en el body y la clase principal */
+body, .guaitipan-page {
+    margin: 0;
+    padding: 0;
+    background-color: #f0fdf4 !important; /* Verde menta de respaldo */
+    background: linear-gradient(180deg, #dcfce7 0%, #f0fdf4 15%, #ffffff 100%) !important;
 }
 
-/* --- HERO CON VIDRIO (Sin margen inferior para continuidad) --- */
-.sub-hero {
-    height: 75vh;
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), 
-                url('images/guaitipan.jpg') center/cover fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0 15%;
-    color: white;
-    /* Clip-path ajustado para una transición más suave */
-    clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
-    margin-bottom: 0; 
-}
-
-#guaitipan-title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: clamp(2.5rem, 6vw, 4rem);
-    color: #19e337;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-    text-shadow: 2px 4px 10px rgba(0,0,0,0.5);
-}
-
-#guaitipan-hero {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    padding: 25px;
-    border-radius: 4px;
-    border-top: 3px solid #19e337;
-    max-width: 800px;
-    font-size: 1.1rem;
-    line-height: 1.6;
-}
-
-/* --- CONTENEDOR DE DETALLES (Márgenes ajustados) --- */
+/* Reducimos el espacio excesivo después del Hero */
 .detail-container {
     max-width: 1200px;
-    margin: 10px auto; /* Reducido para evitar el exceso de blanco */
+    margin: 20px auto 0 auto; /* Casi pegado al hero o sección anterior */
     padding: 0 20px;
 }
 
+/* Ajuste de las tarjetas de experiencia */
 .exp-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-    margin-top: 25px;
+    margin-top: 15px;
+    margin-bottom: 0; /* Eliminamos el margen inferior */
 }
 
-.exp-card {
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 30px;
-    position: relative;
-    overflow: hidden;
-    border: 2px solid #000;
-    box-shadow: 8px 8px 0px #19e337; /* Sombra un poco más sutil */
-    transition: all 0.3s ease;
-    color: white;
-}
-
-.exp-card:hover {
-    transform: translate(-4px, -4px);
-    box-shadow: 12px 12px 0px #000;
-}
-
-/* Imágenes de fondo para las experiencias */
-.senderismo { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/senderismo.jpg') center/cover; }
-.aves { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/aves.jpg') center/cover; }
-.foto { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/fotografia.jpg') center/cover; }
-
-.exp-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #19e337 !important;
-}
-
-/* --- DISEÑO HORIZONTAL (Galería y Mapa unidos) --- */
+/* --- LA UNIÓN CLAVE: GALERÍA Y MAPA --- */
 .horizontal-layout {
     display: flex;
     gap: 25px;
-    margin-top: 10px;
+    margin-top: 20px; /* Reducido de 40px para que suba la sección */
+    padding-bottom: 60px; /* Espacio al final de la página */
     align-items: stretch;
 }
 
 .gallery, .map-section {
     flex: 1;
-    margin-top: 0 !important;
-    display: flex;
-    flex-direction: column;
+    margin-top: 0 !important; /* Eliminamos cualquier margen que empuje hacia abajo */
 }
 
 .gallery {
-    background: rgba(255, 255, 255, 0.7); /* Efecto cristal para el fondo degradado */
-    backdrop-filter: blur(8px);
-    padding: 30px;
-    border: 1px solid rgba(0,0,0,0.05);
+    background: white; /* Blanco sólido para resaltar sobre el fondo menta */
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
 }
 
-.slide {
-    display: none;
-    text-align: center;
-    position: relative;
-    border: 8px solid #fff; /* Marco más elegante */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.slide.active {
-    display: block;
-    animation: fadeIn 0.5s ease;
-}
-
-.slide img, .gallery-video {
-    width: 100%;
-    max-height: 500px;
-    object-fit: cover;
-}
-
-.img-source {
-    background: #1a1a1a;
-    color: #9ca3af;
-    margin: 0;
-    padding: 10px;
-    font-size: 0.8rem;
-    font-style: italic;
-}
-
-/* Controles del Slider */
-.slider {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.prev, .next {
-    background: #000;
-    color: #fff;
-    border: none;
-    padding: 12px 20px;
-    cursor: pointer;
-    font-weight: bold;
-    box-shadow: 4px 4px 0px #19e337;
-    transition: 0.2s;
-}
-
-.prev:hover, .next:hover {
-    background: #19e337;
-    color: #000;
-    transform: translateY(-2px);
-}
-
-/* --- SECCIÓN MAPA --- */
+/* Ajuste del Mapa para que no se vea "suelto" */
 .map-section iframe {
-    flex-grow: 1;
     width: 100%;
-    min-height: 450px;
-    border: 2px solid #000;
-    box-shadow: 8px 8px 0px #dba40b;
-    border-radius: 8px;
-    filter: grayscale(15%);
+    height: 100%;
+    min-height: 400px;
+    border: 3px solid #000;
+    box-shadow: 10px 10px 0px #dba40b;
 }
 
-/* Animaciones */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* --- RESPONSIVE --- */
-@media (max-width: 992px) {
-    .horizontal-layout {
-        flex-direction: column; /* Evita que queden muy angostos en tablets */
-    }
-}
-
-@media (max-width: 768px) {
-    .sub-hero { padding: 0 5%; height: 60vh; }
-    .exp-grid { grid-template-columns: 1fr; }
-    .gallery { padding: 15px; }
-    .map-section iframe { height: 350px; min-height: 350px; }
-    .detail-container { margin: 20px auto; }
+/* Títulos de sección para que no ocupen tanto aire */
+.detail-container h2, .gallery h2, .map-section h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
 }
