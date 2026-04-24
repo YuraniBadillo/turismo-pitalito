@@ -1307,7 +1307,7 @@ section {
 .horizontal-layout {
     display: flex;
     gap: 25px; /* El mismo espacio que usaste en exp-grid para que coincida verticalmente */
-    margin-top: 60px; /* Espacio después de las experiencias */
+    margin-top: 20px; /* Espacio después de las experiencias */
     align-items: stretch; /* Para que ambos tengan la misma altura si es posible */
 }
 
