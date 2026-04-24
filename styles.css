@@ -1180,7 +1180,7 @@ section {
 /* --- CONTENEDOR DE DETALLES (Márgenes ajustados) --- */
 .detail-container {
     max-width: 1200px;
-    margin: 40px auto; /* Reducido para evitar el exceso de blanco */
+    margin: 10px auto; /* Reducido para evitar el exceso de blanco */
     padding: 0 20px;
 }
 
