@@ -1330,37 +1330,3 @@ section {
     display: block;
 }
 
-/* ============================================================
-   LAYOUT DOS COLUMNAS PERFECTAMENTE ALINEADO
-============================================================ */
-
-.detail-container {
-    display: grid;
-    grid-template-columns: 1.1fr 1.3fr; /* derecha más ancha */
-    gap: 40px;
-    max-width: 1300px;
-    margin: 60px auto;
-    padding: 0 20px;
-    align-items: start;
-}
-
-/* IZQUIERDA (experiencias) */
-.exp-grid {
-    width: 100%;
-}
-
-/* DERECHA (galería + mapa como bloque) */
-.right-content {
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
-    width: 100%;
-}
-
-/* GALERÍA y MAPA ocupan TODO el ancho de su columna */
-.gallery,
-.map-section {
-    width: 100%;
-    max-width: 100%;
-    margin: 0; /* quitamos márgenes que desalineaban */
-}
