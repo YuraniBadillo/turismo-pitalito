@@ -1129,26 +1129,43 @@ section {
 }
 
 /* ============================================================
-   ESTILOS ESPECÍFICOS: PÁGINA LAGUNA DE GUAITIPÁN (FINAL)
+   ESTILOS ESPECÍFICOS: PÁGINA LAGUNA DE GUAITIPÁN (SIMETRÍA TOTAL)
 ============================================================ */
 
 .guaitipan-page {
     background-color: #f0fdf4;
 }
 
-/* --- HERO ESTILO NATURALEZA (Alineación corregida) --- */
+/* --- HERO AJUSTADO AL ANCHO DE EXPERIENCIAS --- */
 .sub-hero {
     height: 70vh;
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), 
                 url('images/guaitipan.jpg') center/cover fixed;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinea el contenido a la izquierda */
-    justify-content: center; /* Lo mantiene centrado verticalmente */
+    align-items: center; /* Centrado como base */
+    justify-content: center;
     text-align: left;
-    padding: 0 10%; /* Margen lateral idéntico a Naturaleza */
+    padding: 0 20px; /* Padding estándar para alinearse con el main */
     color: white;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+
+#guaitipan-hero {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 4px;
+    border-left: 8px solid #19e337; 
+    
+    /* COINCIDENCIA DE ANCHO: 1200px igual que .detail-container */
+    max-width: 1200px; 
+    width: 100%;
+    box-sizing: border-box;
+    
+    font-size: 1.15rem;
+    line-height: 1.8;
 }
 
 #guaitipan-title {
@@ -1160,25 +1177,11 @@ section {
     letter-spacing: -3px;
     line-height: 1;
     text-shadow: 2px 4px 10px rgba(0,0,0,0.5);
+    width: 100%; /* Asegura que el título respete el contenedor */
+    max-width: 1200px;
 }
 
-#guaitipan-hero {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    padding: 40px;
-    border-radius: 4px;
-    border-left: 8px solid #19e337; /* Línea lateral gruesa de Naturaleza */
-    
-    /* Ancho corregido para simetría */
-    max-width: 900px;
-    width: 80%;
-    
-    font-size: 1.15rem;
-    line-height: 1.8;
-}
-
-/* --- GRID DE EXPERIENCIAS --- */
+/* --- GRID DE EXPERIENCIAS (REFERENCIA DE ANCHO) --- */
 .detail-container {
     max-width: 1200px;
     margin: 60px auto 10px auto;
@@ -1212,11 +1215,11 @@ section {
 .aves { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/aves.jpg') center/cover; }
 .foto { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/fotografia.jpg') center/cover; }
 
-/* --- SECCIÓN HORIZONTAL (GALERÍA + MAPA) --- */
+/* --- CONTENEDOR HORIZONTAL (GALERÍA + MAPA) --- */
 .horizontal-layout {
     display: flex;
     gap: 30px; 
-    max-width: 1200px;
+    max-width: 1200px; /* Todo unificado a 1200px */
     margin: 0 auto 60px auto; 
     padding: 20px;
     align-items: stretch;
@@ -1244,7 +1247,7 @@ section {
     padding-left: 10px;
 }
 
-/* --- AJUSTES DE LA GALERÍA (ESTILO ÁLBUM) --- */
+/* --- AJUSTES DE LA GALERÍA --- */
 .slide {
     display: none;
     flex-direction: column;
@@ -1295,6 +1298,14 @@ section {
     cursor: pointer;
     font-weight: bold;
     box-shadow: 4px 4px 0px #000;
+    transition: 0.2s;
+}
+
+.prev:hover, .next:hover {
+    background: #000;
+    color: #fff;
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px #dba40b;
 }
 
 /* --- MAPA --- */
@@ -1304,6 +1315,13 @@ section {
     flex-grow: 1;
     border: 3px solid #000;
     min-height: 400px;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 1200px) {
+    #guaitipan-hero, #guaitipan-title {
+        max-width: 90%;
+    }
 }
 /* --- RESPONSIVE --- */
 @media (max-width: 900px) {
