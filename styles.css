@@ -1278,18 +1278,7 @@ section {
     transform: scale(1.1);
 }
 
-/* --- SECCIÓN MAPA --- */
-.map-section {
-    margin-top: 80px;
-}
 
-.map-section iframe {
-    width: 100%;
-    height: 450px;
-    border: 4px solid #000;
-    box-shadow: 12px 12px 0px #dba40b; /* Acento naranja del inicio */
-    filter: grayscale(20%);
-}
 
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
