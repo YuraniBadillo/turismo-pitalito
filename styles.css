@@ -1670,18 +1670,40 @@ h2#art-exp-title, h2#gallery-title, h2#location-title {
 .exp-card p { background: rgba(0,0,0,0.5); padding: 5px 10px; border-radius: 4px; font-size: 0.9rem; }
 
 /* --- SLIDES Y VIDEO --- */
-.slide img, .gallery-video {
-    width: 100%;
-    height: 450px; /* Un poco más grande ya que ocupa todo el ancho */
-    object-fit: cover;
+/* --- AJUSTE DE IMÁGENES MÁS ANGOSTAS --- */
+
+.slide img, 
+.gallery-video {
+    width: 100%;           /* Se adapta al contenedor... */
+    max-width: 600px;      /* ...pero no pasa de 600px (ajusta este número a tu gusto) */
+    height: 400px;         /* Altura fija para mantener uniformidad */
+    object-fit: cover;     /* Mantiene la proporción sin deformar */
+    display: block;        /* Permite el centrado */
+    margin: 0 auto;        /* Centra la imagen horizontalmente */
+    border: 1px solid #ddd;
 }
 
+/* Ajustamos el contenedor de la slide para que el pie de foto también se alinee */
+.slide {
+    display: none;
+    flex-direction: column;
+    align-items: center;    /* Centra todo el contenido de la slide */
+}
+
+.slide.active {
+    display: flex;
+}
+
+/* El pie de foto (fuente) ahora coincidirá con el ancho de la imagen */
 .img-source {
+    width: 100%;
+    max-width: 600px;       /* Mismo ancho que la imagen */
     background: #2d1a0f;
     color: #fef3c7;
     padding: 10px;
     font-size: 0.8rem;
     text-align: center;
+    box-sizing: border-box;
 }
 
 /* --- BOTONES --- */
