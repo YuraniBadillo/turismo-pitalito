@@ -1986,17 +1986,17 @@ h2#cafe-exp-title {
 
 .matrimonio1 { 
     background-image: linear-gradient(to top, rgba(0,0,0,0.9) 10%, transparent 60%), 
-                      url('images/mirador.jpg'); 
+                      url('images/matrimonio1.jpg'); 
 }
 
 .matrimonio2 { 
     background-image: linear-gradient(to top, rgba(0,0,0,0.9) 10%, transparent 60%), 
-                      url('images/comida.jpg'); 
+                      url('images/matrimonio2.jpg'); 
 }
 
 .matrimonio3 { 
     background-image: linear-gradient(to top, rgba(0,0,0,0.9) 10%, transparent 60%), 
-                      url('images/taza.jpg'); 
+                      url('images/matrimonio3.jpg'); 
 }
 
 /* Texto dentro de tarjetas con efecto vidrio oscuro */
