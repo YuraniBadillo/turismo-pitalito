@@ -1562,11 +1562,13 @@ section {
     margin-top: 0;
 }
 /* ============================================================
-   ESTILOS: ARTESANÍAS LOCALES (PALETA TIERRA Y ARCILLA)
+   ESTILOS: ARTESANÍAS LOCALES (FLUJO VERTICAL)
 ============================================================ */
 
 .artesanias-page {
     background-color: #3d2b1f; /* Café profundo */
+    margin: 0;
+    padding: 0;
 }
 
 /* --- HERO --- */
@@ -1580,201 +1582,122 @@ section {
     padding: 0 20px;
     color: white;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    margin-bottom: 0;
 }
 
 #artesanias-title {
     font-family: 'Playfair Display', serif;
     font-size: clamp(3rem, 8vw, 5rem);
-    color: #ffffff;
     text-transform: uppercase;
     margin-bottom: 20px;
-    letter-spacing: -2px;
     text-shadow: 2px 4px 10px rgba(0,0,0,0.5);
-    max-width: 1200px;
 }
 
 #artesanias-hero {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
-    padding: 40px;
-    border-left: 8px solid #d97706; /* Color ámbar/arcilla */
-    max-width: 1200px;
+    padding: 30px;
+    border-left: 8px solid #d97706;
+    max-width: 900px;
     font-size: 1.1rem;
     line-height: 1.8;
 }
 
-/* --- IMÁGENES DE FONDO PARA TARJETAS --- */
-.artesanias1 {
-    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent),
-                url('images/taller.jpg') center/cover;
+/* --- CONTENEDOR PRINCIPAL (UNA SOLA COLUMNA) --- */
+.artesanias-layout {
+    display: block; /* Asegura que las secciones bajen */
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
 }
 
-.artesanias2 {
-    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent),
-                url('images/muestras.jpg') center/cover;
+/* --- SECCIONES (ESTILO PUEBLITO) --- */
+.experiences, .gallery, .map-section {
+    margin-bottom: 50px; /* Espacio entre secciones verticales */
 }
 
-.artesanias3 {
-    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent),
-                url('images/recuerdos.jpg') center/cover;
+.gallery, .map-section {
+    background: #fffaf0;
+    border: 4px solid #2d1a0f;
+    box-shadow: 12px 12px 0px #92400e;
+    padding: 25px;
 }
 
-/* --- TARJETAS (DISEÑO BRUTALISTA) --- */
+h2#art-exp-title, h2#gallery-title, h2#location-title {
+    font-family: 'Playfair Display', serif;
+    color: #fbbf24; /* Color para el título de experiencias sobre fondo oscuro */
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+/* Ajuste de color para títulos sobre fondo claro (Galería y Mapa) */
+.gallery h2, .map-section h2 {
+    color: #78350f;
+    border-left: 5px solid #d97706;
+    padding-left: 15px;
+}
+
+/* --- TARJETAS DE EXPERIENCIAS --- */
+.exp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
 .exp-card {
     height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 30px;
+    padding: 25px;
     color: white;
     border: 2px solid #573b2d;
-    box-shadow: 8px 8px 0px #b45309; /* Sombra sólida arcilla */
     transition: 0.3s;
-    margin-bottom: 20px;
 }
 
 .exp-card:hover {
     transform: translate(-5px, -5px);
-    box-shadow: 12px 12px 0px #78350f;
 }
 
-/* COLORES DIFERENTES POR TARJETA (Variaciones de Marrón/Naranja) */
-.artesanias1 { border-color: #d97706; box-shadow: 8px 8px 0px #d97706; }
-.artesanias2 { border-color: #92400e; box-shadow: 8px 8px 0px #92400e; }
-.artesanias3 { border-color: #78350f; box-shadow: 8px 8px 0px #78350f; }
+/* Colores por tarjeta */
+.artesanias1 { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/taller.jpg') center/cover; border-color: #d97706; box-shadow: 8px 8px 0px #d97706; }
+.artesanias2 { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/muestras.jpg') center/cover; border-color: #92400e; box-shadow: 8px 8px 0px #92400e; }
+.artesanias3 { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/recuerdos.jpg') center/cover; border-color: #78350f; box-shadow: 8px 8px 0px #78350f; }
 
-/* --- EFECTO VIDRIO EN TEXTO --- */
-.exp-card h3,
-.exp-card p {
-    display: inline-block;
-    background: rgba(45, 26, 15, 0.4); /* Fondo oscuro semitransparente */
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    padding: 6px 12px;
-    border-radius: 4px;
-    margin-bottom: 6px;
-    color: #fff;
-    text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
-    border: 1px solid rgba(255,255,255,0.2);
-}
+/* Texto dentro de tarjetas */
+.exp-card h3 { background: rgba(0,0,0,0.5); padding: 5px 10px; border-radius: 4px; color: #fbbf24; margin-bottom: 5px; }
+.exp-card p { background: rgba(0,0,0,0.5); padding: 5px 10px; border-radius: 4px; font-size: 0.9rem; }
 
-.exp-card h3 {
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: #fbbf24; /* Color trigo/oro */
-}
-
-/* --- GALERÍA Y MAPA --- */
-.gallery, .map-section {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    background: #fffaf0; /* Blanco hueso */
-    border: 4px solid #2d1a0f;
-    box-shadow: 12px 12px 0px #92400e;
-    padding: 25px;
-    box-sizing: border-box;
-    margin-bottom: 30px;
-}
-
-.gallery h2, .map-section h2, .experiences h2 {
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-family: 'Playfair Display', serif;
-    color: #78350f;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    border-left: 5px solid #d97706;
-    padding-left: 15px;
-}
-
-.experiences h2 { color: #fcd34d; } /* Título sección experiencias */
-
-/* --- SLIDES --- */
-.slide {
-    display: none;
-    flex-direction: column;
-}
-
-.slide.active {
-    display: flex;
-}
-
+/* --- SLIDES Y VIDEO --- */
 .slide img, .gallery-video {
     width: 100%;
-    height: 350px;
+    height: 450px; /* Un poco más grande ya que ocupa todo el ancho */
     object-fit: cover;
-    border: 1px solid #ddd;
 }
 
-/* --- FUENTE IMAGEN --- */
 .img-source {
     background: #2d1a0f;
     color: #fef3c7;
-    padding: 8px;
-    font-size: 0.75rem;
+    padding: 10px;
+    font-size: 0.8rem;
     text-align: center;
 }
 
-/* --- BOTONES NAVEGACIÓN --- */
-.slider {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 15px;
-}
-
+/* --- BOTONES --- */
 .prev, .next {
     background: #d97706;
     color: #fff;
     border: 2px solid #2d1a0f;
-    padding: 10px 25px;
+    padding: 10px 30px;
     cursor: pointer;
     font-weight: bold;
     box-shadow: 4px 4px 0px #2d1a0f;
-    transition: 0.2s;
-}
-
-.prev:hover, .next:hover {
-    background: #2d1a0f;
-    color: #fbbf24;
-    transform: translate(-2px, -2px);
-    box-shadow: 6px 6px 0px #d97706;
 }
 
 /* --- MAPA --- */
 .map-section iframe {
     width: 100%;
-    height: 400px;
+    height: 450px;
     border: 3px solid #2d1a0f;
-}
-
-/* --- LAYOUT Y RESPONSIVE --- */
-.artesanias-layout {
-    display: flex;
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.experiences { flex: 2; }
-.right-column { flex: 1; }
-
-@media (max-width: 1000px) {
-    .artesanias-layout {
-        flex-direction: column;
-    }
-}
-
-.detail-container {
-    margin-top: 10px;
-}
-
-.footer {
-    background: #1a0f0a;
-    color: #a0a0a0;
-    text-align: center;
-    padding: 20px;
-    font-size: 0.8rem;
 }
