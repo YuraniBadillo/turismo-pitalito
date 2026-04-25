@@ -1584,6 +1584,20 @@ section {
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
     margin-bottom: 0;
 }
+.artesanias1 {
+    background: linear-gradient(to top, rgba(0,0,0,0.6), transparent),
+                url('images/artesanias1.jpg') center/cover;
+}
+
+.artesanias2 {
+    background: linear-gradient(to top, rgba(0,0,0,0.6), transparent),
+                url('images/artesanias2.jpg') center/cover;
+}
+
+.artesanias3 {
+    background: linear-gradient(to top, rgba(0,0,0,0.6), transparent),
+                url('images/artesanias3.jpg') center/cover;
+}
 
 #artesanias-title {
     font-family: 'Playfair Display', serif;
