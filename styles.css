@@ -1561,3 +1561,66 @@ section {
 .experiences h2 {
     margin-top: 0;
 }
+
+/* ============================================================
+   MINI-HERO CON EFECTO VIDRIO (NATURALEZA, CULTURA, FOOD)
+============================================================ */
+
+/* Asegura posicionamiento correcto */
+.nature-section,
+.culture-section,
+.food-section {
+    position: relative;
+}
+
+/* CONTENEDOR DE TEXTO (VIDRIO) */
+#nature,
+#nature-desc,
+#culture,
+#culture-desc,
+#food-title,
+#food-desc {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    padding: 20px 25px;
+    border-radius: 6px;
+
+    display: inline-block;
+    max-width: 750px;
+
+    color: #ffffff;
+    text-shadow: 1px 2px 6px rgba(0,0,0,0.7);
+}
+
+/* Separación entre título y descripción */
+#nature-desc,
+#culture-desc,
+#food-desc {
+    margin-top: 15px;
+
+    /* línea lateral estilo Pueblito */
+    border-left: 6px solid var(--accent-color);
+}
+
+/* Ajuste del título para que no se estire raro */
+#nature,
+#culture,
+#food-title {
+    display: block;
+    width: fit-content;
+}
+
+/* RESPONSIVE (para que no se rompa en móvil) */
+@media (max-width: 768px) {
+    #nature,
+    #culture,
+    #food-title,
+    #nature-desc,
+    #culture-desc,
+    #food-desc {
+        max-width: 100%;
+        padding: 15px 20px;
+    }
+}
