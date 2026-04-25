@@ -1639,7 +1639,7 @@ h2#art-exp-title, h2#gallery-title, h2#location-title {
     padding-left: 15px;
 }
 
-/* --- TARJETAS DE EXPERIENCIAS (CORREGIDO) --- */
+/* --- TARJETAS DE EXPERIENCIAS --- */
 .exp-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1655,39 +1655,13 @@ h2#art-exp-title, h2#gallery-title, h2#location-title {
     color: white;
     border: 2px solid #573b2d;
     transition: 0.3s;
-    /* Aseguramos que la imagen de fondo se vea bien */
-    background-size: cover;
-    background-position: center;
 }
 
 .exp-card:hover {
     transform: translate(-5px, -5px);
 }
 
-/* ASIGNACIÓN DE IMÁGENES Y COLORES 
-   Asegúrate de que los nombres de archivos en la carpeta 'images' sean EXACTAMENTE estos
-*/
 
-.artesanias1 { 
-    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), 
-                url('images/artesanias1.jpg') center/cover; 
-    border-color: #d97706; 
-    box-shadow: 8px 8px 0px #d97706; 
-}
-
-.artesanias2 { 
-    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), 
-                url('images/artesanias2.jpg') center/cover; 
-    border-color: #92400e; 
-    box-shadow: 8px 8px 0px #92400e; 
-}
-
-.artesanias3 { 
-    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), 
-                url('images/artesanias3.jpg') center/cover; 
-    border-color: #78350f; 
-    box-shadow: 8px 8px 0px #78350f; 
-}
 /* Colores por tarjeta */
 .artesanias1 { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/taller.jpg') center/cover; border-color: #d97706; box-shadow: 8px 8px 0px #d97706; }
 .artesanias2 { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/muestras.jpg') center/cover; border-color: #92400e; box-shadow: 8px 8px 0px #92400e; }
