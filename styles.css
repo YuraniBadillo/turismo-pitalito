@@ -1723,3 +1723,22 @@ h2#art-exp-title, h2#gallery-title, h2#location-title {
     height: 450px;
     border: 3px solid #2d1a0f;
 }
+/* --- CAMBIO DE COLOR ESPECÍFICO PARA TÍTULOS EN TARJETAS BLANCAS --- */
+
+.gallery h2#gallery-title, 
+.map-section h2#location-title {
+    color: #2d1a0f;           /* Café muy oscuro (casi negro) */
+    border-left: 5px solid #78350f; /* Un borde café rojizo para resaltar */
+    font-weight: 600;
+}
+
+/* También podemos ajustar el texto de "Fuente" si quieres que sea consistente */
+.gallery .img-source {
+    background: #2d1a0f;      /* Fondo café oscuro */
+    color: #fffaf0;           /* Letra clara */
+}
+
+/* Si tienes algún otro texto dentro de estas cajas blancas (opcional) */
+.gallery p, .map-section p {
+    color: #3d2b1f;           /* Café intermedio para el cuerpo de texto */
+}
