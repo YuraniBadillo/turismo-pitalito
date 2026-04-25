@@ -2312,3 +2312,6 @@ h2#cafe-exp-title {
     color: inherit;
     cursor: pointer;
 }
+#title {
+    color: #f97316; /* naranja moderno */
+}
