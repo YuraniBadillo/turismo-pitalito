@@ -1978,21 +1978,25 @@ h2#cafe-exp-title {
     transform: translate(-5px, -5px);
 }
 
-/* Imágenes de fondo y colores de borde */
+/* Si quieres que la imagen se vea con menos "zoom", 
+   ajustamos el degradado para que sea más sutil y no tape tanto */
+.matrimonio1, .matrimonio2, .matrimonio3 {
+    background-blend-mode: multiply; /* Mezcla el color con la imagen para dar textura */
+}
+
 .matrimonio1 { 
-    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/matrimonio1.jpg'); 
-    border-color: #8b5a2b; 
-    box-shadow: 8px 8px 0px #8b5a2b; 
+    background-image: linear-gradient(to top, rgba(0,0,0,0.9) 10%, transparent 60%), 
+                      url('images/mirador.jpg'); 
 }
+
 .matrimonio2 { 
-    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/matrimonio2.jpg'); 
-    border-color: #6d4c41; 
-    box-shadow: 8px 8px 0px #6d4c41; 
+    background-image: linear-gradient(to top, rgba(0,0,0,0.9) 10%, transparent 60%), 
+                      url('images/comida.jpg'); 
 }
+
 .matrimonio3 { 
-    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/matrimonio3.jpg'); 
-    border-color: #4e342e; 
-    box-shadow: 8px 8px 0px #4e342e; 
+    background-image: linear-gradient(to top, rgba(0,0,0,0.9) 10%, transparent 60%), 
+                      url('images/taza.jpg'); 
 }
 
 /* Texto dentro de tarjetas con efecto vidrio oscuro */
