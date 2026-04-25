@@ -2315,3 +2315,6 @@ h2#cafe-exp-title {
 #title {
     color: #f97316; /* naranja moderno */
 }
+#title {
+    font-family: 'Playfair Display', serif;
+}
