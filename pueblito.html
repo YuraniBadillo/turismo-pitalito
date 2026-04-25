@@ -34,8 +34,6 @@ El Parque Ecoturístico Pueblito Huilense rescata las tradiciones culturales del
 
 <main class="detail-container">
 
-<div class="pueblito-layout">
-
 <!-- ⭐ EXPERIENCIAS -->
 <section class="experiences">
 
@@ -67,8 +65,8 @@ Degustación de platos típicos y productos artesanales.
 </div>
 </section>
 
-<!-- ⭐ COLUMNA DERECHA -->
-<div class="right-column">
+<!-- ⭐ GALERÍA Y MAPA EN FILA -->
+<div class="horizontal-layout">
 
 <!-- ⭐ GALERÍA -->
 <section class="gallery">
@@ -87,20 +85,21 @@ Degustación de platos típicos y productos artesanales.
   
 <div class="slide">
 <img src="images/parqued.jpg">
-<p class="img-source" id="p-img1">Fuente: Internet</p>
+<p class="img-source">Fuente: Internet</p>
 </div>
 
 <div class="slide">
 <img src="images/parquec.jpg">
-<p class="img-source" id="p-img3">Fuente: Internet<</p>
+<p class="img-source" id="p-img3">Fuente: Internet</p>
 </div>
 
- 
 <div class="slide">
 <video controls class="gallery-video">
 <source src="images/pueblito.mp4" type="video/mp4">
 </video>
-<p class="img-source" id="p-img4">Fuente: https://www.instagram.com/reels/DQAtfKNDefZ/</p>
+<p class="img-source" id="p-img4">
+Fuente: https://www.instagram.com/reels/DQAtfKNDefZ/
+</p>
 </div>
 
 <div class="slider">
@@ -108,9 +107,9 @@ Degustación de platos típicos y productos artesanales.
 <button class="next" onclick="moveSlide(1)">❯</button>
 </div>
 
+</section>
 
-
-<!-- ⭐ MAPA (DEBAJO DE GALERÍA) -->
+<!-- ⭐ MAPA -->
 <section class="map-section">
 
 <h2 id="location-title">Ubicación</h2>
@@ -121,7 +120,6 @@ src="https://www.google.com/maps?q=Pueblito+Huilense+Pitalito&output=embed">
 
 </section>
 
-</div>
 </div>
 </main>
 
@@ -143,13 +141,17 @@ showSlide(index);
 </script>
 
 <script src="script.js"></script>
-  <a href="#" class="back-to-top">↑</a><footer class="footer">
-  <p>
-    Este sitio web utilizó ChatGPT como apoyo en la generación de contenido y desarrollo web (OpenAI, 2023).
-  </p>
-  <p>
-    Referencia: OpenAI. (2023). ChatGPT [Modelo de lenguaje grande]. https://chat.openai.com
-  </p>
+
+<a href="#" class="back-to-top">↑</a>
+
+<footer class="footer">
+<p>
+Este sitio web utilizó ChatGPT como apoyo en la generación de contenido y desarrollo web (OpenAI, 2023).
+</p>
+<p>
+Referencia: OpenAI. (2023). ChatGPT [Modelo de lenguaje grande]. https://chat.openai.com
+</p>
 </footer>
+
 </body>
 </html>
