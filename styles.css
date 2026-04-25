@@ -1547,3 +1547,17 @@ section {
         flex-direction: column;
     }
 }
+/* Quitar espacio entre hero y contenido */
+.sub2-hero {
+    margin-bottom: 0;
+}
+
+/* Reducir separación del contenedor */
+.detail-container {
+    margin-top: 20px; /* antes suele ser 60px */
+}
+
+/* Quitar margen extra del título */
+.experiences h2 {
+    margin-top: 0;
+}
