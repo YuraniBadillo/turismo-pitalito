@@ -1663,9 +1663,9 @@ h2#art-exp-title, h2#gallery-title, h2#location-title {
 
 
 /* Colores por tarjeta */
-.artesanias1 { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/taller.jpg') center/cover; border-color: #d97706; box-shadow: 8px 8px 0px #d97706; }
-.artesanias2 { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/muestras.jpg') center/cover; border-color: #92400e; box-shadow: 8px 8px 0px #92400e; }
-.artesanias3 { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/recuerdos.jpg') center/cover; border-color: #78350f; box-shadow: 8px 8px 0px #78350f; }
+.artesanias1 { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/artesanias1.jpg') center/cover; border-color: #d97706; box-shadow: 8px 8px 0px #d97706; }
+.artesanias2 { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/artesanias2.jpg') center/cover; border-color: #92400e; box-shadow: 8px 8px 0px #92400e; }
+.artesanias3 { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/artesanias3.jpg') center/cover; border-color: #78350f; box-shadow: 8px 8px 0px #78350f; }
 
 /* Texto dentro de tarjetas */
 .exp-card h3 { background: rgba(0,0,0,0.5); padding: 5px 10px; border-radius: 4px; color: #fbbf24; margin-bottom: 5px; }
