@@ -1554,7 +1554,7 @@ section {
 
 /* Reducir separación del contenedor */
 .detail-container {
-    margin-top: 20px; /* antes suele ser 60px */
+    margin-top: 5px; /* antes suele ser 60px */
 }
 
 /* Quitar margen extra del título */
