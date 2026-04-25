@@ -1563,22 +1563,20 @@ section {
 }
 
 /* ============================================================
-   MINI-HERO CON EFECTO VIDRIO (NATURALEZA, CULTURA, FOOD)
+   MI/* ============================================================
+   MINI-HERO VIDRIO (SOLO DESCRIPCIÓN, NO TÍTULO)
 ============================================================ */
 
-/* Asegura posicionamiento correcto */
+/* CONTENEDOR base */
 .nature-section,
 .culture-section,
 .food-section {
     position: relative;
 }
 
-/* CONTENEDOR DE TEXTO (VIDRIO) */
-#nature,
+/* 🔥 SOLO TEXTO (descripción) */
 #nature-desc,
-#culture,
 #culture-desc,
-#food-title,
 #food-desc {
     background: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(12px);
@@ -1592,31 +1590,24 @@ section {
 
     color: #ffffff;
     text-shadow: 1px 2px 6px rgba(0,0,0,0.7);
-}
 
-/* Separación entre título y descripción */
-#nature-desc,
-#culture-desc,
-#food-desc {
     margin-top: 15px;
 
     /* línea lateral estilo Pueblito */
     border-left: 6px solid var(--accent-color);
 }
 
-/* Ajuste del título para que no se estire raro */
+/* 🚫 IMPORTANTE: aseguramos que el título NO tenga fondo */
 #nature,
 #culture,
 #food-title {
-    display: block;
-    width: fit-content;
+    background: none;
+    backdrop-filter: none;
+    padding: 0;
 }
 
-/* RESPONSIVE (para que no se rompa en móvil) */
+/* RESPONSIVE */
 @media (max-width: 768px) {
-    #nature,
-    #culture,
-    #food-title,
     #nature-desc,
     #culture-desc,
     #food-desc {
