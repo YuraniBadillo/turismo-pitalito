@@ -1335,19 +1335,18 @@ section {
 }
 
 /* ============================================================
-   ESTILOS ESPECÍFICOS: PÁGINA PUEBLITO (SIMETRÍA TOTAL)
-   Paleta: Terracota, Crema, Azul Colonial y Negro
+   ESTILOS ESPECÍFICOS: PÁGINA PUEBLITO HUILENSE
 ============================================================ */
 
 .pueblito-page {
-    background-color: #2c1e1a; /* Café muy oscuro/tierra */
+    background-color: #2c1e1a; /* Tono tierra oscuro */
 }
 
-/* --- HERO AJUSTADO AL ANCHO DE EXPERIENCIAS --- */
-.sub-hero-pueblito {
+/* --- HERO (Basado en tu clase .sub2-hero) --- */
+.sub2-hero {
     height: 70vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), 
-                url('images/pueblito-bg.jpg') center/cover fixed;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), 
+                url('images/parque-hero.jpg') center/cover fixed;
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -1364,12 +1363,10 @@ section {
     -webkit-backdrop-filter: blur(15px);
     padding: 40px;
     border-radius: 4px;
-    border-left: 8px solid #e67e22; /* Color Terracota / Teja */
-    
+    border-left: 8px solid #e67e22; /* Terracota */
     max-width: 1200px; 
     width: 100%;
     box-sizing: border-box;
-    
     font-size: 1.15rem;
     line-height: 1.8;
 }
@@ -1377,7 +1374,7 @@ section {
 #pueblito-title {
     font-family: 'Montserrat', sans-serif;
     font-size: clamp(3rem, 8vw, 5rem);
-    color: #e67e22; /* Terracota brillante */
+    color: #e67e22;
     text-transform: uppercase;
     margin-bottom: 20px;
     letter-spacing: -3px;
@@ -1387,66 +1384,33 @@ section {
     max-width: 1200px;
 }
 
-/* --- GRID DE EXPERIENCIAS --- */
-.detail-container-pueblito {
+/* --- CONTENEDOR PRINCIPAL --- */
+.detail-container {
     max-width: 1200px;
-    margin: 60px auto 10px auto;
+    margin: 60px auto 20px auto;
     padding: 0 20px;
 }
 
-.exp-grid-pueblito {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
+/* --- LAYOUT: EXPERIENCIAS + COLUMNA DERECHA --- */
+.pueblito-layout {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
 }
 
-.exp-card-pueblito {
-    height: 300px;
+.experiences {
+    flex: 2; /* Más ancho para las cards */
+}
+
+.right-column {
+    flex: 1; /* Columna para Galería y Mapa */
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    padding: 30px;
-    border: 3px solid #000;
-    box-shadow: 10px 10px 0px #e67e22; /* Sombra Terracota */
-    transition: 0.3s;
-    color: white;
-    position: relative;
-    overflow: hidden;
+    gap: 30px;
 }
 
-.exp-card-pueblito:hover {
-    transform: translate(-5px, -5px);
-    box-shadow: 15px 15px 0px #000;
-}
-
-/* Fondos específicos para Pueblito */
-.arquitectura { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/arquitectura.jpg') center/cover; }
-.artesanias { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/artesanias.jpg') center/cover; }
-.gastronomia { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/gastronomia.jpg') center/cover; }
-
-/* --- CONTENEDOR HORIZONTAL (GALERÍA + MAPA) --- */
-.horizontal-layout-pueblito {
-    display: flex;
-    gap: 30px; 
-    max-width: 1200px;
-    margin: 0 auto 60px auto; 
-    padding: 20px;
-    align-items: stretch;
-}
-
-.gallery-pueblito, .map-section-pueblito {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    background: #fdf5e6; /* Color Crema/Papel antiguo */
-    border: 4px solid #000;
-    box-shadow: 12px 12px 0px #2980b9; /* Azul Colonial */
-    padding: 25px;
-    box-sizing: border-box;
-}
-
-.gallery-pueblito h2, .map-section-pueblito h2 {
-    margin-top: 0;
+/* --- TITULOS SECCIONES --- */
+.experiences h2, .gallery h2, .map-section h2 {
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
     color: #2980b9; /* Azul Colonial */
@@ -1456,57 +1420,108 @@ section {
     padding-left: 10px;
 }
 
-/* --- AJUSTES DE LA GALERÍA --- */
-.slide-photo-frame-pueblito {
-    background: #fff;
-    padding: 10px; 
-    border: 1px solid #ddd;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-    flex-grow: 1;
+/* --- GRID DE EXPERIENCIAS --- */
+.exp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.exp-card {
+    height: 300px;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px;
+    border: 3px solid #000;
+    box-shadow: 10px 10px 0px #e67e22;
+    transition: 0.3s;
+    color: white;
+}
+
+.exp-card:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 15px 15px 0px #000;
+}
+
+/* Imágenes de fondo para las cards */
+.parque1 { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/parquea.jpg') center/cover; }
+.parque2 { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/parqueb.jpg') center/cover; }
+.parque3 { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/parquec.jpg') center/cover; }
+
+/* --- GALERÍA Y MAPA (ESTILO CAJA) --- */
+.gallery, .map-section {
+    background: #fdf5e6; /* Crema */
+    border: 4px solid #000;
+    box-shadow: 10px 10px 0px #2980b9;
+    padding: 20px;
+}
+
+.slide {
+    display: none;
     flex-direction: column;
 }
 
-.prev-pueblito, .next-pueblito {
-    background: #2980b9;
-    color: #fff;
-    border: 2px solid #000;
-    padding: 10px 25px;
-    cursor: pointer;
-    font-weight: bold;
-    box-shadow: 4px 4px 0px #000;
-    transition: 0.2s;
+.slide.active {
+    display: flex;
 }
 
-.prev-pueblito:hover, .next-pueblito:hover {
+.slide img, .gallery-video {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border: 2px solid #000;
+}
+
+.img-source {
     background: #000;
     color: #fff;
+    padding: 5px;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+/* --- BOTONES SLIDER --- */
+.slider {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.prev, .next {
+    background: #2980b9;
+    color: white;
+    border: 2px solid #000;
+    padding: 8px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 3px 3px 0px #000;
+}
+
+.prev:hover, .next:hover {
+    background: #000;
     transform: translate(-2px, -2px);
-    box-shadow: 6px 6px 0px #2980b9;
+    box-shadow: 5px 5px 0px #2980b9;
 }
 
 /* --- MAPA --- */
-.map-section-pueblito iframe {
+.map-section iframe {
     width: 100%;
-    height: 100%; 
-    flex-grow: 1;
-    border: 3px solid #000;
-    min-height: 400px;
+    height: 300px;
+    border: 2px solid #000;
 }
 
 /* --- RESPONSIVE --- */
-@media (max-width: 1200px) {
-    #pueblito-hero, #pueblito-title {
-        max-width: 90%;
-    }
-}
-
-@media (max-width: 900px) {
-    .horizontal-layout-pueblito {
+@media (max-width: 950px) {
+    .pueblito-layout {
         flex-direction: column;
-        align-items: center;
     }
-    .gallery-pueblito, .map-section-pueblito {
+    .right-column, .experiences {
         width: 100%;
+    }
+    .sub2-hero {
+        height: auto;
+        padding: 100px 20px;
     }
 }
