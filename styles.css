@@ -2304,3 +2304,11 @@ h2#cafe-exp-title {
     padding: 20px;
     text-align: center;
 }
+.logo-link {
+    text-decoration: none;
+}
+
+.logo-link h1 {
+    color: inherit;
+    cursor: pointer;
+}
