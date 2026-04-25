@@ -2304,19 +2304,17 @@ h2#cafe-exp-title {
     padding: 20px;
     text-align: center;
 }
+.logo-link {
+    text-decoration: none;
+}
 
+.logo-link h1 {
+    color: inherit;
+    cursor: pointer;
 }
 #title {
     color: #f97316; /* naranja moderno */
 }
 #title {
     font-family: 'Playfair Display', serif;
-}
-.logo-link {
-    text-decoration: none;
-    display: inline-block; /* 🔥 ESTO ARREGLA TODO */
-}
-
-#title {
-    margin: 0; /* evita que desplace el header */
 }
