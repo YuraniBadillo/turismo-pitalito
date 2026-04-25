@@ -1699,7 +1699,7 @@ h2#art-exp-title, h2#gallery-title, h2#location-title {
     width: 100%;
     max-width: 600px;       /* Mismo ancho que la imagen */
     background: #2d1a0f;
-    color: #fef3c7;
+    color: #2d1a0f;
     padding: 10px;
     font-size: 0.8rem;
     text-align: center;
