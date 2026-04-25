@@ -1980,17 +1980,17 @@ h2#cafe-exp-title {
 
 /* Imágenes de fondo y colores de borde */
 .matrimonio1 { 
-    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/mirador.jpg'); 
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/matrimonio1.jpg'); 
     border-color: #8b5a2b; 
     box-shadow: 8px 8px 0px #8b5a2b; 
 }
 .matrimonio2 { 
-    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/comida.jpg'); 
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/matrimonio2.jpg'); 
     border-color: #6d4c41; 
     box-shadow: 8px 8px 0px #6d4c41; 
 }
 .matrimonio3 { 
-    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/taza.jpg'); 
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/matrimonio3.jpg'); 
     border-color: #4e342e; 
     box-shadow: 8px 8px 0px #4e342e; 
 }
