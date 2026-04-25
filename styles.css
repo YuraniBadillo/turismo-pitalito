@@ -1335,11 +1335,11 @@ section {
 }
 
 /* ============================================================
-   ESTILOS: PUEBLITO HUILENSE (MISMO DISEÑO, NUEVA IDENTIDAD)
+   ESTILOS: PUEBLITO HUILENSE (DISEÑO COMPLETO FINAL)
 ============================================================ */
 
 .pueblito-page {
-    background-color: #2f1b12; /* café oscuro */
+    background-color: #2f1b12;
 }
 
 /* --- HERO --- */
@@ -1376,7 +1376,7 @@ section {
     line-height: 1.8;
 }
 
-/* --- EXPERIENCIAS (MEJORADAS) --- */
+/* --- EXPERIENCIAS (IMÁGENES) --- */
 .parque1 {
     background: linear-gradient(to top, rgba(0,0,0,0.6), transparent),
                 url('images/parque1.jpg') center/cover;
@@ -1392,7 +1392,41 @@ section {
                 url('images/parque3.jpg') center/cover;
 }
 
-/* --- EFECTO VIDRIO SOLO EN TEXTO --- */
+/* --- TARJETAS (NUEVA IDENTIDAD) --- */
+.exp-card {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px;
+    color: white;
+    border: 2px solid #7c2d12;
+    box-shadow: 8px 8px 0px #ff7b00;
+    transition: 0.3s;
+}
+
+.exp-card:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 12px 12px 0px #7c2d12;
+}
+
+/* COLORES DIFERENTES POR TARJETA */
+.parque1 {
+    border-color: #ff7b00;
+    box-shadow: 8px 8px 0px #ff7b00;
+}
+
+.parque2 {
+    border-color: #c2410c;
+    box-shadow: 8px 8px 0px #c2410c;
+}
+
+.parque3 {
+    border-color: #a16207;
+    box-shadow: 8px 8px 0px #a16207;
+}
+
+/* --- EFECTO VIDRIO EN TEXTO --- */
 .exp-card h3,
 .exp-card p {
     display: inline-block;
@@ -1410,10 +1444,11 @@ section {
     border: 1px solid rgba(255,255,255,0.3);
 }
 
-/* TIPOGRAFÍA MEJORADA */
+/* TIPOGRAFÍA */
 .exp-card h3 {
     font-size: 1.3rem;
     font-weight: 600;
+    color: #ffe0c7;
 }
 
 .exp-card p {
@@ -1428,7 +1463,7 @@ section {
     flex-direction: column;
     background: #fff8f0;
     border: 4px solid #000;
-    box-shadow: 12px 12px 0px #ff7b00; 
+    box-shadow: 12px 12px 0px #ff7b00;
     padding: 25px;
     box-sizing: border-box;
 }
