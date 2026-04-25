@@ -1633,7 +1633,7 @@ h2#art-exp-title, h2#gallery-title, h2#location-title {
 
 /* Ajuste de color para títulos sobre fondo claro (Galería y Mapa) */
 .gallery h2, .map-section h2 {
-    color: #78350f;
+    color: #0a0a0a;
     border-left: 5px solid #d97706;
     padding-left: 15px;
 }
@@ -1699,7 +1699,7 @@ h2#art-exp-title, h2#gallery-title, h2#location-title {
     width: 100%;
     max-width: 600px;       /* Mismo ancho que la imagen */
     background: #2d1a0f;
-    color: #2d1a0f;
+    color: #fef3c7;
     padding: 10px;
     font-size: 0.8rem;
     text-align: center;
