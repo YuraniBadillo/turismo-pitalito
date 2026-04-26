@@ -959,7 +959,7 @@ section {
 /* Textos del Hero Cultura */
 #culture {
     font-size: clamp(3rem, 8vw, 5rem);
-    color: #c90e0e; 
+    color: #ffb700; 
     margin: 0;
     text-transform: uppercase;
     letter-spacing: -3px;
