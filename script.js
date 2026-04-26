@@ -124,11 +124,11 @@ artImg4: "Huila Magnifica-:https://huilamagnifica.com/el-chorote-artesanias-y-ce
 artImg5: "Alcaldia de Pitalito, 2024 (Facebook) Disponible en: https://www.facebook.com/watch/?v=1665123227615087/",
 
 
-cafeImg1: "Posadas Rurales - https://posadasrurales.co/5537-large_default/lodge-laguna-guaitipan-ancestral-pitalito-huila-.jpg",
-cafeImg2: "Laguna de Guaitipan, 2026 (Facebook) Disponible en: https://scontent.fptx1-1.fna.fbcdn.net/v/t39.30808-6/650725654_1250492770597687_5211064536644131229_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeHb2IoEcbwwXkc9oeHQ2r73ke0Y-h2XJzqR7Rj6HZcnOtcpON3_GKSCPImoyrwtASGRgbRdcESfeppxcMry9WE2&_nc_ohc=WzLIHJm0TEoQ7kNvwGoqCHs&_nc_oc=AdoGL586g8SvsDvoRRWTnMnkb45S25jYwBYTSNXPj4PkYa-WVgy2OrPOm612defvJNw&_nc_zt=23&_nc_ht=scontent.fptx1-1.fna&_nc_gid=TaKGZwqA9axADZ15FOZl5w&_nc_ss=7b2a8&oh=00_Af35tg54tdLdYD-DYVI3boCLHEvQJyLm1H1FvHbOeadlLg&oe=69F3A63E",
-cafeImg3: "Laguna de Guaitipan, 2026 (Facebook) Disponible en:https://scontent.fptx1-1.fna.fbcdn.net/v/t39.30808-6/649140160_1249751150671849_3632419596393222011_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeGvQyQyVVWIIamlPga-rJrg9S7EdfRYvVH1LsR19Fi9UcZloWOwelWpsE9ObJtzcJ3H0qLj-TRTq5oNrW1PQMA6&_nc_ohc=aiH03E8psi4Q7kNvwEMWPD_&_nc_oc=AdrfuISPIjjRAAMoiylwXR3nfUyLDN4GA6xJqBpN5_dfTqnQWAzyVTccG-D5OS-NkQ8&_nc_zt=23&_nc_ht=scontent.fptx1-1.fna&_nc_gid=OlRH8x6OuLma44GdC2jULQ&_nc_ss=7b2a8&oh=00_Af1_VSZ0ieX6_JVL6g2mD-OdONbc4T76QH3chBVT2ErwoA&oe=69F393EB",
-cafeImg4: "Fuente: Internet",
-cafeImg5: "Fuente: Video turístico",
+boscafeImg1: "boscafesanjuan (Instagram) Dispoible en https://www.instagram.com/stories/highlights/18330768274136954/",
+boscafeImg2: "boscafesanjuan (Instagram) Dispoible en https://www.instagram.com/stories/highlights/18269926930071795/",
+boscafeImg3: "boscafesanjuan (Instagram) Dispoible en https://www.instagram.com/p/CuxFGgzuEt8/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
+boscafeImg4: "boscafesanjuan (Instagram) Dispoible en https://www.instagram.com/stories/highlights/18330768274136954/",
+boscafeImg5: "boscafesanjuan (Instagram) Dispoible en https://www.instagram.com/stories/highlights/18382110673017062/",
 
         
         exp8Title: "Finca Cafetera El Matrimonio",
@@ -354,11 +354,11 @@ artImg3: "Huila Magnifica-https://huilamagnifica.com/cooperativa-de-arte-de-pita
 artImg4: "Huila Magnifica-:https://huilamagnifica.com/el-chorote-artesanias-y-ceramicas-acevedo",
 artImg5: "Pitalito City Hall, 2024 (Facebook) Available at: https://www.facebook.com/watch/?v=1665123227615087/",
 
-cafeImg1: "Source: Internet",
-cafeImg2: "Source: Internet",
-cafeImg3: "Source: Internet",
-cafeImg4: "Source: Internet",
-cafeImg5: "Source: Tourism video",
+boscafeImg1: "boscafesanjuan (Instagram) Available at https://www.instagram.com/stories/highlights/18330768274136954/",
+boscafeImg2: "boscafesanjuan (Instagram) Available at https://www.instagram.com/stories/highlights/18269926930071795/",
+boscafeImg3: "boscafesanjuan (Instagram) Available at https://www.instagram.com/p/CuxFGgzuEt8/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
+boscafeImg4: "boscafesanjuan (Instagram) Available in https://www.instagram.com/stories/highlights/18330768274136954/",
+boscafeImg5: "boscafesanjuan (Instagram) Available at https://www.instagram.com/stories/highlights/18382110673017062/",
 
         exp8Title: "El Matrimonio Coffee Farm",
 exp8Desc: "El Matrimonio Coffee Farm, located in Pitalito, Huila, is a well-known agrotourism destination. It offers coffee experiences, guided tours, traditional food, rural lodging, and panoramic views.",
