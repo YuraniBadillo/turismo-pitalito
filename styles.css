@@ -1561,6 +1561,751 @@ section {
 .experiences h2 {
     margin-top: 0;
 }
+
+/* ============================================================
+   ESTILOS: ARTESANÍAS LOCALES (FLUJO VERTICAL)
+============================================================ */
+
+.artesanias-page {
+    background-color: #3d2b1f; /* Café profundo */
+    margin: 0;
+    padding: 0;
+}
+
+/* --- HERO --- */
+.sub3-hero {
+    height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), 
+                url('images/artesanias-hero.jpg') center/cover fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    margin-bottom: 0;
+}
+
+
+#artesanias-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3rem, 8vw, 5rem);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-shadow: 2px 4px 10px rgba(0,0,0,0.5);
+}
+
+#artesanias-hero {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-left: 8px solid #d97706;
+    max-width: 900px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* --- CONTENEDOR PRINCIPAL (UNA SOLA COLUMNA) --- */
+.artesanias-layout {
+    display: block; /* Asegura que las secciones bajen */
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* --- SECCIONES (ESTILO PUEBLITO) --- */
+.experiences, .gallery, .map-section {
+    margin-bottom: 50px; /* Espacio entre secciones verticales */
+}
+
+.gallery, .map-section {
+    background: #fffaf0;
+    border: 4px solid #2d1a0f;
+    box-shadow: 12px 12px 0px #92400e;
+    padding: 25px;
+}
+
+h2#art-exp-title, h2#gallery-title, h2#location-title {
+    font-family: 'Playfair Display', serif;
+    color: #fbbf24; /* Color para el título de experiencias sobre fondo oscuro */
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+/* Ajuste de color para títulos sobre fondo claro (Galería y Mapa) */
+.gallery h2, .map-section h2 {
+    color: #0a0a0a;
+    border-left: 5px solid #d97706;
+    padding-left: 15px;
+}
+
+/* --- TARJETAS DE EXPERIENCIAS --- */
+.exp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.exp-card {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 25px;
+    color: white;
+    border: 2px solid #573b2d;
+    transition: 0.3s;
+}
+
+.exp-card:hover {
+    transform: translate(-5px, -5px);
+}
+
+
+/* Colores por tarjeta */
+.artesanias1 { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/artesanias1.jpg') center/cover; border-color: #d97706; box-shadow: 8px 8px 0px #d97706; }
+.artesanias2 { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/artesanias2.jpg') center/cover; border-color: #92400e; box-shadow: 8px 8px 0px #92400e; }
+.artesanias3 { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('images/artesanias3.jpg') center/cover; border-color: #78350f; box-shadow: 8px 8px 0px #78350f; }
+
+/* Texto dentro de tarjetas */
+.exp-card h3 { background: rgba(0,0,0,0.5); padding: 5px 10px; border-radius: 4px; color: #fbbf24; margin-bottom: 5px; }
+.exp-card p { background: rgba(0,0,0,0.5); padding: 5px 10px; border-radius: 4px; font-size: 0.9rem; }
+
+/* --- SLIDES Y VIDEO --- */
+/* --- AJUSTE DE IMÁGENES MÁS ANGOSTAS --- */
+
+.slide img, 
+.gallery-video {
+    width: 100%;           /* Se adapta al contenedor... */
+    max-width: 600px;      /* ...pero no pasa de 600px (ajusta este número a tu gusto) */
+    height: 400px;         /* Altura fija para mantener uniformidad */
+    object-fit: cover;     /* Mantiene la proporción sin deformar */
+    display: block;        /* Permite el centrado */
+    margin: 0 auto;        /* Centra la imagen horizontalmente */
+    border: 1px solid #ddd;
+}
+
+/* Ajustamos el contenedor de la slide para que el pie de foto también se alinee */
+.slide {
+    display: none;
+    flex-direction: column;
+    align-items: center;    /* Centra todo el contenido de la slide */
+}
+
+.slide.active {
+    display: flex;
+}
+
+/* El pie de foto (fuente) ahora coincidirá con el ancho de la imagen */
+.img-source {
+    width: 100%;
+    max-width: 600px;       /* Mismo ancho que la imagen */
+    background: #2d1a0f;
+    color: #fef3c7;
+    padding: 10px;
+    font-size: 0.8rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* --- BOTONES --- */
+.prev, .next {
+    background: #d97706;
+    color: #fff;
+    border: 2px solid #2d1a0f;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 4px 4px 0px #2d1a0f;
+}
+
+/* --- MAPA --- */
+.map-section iframe {
+    width: 100%;
+    height: 450px;
+    border: 3px solid #2d1a0f;
+}
+/* --- CAMBIO DE COLOR ESPECÍFICO PARA TÍTULOS EN TARJETAS BLANCAS --- */
+
+.gallery h2#gallery-title, 
+.map-section h2#location-title {
+    color: #2d1a0f;           /* Café muy oscuro (casi negro) */
+    border-left: 5px solid #78350f; /* Un borde café rojizo para resaltar */
+    font-weight: 600;
+}
+
+/* También podemos ajustar el texto de "Fuente" si quieres que sea consistente */
+.gallery .img-source {
+    background: #2d1a0f;      /* Fondo café oscuro */
+    color: #fffaf0;           /* Letra clara */
+}
+
+/* Si tienes algún otro texto dentro de estas cajas blancas (opcional) */
+.gallery p, .map-section p {
+    color: #3d2b1f;           /* Café intermedio para el cuerpo de texto */
+}
+/* ============================================================
+   ESTILOS: RUTA DEL CAFÉ (VERDES Y MARRONES)
+============================================================ */
+
+.cafe-page {
+    background-color: #1b2614; /* Verde bosque muy oscuro */
+    margin: 0;
+    padding: 0;
+}
+
+/* --- HERO RUTA DEL CAFÉ --- */
+.sub4-hero {
+    height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), 
+                url('images/cafe.jpg') center/cover fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+
+#cafe-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3rem, 8vw, 5rem);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 15px rgba(0,0,0,0.7);
+}
+
+#cafe-hero {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-left: 8px solid #a47148; /* Color café tostado */
+    max-width: 900px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #f1f1f1;
+}
+
+/* --- CONTENEDOR DE TARJETAS (CATEGORY CONTENT) --- */
+.category-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+/* --- ESTILO DE TARJETAS (CARDS) --- */
+.card {
+    background: #fffaf0; /* Crema/Hueso */
+    border: 4px solid #2d1a0f; /* Café oscuro */
+    box-shadow: 12px 12px 0px #5d7a42; /* Verde café (hoja) */
+    padding: 25px;
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 18px 18px 0px #a47148; /* Cambia a café al pasar el mouse */
+}
+
+.card h3 {
+    font-family: 'Playfair Display', serif;
+    color: #2d1a0f;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #5d7a42;
+    padding-bottom: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border: 2px solid #2d1a0f;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #3d2b1f;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* --- BOTÓN VER MÁS --- */
+.btn-sub {
+    display: inline-block;
+    background: #2d1a0f;
+    color: #fbbf24; /* Amarillo café */
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid #000;
+    box-shadow: 4px 4px 0px #5d7a42;
+    transition: 0.2s;
+}
+
+.btn-sub:hover {
+    background: #5d7a42;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 0px #000;
+}
+
+/* --- FOOTER --- */
+.footer {
+    background: #0d120a;
+    color: #888;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+    font-size: 0.85rem;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 600px) {
+    .category-content {
+        grid-template-columns: 1fr;
+    }
+}
+/* ============================================================
+   ESTILOS: FINCA EL MATRIMONIO (TONOS CAFÉ Y TIERRA)
+============================================================ */
+
+.matrimonio-page {
+    background-color: #2b1d12; /* Café oscuro tierra */
+    margin: 0;
+    padding: 0;
+}
+
+/* --- HERO (IGUAL A ARTESANÍAS) --- */
+.sub5-hero {
+    height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), 
+                url('images/matrimonio-hero.jpg') center/cover fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+
+#matrimonio-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 7vw, 4.5rem);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-shadow: 2px 4px 10px rgba(0,0,0,0.5);
+}
+
+#matrimonio-hero {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-left: 8px solid #8b5a2b; /* Café cuero */
+    max-width: 900px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* --- CONTENEDOR PRINCIPAL FLUJO VERTICAL --- */
+.cafe-layout {
+    display: block; 
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* --- SECCIONES --- */
+.experiences, .gallery, .map-section {
+    margin-bottom: 50px;
+}
+
+.gallery, .map-section {
+    background: #fffdf5; /* Blanco crema */
+    border: 4px solid #3d2b1f;
+    box-shadow: 12px 12px 0px #8b5a2b;
+    padding: 25px;
+}
+
+/* Títulos de sección */
+h2#cafe-exp-title {
+    font-family: 'Playfair Display', serif;
+    color: #e6ccb2; /* Color crema claro */
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.gallery h2, .map-section h2 {
+    font-family: 'Playfair Display', serif;
+    color: #3d2b1f;
+    border-left: 5px solid #8b5a2b;
+    padding-left: 15px;
+    text-transform: uppercase;
+}
+
+/* --- TARJETAS DE EXPERIENCIAS (COMO ARTESANÍAS) --- */
+.exp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.exp-card {
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 25px;
+    color: white;
+    border: 2px solid #573b2d;
+    transition: 0.3s;
+    background-size: cover;
+    background-position: center;
+}
+
+.exp-card:hover {
+    transform: translate(-5px, -5px);
+}
+
+/* Si quieres que la imagen se vea con menos "zoom", 
+   ajustamos el degradado para que sea más sutil y no tape tanto */
+.matrimonio1, .matrimonio2, .matrimonio3 {
+    background-blend-mode: multiply; /* Mezcla el color con la imagen para dar textura */
+}
+
+.matrimonio1 { 
+    background-image: linear-gradient(to top, rgba(0,0,0,0.9) 10%, transparent 60%), 
+                      url('images/matrimonio1.jpg'); 
+}
+
+.matrimonio2 { 
+    background-image: linear-gradient(to top, rgba(0,0,0,0.9) 10%, transparent 60%), 
+                      url('images/matrimonio2.jpg'); 
+}
+
+.matrimonio3 { 
+    background-image: linear-gradient(to top, rgba(0,0,0,0.9) 10%, transparent 60%), 
+                      url('images/matrimonio3.jpg'); 
+}
+
+/* Texto dentro de tarjetas con efecto vidrio oscuro */
+.exp-card h3 { 
+    background: rgba(0,0,0,0.6); 
+    padding: 5px 10px; 
+    border-radius: 4px; 
+    color: #ede0d4; 
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+.exp-card p { 
+    background: rgba(0,0,0,0.6); 
+    padding: 8px 12px; 
+    border-radius: 4px; 
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* --- GALERÍA (IMÁGENES ANGOSTAS Y CENTRADAS) --- */
+.slide img {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+}
+
+.slide {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide.active {
+    display: flex;
+}
+
+.img-source {
+    width: 100%;
+    max-width: 600px;
+    background: #3d2b1f;
+    color: #ede0d4;
+    padding: 8px;
+    font-size: 0.75rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* --- BOTONES NAVEGACIÓN --- */
+.slider {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.prev, .next {
+    background: #8b5a2b;
+    color: #fff;
+    border: 2px solid #3d2b1f;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 4px 4px 0px #3d2b1f;
+    transition: 0.2s;
+}
+
+.prev:hover, .next:hover {
+    background: #3d2b1f;
+    color: #ede0d4;
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px #8b5a2b;
+}
+
+/* --- MAPA --- */
+.map-section iframe {
+    width: 100%;
+    height: 450px;
+    border: 3px solid #3d2b1f;
+}
+
+/* --- FOOTER --- */
+.footer {
+    background: #1a120b;
+    color: #7f5539;
+    padding: 20px;
+    text-align: center;
+}
+/* ============================================================
+   ESTILOS: FINCA BOSCAFÉ SAN JUAN (VERDE BOSQUE Y CAFÉ)
+============================================================ */
+
+.boscafe-page {
+    background-color: #1a2416; /* Verde oscuro bosque */
+    margin: 0;
+    padding: 0;
+}
+
+/* --- HERO --- */
+.sub6-hero {
+    height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), 
+                url('images/boscafe-hero.jpg') center/cover fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+
+#boscafe-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 7vw, 4.5rem);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-shadow: 2px 4px 10px rgba(0,0,0,0.5);
+}
+
+#boscafe-hero {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-left: 8px solid #5d7a42; /* Verde café */
+    max-width: 900px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* --- CONTENEDOR PRINCIPAL FLUJO VERTICAL --- */
+/* Cambiado de horizontal-layout a block para que todo fluya hacia abajo */
+.horizontal-layout {
+    display: block; 
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* --- SECCIONES --- */
+.experiences, .gallery, .map-section {
+    margin-bottom: 50px;
+}
+
+.gallery, .map-section {
+    background: #fdfdfa; /* Blanco hueso */
+    border: 4px solid #1a2416;
+    box-shadow: 12px 12px 0px #5d7a42; /* Sombra verde */
+    padding: 25px;
+}
+
+/* Títulos de sección */
+.experiences h2 {
+    font-family: 'Playfair Display', serif;
+    color: #d4e0cf; /* Verde muy pálido */
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.gallery h2, .map-section h2 {
+    font-family: 'Playfair Display', serif;
+    color: #1a2416;
+    border-left: 5px solid #5d7a42;
+    padding-left: 15px;
+    text-transform: uppercase;
+}
+
+/* --- TARJETAS DE EXPERIENCIAS --- */
+.exp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.exp-card {
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 25px;
+    color: white;
+    border: 2px solid #2d3a28;
+    transition: 0.3s;
+    background-size: cover;
+    background-position: center;
+}
+
+.exp-card:hover {
+    transform: translate(-5px, -5px);
+}
+
+/* Imágenes de fondo específicas para Boscafé */
+.boscafe1, .boscafe2, .boscafe3 {
+    background-blend-mode: multiply;
+}
+
+.boscafe1 { 
+    background-image: linear-gradient(to top, rgba(0,0,0,0.9) 10%, transparent 60%), 
+                      url('images/boscafe1.jpg'); 
+    border-color: #5d7a42; 
+    box-shadow: 8px 8px 0px #5d7a42; 
+}
+.boscafe2 { 
+    background-image: linear-gradient(to top, rgba(0,0,0,0.9) 10%, transparent 60%), 
+                      url('images/boscafe2.jpg'); 
+    border-color: #435b31; 
+    box-shadow: 8px 8px 0px #435b31; 
+}
+.boscafe3 { 
+    background-image: linear-gradient(to top, rgba(0,0,0,0.9) 10%, transparent 60%), 
+                      url('images/boscafe3.jpg'); 
+    border-color: #2d3a28; 
+    box-shadow: 8px 8px 0px #2d3a28; 
+}
+
+/* Texto dentro de tarjetas */
+.exp-card h3 { 
+    background: rgba(0,0,0,0.6); 
+    padding: 5px 10px; 
+    border-radius: 4px; 
+    color: #d4e0cf; 
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+.exp-card p { 
+    background: rgba(0,0,0,0.6); 
+    padding: 8px 12px; 
+    border-radius: 4px; 
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* --- GALERÍA (IMÁGENES ANGOSTAS Y CENTRADAS) --- */
+.slide img {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+}
+
+.slide {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide.active {
+    display: flex;
+}
+
+.img-source {
+    width: 100%;
+    max-width: 600px;
+    background: #1a2416;
+    color: #d4e0cf;
+    padding: 8px;
+    font-size: 0.75rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* --- BOTONES NAVEGACIÓN --- */
+.slider {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.prev, .next {
+    background: #5d7a42;
+    color: #fff;
+    border: 2px solid #1a2416;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 4px 4px 0px #1a2416;
+    transition: 0.2s;
+}
+
+.prev:hover, .next:hover {
+    background: #1a2416;
+    color: #d4e0cf;
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px #5d7a42;
+}
+
+/* --- MAPA --- */
+.map-section iframe {
+    width: 100%;
+    height: 450px;
+    border: 3px solid #1a2416;
+}
+
+/* --- FOOTER --- */
+.footer {
+    background: #0d120a;
+    color: #5d7a42;
+    padding: 20px;
+    text-align: center;
+}
+
 #title {
     color: #f97316; /* naranja moderno */
 }
