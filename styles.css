@@ -85,15 +85,7 @@ header {
     max-width: 600px;
 }
 
-header h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: clamp(32px, 5vw, 52px); /* Tamaño fluido */
-    color: var(--accent-color); /* Color de letra H1 diferenciado */
-    text-transform: uppercase;
-    margin: 0 0 20px 0;
-    line-height: 1;
-    letter-spacing: -2px;
-}
+
 
 /* =========================
    BOTONES CUADRADOS (Match con el estilo anterior)
