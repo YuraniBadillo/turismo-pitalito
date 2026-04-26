@@ -2233,7 +2233,7 @@ h2#cafe-exp-title {
 }
 
 /* --- ESTILO DE TARJETAS (CARDS) --- */
-.card {
+.cafe-page .card {
     background: #fffaf0; /* Crema/Hueso */
     border: 4px solid #2d1a0f; /* Café oscuro */
     box-shadow: 12px 12px 0px #5d7a42; /* Verde café (hoja) */
@@ -2244,12 +2244,12 @@ h2#cafe-exp-title {
     justify-content: space-between;
 }
 
-.card:hover {
+.cafe-page .card:hover {
     transform: translate(-5px, -5px);
     box-shadow: 18px 18px 0px #a47148; /* Cambia a café al pasar el mouse */
 }
 
-.card h3 {
+.cafe-page .card h3 {
     font-family: 'Playfair Display', serif;
     color: #2d1a0f;
     font-size: 1.5rem;
@@ -2258,7 +2258,7 @@ h2#cafe-exp-title {
     padding-bottom: 10px;
 }
 
-.card img {
+.cafe-page .card img {
     width: 100%;
     height: 250px;
     object-fit: cover;
@@ -2266,7 +2266,7 @@ h2#cafe-exp-title {
     margin-bottom: 15px;
 }
 
-.card p {
+.cafe-page .card p {
     color: #3d2b1f;
     font-size: 0.95rem;
     line-height: 1.6;
