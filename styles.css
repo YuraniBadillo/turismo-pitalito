@@ -77,7 +77,7 @@ header {
 }
 
 /* Contenedor de texto estilo "Vidrio" */
-header .header-content {
+.header-content {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     padding: 25px 40px;
@@ -85,7 +85,15 @@ header .header-content {
     max-width: 600px;
 }
 
-
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(32px, 5vw, 52px); /* Tamaño fluido */
+    color: var(--accent-color); /* Color de letra H1 diferenciado */
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+    line-height: 1;
+    letter-spacing: -2px;
+}
 
 /* =========================
    BOTONES CUADRADOS (Match con el estilo anterior)
@@ -119,20 +127,7 @@ header h1 {
     letter-spacing: -2px;
     flex-shrink: 0; /* Evita que el título se achique si el texto es largo */
 }
-/* Contenedor de vidrio específico para el Título */
-.title-glass-wrap {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    padding: 15px 30px;
-    border-radius: 4px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    display: inline-block; /* Para que el vidrio solo ocupe el ancho del texto */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    margin-right: 50px; /* Aumenta este número si quieres más separación */
-    transition: transform 0.3s ease;
-}
-}
+
 
 /* =========================
    HERO DINÁMICO (Adiós a la rigidez)
@@ -156,12 +151,6 @@ header h1 {
     border-radius: 4px;
     border-left: 5px solid var(--accent-color);
     max-width: 600px;
-    
-    /* FUERZA LA VERTICALIDAD AQUÍ */
-    display: flex;
-    flex-direction: column; 
-    align-items: flex-start;
-}
 }
 
 .hero h2 {
@@ -945,7 +934,7 @@ section {
 /* Textos del Hero Cultura */
 #culture {
     font-size: clamp(3rem, 8vw, 5rem);
-    color: #f2cb0a; 
+    color: #c90e0e; 
     margin: 0;
     text-transform: uppercase;
     letter-spacing: -3px;
@@ -1184,30 +1173,7 @@ section {
         grid-template-columns: 1fr;
     }
 }
-/* =========================
-   CONTENEDOR DE VIDRIO (Gastronomía)
-========================= */
 
-.food-glass-card {
-    background: rgba(255, 255, 255, 0.05); /* Efecto cristal transparente */
-    backdrop-filter: blur(15px); 
-    -webkit-backdrop-filter: blur(15px);
-    padding: 40px;
-    border-radius: 4px;
-    border-left: 8px solid #f97316; /* Línea lateral color fuego */
-    
-    max-width: 1200px; 
-    width: 100%;
-    box-sizing: border-box;
-    
-    /* Sombra para resaltar sobre los tonos cálidos del fondo */
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-}
-
-/* Ajuste de legibilidad para el texto */
-#food-desc {
-    color: #ffffff !important;
-}
 /* ============================================================
    ESTILOS ESPECÍFICOS: PÁGINA LAGUNA DE GUAITIPÁN (SIMETRÍA TOTAL)
 ============================================================ */
@@ -2347,5 +2313,4 @@ h2#cafe-exp-title {
     line-height: 1.8;
     color: #f1f1f1;
 }
-
 
