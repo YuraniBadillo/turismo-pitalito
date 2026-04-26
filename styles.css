@@ -763,7 +763,30 @@ section {
     #nature { font-size: 2.8rem; }
     .nature-section::after { height: 1000px; } /* Más largo para móvil porque las tarjetas se apilan */
 }
+/* =========================
+   CONTENEDOR DE VIDRIO (Naturaleza)
+========================= */
 
+.nature-glass-card {
+    background: rgba(255, 255, 255, 0.05); /* Fondo blanco casi invisible */
+    backdrop-filter: blur(15px); /* El efecto de desenfoque */
+    -webkit-backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 4px;
+    border-left: 8px solid #19e337; /* Línea neón lateral */
+    
+    max-width: 1200px; 
+    width: 100%;
+    box-sizing: border-box;
+    
+    /* Asegura que el texto destaque sobre el fondo */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Ajuste ligero al texto para que brille dentro del vidrio */
+#nature-desc {
+    color: #ffffff; 
+}
 /* =========================
    PÁGINA DE CULTURA (culture-page)
 ========================= */
