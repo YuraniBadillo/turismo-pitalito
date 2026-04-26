@@ -137,6 +137,9 @@ header h1 {
     border: 1px solid rgba(255, 255, 255, 0.2);
     display: inline-block; /* Para que el vidrio solo ocupe el ancho del texto */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-right: 50px; /* Aumenta este número si quieres más separación */
+    transition: transform 0.3s ease;
+}
 }
 
 /* =========================
