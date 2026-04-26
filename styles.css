@@ -77,7 +77,7 @@ header {
 }
 
 /* Contenedor de texto estilo "Vidrio" */
-.header-content {
+header .header-content {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     padding: 25px 40px;
