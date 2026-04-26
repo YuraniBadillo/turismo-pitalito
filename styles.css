@@ -1561,3 +1561,9 @@ section {
 .experiences h2 {
     margin-top: 0;
 }
+#title {
+    color: #f97316; /* naranja moderno */
+}
+#title {
+    font-family: 'Playfair Display', serif;
+}
