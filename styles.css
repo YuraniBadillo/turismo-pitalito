@@ -2338,4 +2338,63 @@ h2#cafe-exp-title {
     line-height: 1.8;
     color: #f1f1f1;
 }
+/* Contenedor principal de las tarjetas */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Columnas responsivas */
+    gap: 25px; /* Espacio uniforme entre tarjetas */
+    padding: 20px;
+}
+
+/* La tarjeta como tal FOGON PAGINA */
+.menu-card {
+    display: flex;
+    flex-direction: column; /* Alinea el contenido de arriba a abajo */
+    height: 100%; /* Obliga a todas a tener la misma altura en la misma fila */
+    background: rgba(255, 255, 255, 0.1); /* Efecto vidrio */
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+/* Contenedor de imagen con altura fija */
+.card-img-container {
+    width: 100%;
+    height: 200px; /* Altura fija para que todas las fotos se vean iguales */
+    overflow: hidden;
+    position: relative;
+}
+
+.card-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Recorta la imagen para que llene el espacio sin deformarse */
+}
+
+/* Cita sobre la imagen o justo debajo */
+.img-citation {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 0.6rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* Información del menú alineada */
+.menu-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Esto hace que el contenido empuje el precio hacia abajo */
+}
+
+.price-wrapper {
+    margin-top: auto; /* Empuja el precio siempre al fondo de la tarjeta */
+    padding-top: 10px;
+}
 
