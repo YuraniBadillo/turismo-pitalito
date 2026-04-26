@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fogón de Piedra - Gastronomía</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fogón de Piedra</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body class="fogon-page">
@@ -20,93 +20,167 @@
 </header>
 
 <nav class="navbar">
-    <ul>
-        <li><a href="index.html" id="nav-home">Inicio</a></li>
-        <li><a href="naturaleza.html" id="nav-nature">Naturaleza</a></li>
-        <li><a href="cultura.html" id="nav-culture">Cultura</a></li>
-        <li><a href="gastronomia.html" id="nav-food">Gastronomía</a></li>
-    </ul>
+<ul>
+<li><a href="index.html" id="nav-home">Inicio</a></li>
+<li><a href="naturaleza.html" id="nav-nature">Naturaleza</a></li>
+<li><a href="cultura.html" id="nav-culture">Cultura</a></li>
+<li><a href="gastronomia.html" id="nav-food">Gastronomía</a></li>
+</ul>
 </nav>
 
-<section class="sub-food-hero">
-    <div class="hero-glass-container">
-        <h1 id="fogon-title">Fogón de Piedra</h1>
-        <p id="fogon-hero">
-            Fogón de Piedra es un restaurante tradicional de Pitalito reconocido por su auténtica cocina huilense preparada de forma artesanal.
-        </p>
-        <span class="hero-img-credit">Foto: [Nombre del Autor/Instagram]</span>
-    </div>
-</section>
+<!-- ⭐ HERO -->
+<header class="sub-food-hero">
+<h1 id="fogon-title">Fogón de Piedra</h1>
+
+<p id="fogon-hero">
+Fogón de Piedra es un restaurante tradicional de Pitalito reconocido por su auténtica cocina huilense preparada de forma artesanal...
+</p>
+</header>
 
 <main>
 
-    <section class="menu-section">
-        <h2 id="menu-title">Nuestro Menú</h2>
-        
-        <div class="menu-grid">
-            <div class="menu-card">
-                <figure>
-                    <img src="images/asado.jpg" alt="Asado huilense">
-                    <figcaption class="img-source">Fuente: [Autor]</figcaption>
-                </figure>
-                <div class="menu-info">
-                    <h3 id="plato1-title">Asado huilense</h3>
-                    <p id="plato1-desc">Arroz, yuca, ensalada y arepa.</p>
-                    <span class="price" id="plato1-price">$40.000</span>
-                </div>
-            </div>
+<!-- ⭐ MENÚ -->
+<section class="menu-section">
 
-            <div class="menu-card">
-                <figure>
-                    <img src="images/pescado.jpg" alt="Pescado">
-                    <figcaption class="img-source">Fuente: [Autor]</figcaption>
-                </figure>
-                <div class="menu-info">
-                    <h3 id="plato2-title">Pescado</h3>
-                    <p id="plato2-desc">Yuca, papa, plátano y arroz.</p>
-                    <span class="price" id="plato2-price">$43.000</span>
-                </div>
-            </div>
+<h2 id="menu-title">Menú</h2>
 
-            </div>
-    </section>
+<div class="menu-grid">
 
-    <section class="bottom-section">
-        <div class="gallery-box glass-card">
-            <h2 id="gallery-title">Galería de Sabores</h2>
-            
-            <div class="slider-container">
-                <div class="slide active">
-                    <img src="images/fogona.jpg">
-                    <p class="img-source">Fuente: Instagram - @fogon_de_piedra</p>
-                </div>
-                <div class="slider-controls">
-                    <button onclick="moveSlide(-1)">❮</button>
-                    <button onclick="moveSlide(1)">❯</button>
-                </div>
-            </div>
-        </div>
+<div class="menu-card">
+<img src="images/asado.jpg">
+<div class="menu-info">
+<h3 id="plato1-title">Asado huilense</h3>
+<p id="plato1-desc">Arroz, yuca, ensalada y arepa.</p>
+<span class="price" id="plato1-price">$40.000</span>
+</div>
+</div>
 
-        <div class="map-box glass-card">
-            <h2 id="location-title">Ubicación</h2>
-            <div class="map-wrapper">
-                <iframe src="https://www.google.com/maps/embed?..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-            <p class="map-credit">Ubicación exacta en Pitalito, Huila.</p>
-        </div>
-    </section>
+<div class="menu-card">
+<img src="images/pescado.jpg">
+<div class="menu-info">
+<h3 id="plato2-title">Pescado</h3>
+<p id="plato2-desc">Yuca, papa, plátano y arroz.</p>
+<span class="price" id="plato2-price">$43.000</span>
+</div>
+</div>
+
+<div class="menu-card">
+<img src="images/carne.jpg">
+<div class="menu-info">
+<h3 id="plato3-title">Carne a la llanera</h3>
+<p id="plato3-desc">Papa criolla, ensalada y arepa.</p>
+<span class="price" id="plato3-price">$33.000</span>
+</div>
+</div>
+
+<div class="menu-card">
+<img src="images/pollo.jpg">
+<div class="menu-info">
+<h3 id="plato4-title">Pollo campesino</h3>
+<p id="plato4-desc">Arroz, patacón y ensalada.</p>
+<span class="price" id="plato4-price">$33.000</span>
+</div>
+</div>
+
+<div class="menu-card">
+<img src="images/tilapia.jpg">
+<div class="menu-info">
+<h3 id="plato5-title">Tilapia frita</h3>
+<p id="plato5-desc">Arroz, patacón, ensalada y limón.</p>
+<span class="price" id="plato5-price">$40.000</span>
+</div>
+</div>
+
+<div class="menu-card">
+<img src="images/churrasco.jpg">
+<div class="menu-info">
+<h3 id="plato6-title">Churrasco</h3>
+<p id="plato6-desc">Papas a la francesa y ensalada.</p>
+<span class="price" id="plato6-price">$40.000</span>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- ⭐ GALERÍA + MAPA -->
+<section class="bottom-section">
+
+<div class="gallery-box">
+
+<h2 id="gallery-title">Galería</h2>
+
+<div class="slide active">
+<img src="images/fogona.jpg">
+<p class="img-source" id="fogon-img1">Fuente: Instagram</p>
+</div>
+
+<div class="slide">
+<img src="images/fogonb.jpg">
+<p class="img-source" id="fogon-img2">Fuente: Instagram</p>
+</div>
+
+<div class="slide">
+<img src="images/fogonc.jpg">
+<p class="img-source" id="fogon-img3">Fuente: Instagram</p>
+</div>
+
+<div class="slide">
+<img src="images/fogond.jpg">
+<p class="img-source" id="fogon-img4">Fuente: Instagram</p>
+</div>
+
+<div class="slider">
+<button onclick="moveSlide(-1)">❮</button>
+<button onclick="moveSlide(1)">❯</button>
+</div>
+
+</div>
+
+<div class="map-box">
+
+<h2 id="location-title">Ubicación</h2>
+
+<iframe 
+src="https://www.google.com/maps?q=Fogon+de+Piedra+Pitalito&output=embed">
+</iframe>
+
+</div>
+
+</section>
 
 </main>
 
-<footer class="footer">
-    <div class="footer-credits">
-        <p><strong>Créditos Visuales:</strong> Imágenes de platos y galería cortesía de Restaurante Fogón de Piedra.</p>
-    </div>
-    <hr>
-    <p>Este sitio web utilizó ChatGPT como apoyo en la generación de contenido y desarrollo web (OpenAI, 2023).</p>
-    <p>Referencia: OpenAI. (2023). ChatGPT [Modelo de lenguaje grande]. https://chat.openai.com</p>
-</footer>
+<script>
+let index = 0;
+const slides = document.querySelectorAll(".slide");
+
+function showSlide(n){
+  slides.forEach(s => s.classList.remove("active"));
+  slides[n].classList.add("active");
+}
+
+function moveSlide(step){
+  index += step;
+  if(index >= slides.length) index = 0;
+  if(index < 0) index = slides.length - 1;
+  showSlide(index);
+}
+</script>
 
 <script src="script.js"></script>
+
+  <a href="#" class="back-to-top">↑</a>
+
+<footer class="footer">
+  <p>
+    Este sitio web utilizó ChatGPT como apoyo en la generación de contenido y desarrollo web (OpenAI, 2023).
+  </p>
+  <p>
+    Referencia: OpenAI. (2023). ChatGPT [Modelo de lenguaje grande]. https://chat.openai.com
+  </p>
+</footer>
+
 </body>
 </html>
