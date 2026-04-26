@@ -68,10 +68,10 @@ const content = {
         galleryTitle: "Galería",
 locationTitle: "Ubicación",
 
-imgSource1: "Fuente: Autor desconocido",
-imgSource2: "Fuente: Internet",
-imgSource3: "Fuente: Turismo Huila",
-imgSource4: "Fuente: Facebook Laguna de Guaitipán",
+imgSource1: "Posadas Rurales - https://posadasrurales.co/5537-large_default/lodge-laguna-guaitipan-ancestral-pitalito-huila-.jpg",
+imgSource2: "Laguna de Guaitipan, 2026 (Facebook) Disponible en: https://scontent.fptx1-1.fna.fbcdn.net/v/t39.30808-6/650725654_1250492770597687_5211064536644131229_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeHb2IoEcbwwXkc9oeHQ2r73ke0Y-h2XJzqR7Rj6HZcnOtcpON3_GKSCPImoyrwtASGRgbRdcESfeppxcMry9WE2&_nc_ohc=WzLIHJm0TEoQ7kNvwGoqCHs&_nc_oc=AdoGL586g8SvsDvoRRWTnMnkb45S25jYwBYTSNXPj4PkYa-WVgy2OrPOm612defvJNw&_nc_zt=23&_nc_ht=scontent.fptx1-1.fna&_nc_gid=TaKGZwqA9axADZ15FOZl5w&_nc_ss=7b2a8&oh=00_Af35tg54tdLdYD-DYVI3boCLHEvQJyLm1H1FvHbOeadlLg&oe=69F3A63E",
+imgSource3: "Laguna de Guaitipan, 2026 (Facebook) Disponible en:https://scontent.fptx1-1.fna.fbcdn.net/v/t39.30808-6/649140160_1249751150671849_3632419596393222011_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeGvQyQyVVWIIamlPga-rJrg9S7EdfRYvVH1LsR19Fi9UcZloWOwelWpsE9ObJtzcJ3H0qLj-TRTq5oNrW1PQMA6&_nc_ohc=aiH03E8psi4Q7kNvwEMWPD_&_nc_oc=AdrfuISPIjjRAAMoiylwXR3nfUyLDN4GA6xJqBpN5_dfTqnQWAzyVTccG-D5OS-NkQ8&_nc_zt=23&_nc_ht=scontent.fptx1-1.fna&_nc_gid=OlRH8x6OuLma44GdC2jULQ&_nc_ss=7b2a8&oh=00_Af1_VSZ0ieX6_JVL6g2mD-OdONbc4T76QH3chBVT2ErwoA&oe=69F393EB",
+imgSource4: "Laguna de Guaitipan, 2026 (Instragram) Disponible en:https://www.instagram.com/reel/DU1j84_j37y/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
         
         pExpTitle: "Experiencias en el Parque",
 
@@ -125,8 +125,8 @@ artImg5: "Alcaldia de Pitalito, 2024 (Facebook) Disponible en: https://www.faceb
 
 
 cafeImg1: "Posadas Rurales - https://posadasrurales.co/5537-large_default/lodge-laguna-guaitipan-ancestral-pitalito-huila-.jpg",
-cafeImg2: "Fuente: Internet",
-cafeImg3: "Fuente: Internet",
+cafeImg2: "Laguna de Guaitipan, 2026 (Facebook) Disponible en: https://scontent.fptx1-1.fna.fbcdn.net/v/t39.30808-6/650725654_1250492770597687_5211064536644131229_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeHb2IoEcbwwXkc9oeHQ2r73ke0Y-h2XJzqR7Rj6HZcnOtcpON3_GKSCPImoyrwtASGRgbRdcESfeppxcMry9WE2&_nc_ohc=WzLIHJm0TEoQ7kNvwGoqCHs&_nc_oc=AdoGL586g8SvsDvoRRWTnMnkb45S25jYwBYTSNXPj4PkYa-WVgy2OrPOm612defvJNw&_nc_zt=23&_nc_ht=scontent.fptx1-1.fna&_nc_gid=TaKGZwqA9axADZ15FOZl5w&_nc_ss=7b2a8&oh=00_Af35tg54tdLdYD-DYVI3boCLHEvQJyLm1H1FvHbOeadlLg&oe=69F3A63E",
+cafeImg3: "Laguna de Guaitipan, 2026 (Facebook) Disponible en:https://scontent.fptx1-1.fna.fbcdn.net/v/t39.30808-6/649140160_1249751150671849_3632419596393222011_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeGvQyQyVVWIIamlPga-rJrg9S7EdfRYvVH1LsR19Fi9UcZloWOwelWpsE9ObJtzcJ3H0qLj-TRTq5oNrW1PQMA6&_nc_ohc=aiH03E8psi4Q7kNvwEMWPD_&_nc_oc=AdrfuISPIjjRAAMoiylwXR3nfUyLDN4GA6xJqBpN5_dfTqnQWAzyVTccG-D5OS-NkQ8&_nc_zt=23&_nc_ht=scontent.fptx1-1.fna&_nc_gid=OlRH8x6OuLma44GdC2jULQ&_nc_ss=7b2a8&oh=00_Af1_VSZ0ieX6_JVL6g2mD-OdONbc4T76QH3chBVT2ErwoA&oe=69F393EB",
 cafeImg4: "Fuente: Internet",
 cafeImg5: "Fuente: Video turístico",
 
@@ -297,10 +297,12 @@ parqueExp3Desc: "Taste typical dishes and artisanal products.",
         galleryTitle: "Gallery",
 locationTitle: "Location",
 
-imgSource1: "Source: Unknown author",
-imgSource2: "Source: Internet",
-imgSource3: "Source: Huila Tourism",
-imgSource4: "Source: Laguna de Guaitipan Facebook",
+imgSource1: "Rural Inns - https://posadasrurales.co/5537-large_default/lodge-laguna-guaitipan-ancestral-pitalito-huila-.jpg",
+imgSource2: "Guaitipan Lagoon, 2026 (Facebook) Available at: https://scontent.fptx1-1.fna.fbcdn.net/v/t39.30808-6/650725654_1250492770597687_5211064536644131229_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeHb2IoEcbwwXkc9oeHQ2r73ke0Y-h2XJzqR7Rj6HZcnOtcpON3_GKSCPImoyrwtASGRgbRdcESfeppxcMry9WE2&_nc_ohc=WzLIHJ m0TEoQ7kNvwGoqCHs&_nc_oc=AdoGL586g8SvsDvoRRWTnMnkb45S25jYwBYTSNXPj4PkYa-WVgy2OrPOm612defvJNw&_nc_zt=23&_nc_ht=scontent.f ptx1-1.fna&_nc_gid=TaKGZwqA9axADZ15FOZl5w&_nc_ss=7b2a8&oh=00_Af35tg54tdLdYD-DYVI3boCLHEvQJyLm1H1FvHbOeadlLg&oe=69F3A63E",
+imgSource3: "Laguna de Guaitipan, 2026 (Facebook) Available at:https://scontent.fptx1-1.fna.fbcdn.net/v/t39.30808-6/649140160_1249751150671849_3632419596393222011_n.jpg?_nc_cat=104&ccb=1- 7&_nc_sid=7b2446&_nc_eui2=AeGvQyQyVVWIIamlPga-rJrg9S7EdfRYvVH1LsR19Fi9UcZloWOwelWpsE9ObJtzcJ3H0qLj-TRTq5oNrW1PQMA6&_nc_ohc=aiH0 3E8psi4Q7kNvwEMWPD_&_nc_oc=AdrfuISPIjjRAAMoiylwXR3nfUyLDN4GA6xJqBpN5_dfTqnQWAzyVTccG-D5OS-NkQ8&_nc_zt=23&_nc_ht=scontent. fptx1-1.fna&_nc_gid=OlRH8x6OuLma44GdC2jULQ&_nc_ss=7b2a8&oh=00_Af1_VSZ0ieX6_JVL6g2mD-OdONbc4T76QH3chBVT2ErwoA&oe=69F393EB",
+imgSource4: "Laguna de Guaitipan, 2026 (Instragram) Available at: https://www.instagram.com/reel/DU1j84_j37y/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        
+        pExpTitle: "Experiences in the Park",
         pExpTitle: "Experiences in the Park",
 
 pExp1Title: "Cultural tour",
