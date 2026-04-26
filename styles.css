@@ -725,6 +725,28 @@ section {
 }
 
 /* Textos del Hero */
+/* =========================
+   CONTENEDOR DE VIDRIO (GLASSMORPHISM)
+========================= */
+
+/* Este es el contenedor que envolverá el h1 y el p */
+.nature-glass-container {
+    background: rgba(255, 255, 255, 0.05); /* Fondo blanco muy transparente */
+    backdrop-filter: blur(15px); /* El efecto de desenfoque */
+    -webkit-backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 4px;
+    border-left: 8px solid #19e337; /* Línea neón lateral */
+    
+    max-width: 1200px; 
+    width: 100%;
+    box-sizing: border-box;
+    
+    /* Sutil sombra para dar profundidad sobre la imagen */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Ajustes de los textos dentro del vidrio */
 #nature {
     font-size: clamp(3rem, 8vw, 5rem);
     color: #19e337; 
@@ -737,13 +759,21 @@ section {
 #nature-desc {
     font-size: 1.15rem;
     line-height: 1.8;
-    color: #e5e7eb;
+    color: #ffffff; /* Blanco puro para mejor contraste en el vidrio */
     max-width: 750px;
     margin-top: 25px;
     text-align: left;
-    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
 }
 
+/* Ajuste del Hero para centrar el contenedor de vidrio */
+.nature-section {
+    /* ... (tus otras propiedades se mantienen) ... */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Alineado a la izquierda como Guaitipán */
+}
 /* =========================
    CONTENEDOR DE TARJETAS
 ========================= */
