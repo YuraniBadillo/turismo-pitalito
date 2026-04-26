@@ -7,7 +7,7 @@ const content = {
         heroDesc: "Vive experiencias únicas entre montañas, cafetales, cultura y sabores tradicionales en uno de los destinos turísticos más encantadores del Huila.",
         heroBtn: "Explorar destinos",
         homeTitle: "Explora Pitalito",
-        homeDesc: "Descubre Pitalito, un destino lleno de vida y diversidad. Desde sus verdes montañas y ríos cristalinos hasta sus cafetales y coloridos paisajes rurales, cada rincón ofrece experiencias únicas: ecoturismo, senderismo, avistamiento de aves, gastronomía típica y la calidez de su gente te esperan para vivir aventuras inolvidables. ¡Explora la riqueza natural y cultural de Pitalito y déjate sorprender!",
+        homeDesc: "Descubre Pitalito, un destino lleno de vida y diversidad. Desde sus verdes montañas y ríos cristalinos hasta sus cafetales y coloridos paisajes rurales, cada rincón ofrece experiencias únicas: ecoturismo, senderismo, avistamiento de aves, gastronomía típica y la calidez de su gente te esperan para vivir aventuras inolvidables. ¡Explora la riqueza natural y cultural de Pitalito y déjate sorprender! Texto generado con IA. (OpenAI, 2023)",
         homeFoodTitle: "Gastronomía",
         homeFoodDesc: "Descubre los sabores tradicionales de Pitalito y disfruta de su rica oferta gastronómica.",
         homeFoodBtn: "Ver Gastronomía",
@@ -20,8 +20,8 @@ const content = {
         btnCulture: "Ver Cultura",
         nature: "Naturaleza",
         culture: "Cultura",
-        natureDesc: "Pitalito se caracteriza por un entorno natural muy diverso y exuberante. Está ubicado en el sur del departamento del Huila, en una región rodeada de montañas y valles que forman parte de la cordillera Oriental de los Andes. Su clima es mayormente cálido y templado, ideal para la agricultura y el desarrollo de ecosistemas ricos en flora y fauna. Los ríos que atraviesan la zona, como el río Magdalena y sus afluentes, contribuyen a la fertilidad del suelo y al mantenimiento de bosques ribereños, que albergan numerosas especies de aves, mamíferos y peces. Además, los cerros y paisajes montañosos ofrecen un escenario perfecto para la conservación de la biodiversidad y actividades ecoturísticas, como senderismo, observación de aves y turismo de naturaleza. La combinación de paisajes agrícolas, bosques y cuerpos de agua hace que Pitalito sea un lugar de gran valor ecológico y ambiental en la región sur del Huila.",
-        cultureDesc: "Descubre tradiciones, historia y patrimonio cultural de Pitalito.  Sumérgete en sus costumbres, festividades, expresiones artísticas y arquitectura representativa que reflejan la identidad y el legado de su gente. Vive experiencias culturales auténticas mientras recorres espacios llenos de memoria, color y significado que conectan el pasado con el presente de la región.",
+        natureDesc: "Pitalito se caracteriza por un entorno natural muy diverso y exuberante. Está ubicado en el sur del departamento del Huila, en una región rodeada de montañas y valles que forman parte de la cordillera Oriental de los Andes. Su clima es mayormente cálido y templado, ideal para la agricultura y el desarrollo de ecosistemas ricos en flora y fauna. Los ríos que atraviesan la zona, como el río Magdalena y sus afluentes, contribuyen a la fertilidad del suelo y al mantenimiento de bosques ribereños, que albergan numerosas especies de aves, mamíferos y peces. Además, los cerros y paisajes montañosos ofrecen un escenario perfecto para la conservación de la biodiversidad y actividades ecoturísticas, como senderismo, observación de aves y turismo de naturaleza. La combinación de paisajes agrícolas, bosques y cuerpos de agua hace que Pitalito sea un lugar de gran valor ecológico y ambiental en la región sur del Huila. Texto generado con IA. (OpenAI, 2023)",
+        cultureDesc: "Descubre tradiciones, historia y patrimonio cultural de Pitalito.  Sumérgete en sus costumbres, festividades, expresiones artísticas y arquitectura representativa que reflejan la identidad y el legado de su gente. Vive experiencias culturales auténticas mientras recorres espacios llenos de memoria, color y significado que conectan el pasado con el presente de la región. Texto generado con IA. (OpenAI, 2023)",
         navHome: "Inicio",
         navNature: "Naturaleza",
         navCulture: "Cultura",
@@ -39,7 +39,7 @@ const content = {
         exp3Title: "Parque Ecoturístico Pueblito Huilense",
         exp3Desc: "es un Parque Ecoturistico que busca brindar experiencias en un entorno natural rescatando la cultura del Huila.",
         guaitipanTitle: "Laguna de Guaitipán",
-        guaitipanHero: "La Laguna de Guaitipán es uno de los destinos naturales más representativos del municipio. Rodeada de montañas, aire puro y vegetación exuberante, ofrece un ambiente ideal para el descanso y el turismo ecológico.Los visitantes pueden disfrutar caminatas, observación de aves, fotografía de naturaleza y experiencias sostenibles que permiten conectarse con la biodiversidad del sur del Huila.",
+        guaitipanHero: "La Laguna de Guaitipán es uno de los destinos naturales más representativos del municipio. Rodeada de montañas, aire puro y vegetación exuberante, ofrece un ambiente ideal para el descanso y el turismo ecológico.Los visitantes pueden disfrutar caminatas, observación de aves, fotografía de naturaleza y experiencias sostenibles que permiten conectarse con la biodiversidad del sur del Huila. Texto generado con IA. (OpenAI, 2023)",
         guaExpTitle: "Experiencias en la Laguna de Guaitipán",
         guaExp1Title: "Senderismo ecológico",
         guaExp1Desc: "Recorre senderos naturales rodeados de vegetación y paisajes montañosos.",
@@ -89,9 +89,9 @@ pImg2: "Pueblito Huilense (Instagram) Disponible en: https://www.instagram.com/r
 pImg3: "Alcaldía de Pitalito, 2026 (Facebook) Disponible en: https://scontent.fptx1-1.fna.fbcdn.net/v/t39.30808-6/657297884_1270906378546423_6292280615678575966_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeEBpy0niQmNGbZdEl5_yYcIiv7sI2gXIIGK_uwjaBcggdXMzU6aG2pSIPgd7G47L4pBPU1gokfad2cB_W6GZ8Xm&_nc_ohc=7TF2ukQ0HIkQ7kNvwHHI0GI&_nc_oc=AdqT1IvJYIDzb7gjD3TU3kb7c85mqMsNOr40gQaAxzvp3AE_n6ePbnUODIl6l8KSPFk&_nc_zt=23&_nc_ht=scontent.fptx1-1.fna&_nc_gid=RGSNqRKj6uIBVXYyXH1sww&_nc_ss=7b2a8&oh=00_Af3r766uBd3GxRX7iNJ2OyYs9zgweu2CLuiEgZKkcer0Rg&oe=69F376D7",
 pImg4: "Pueblito Huilense (Instagram) Disponible en: https://www.instagram.com/reel/DQAtfKNDefZ/",
         pueblitoTitle: "Parque Ecoturístico Pueblito Huilense",
-pueblitoHero: "El Parque Ecoturístico Pueblito Huilense es un espacio diseñado para rescatar las tradiciones culturales del departamento del Huila en medio de un entorno natural. Los visitantes pueden recorrer senderos, conocer arquitectura típica, disfrutar gastronomía regional y vivir experiencias recreativas.",
+pueblitoHero: "El Parque Ecoturístico Pueblito Huilense es un espacio diseñado para rescatar las tradiciones culturales del departamento del Huila en medio de un entorno natural. Los visitantes pueden recorrer senderos, conocer arquitectura típica, disfrutar gastronomía regional y vivir experiencias recreativas. Texto generado con IA. (OpenAI, 2023)",
         artesaniasTitle: "Artesanías Locales",
-artesaniasHero: "Las artesanías locales de Pitalito representan la identidad cultural y la creatividad de sus habitantes. En esta experiencia, los visitantes pueden conocer el trabajo de artesanos que elaboran piezas únicas utilizando materiales tradicionales como madera, fibras naturales, cerámica y tejidos. Además de observar el proceso de elaboración, es posible interactuar con los artesanos, aprender sobre las técnicas ancestrales y adquirir recuerdos auténticos que reflejan la historia y las costumbres de la región. Esta actividad permite valorar el patrimonio cultural y apoyar la economía local mientras se vive una experiencia auténtica y enriquecedora.",
+artesaniasHero: "Las artesanías locales de Pitalito representan la identidad cultural y la creatividad de sus habitantes. En esta experiencia, los visitantes pueden conocer el trabajo de artesanos que elaboran piezas únicas utilizando materiales tradicionales como madera, fibras naturales, cerámica y tejidos. Además de observar el proceso de elaboración, es posible interactuar con los artesanos, aprender sobre las técnicas ancestrales y adquirir recuerdos auténticos que reflejan la historia y las costumbres de la región. Esta actividad permite valorar el patrimonio cultural y apoyar la economía local mientras se vive una experiencia auténtica y enriquecedora. Texto generado con IA. (OpenAI, 2023)",
 
 artExpTitle: "Experiencias Culturales",
 
@@ -104,7 +104,7 @@ artExp2Desc: "Explora espacios donde se exhiben artesanías representativas de l
 artExp3Title: "Compra de recuerdos tradicionales",
 artExp3Desc: "Adquiere artesanías auténticas y apoya la economía local.",
         cafeTitle: "Ruta del Café",
-cafeHero: "La Ruta del Café en Pitalito permite a los visitantes adentrarse en el fascinante proceso de producción del café huilense, reconocido a nivel nacional e internacional por su calidad, aroma y sabor excepcional. Durante el recorrido, es posible visitar fincas cafeteras tradicionales, caminar entre cultivos rodeados de paisajes naturales y aprender de los caficultores sobre cada etapa del cultivo, desde la siembra y la cosecha hasta el secado y la tostión del grano.",
+cafeHero: "La Ruta del Café en Pitalito permite a los visitantes adentrarse en el fascinante proceso de producción del café huilense, reconocido a nivel nacional e internacional por su calidad, aroma y sabor excepcional. Durante el recorrido, es posible visitar fincas cafeteras tradicionales, caminar entre cultivos rodeados de paisajes naturales y aprender de los caficultores sobre cada etapa del cultivo, desde la siembra y la cosecha hasta el secado y la tostión del grano. Texto generado con IA. (OpenAI, 2023)",
 
 cafeExpTitle: "Experiencias Cafeteras",
 
@@ -138,7 +138,7 @@ exp9Title: "Finca Agroturística Boscafé San Juan",
 exp9Desc: "Ubicada en el corregimiento de Bruselas en Pitalito, es un espacio donde la tradición cafetera y la naturaleza se unen. Permite conocer el proceso del café mientras disfrutas paisajes montañosos.",
 
 matrimonioTitle: "Finca Cafetera El Matrimonio",
-matrimonioHero: "La Finca Cafetera El Matrimonio, ubicada en Pitalito, Huila (vía Guacacallo), es un destino agroturístico que combina tradición, naturaleza y cultura cafetera. Este lugar ofrece a los visitantes una experiencia auténtica donde pueden conocer de cerca todo el proceso del café, desde la siembra del grano hasta su preparación en taza. Durante el recorrido, los visitantes son guiados por sus anfitriones, quienes comparten sus conocimientos y la historia de la finca, permitiendo una conexión directa con las raíces del campo. Además, la finca cuenta con hermosos paisajes, miradores naturales, gastronomía típica de la región y espacios de descanso que hacen de la visita una experiencia tranquila y enriquecedora.",
+matrimonioHero: "La Finca Cafetera El Matrimonio, ubicada en Pitalito, Huila (vía Guacacallo), es un destino agroturístico que combina tradición, naturaleza y cultura cafetera. Este lugar ofrece a los visitantes una experiencia auténtica donde pueden conocer de cerca todo el proceso del café, desde la siembra del grano hasta su preparación en taza. Durante el recorrido, los visitantes son guiados por sus anfitriones, quienes comparten sus conocimientos y la historia de la finca, permitiendo una conexión directa con las raíces del campo. Además, la finca cuenta con hermosos paisajes, miradores naturales, gastronomía típica de la región y espacios de descanso que hacen de la visita una experiencia tranquila y enriquecedora. Texto generado con IA. (OpenAI, 2023)",
 
 cafeExpTitle: "Experiencias",
 
@@ -152,7 +152,7 @@ cafeExp3Title: "Degustación de café especial",
 cafeExp3Desc: "Vive una experiencia sensorial probando diferentes variedades de café huilense y aprendiendo a identificar sus aromas y sabores.",
         boscafeTitle: "Finca Agroturística Boscafé San Juan",
 
-boscafeHero: "La Finca Agroturística Boscafé San Juan, ubicada en el corregimiento de Bruselas en Pitalito, Huila, es un destino que combina la riqueza de la tradición cafetera con la belleza natural de la región. Rodeada de montañas, cafetales y una exuberante vegetación, esta finca ofrece a los visitantes una experiencia auténtica en contacto con el campo. Durante la visita, es posible conocer todo el proceso del café, desde su cultivo hasta su preparación final, guiado por personas expertas que comparten sus conocimientos y pasión por el café huilense. Además, el entorno natural permite disfrutar de paisajes tranquilos, aire puro y espacios ideales para el descanso.",
+boscafeHero: "La Finca Agroturística Boscafé San Juan, ubicada en el corregimiento de Bruselas en Pitalito, Huila, es un destino que combina la riqueza de la tradición cafetera con la belleza natural de la región. Rodeada de montañas, cafetales y una exuberante vegetación, esta finca ofrece a los visitantes una experiencia auténtica en contacto con el campo. Durante la visita, es posible conocer todo el proceso del café, desde su cultivo hasta su preparación final, guiado por personas expertas que comparten sus conocimientos y pasión por el café huilense. Además, el entorno natural permite disfrutar de paisajes tranquilos, aire puro y espacios ideales para el descanso. Texto generado con IA. (OpenAI, 2023)",
 
 boscafeExpTitle: "Experiencias",
 
@@ -171,7 +171,7 @@ boscafeImg3: "boscafesanjuan (Instagram) Dispoible en https://www.instagram.com/
 boscafeImg4: "boscafesanjuan (Instagram) Dispoible en https://www.instagram.com/stories/highlights/18330768274136954/",
 boscafeImg5: "boscafesanjuan (Instagram) Dispoible en https://www.instagram.com/stories/highlights/18382110673017062/",
         fogonTitle: "Fogón de Piedra",
-fogonHero: "Fogón de Piedra es uno de los restaurantes más representativos de Pitalito, reconocido por preservar y resaltar la auténtica gastronomía huilense a través de preparaciones tradicionales hechas en fogón de piedra, una técnica ancestral que le aporta un sabor único a cada plato. En este lugar, la cocina no solo se entiende como alimentación, sino como una expresión cultural que transmite historia, identidad y tradición. El restaurante se distingue por el uso de ingredientes frescos y locales, cuidadosamente seleccionados para garantizar calidad y sabor en cada preparación. Platos como el asado huilense, la tilapia frita, el pollo campesino y las carnes a la parrilla son elaborados siguiendo recetas típicas que han pasado de generación en generación, manteniendo la esencia de la cocina regional.",
+fogonHero: "Fogón de Piedra es uno de los restaurantes más representativos de Pitalito, reconocido por preservar y resaltar la auténtica gastronomía huilense a través de preparaciones tradicionales hechas en fogón de piedra, una técnica ancestral que le aporta un sabor único a cada plato. En este lugar, la cocina no solo se entiende como alimentación, sino como una expresión cultural que transmite historia, identidad y tradición. El restaurante se distingue por el uso de ingredientes frescos y locales, cuidadosamente seleccionados para garantizar calidad y sabor en cada preparación. Platos como el asado huilense, la tilapia frita, el pollo campesino y las carnes a la parrilla son elaborados siguiendo recetas típicas que han pasado de generación en generación, manteniendo la esencia de la cocina regional. Texto generado con IA. (OpenAI, 2023)",
         menuTitle: "Menú",
 
         plato1Title: "Asado huilense",
@@ -198,7 +198,7 @@ fogonImg3: "fogondepiedrapitalito (Instagram) Disponible en: https://www.instagr
 fogonImg4: "fogondepiedrapitalito (Instagram) Disponible en: https://www.instagram.com/p/DRChYVbkRZ1/",
 
 peceraTitle: "La Pecera",
-peceraHero: "La Pecera es un restaurante reconocido en Pitalito por ofrecer una experiencia gastronómica única que combina tradición, sabor y un ambiente moderno y acogedor. Este lugar se destaca por su variada oferta de platos típicos de la región, especialmente preparaciones a base de pescado y mariscos, elaboradas con ingredientes frescos y de alta calidad. El restaurante brinda un espacio agradable ideal para compartir en familia o con amigos, donde los visitantes pueden disfrutar de una atención cálida y un ambiente relajado. Su propuesta culinaria resalta los sabores auténticos del Huila, incorporando técnicas que potencian el gusto y la presentación de cada plato.",
+peceraHero: "La Pecera es un restaurante reconocido en Pitalito por ofrecer una experiencia gastronómica única que combina tradición, sabor y un ambiente moderno y acogedor. Este lugar se destaca por su variada oferta de platos típicos de la región, especialmente preparaciones a base de pescado y mariscos, elaboradas con ingredientes frescos y de alta calidad. El restaurante brinda un espacio agradable ideal para compartir en familia o con amigos, donde los visitantes pueden disfrutar de una atención cálida y un ambiente relajado. Su propuesta culinaria resalta los sabores auténticos del Huila, incorporando técnicas que potencian el gusto y la presentación de cada plato. Texto generado con IA. (OpenAI, 2023)",
         menuTitle: "Menú",
         
 peceraPlato1Title: "Cazuela de Mariscos",
@@ -232,7 +232,7 @@ peceraImg4: "Fuente: Facebook La Pecera",
         heroDesc: "Live unique experiences among mountains, coffee plantations, culture and traditional flavors in one of the most charming tourist destinations in Huila.",
         heroBtn: "Explore destinations",
         homeTitle: "Explore Pitalito",
-        homeDesc: "Discover Pitalito, a vibrant and diverse destination. From its verdant mountains and crystal-clear rivers to its coffee plantations and colorful rural landscapes, every corner offers unique experiences: ecotourism, hiking, birdwatching, traditional cuisine, and the warmth of its people await you for unforgettable adventures. Explore the natural and cultural richness of Pitalito and prepare to be amazed!",
+        homeDesc: "Discover Pitalito, a vibrant and diverse destination. From its verdant mountains and crystal-clear rivers to its coffee plantations and colorful rural landscapes, every corner offers unique experiences: ecotourism, hiking, birdwatching, traditional cuisine, and the warmth of its people await you for unforgettable adventures. Explore the natural and cultural richness of Pitalito and prepare to be amazed! Text generated with AI. (OpenAI, 2023)",
         homeFoodTitle: "Gastronomy",
         homeFoodDesc: "Discover the traditional flavors of Pitalito and enjoy its rich gastronomic offer.",
         homeFoodBtn: "View Gastronomy",
@@ -246,8 +246,8 @@ peceraImg4: "Fuente: Facebook La Pecera",
         btnCulture: "View Culture",
         nature: "Nature",
         culture: "Culture",
-        natureDesc: "Pitalito is characterized by its diverse and lush natural environment. Located in the southern part of the Huila department, it lies in a region surrounded by mountains and valleys that form part of the Eastern Cordillera of the Andes. Its climate is mostly warm and temperate, ideal for agriculture and the development of ecosystems rich in flora and fauna. The rivers that cross the area, such as the Magdalena River and its tributaries, contribute to soil fertility and the maintenance of riparian forests, which are home to numerous species of birds, mammals, and fish. Furthermore, the hills and mountainous landscapes offer a perfect setting for biodiversity conservation and ecotourism activities, such as hiking, birdwatching, and nature tourism. The combination of agricultural landscapes, forests, and bodies of water makes Pitalito a place of great ecological and environmental value in the southern region of Huila.",
-        cultureDesc: "Discover traditions, history and cultural heritage of Pitalito. Immerse yourself in its customs, festivals, artistic expressions, and distinctive architecture, which reflect the identity and legacy of its people. Enjoy authentic cultural experiences as you explore places steeped in history, color, and meaning that connect the region’s past with its present.",
+        natureDesc: "Pitalito is characterized by its diverse and lush natural environment. Located in the southern part of the Huila department, it lies in a region surrounded by mountains and valleys that form part of the Eastern Cordillera of the Andes. Its climate is mostly warm and temperate, ideal for agriculture and the development of ecosystems rich in flora and fauna. The rivers that cross the area, such as the Magdalena River and its tributaries, contribute to soil fertility and the maintenance of riparian forests, which are home to numerous species of birds, mammals, and fish. Furthermore, the hills and mountainous landscapes offer a perfect setting for biodiversity conservation and ecotourism activities, such as hiking, birdwatching, and nature tourism. The combination of agricultural landscapes, forests, and bodies of water makes Pitalito a place of great ecological and environmental value in the southern region of Huila. Text generated with AI. (OpenAI, 2023)",
+        cultureDesc: "Discover traditions, history and cultural heritage of Pitalito. Immerse yourself in its customs, festivals, artistic expressions, and distinctive architecture, which reflect the identity and legacy of its people. Enjoy authentic cultural experiences as you explore places steeped in history, color, and meaning that connect the region’s past with its present. Text generated with AI. (OpenAI, 2023)",
         navHome: "Home",
         navNature: "Nature",
         navCulture: "Culture",
@@ -265,7 +265,7 @@ peceraImg4: "Fuente: Facebook La Pecera",
         exp3Title: "Pueblito Huilense Ecotourism Park",
         exp3Desc: "It is an Ecotourism Park that seeks to provide experiences in a natural environment, rescuing the culture of Huila.",
         guaitipanTitle: "Guaitipan Lagoon",
-guaitipanHero:"Guaitipán Lagoon is one of the municipality’s most iconic natural destinations. Surrounded by mountains, fresh air, and lush vegetation, it offers the perfect setting for relaxation, enjoying the scenery, and eco-tourism. Visitors can enjoy hiking, birdwatching, nature photography, and sustainable activities that allow them to connect with the biodiversity of southern Huila.",
+guaitipanHero:"Guaitipán Lagoon is one of the municipality’s most iconic natural destinations. Surrounded by mountains, fresh air, and lush vegetation, it offers the perfect setting for relaxation, enjoying the scenery, and eco-tourism. Visitors can enjoy hiking, birdwatching, nature photography, and sustainable activities that allow them to connect with the biodiversity of southern Huila. Text generated with AI. (OpenAI, 2023)",
 guaExpTitle: "Experiences at Guaitipan Lagoon",
 guaExp1Title: "Ecological hiking",
 guaExp1Desc: "Walk along natural trails surrounded by mountains and native vegetation.",
@@ -317,9 +317,9 @@ pImg2: "Pueblito Huilense (Instagram) Available at: https://www.instagram.com/re
 pImg3: "Pitalito City Hall, 2026 (Facebook) Available at: https://scontent.fptx1-1.fna.fbcdn.net/v/t39.30808-6/657297884_1270906378546423_6292280615678575966_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeEBpy0niQmNGbZdEl5_yYcIiv7sI2gXIIGK_uwjaBcggdXMzU6aG2pSIPgd7G47L4pBPU1gokfad2cB_W6GZ8Xm&_nc_ohc=7TF 2ukQ0HIkQ7kNvwHHI0GI&_nc_oc=AdqT1IvJYIDzb7gjD3TU3kb7c85mqMsNOr40gQaAxzvp3AE_n6ePbnUODIl6l8KSPFk&_nc_zt=23&_nc_ht=scontent. fptx1-1.fna&_nc_gid=RGSNqRKj6uIBVXYyXH1sww&_nc_ss=7b2a8&oh=00_Af3r766uBd3GxRX7iNJ2OyYs9zgweu2CLuiEgZKkcer0Rg&oe=69F376D7",
 pImg4: "Pueblito Huilense (Instagram) Available at: https://www.instagram.com/reel/DQAtfKNDefZ/",
         pueblitoTitle: "Pueblito Huilense Ecotourism Park",
-pueblitoHero: "The Pueblito Huilense Ecotourism Park is a space designed to preserve the cultural traditions of the department of Huila within a natural setting. Visitors can explore trails, discover traditional architecture, enjoy regional cuisine, and participate in recreational activities.",
+pueblitoHero: "The Pueblito Huilense Ecotourism Park is a space designed to preserve the cultural traditions of the department of Huila within a natural setting. Visitors can explore trails, discover traditional architecture, enjoy regional cuisine, and participate in recreational activities. Text generated with AI. (OpenAI, 2023)",
         artesaniasTitle: "Local Handicrafts",
-artesaniasHero: "The local crafts of Pitalito reflect the cultural identity and creativity of its residents. During this experience, visitors can discover the work of artisans who create unique pieces using traditional materials such as wood, natural fibers, ceramics, and textiles. In addition to observing the crafting process, visitors can interact with the artisans, learn about traditional techniques, and purchase authentic souvenirs that reflect the region’s history and customs. This activity allows you to appreciate the cultural heritage and support the local economy while enjoying an authentic and enriching experience.",
+artesaniasHero: "The local crafts of Pitalito reflect the cultural identity and creativity of its residents. During this experience, visitors can discover the work of artisans who create unique pieces using traditional materials such as wood, natural fibers, ceramics, and textiles. In addition to observing the crafting process, visitors can interact with the artisans, learn about traditional techniques, and purchase authentic souvenirs that reflect the region’s history and customs. This activity allows you to appreciate the cultural heritage and support the local economy while enjoying an authentic and enriching experience. Text generated with AI. (OpenAI, 2023)",
 
 artExpTitle: "Cultural Experiences",
 
@@ -333,7 +333,7 @@ artExp3Title: "Traditional souvenir shopping",
 artExp3Desc: "Buy authentic handicrafts and support the local economy.",
 
         cafeTitle: "Coffee Route",
-cafeHero: "The Coffee Route in Pitalito allows visitors to delve into the fascinating process of producing Huila coffee, which is recognized nationally and internationally for its exceptional quality, aroma, and flavor. During the tour, you can visit traditional coffee farms, walk among the crops surrounded by natural landscapes, and learn from the coffee farmers about every stage of cultivation, from planting and harvesting to drying and roasting the beans.",
+cafeHero: "The Coffee Route in Pitalito allows visitors to delve into the fascinating process of producing Huila coffee, which is recognized nationally and internationally for its exceptional quality, aroma, and flavor. During the tour, you can visit traditional coffee farms, walk among the crops surrounded by natural landscapes, and learn from the coffee farmers about every stage of cultivation, from planting and harvesting to drying and roasting the beans.Text generated with AI. (OpenAI, 2023)",
 
 cafeExpTitle: "Coffee Experiences",
 
@@ -365,7 +365,7 @@ exp9Title: "Boscafé San Juan Agrotourism Farm",
 exp9Desc: "Located in Bruselas, Pitalito, it is a place where coffee tradition and nature come together. Visitors can learn about the coffee process while enjoying mountain landscapes.",
 
 matrimonioTitle: "El Matrimonio Coffee Farm",
-matrimonioHero: "El Matrimonio Coffee Farm, located in Pitalito, Huila, is an agrotourism destination that combines tradition, nature, and coffee culture. Visitors can experience the entire coffee process, from planting to cup preparation. Guided tours allow guests to connect with local traditions, enjoy beautiful landscapes, natural viewpoints, traditional food, and relaxing rural spaces.",
+matrimonioHero: "El Matrimonio Coffee Farm, located in Pitalito, Huila, is an agrotourism destination that combines tradition, nature, and coffee culture. Visitors can experience the entire coffee process, from planting to cup preparation. Guided tours allow guests to connect with local traditions, enjoy beautiful landscapes, natural viewpoints, traditional food, and relaxing rural spaces. Text generated with AI. (OpenAI, 2023)",
 
 cafeExpTitle: "Experiences",
 
@@ -379,7 +379,7 @@ cafeExp3Title: "Specialty coffee tasting",
 cafeExp3Desc: "Experience a sensory journey tasting different coffee varieties while learning to identify aromas and flavors.",
         boscafeTitle: "Boscafé San Juan Agrotourism Farm",
 
-boscafeHero: "Boscafé San Juan Agrotourism Farm, located in Bruselas, Pitalito, Huila, is a destination that combines coffee tradition with natural beauty. Surrounded by mountains and coffee plantations, it offers an authentic rural experience. Visitors can learn about the entire coffee process, from cultivation to preparation, while enjoying peaceful landscapes and fresh air.",
+boscafeHero: "Boscafé San Juan Agrotourism Farm, located in Bruselas, Pitalito, Huila, is a destination that combines coffee tradition with natural beauty. Surrounded by mountains and coffee plantations, it offers an authentic rural experience. Visitors can learn about the entire coffee process, from cultivation to preparation, while enjoying peaceful landscapes and fresh air. Text generated with AI. (OpenAI, 2023)",
 
 boscafeExpTitle: "Experiences",
 
@@ -398,7 +398,7 @@ boscafeImg3: "boscafesanjuan (Instagram) Available at https://www.instagram.com/
 boscafeImg4: "boscafesanjuan (Instagram) Available in https://www.instagram.com/stories/highlights/18330768274136954/",
 boscafeImg5: "boscafesanjuan (Instagram) Available at https://www.instagram.com/stories/highlights/18382110673017062/",
         fogonTitle: "Stone Stove",
-fogonHero: "Fogón de Piedra is one of Pitalito’s most iconic restaurants, renowned for preserving and showcasing authentic Huila cuisine through traditional dishes prepared in a stone oven—an ancient technique that lends a unique flavor to every dish. Here, cooking is not merely about food, but a cultural expression that conveys history, identity, and tradition. The restaurant stands out for its use of fresh, local ingredients, carefully selected to ensure quality and flavor in every dish. Dishes such as Huila-style roast, fried tilapia, country-style chicken, and grilled meats are prepared using traditional recipes passed down from generation to generation, preserving the essence of regional cuisine.",
+fogonHero: "Fogón de Piedra is one of Pitalito’s most iconic restaurants, renowned for preserving and showcasing authentic Huila cuisine through traditional dishes prepared in a stone oven—an ancient technique that lends a unique flavor to every dish. Here, cooking is not merely about food, but a cultural expression that conveys history, identity, and tradition. The restaurant stands out for its use of fresh, local ingredients, carefully selected to ensure quality and flavor in every dish. Dishes such as Huila-style roast, fried tilapia, country-style chicken, and grilled meats are prepared using traditional recipes passed down from generation to generation, preserving the essence of regional cuisine. Text generated with AI. (OpenAI, 2023)",
 menuTitle: "Menu",
         plato1Title: "Huila-style Roast",
 plato1Desc: "Rice, cassava, salad and arepa.",
@@ -424,7 +424,7 @@ fogonImg3: "fogondepiedrapitalito (Instagram) Available at: https://www.instagra
 fogonImg4: "fogondepiedrapitalito (Instagram) Available at: https://www.instagram.com/p/DRChYVbkRZ1/",
 
         peceraTitle: "La Pecera",
-peceraHero: "La Pecera is a well-known restaurant in Pitalito that offers a unique dining experience combining tradition, flavor, and a modern, welcoming atmosphere. This restaurant stands out for its wide variety of regional specialties, particularly fish and seafood dishes, prepared with fresh, high-quality ingredients. The restaurant offers a pleasant space ideal for sharing with family or friends, where guests can enjoy warm service and a relaxed atmosphere. Its culinary offerings highlight the authentic flavors of Huila, incorporating techniques that enhance the taste and presentation of each dish.",
+peceraHero: "La Pecera is a well-known restaurant in Pitalito that offers a unique dining experience combining tradition, flavor, and a modern, welcoming atmosphere. This restaurant stands out for its wide variety of regional specialties, particularly fish and seafood dishes, prepared with fresh, high-quality ingredients. The restaurant offers a pleasant space ideal for sharing with family or friends, where guests can enjoy warm service and a relaxed atmosphere. Its culinary offerings highlight the authentic flavors of Huila, incorporating techniques that enhance the taste and presentation of each dish. Text generated with AI. (OpenAI, 2023)",
         menuTitle: "Menu",
         
         peceraPlato1Title: "Seafood Casserole",
