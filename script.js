@@ -124,7 +124,7 @@ artImg4: "Huila Magnifica-:https://huilamagnifica.com/el-chorote-artesanias-y-ce
 artImg5: "Alcaldia de Pitalito, 2024 (Facebook) Disponible en: https://www.facebook.com/watch/?v=1665123227615087/",
 
 
-cafeImg1: "Fuente: Internet",
+cafeImg1: "Posadas Rurales - https://posadasrurales.co/5537-large_default/lodge-laguna-guaitipan-ancestral-pitalito-huila-.jpg",
 cafeImg2: "Fuente: Internet",
 cafeImg3: "Fuente: Internet",
 cafeImg4: "Fuente: Internet",
