@@ -1173,7 +1173,30 @@ section {
         grid-template-columns: 1fr;
     }
 }
+/* =========================
+   CONTENEDOR DE VIDRIO (Gastronomía)
+========================= */
 
+.food-glass-card {
+    background: rgba(255, 255, 255, 0.05); /* Efecto cristal transparente */
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 4px;
+    border-left: 8px solid #f97316; /* Línea lateral color fuego */
+    
+    max-width: 1200px; 
+    width: 100%;
+    box-sizing: border-box;
+    
+    /* Sombra para resaltar sobre los tonos cálidos del fondo */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Ajuste de legibilidad para el texto */
+#food-desc {
+    color: #ffffff !important;
+}
 /* ============================================================
    ESTILOS ESPECÍFICOS: PÁGINA LAGUNA DE GUAITIPÁN (SIMETRÍA TOTAL)
 ============================================================ */
