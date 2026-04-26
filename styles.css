@@ -77,14 +77,22 @@ header {
 }
 
 /* Contenedor de texto estilo "Vidrio" */
-.header-content {
+/* Solo para la parte superior (Logo y Botón idioma) */
+header .header-content {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    padding: 25px 40px;
-    border-left: 8px solid var(--accent-color); /* Línea gruesa de acento */
-    max-width: 600px;
+    padding: 20px 40px;
+    border-left: 8px solid var(--accent-color);
+    
+    /* Mantenemos el diseño horizontal solo aquí */
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-between;
+    
+    max-width: 100%; 
+    width: 100%;
 }
-
 header h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: clamp(32px, 5vw, 52px); /* Tamaño fluido */
