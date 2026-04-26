@@ -2346,55 +2346,180 @@ h2#cafe-exp-title {
     padding: 20px;
 }
 
-/* La tarjeta como tal FOGON PAGINA */
-.menu-card {
-    display: flex;
-    flex-direction: column; /* Alinea el contenido de arriba a abajo */
-    height: 100%; /* Obliga a todas a tener la misma altura en la misma fila */
-    background: rgba(255, 255, 255, 0.1); /* Efecto vidrio */
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: transform 0.3s ease;
+/* =========================
+   PÁGINA FOGÓN DE PIEDRA (fogon-page)
+========================= */
+
+/* Fondo degradado cálido */
+.fogon-page {
+    background: linear-gradient(to bottom, #451a03, #fff7ed); 
 }
 
-/* Contenedor de imagen con altura fija */
-.card-img-container {
-    width: 100%;
-    height: 200px; /* Altura fija para que todas las fotos se vean iguales */
+/* Grilla del Menú: Alineación perfecta */
+.fogon-page .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+    gap: 40px;
+    max-width: 1300px;
+    margin: 50px auto;
+    padding: 0 40px;
+}
+
+/* =========================
+   TARJETAS DEL MENÚ (Estilo Naturaleza)
+========================= */
+
+.fogon-page .menu-card {
+    background: #ffffff;
+    border: 3px solid #451a03; /* Marrón oscuro (carbón/tierra) */
+    padding: 0;
     overflow: hidden;
     position: relative;
-}
-
-.card-img-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Recorta la imagen para que llene el espacio sin deformarse */
-}
-
-/* Cita sobre la imagen o justo debajo */
-.img-citation {
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    font-size: 0.6rem;
-    padding: 2px 6px;
-    border-radius: 4px;
-}
-
-/* Información del menú alineada */
-.menu-info {
-    padding: 15px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1; /* Esto hace que el contenido empuje el precio hacia abajo */
+    transition: 0.3s ease;
+    
+    /* Sombra sólida naranja rojizo (Fuego) */
+    box-shadow: 15px 15px 0px #f97316; 
 }
 
-.price-wrapper {
-    margin-top: auto; /* Empuja el precio siempre al fondo de la tarjeta */
-    padding-top: 10px;
+/* Asimetría igual que en Naturaleza */
+.fogon-page .menu-card:nth-child(odd) {
+    border-radius: 0 80px 0 0;
 }
 
+.fogon-page .menu-card:nth-child(even) {
+    border-radius: 80px 0 0 0;
+}
+
+/* Contenedor de Imagen de Plato */
+.fogon-page .menu-card img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+    border-bottom: 3px solid #451a03;
+    transition: transform 0.5s ease;
+}
+
+.fogon-page .menu-card:hover img {
+    transform: scale(1.05);
+}
+
+/* =========================
+   TEXTOS Y PRECIOS
+========================= */
+
+.fogon-page .menu-info {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.fogon-page .menu-card h3 {
+    color: #451a03;
+    font-size: 1.6rem;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+}
+
+.fogon-page .menu-card p {
+    color: #4b5563;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.fogon-page .price {
+    display: inline-block;
+    background: #f97316;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 800;
+    border: 2px solid #000;
+    box-shadow: 4px 4px 0px #000;
+    align-self: flex-start;
+    margin-top: auto; /* Alinea los precios al fondo */
+}
+
+/* =========================
+   HERO DE GASTRONOMÍA (Vidrio)
+========================= */
+
+.sub-food-hero {
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 10%;
+    background: 
+        linear-gradient(to right, rgba(69, 26, 3, 0.9), rgba(0, 0, 0, 0.4)),
+        url('images/fogon-hero.jpg'); /* Asegúrate de tener esta imagen */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero-glass-container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 50px;
+    border-radius: 4px;
+    border-left: 8px solid #f97316; /* Línea de fuego lateral */
+    max-width: 900px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+#fogon-title {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    color: #f97316;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    margin: 0;
+}
+
+#fogon-hero {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+/* Cita de imagen en el Hero */
+.hero-img-credit {
+    font-size: 0.7rem;
+    display: block;
+    margin-top: 20px;
+    opacity: 0.7;
+    font-style: italic;
+}
+
+/* =========================
+   CITAS DE IMÁGENES (Cards)
+========================= */
+.img-source {
+    font-size: 0.65rem;
+    text-align: center;
+    padding: 5px;
+    background: #451a03;
+    color: #fff;
+    margin: 0;
+    font-style: italic;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    .fogon-page .menu-grid {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+    
+    .hero-glass-container {
+        padding: 30px;
+    }
+}
