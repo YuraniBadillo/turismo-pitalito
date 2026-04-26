@@ -743,7 +743,19 @@ section {
     text-align: left;
     text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
 }
+.nature-hero-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
 
+    padding: 40px;
+    border-radius: 4px;
+    border-left: 8px solid #19e337;
+
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+}
 /* =========================
    CONTENEDOR DE TARJETAS
 ========================= */
